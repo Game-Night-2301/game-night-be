@@ -19,7 +19,7 @@
 @user_event_1 = UserEvent.create!(user_id: @user_1.id, event_id: @event_1.id)
 @user_event_2 = UserEvent.create!(user_id: @user_2.id, event_id: @event_1.id)
 @user_event_3 = UserEvent.create!(user_id: @user_3.id, event_id: @event_1.id)
-@user_event_4 = UserEvent.create!(user_id: @user_3.id, event_id: @event_2.id)
+@user_event_4 = UserEvent.create!(user_id: @user_2.id, event_id: @event_2.id)
 @user_event_5 = UserEvent.create!(user_id: @user_4.id, event_id: @event_2.id)
 @user_event_6 = UserEvent.create!(user_id: @user_5.id, event_id: @event_2.id)
 
