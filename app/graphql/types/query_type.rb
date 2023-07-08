@@ -20,3 +20,28 @@ module Types
     end
   end
 end
+
+
+# Try this query!!
+
+# {
+#   users {
+#     id
+#     events {
+#       id
+#       date
+#       address
+#       city
+#       state
+#       zip
+#       title
+#       cancelled
+#       description
+#       hostId
+#       game
+#       gameType
+#       lat
+#       lon
+#     }
+#   } 
+# }
