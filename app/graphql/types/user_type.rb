@@ -1,6 +1,8 @@
 # frozen_string_literal: true
 
+# This is the user type
 module Types
+  # This is the user type
   class UserType < Types::BaseObject
     field :id, ID, null: false
     field :username, String
@@ -17,7 +19,7 @@ module Types
     def attending_events
       object.events
     end
-    
+
     def hosted_events
       object.events.where(host_id: object.id)
     end

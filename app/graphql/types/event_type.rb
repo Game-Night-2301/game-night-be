@@ -1,6 +1,8 @@
 # frozen_string_literal: true
 
+# This is the event type
 module Types
+  # This is the event type
   class EventType < Types::BaseObject
     field :id, ID, null: false
     field :date, GraphQL::Types::ISO8601DateTime

@@ -1,6 +1,8 @@
 # frozen_string_literal: true
 
+# This is the user game type
 module Types
+  # This is the user game type
   class UserGameType < Types::BaseObject
     field :id, ID, null: false
     field :user_id, Integer, null: false

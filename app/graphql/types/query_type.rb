@@ -6,24 +6,24 @@ module Types
     include GraphQL::Types::Relay::HasNodeField
     include GraphQL::Types::Relay::HasNodesField
 
-    field :users, [UserType], null: false, description: "List all users"
+    field :users, [UserType], null: false, description: 'List all users'
     def users
       User.all
     end
 
-    field :user, Types::UserType, null: false, description: "Find a user by id" do
+    field :user, Types::UserType, null: false, description: 'Find a user by id' do
       argument :id, ID, required: true
     end
     def user(id:)
       User.find(id)
     end
 
-    field :events, [EventType], null: false, description: "List all events"
+    field :events, [EventType], null: false, description: 'List all events'
     def events
       Event.all
     end
 
-    field :event, Types::EventType, null: false, description: "Find an event by id" do
+    field :event, Types::EventType, null: false, description: 'Find an event by id' do
       argument :id, ID, required: true
     end
     def event(id:)
@@ -31,7 +31,6 @@ module Types
     end
   end
 end
-
 
 # Try this query!!
 
@@ -54,5 +53,5 @@ end
 #       lat
 #       lon
 #     }
-#   } 
+#   }
 # }
