@@ -30,7 +30,6 @@ module Mutations
         game_type: gameType
       )
 
-      require 'pry'; binding.pry
       if event.save
         { event: event, errors: [] }
       else
