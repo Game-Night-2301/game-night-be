@@ -14,6 +14,9 @@ module Types
       "Hello World!"
     end
 
-    
+    field :users, [UserType], null: false, description: "List all users"
+    def users
+      User.all
+    end
   end
 end
