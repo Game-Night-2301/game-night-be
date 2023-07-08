@@ -1,4 +1,8 @@
+# frozen_string_literal: true
+
+# This is the mutation for creating an event
 module Mutations
+  # This is the mutation for creating an event
   class CreateEvent < BaseMutation
     # TODO: define return fields
     # field :post, Types::PostType, null: false
@@ -18,21 +22,20 @@ module Mutations
 
     def resolve(date:, address:, city:, state:, zip:, title:, description:, host:, game:, gameType:)
       event = Event.new(
-        date: date,
-        address: address,
-        city: city,
-        state: state,
-        zip: zip,
-        title: title,
-        description: description,
+        date:,
+        address:,
+        city:,
+        state:,
+        zip:,
+        title:,
+        description:,
         host_id: host.to_i,
         game: game.to_i,
         game_type: gameType
       )
 
-      require 'pry'; binding.pry
       if event.save
-        { event: event, errors: [] }
+        { event:, errors: [] }
       else
         { event: nil, errors: event.errors.full_messages }
       end

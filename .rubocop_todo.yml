@@ -54,6 +54,32 @@ Style/IfUnlessModifier:
   Exclude:
     - 'bin/bundle'
 
+Style/VariableNumber:
+  Enabled: false
+
+Metrics/BlockLength:
+  Enabled: false
+
+Naming/VariableName:
+  Exclude:
+    - 'app/graphql/mutations/*'
+
+Naming/MethodParameterName:
+  Exclude:
+    - 'app/graphql/mutations/*'
+
+Metrics/MethodLength:
+  Enabled: false
+
+Metrics/ParameterLists:
+  Enabled: false
+
+Naming/MethodParameterName:
+  Enabled: false
+
+Style/GlobalStdStream:
+  Exclude:
+    - 'app/graphql/mutations/*'
 # Offense count: 1
 # This cop supports safe autocorrection (--autocorrect).
 # Configuration parameters: AllowHeredoc, AllowURI, URISchemes, IgnoreCopDirectives, AllowedPatterns.

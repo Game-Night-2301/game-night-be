@@ -1,6 +1,8 @@
 # frozen_string_literal: true
 
+# This is the user event type
 module Types
+  # This is the user event type
   class UserEventType < Types::BaseObject
     field :id, ID, null: false
     field :user_id, Integer, null: false
