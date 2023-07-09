@@ -18,12 +18,9 @@ module Types
     end
 
     def user(id:)
-      begin
-        User.find(id)
-      rescue ActiveRecord::RecordNotFound
-        raise GraphQL::ExecutionError.new("User does not exist.", extensions: { status_code: 404 })
-        { errors: ["User does not exist."] }
-      end
+      User.find(id)
+    rescue ActiveRecord::RecordNotFound
+      raise GraphQL::ExecutionError.new('User does not exist.', extensions: { status_code: 404 })
     end
 
     field :events, [EventType], null: false, description: 'List all events'

@@ -38,38 +38,38 @@
 @user_game_9 = UserGame.create!(user_id: @user_2.id, game: 254_687_468)
 @user_game_10 = UserGame.create!(user_id: @user_2.id, game: 465_684_511)
 
-a = {
+{
   "data": {
-      "createEvent": {
-          "event": {
-              "id": "1",
-              "date": "2023-01-01T00:00:00Z",
-              "address": "1 One street",
-              "state": "1 state",
-              "city": "1 city",
-              "zip": 11111,
-              "title": "1 title",
-              "cancelled": false,
-              "description": "1 description",
-              "hostId": 1,
-              "game": 11111111,
-              "gameType": "board game",
-              "playerCount": 3,
-              "attendees": [
-                  {
-                      "id": "1",
-                      "username": "user 1"
-                  },
-                  {
-                      "id": "2",
-                      "username": "user 2"
-                  },
-                  {
-                      "id": "3",
-                      "username": "user 3"
-                  }
-              ]
+    "createEvent": {
+      "event": {
+        "id": '1',
+        "date": '2023-01-01T00:00:00Z',
+        "address": '1 One street',
+        "state": '1 state',
+        "city": '1 city',
+        "zip": 11_111,
+        "title": '1 title',
+        "cancelled": false,
+        "description": '1 description',
+        "hostId": 1,
+        "game": 11_111_111,
+        "gameType": 'board game',
+        "playerCount": 3,
+        "attendees": [
+          {
+            "id": '1',
+            "username": 'user 1'
+          },
+          {
+            "id": '2',
+            "username": 'user 2'
+          },
+          {
+            "id": '3',
+            "username": 'user 3'
           }
+        ]
       }
+    }
   }
 }
