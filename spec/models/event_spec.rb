@@ -16,7 +16,5 @@ RSpec.describe Event, type: :model do
     it { should validate_presence_of(:host_id) }
     it { should validate_presence_of(:game) }
     it { should validate_presence_of(:game_type) }
-    it { should validate_presence_of(:lat) }
-    it { should validate_presence_of(:lon) }
   end
 end

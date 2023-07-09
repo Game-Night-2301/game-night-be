@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require 'rails_helper'
 
 RSpec.describe Types::QueryType do
@@ -27,27 +29,27 @@ RSpec.describe Types::QueryType do
 
   def query
     <<~GQL
-    query {
-      event(id: 1) {
-        id
-        date
-        address
-        state
-        city
-        zip
-        title
-        cancelled
-        description
-        hostId
-        game
-        gameType
-        playerCount
-        attendees {
+      query {
+        event(id: 1) {
           id
-          username
+          date
+          address
+          state
+          city
+          zip
+          title
+          cancelled
+          description
+          hostId
+          game
+          gameType
+          playerCount
+          attendees {
+            id
+            username
+          }
         }
       }
-    }
     GQL
   end
 end

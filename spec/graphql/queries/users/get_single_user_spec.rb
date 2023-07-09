@@ -24,23 +24,23 @@ RSpec.describe Types::QueryType do
 
   def query
     <<~GQL
-      query {
-      user(id: 1 ) {
-        id
-        username
-        password
-        city
-        state
-        lat
-        lon
-        attendingEvents {
+        query {
+        user(id: 1 ) {
           id
-        }
-        hostedEvents {
-          id
+          username
+          password
+          city
+          state
+          lat
+          lon
+          attendingEvents {
+            id
+          }
+          hostedEvents {
+            id
+          }
         }
       }
-    }
     GQL
   end
 end
