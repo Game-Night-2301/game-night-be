@@ -12,8 +12,8 @@ RSpec.describe GameService do
   end
 
   describe "instance methods" do
-    it "#get_all_games" do
-      all_games = @game_service.get_all_games
+    it "#all_games" do
+      all_games = @game_service.all_games
       example = all_games[rand(1100)]
 
       expect(all_games).to be_a(Array)
@@ -35,7 +35,7 @@ RSpec.describe GameService do
     end
 
     it "get_one_random_game" do
-      game = @game_service.get_one_random_game
+      game = @game_service.one_random_game
 
       expect(game).to be_a(Hash)
       expect(game[:id]).to be_a(String)

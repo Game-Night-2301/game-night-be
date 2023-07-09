@@ -28,6 +28,15 @@ Naming/MethodParameterName:
   Exclude:
     - 'app/controllers/graphql_controller.rb'
 
+Style/FrozenStringLiteralComment:
+  Enabled: false
+
+Layout/ArrayAlignment:
+  Exclude:
+    - "app/services/game_service.rb"
+
+Naming/MemoizedInstanceVariableName:
+  Enabled: false
 # Offense count: 13
 # Configuration parameters: AllowedConstants.
 Style/Documentation:
