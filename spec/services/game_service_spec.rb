@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-RSpec.describe GameService do
+RSpec.describe GameService, vcr: { record: :new_episodes } do
   before do
     @game_service = GameService.new
   end
