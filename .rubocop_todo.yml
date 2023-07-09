@@ -68,6 +68,9 @@ Naming/MethodParameterName:
   Exclude:
     - 'app/graphql/mutations/*'
 
+Style/StringLiterals:
+  Enabled: false
+
 Metrics/MethodLength:
   Enabled: false
 

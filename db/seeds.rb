@@ -25,6 +25,7 @@
 @user_event_4 = UserEvent.create!(user_id: @user_2.id, event_id: @event_2.id)
 @user_event_5 = UserEvent.create!(user_id: @user_4.id, event_id: @event_2.id)
 @user_event_6 = UserEvent.create!(user_id: @user_5.id, event_id: @event_2.id)
+@user_event_6 = UserEvent.create!(user_id: @user_1.id, event_id: @event_2.id)
 
 @user_game_1 = UserGame.create!(user_id: @user_1.id, game: 981_723_987)
 @user_game_2 = UserGame.create!(user_id: @user_1.id, game: 351_684_354)
@@ -36,3 +37,39 @@
 @user_game_8 = UserGame.create!(user_id: @user_2.id, game: 156_468_743)
 @user_game_9 = UserGame.create!(user_id: @user_2.id, game: 254_687_468)
 @user_game_10 = UserGame.create!(user_id: @user_2.id, game: 465_684_511)
+
+{
+  "data": {
+    "createEvent": {
+      "event": {
+        "id": '1',
+        "date": '2023-01-01T00:00:00Z',
+        "address": '1 One street',
+        "state": '1 state',
+        "city": '1 city',
+        "zip": 11_111,
+        "title": '1 title',
+        "cancelled": false,
+        "description": '1 description',
+        "hostId": 1,
+        "game": 11_111_111,
+        "gameType": 'board game',
+        "playerCount": 3,
+        "attendees": [
+          {
+            "id": '1',
+            "username": 'user 1'
+          },
+          {
+            "id": '2',
+            "username": 'user 2'
+          },
+          {
+            "id": '3',
+            "username": 'user 3'
+          }
+        ]
+      }
+    }
+  }
+}
