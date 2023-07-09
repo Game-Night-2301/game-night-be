@@ -6,6 +6,8 @@ module Types
     include GraphQL::Types::Relay::HasNodeField
     include GraphQL::Types::Relay::HasNodesField
 
+    field :errors, [String], null: false
+
     field :users, [UserType], null: false, description: 'List all users'
     def users
       User.all
@@ -14,8 +16,14 @@ module Types
     field :user, Types::UserType, null: false, description: 'Find a user by id' do
       argument :id, ID, required: true
     end
+
     def user(id:)
-      User.find(id)
+      begin
+        User.find(id)
+      rescue ActiveRecord::RecordNotFound
+        raise GraphQL::ExecutionError.new("User does not exist.", extensions: { status_code: 404 })
+        { errors: ["User does not exist."] }
+      end
     end
 
     field :events, [EventType], null: false, description: 'List all events'
