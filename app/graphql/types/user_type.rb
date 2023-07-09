@@ -21,7 +21,7 @@ module Types
     end
 
     def hosted_events
-      object.events.where(host_id: object.id)
+      object.hosted_events
     end
   end
 end

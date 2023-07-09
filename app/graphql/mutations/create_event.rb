@@ -35,6 +35,7 @@ module Mutations
       )
 
       if event.save
+        UserEvent.create(user_id: host, event_id: event.id)
         { event:, errors: [] }
       else
         { event: nil, errors: event.errors.full_messages }

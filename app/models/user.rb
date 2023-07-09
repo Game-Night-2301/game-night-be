@@ -7,4 +7,8 @@ class User < ApplicationRecord
   has_many :events, through: :user_events
 
   validates_presence_of :username, :password, :city, :state
+
+  def hosted_events
+    events.where(host_id: id)
+  end
 end
