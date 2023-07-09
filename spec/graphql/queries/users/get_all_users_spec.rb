@@ -22,8 +22,8 @@ RSpec.describe Types::QueryType do
       expect(result['data']['users'][0]['password']).to eq(user_1.password)
       expect(result['data']['users'][0]['city']).to eq(user_1.city)
       expect(result['data']['users'][0]['state']).to eq(user_1.state)
-      expect(result['data']['users'][0]['lat']).to eq(user_1.lat.round(14))
-      expect(result['data']['users'][0]['lon']).to eq(user_1.lon.round(14))
+      expect(result['data']['users'][0]['lat']).to eq(user_1.lat)
+      expect(result['data']['users'][0]['lon']).to eq(user_1.lon)
       expect(result['data']['users'][0]['attendingEvents']).to be_an(Array)
       expect(result['data']['users'][0]['hostedEvents']).to be_an(Array)
 
@@ -32,8 +32,8 @@ RSpec.describe Types::QueryType do
       expect(result['data']['users'][4]['password']).to eq(user_2.password)
       expect(result['data']['users'][4]['city']).to eq(user_2.city)
       expect(result['data']['users'][4]['state']).to eq(user_2.state)
-      expect(result['data']['users'][4]['lat']).to eq(user_2.lat.round(14))
-      expect(result['data']['users'][4]['lon']).to eq(user_2.lon.round(14))
+      expect(result['data']['users'][4]['lat']).to eq(user_2.lat)
+      expect(result['data']['users'][4]['lon']).to eq(user_2.lon)
       expect(result['data']['users'][4]['attendingEvents']).to be_an(Array)
       expect(result['data']['users'][4]['hostedEvents']).to be_an(Array)
     end

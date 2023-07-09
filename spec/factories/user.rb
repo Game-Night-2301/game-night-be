@@ -6,7 +6,5 @@ FactoryBot.define do
     password { Faker::Internet.password }
     city { Faker::Address.city }
     state { Faker::Address.state }
-    lat { Faker::Address.latitude }
-    lon { Faker::Address.longitude }
   end
 end
