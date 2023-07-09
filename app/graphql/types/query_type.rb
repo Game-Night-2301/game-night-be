@@ -22,7 +22,6 @@ module Types
         User.find(id)
       rescue ActiveRecord::RecordNotFound
         raise GraphQL::ExecutionError.new("User does not exist.", extensions: { status_code: 404 })
-        { errors: ["User does not exist."] }
       end
     end
 

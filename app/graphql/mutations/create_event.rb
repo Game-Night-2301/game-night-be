@@ -7,7 +7,6 @@ module Mutations
     # TODO: define return fields
     # field :post, Types::PostType, null: false
     field :event, Types::EventType, null: false
-    field :errors, [String], null: false
 
     argument :date, String, required: true
     argument :address, String, required: true
@@ -35,9 +34,9 @@ module Mutations
       )
 
       if event.save
-        { event:, errors: [] }
+        { event: event }
       else
-        { event: nil, errors: event.errors.full_messages }
+        raise GraphQL::ExecutionError.new(event.errors.full_messages.join(", "), extensions: { status_code: 422 })
       end
     end
   end
