@@ -62,6 +62,10 @@ group :development, :test do
   gem 'bundler-audit'
   gem 'ruby_audit'
 
+  # Test Factories
+  gem 'factory_bot_rails'
+  gem 'faker'
+
   # Linting
   gem 'rubocop'
   gem 'rubocop-rails'
