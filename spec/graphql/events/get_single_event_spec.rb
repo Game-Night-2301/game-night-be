@@ -2,7 +2,7 @@ require 'rails_helper'
 
 RSpec.describe Types::QueryType do
   describe 'display events' do
-    it 'can query all events' do
+    it 'can query a single event' do
       Event.destroy_all
       user = create(:user, id: 1)
       event = create(:event, id: 1, host_id: user.id, date: '2020-04-04T00:00:00Z')

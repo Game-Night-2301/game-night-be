@@ -20,6 +20,8 @@ RSpec.describe Types::QueryType do
       expect(result['data']['users'][0]['state']).to eq(user_1.state)
       expect(result['data']['users'][0]['lat']).to eq(user_1.lat)
       expect(result['data']['users'][0]['lon']).to eq(user_1.lon)
+      expect(result['data']['users'][0]['attendingEvents']).to be_an(Array)
+      expect(result['data']['users'][0]['hostedEvents']).to be_an(Array)
 
       expect(result['data']['users'][4]['id']).to eq(user_2.id.to_s)
       expect(result['data']['users'][4]['username']).to eq(user_2.username)
@@ -28,6 +30,8 @@ RSpec.describe Types::QueryType do
       expect(result['data']['users'][4]['state']).to eq(user_2.state)
       expect(result['data']['users'][4]['lat']).to eq(user_2.lat)
       expect(result['data']['users'][4]['lon']).to eq(user_2.lon)
+      expect(result['data']['users'][4]['attendingEvents']).to be_an(Array)
+      expect(result['data']['users'][4]['hostedEvents']).to be_an(Array)
     end
   end
 
