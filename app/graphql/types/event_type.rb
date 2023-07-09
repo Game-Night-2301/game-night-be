@@ -14,6 +14,7 @@ module Types
     field :cancelled, Boolean
     field :description, String
     field :host_id, Integer
+    field :host, Types::UserType
     field :game, Integer
     field :game_type, String
     field :lat, Float
@@ -27,8 +28,12 @@ module Types
       object.users
     end
 
+    def host
+      object.find_host(object.host_id)
+    end
+
     def player_count
-      object.users.count
+      object.player_count
     end
   end
 end
