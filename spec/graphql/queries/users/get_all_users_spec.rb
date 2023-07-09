@@ -7,7 +7,9 @@ RSpec.describe Types::QueryType do
     it 'can query all users' do
       User.destroy_all
       user_1 = create(:user, id: 1)
-      create_list(:user, 3)
+      create(:user, id: 2)
+      create(:user, id: 3)
+      create(:user, id: 4)
       user_2 = create(:user, id: 5)
 
       result = GameNightBeSchema.execute(query).as_json
