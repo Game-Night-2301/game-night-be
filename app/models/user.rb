@@ -9,6 +9,6 @@ class User < ApplicationRecord
   validates_presence_of :username, :password, :city, :state
 
   def hosted_events
-    events.where(host_id: self.id)
+    events.where(host_id: id)
   end
 end
