@@ -7,7 +7,7 @@ module Mutations
     RSpec.describe CreateEvent, type: :request do
       describe 'resolve' do
         it 'can create an event' do
-          host = create(:user, id: 4744564)
+          host = create(:user, id: 4_744_564)
           post '/graphql', params: { query: }
 
           result = JSON.parse(response.body)

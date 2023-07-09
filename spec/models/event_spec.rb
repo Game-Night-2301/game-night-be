@@ -11,7 +11,7 @@ RSpec.describe Event, type: :model do
     UserEvent.create(user_id: @host.id, event_id: @event.id)
     UserEvent.create(user_id: @user_1.id, event_id: @event.id)
   end
-  
+
   describe 'instantiation and relationships' do
     it { should have_many(:user_events) }
     it { should have_many(:users).through(:user_events) }
