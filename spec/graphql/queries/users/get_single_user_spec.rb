@@ -20,12 +20,40 @@ RSpec.describe Types::QueryType do
       expect(result['data']['user']['attendingEvents']).to be_an(Array)
       expect(result['data']['user']['hostedEvents']).to be_an(Array)
     end
+
+    it 'returns an error is the user does not exist' do
+      result = GameNightBeSchema.execute(query_no_user).as_json
+
+      expect(result['errors'][0]['message']).to eq('User does not exist.')
+    end
   end
 
   def query
     <<~GQL
         query {
         user(id: 1 ) {
+          id
+          username
+          password
+          city
+          state
+          lat
+          lon
+          attendingEvents {
+            id
+          }
+          hostedEvents {
+            id
+          }
+        }
+      }
+    GQL
+  end
+
+  def query_no_user
+    <<~GQL
+        query {
+        user(id: 70 ) {
           id
           username
           password

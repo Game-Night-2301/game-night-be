@@ -25,9 +25,41 @@ RSpec.describe Types::QueryType do
       expect(result['data']['event']['playerCount']).to eq(0)
       expect(result['data']['event']['attendees']).to eq([])
     end
+
+    it 'returns an error if event does not exist' do
+      result = GameNightBeSchema.execute(query_no_event).as_json
+
+      expect(result['errors'][0]['message']).to eq('Event does not exist.')
+    end
   end
 
   def query
+    <<~GQL
+      query {
+        event(id: 1) {
+          id
+          date
+          address
+          state
+          city
+          zip
+          title
+          cancelled
+          description
+          hostId
+          game
+          gameType
+          playerCount
+          attendees {
+            id
+            username
+          }
+        }
+      }
+    GQL
+  end
+
+  def query_no_event
     <<~GQL
       query {
         event(id: 1) {
