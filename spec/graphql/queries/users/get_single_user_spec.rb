@@ -15,8 +15,8 @@ RSpec.describe Types::QueryType do
       expect(result['data']['user']['password']).to eq(user.password)
       expect(result['data']['user']['city']).to eq(user.city)
       expect(result['data']['user']['state']).to eq(user.state)
-      expect(result['data']['user']['lat']).to eq(user.lat)
-      expect(result['data']['user']['lon']).to eq(user.lon)
+      expect(result['data']['user']['lat']).to eq(user.lat.round(14))
+      expect(result['data']['user']['lon']).to eq(user.lon.round(14))
       expect(result['data']['user']['attendingEvents']).to be_an(Array)
       expect(result['data']['user']['hostedEvents']).to be_an(Array)
     end
