@@ -31,8 +31,11 @@ module Types
     field :event, Types::EventType, null: false, description: 'Find an event by id' do
       argument :id, ID, required: true
     end
+
     def event(id:)
       Event.find(id)
+    rescue ActiveRecord::RecordNotFound
+      raise GraphQL::ExecutionError.new('Event does not exist.', extensions: { status_code: 404 })
     end
   end
 end
