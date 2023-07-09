@@ -31,7 +31,7 @@ module Types
     field :event, Types::EventType, null: false, description: 'Find an event by id' do
       argument :id, ID, required: true
     end
-    
+
     def event(id:)
       Event.find(id)
     rescue ActiveRecord::RecordNotFound
