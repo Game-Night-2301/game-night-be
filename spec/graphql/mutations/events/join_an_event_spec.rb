@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require 'rails_helper'
 
 module Mutations
@@ -17,7 +19,6 @@ module Mutations
 
       describe 'resolve' do
         it 'can create a user_event' do
-          
           expect(@event.users.count).to eq(2)
 
           post '/graphql', params: { query: }
@@ -40,18 +41,18 @@ module Mutations
 
       def query
         <<~GQL
-         mutation {
-          createUserEvent(input: {
-              userId: 4
-              eventId: 1
-          }) {
-              userEvent {
-                id
-                userId
-                eventId
-                }
-              }
-            }
+          mutation {
+           createUserEvent(input: {
+               userId: 4
+               eventId: 1
+           }) {
+               userEvent {
+                 id
+                 userId
+                 eventId
+                 }
+               }
+             }
         GQL
       end
     end
