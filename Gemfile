@@ -41,6 +41,8 @@ gem 'bootsnap', require: false
 # gem "rack-cors"
 
 gem 'pry'
+gem 'faraday'
+gem 'figaro'
 
 group :test do
   gem 'capybara'
