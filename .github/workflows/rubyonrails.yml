@@ -4,6 +4,9 @@
 #
 # This workflow will install a prebuilt Ruby version, install dependencies, and
 # run tests and linters.
+env:
+  BOARD_GAME_ATLAS_CLIENT_ID: hgt0qVtR4Y
+
 name: "Ruby on Rails CI"
 on:
   push:

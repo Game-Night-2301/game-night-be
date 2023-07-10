@@ -1,5 +1,3 @@
-# frozen_string_literal: true
-
 # This file is auto-generated from the current state of the database. Instead
 # of editing this file, please use the migrations feature of Active Record to
 # incrementally modify your database, and then regenerate this schema definition.
@@ -12,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 20_230_707_223_952) do
+ActiveRecord::Schema[7.0].define(version: 2023_07_10_000059) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
@@ -34,6 +32,22 @@ ActiveRecord::Schema[7.0].define(version: 20_230_707_223_952) do
     t.datetime "updated_at", null: false
   end
 
+  create_table "games", force: :cascade do |t|
+    t.string "bga_id"
+    t.string "name"
+    t.integer "min_players"
+    t.integer "max_players"
+    t.integer "min_playtime"
+    t.integer "max_playtime"
+    t.string "description"
+    t.string "image_url"
+    t.float "average_user_rating"
+    t.float "average_strategy_complexity"
+
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
   create_table "user_events", force: :cascade do |t|
     t.bigint "user_id", null: false
     t.bigint "event_id", null: false
@@ -45,9 +59,10 @@ ActiveRecord::Schema[7.0].define(version: 20_230_707_223_952) do
 
   create_table "user_games", force: :cascade do |t|
     t.bigint "user_id", null: false
-    t.bigint "game"
+    t.bigint "game_id", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+
     t.index ["user_id"], name: "index_user_games_on_user_id"
   end
 
@@ -64,5 +79,6 @@ ActiveRecord::Schema[7.0].define(version: 20_230_707_223_952) do
 
   add_foreign_key "user_events", "events"
   add_foreign_key "user_events", "users"
+  add_foreign_key "user_games", "games"
   add_foreign_key "user_games", "users"
 end
