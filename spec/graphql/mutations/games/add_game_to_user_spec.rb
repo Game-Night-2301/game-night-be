@@ -14,7 +14,7 @@ module Mutations
           game_3 = create(:game, id: 2000)
           UserGame.create(user_id: user.id, game_id: game_1.id)
           UserGame.create(user_id: user.id, game_id: game_2.id)
-
+          
           expect(user.games.count).to eq(2)
           expect(user.games).to eq([game_1, game_2])
           expect(user.games.first).to eq(game_1)
