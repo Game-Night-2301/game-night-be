@@ -3,8 +3,9 @@ require 'rails_helper'
 RSpec.describe Game, type: :model do
   describe "creation and attributes" do
     before do
-      game_data = GameService.new.get_one_random_game
-      @game = Game.new(game_data)
+      game_data = GameService.new.one_random_game
+      GameFactory.new.build_one_game(game_data)
+      @game = Game.first
     end
 
     it "exists" do

@@ -39,7 +39,6 @@ RSpec.describe GameFactory do
     it "makes games" do
       expect(Game.all.count).to eq(0)
       @game_factory.build_games(@game_data)
-      
       expect(Game.all.count).to eq(2)
       expect(Game.first.name).to eq("Hodor")
       expect(Game.last.name).to eq("Shmodor")

@@ -3,7 +3,7 @@ class GameFactory
   def build_games(game_data)
     game_data.each do |datum|
       Game.create(
-        bga_id: datum[:id],
+        bga_id: datum[:id].to_s,
         name: datum[:name],
         min_players: datum[:min_players],
         max_players: datum[:max_players],
@@ -15,5 +15,20 @@ class GameFactory
         average_strategy_complexity: datum[:average_strategy_complexity]
       )
     end
+  end
+
+  def build_one_game(datum)
+    Game.create(
+      bga_id: datum[:id].to_s,
+      name: datum[:name],
+      min_players: datum[:min_players],
+      max_players: datum[:max_players],
+      min_playtime: datum[:min_playtime],
+      max_playtime: datum[:max_playtime],
+      description: datum[:description],
+      image_url: datum[:image_url],
+      average_user_rating: datum[:average_user_rating],
+      average_strategy_complexity: datum[:average_strategy_complexity]
+    )
   end
 end

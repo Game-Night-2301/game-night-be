@@ -69,6 +69,10 @@ Style/VariableNumber:
 Metrics/BlockLength:
   Enabled: false
 
+Style/NumericLiterals:
+  Exclude:
+    - 'db/schema.rb'
+
 Naming/VariableName:
   Exclude:
     - 'app/graphql/mutations/*'

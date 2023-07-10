@@ -44,7 +44,6 @@ gem 'faraday'
 gem 'figaro'
 gem 'pry'
 
-
 group :test do
   gem 'capybara'
   gem 'launchy'
