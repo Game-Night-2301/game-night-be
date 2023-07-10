@@ -11,6 +11,7 @@ module Types
     field :state, String
     field :lat, Float
     field :lon, Float
+    field :owned_games, [Types::GameType]
     field :attending_events, [Types::EventType]
     field :hosted_events, [Types::EventType]
     field :created_at, GraphQL::Types::ISO8601DateTime, null: false
@@ -22,6 +23,10 @@ module Types
 
     def hosted_events
       object.hosted_events
+    end
+
+    def owned_games
+      object.games
     end
   end
 end
