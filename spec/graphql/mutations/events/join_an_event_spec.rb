@@ -30,11 +30,11 @@ module Mutations
 
         it 'returns an error when the user is already attending the event' do
           UserEvent.create(user_id: @user_4.id, event_id: @event.id)
-
+          require 'pry'; binding.pry
           post '/graphql', params: { query: }
 
           response = JSON.parse(@response.body, symbolize_names: true)
-
+          
           expect(response[:errors][0][:message]).to eq('Cannot return null for non-nullable field CreateUserEventPayload.userEvent')
         end
       end
