@@ -43,6 +43,7 @@ ActiveRecord::Schema[7.0].define(version: 2023_07_10_000059) do
     t.string "image_url"
     t.float "average_user_rating"
     t.float "average_strategy_complexity"
+
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
@@ -61,7 +62,7 @@ ActiveRecord::Schema[7.0].define(version: 2023_07_10_000059) do
     t.bigint "game_id", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.index ["game_id"], name: "index_user_games_on_game_id"
+
     t.index ["user_id"], name: "index_user_games_on_user_id"
   end
 
