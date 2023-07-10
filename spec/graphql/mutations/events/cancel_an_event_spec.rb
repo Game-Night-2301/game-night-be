@@ -28,14 +28,17 @@ module Mutations
         end
       end
 
-      describe "event doesn't exist" do
-        it "updates event cancelled = true" do
-          expect(@event_1.cancelled).to eq(false)
-          post '/graphql', params: { query: }
+      describe "sad paths" do
+        it "nonexistent event" do
+          post '/graphql', params: { query: query_nonexistent_event }
           response = JSON.parse(@response.body, symbolize_names: true)
-          expect(response[:data][:cancelEvent][:event][:id]).to eq("1")
-          @event_1.reload
-          expect(@event_1.cancelled).to eq(false)
+          expect(response[:errors].first[:message]).to eq("Event not found or user id does not match event host id.")
+        end
+
+        it "user is not host" do
+          post '/graphql', params: { query: query_user_is_not_host }
+          response = JSON.parse(@response.body, symbolize_names: true)
+          expect(response[:errors].first[:message]).to eq("Event not found or user id does not match event host id.")
         end
       end
 
@@ -45,6 +48,82 @@ module Mutations
             cancelEvent(input: {
               id: 1
               hostId: 1
+              cancelled: true
+            }) {
+                event {
+                  id
+                  date
+                  address
+                  city
+                  state
+                  zip
+                  title
+                  cancelled
+                  description
+                  hostId
+                  host {
+                    id
+                    username
+                  }
+                  game
+                  gameType
+                  lat
+                  lon
+                  attendees {
+                    id
+                    username
+                  }
+                  playerCount
+              }
+            }
+          }
+        GQL
+      end
+
+      def query_nonexistent_event
+        <<~GQL
+          mutation {
+            cancelEvent(input: {
+              id: 10
+              hostId: 1
+              cancelled: true
+            }) {
+                event {
+                  id
+                  date
+                  address
+                  city
+                  state
+                  zip
+                  title
+                  cancelled
+                  description
+                  hostId
+                  host {
+                    id
+                    username
+                  }
+                  game
+                  gameType
+                  lat
+                  lon
+                  attendees {
+                    id
+                    username
+                  }
+                  playerCount
+              }
+            }
+          }
+        GQL
+      end
+
+      def query_user_is_not_host
+        <<~GQL
+          mutation {
+            cancelEvent(input: {
+              id: 1
+              hostId: 2
               cancelled: true
             }) {
                 event {
