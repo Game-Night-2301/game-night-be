@@ -29,43 +29,43 @@ module Mutations
           expect(response[:data][:createUserGame][:userGame][:userId]).to eq(user.id)
           expect(response[:data][:createUserGame][:userGame][:gameId]).to eq(game_3.id)
           expect(response[:data][:createUserGame][:userGame]).to have_key(:newGame)
-            expect(response[:data][:createUserGame][:userGame][:newGame]).to be_a(Hash)
-              expect(response[:data][:createUserGame][:userGame][:newGame]).to have_key(:name)
-              expect(response[:data][:createUserGame][:userGame][:newGame][:name]).to be_a(String)
-              expect(response[:data][:createUserGame][:userGame][:newGame][:name]).to eq(game_3.name)
+          expect(response[:data][:createUserGame][:userGame][:newGame]).to be_a(Hash)
+          expect(response[:data][:createUserGame][:userGame][:newGame]).to have_key(:name)
+          expect(response[:data][:createUserGame][:userGame][:newGame][:name]).to be_a(String)
+          expect(response[:data][:createUserGame][:userGame][:newGame][:name]).to eq(game_3.name)
 
-              expect(response[:data][:createUserGame][:userGame][:newGame]).to have_key(:minPlayers)
-              expect(response[:data][:createUserGame][:userGame][:newGame][:minPlayers]).to be_an(Integer)
-              expect(response[:data][:createUserGame][:userGame][:newGame][:minPlayers]).to eq(game_3.min_players)
-              
-              expect(response[:data][:createUserGame][:userGame][:newGame]).to have_key(:maxPlayers)
-              expect(response[:data][:createUserGame][:userGame][:newGame][:maxPlayers]).to be_an(Integer)
-              expect(response[:data][:createUserGame][:userGame][:newGame][:maxPlayers]).to eq(game_3.max_players)
-              
-              expect(response[:data][:createUserGame][:userGame][:newGame]).to have_key(:minPlaytime)
-              expect(response[:data][:createUserGame][:userGame][:newGame][:minPlaytime]).to be_an(Integer)
-              expect(response[:data][:createUserGame][:userGame][:newGame][:minPlaytime]).to eq(game_3.min_playtime)
-            
-              expect(response[:data][:createUserGame][:userGame][:newGame]).to have_key(:maxPlaytime)
-              expect(response[:data][:createUserGame][:userGame][:newGame][:maxPlaytime]).to be_an(Integer)
-              expect(response[:data][:createUserGame][:userGame][:newGame][:maxPlaytime]).to eq(game_3.max_playtime)
+          expect(response[:data][:createUserGame][:userGame][:newGame]).to have_key(:minPlayers)
+          expect(response[:data][:createUserGame][:userGame][:newGame][:minPlayers]).to be_an(Integer)
+          expect(response[:data][:createUserGame][:userGame][:newGame][:minPlayers]).to eq(game_3.min_players)
 
-              expect(response[:data][:createUserGame][:userGame][:newGame]).to have_key(:description)
-              expect(response[:data][:createUserGame][:userGame][:newGame][:description]).to be_a(String)
-              expect(response[:data][:createUserGame][:userGame][:newGame][:description]).to eq(game_3.description)
+          expect(response[:data][:createUserGame][:userGame][:newGame]).to have_key(:maxPlayers)
+          expect(response[:data][:createUserGame][:userGame][:newGame][:maxPlayers]).to be_an(Integer)
+          expect(response[:data][:createUserGame][:userGame][:newGame][:maxPlayers]).to eq(game_3.max_players)
 
-              expect(response[:data][:createUserGame][:userGame][:newGame]).to have_key(:imageUrl)
-              expect(response[:data][:createUserGame][:userGame][:newGame][:imageUrl]).to be_a(String)
-              expect(response[:data][:createUserGame][:userGame][:newGame][:imageUrl]).to eq(game_3.image_url)
+          expect(response[:data][:createUserGame][:userGame][:newGame]).to have_key(:minPlaytime)
+          expect(response[:data][:createUserGame][:userGame][:newGame][:minPlaytime]).to be_an(Integer)
+          expect(response[:data][:createUserGame][:userGame][:newGame][:minPlaytime]).to eq(game_3.min_playtime)
 
-              expect(response[:data][:createUserGame][:userGame][:newGame]).to have_key(:averageUserRating)
-              expect(response[:data][:createUserGame][:userGame][:newGame][:averageUserRating]).to be_a(Float)
-              expect(response[:data][:createUserGame][:userGame][:newGame][:averageUserRating]).to eq(game_3.average_user_rating)
+          expect(response[:data][:createUserGame][:userGame][:newGame]).to have_key(:maxPlaytime)
+          expect(response[:data][:createUserGame][:userGame][:newGame][:maxPlaytime]).to be_an(Integer)
+          expect(response[:data][:createUserGame][:userGame][:newGame][:maxPlaytime]).to eq(game_3.max_playtime)
 
-              expect(response[:data][:createUserGame][:userGame][:newGame]).to have_key(:averageStrategyComplexity)
-              expect(response[:data][:createUserGame][:userGame][:newGame][:averageStrategyComplexity]).to be_a(Float)
-              expect(response[:data][:createUserGame][:userGame][:newGame][:averageStrategyComplexity]).to eq(game_3.average_strategy_complexity)
-            end
+          expect(response[:data][:createUserGame][:userGame][:newGame]).to have_key(:description)
+          expect(response[:data][:createUserGame][:userGame][:newGame][:description]).to be_a(String)
+          expect(response[:data][:createUserGame][:userGame][:newGame][:description]).to eq(game_3.description)
+
+          expect(response[:data][:createUserGame][:userGame][:newGame]).to have_key(:imageUrl)
+          expect(response[:data][:createUserGame][:userGame][:newGame][:imageUrl]).to be_a(String)
+          expect(response[:data][:createUserGame][:userGame][:newGame][:imageUrl]).to eq(game_3.image_url)
+
+          expect(response[:data][:createUserGame][:userGame][:newGame]).to have_key(:averageUserRating)
+          expect(response[:data][:createUserGame][:userGame][:newGame][:averageUserRating]).to be_a(Float)
+          expect(response[:data][:createUserGame][:userGame][:newGame][:averageUserRating]).to eq(game_3.average_user_rating)
+
+          expect(response[:data][:createUserGame][:userGame][:newGame]).to have_key(:averageStrategyComplexity)
+          expect(response[:data][:createUserGame][:userGame][:newGame][:averageStrategyComplexity]).to be_a(Float)
+          expect(response[:data][:createUserGame][:userGame][:newGame][:averageStrategyComplexity]).to eq(game_3.average_strategy_complexity)
+        end
       end
 
       def query
