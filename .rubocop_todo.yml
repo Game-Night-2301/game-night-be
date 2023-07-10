@@ -35,6 +35,13 @@ Layout/ArrayAlignment:
   Exclude:
     - "app/services/game_service.rb"
 
+Style/HashSyntax:
+  Exclude:
+    - "app/graphql/mutations/cancel_event.rb"
+
+Metrics/ModuleLength:
+  Enabled: false
+  
 Naming/MemoizedInstanceVariableName:
   Enabled: false
 # Offense count: 13
