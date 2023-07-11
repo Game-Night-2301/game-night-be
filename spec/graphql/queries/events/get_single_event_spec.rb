@@ -6,11 +6,16 @@ RSpec.describe Types::QueryType do
   describe 'display events' do
     it 'can query a single event' do
       Event.destroy_all
+      host = create(:user, id: 2)
       user = create(:user, id: 1)
-      event = create(:event, id: 1, host_id: user.id, date: '2020-04-04T00:00:00Z')
+      event = create(:event, id: 1, host_id: host.id, game: 35)
+      game = create(:game, id: 35)
+      UserEvent.create(user_id: user.id, event_id: event.id)
+      UserEvent.create(user_id: host.id, event_id: event.id)
+      UserGame.create(user_id: host.id, game_id: 35)
 
       result = GameNightBeSchema.execute(query).as_json
-
+      # Event Details
       expect(result['data']['event']['id']).to eq(event.id.to_s)
       expect(result['data']['event']['address']).to eq(event.address)
       expect(result['data']['event']['city']).to eq(event.city)
@@ -22,8 +27,27 @@ RSpec.describe Types::QueryType do
       expect(result['data']['event']['hostId']).to eq(event.host_id)
       expect(result['data']['event']['game']).to eq(event.game)
       expect(result['data']['event']['gameType']).to eq(event.game_type)
-      expect(result['data']['event']['playerCount']).to eq(0)
-      expect(result['data']['event']['attendees']).to eq([])
+      expect(result['data']['event']['playerCount']).to eq(2)
+      # Game Details
+      expect(result['data']['event']['gameDetails']['id']).to eq(game.id.to_s)
+      expect(result['data']['event']['gameDetails']['name']).to eq(game.name)
+      expect(result['data']['event']['gameDetails']['minPlayers']).to eq(game.min_players)
+      expect(result['data']['event']['gameDetails']['maxPlayers']).to eq(game.max_players)
+      expect(result['data']['event']['gameDetails']['minPlaytime']).to eq(game.min_playtime)
+      expect(result['data']['event']['gameDetails']['maxPlaytime']).to eq(game.max_playtime)
+      expect(result['data']['event']['gameDetails']['description']).to eq(game.description)
+      expect(result['data']['event']['gameDetails']['imageUrl']).to eq(game.image_url)
+      expect(result['data']['event']['gameDetails']['averageUserRating']).to eq(game.average_user_rating)
+      expect(result['data']['event']['gameDetails']['averageStrategyComplexity']).to eq(game.average_strategy_complexity)
+      # Host Details
+      expect(result['data']['event']['host']['id']).to eq(host.id.to_s)
+      expect(result['data']['event']['host']['username']).to eq(host.username)
+      # Attendee Details
+      expect(result['data']['event']['attendees'].count).to eq(2)
+      expect(result['data']['event']['attendees'][0]['id']).to eq(host.id.to_s)
+      expect(result['data']['event']['attendees'][0]['username']).to eq(host.username)
+      expect(result['data']['event']['attendees'][1]['id']).to eq(user.id.to_s)
+      expect(result['data']['event']['attendees'][1]['username']).to eq(user.username)
     end
 
     it 'returns an error if event does not exist' do
@@ -50,6 +74,22 @@ RSpec.describe Types::QueryType do
           game
           gameType
           playerCount
+          gameDetails {
+            id
+            name
+            minPlayers
+            maxPlayers
+            minPlaytime
+            maxPlaytime
+            description
+            imageUrl
+            averageUserRating
+            averageStrategyComplexity
+          }
+          host {
+            id
+            username
+          }
           attendees {
             id
             username
