@@ -21,6 +21,7 @@ module Types
     field :lon, Float
     field :attendees, [Types::UserType]
     field :player_count, Integer
+    field :game_details, Types::GameType
     field :created_at, GraphQL::Types::ISO8601DateTime, null: false
     field :updated_at, GraphQL::Types::ISO8601DateTime, null: false
 
@@ -34,6 +35,10 @@ module Types
 
     def player_count
       object.player_count
+    end
+
+    def game_details
+      Game.find_by_id(object.game)
     end
   end
 end
