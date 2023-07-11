@@ -35,7 +35,6 @@ RSpec.describe User, type: :model do
       end
     end
 
-
     describe '#sort_events_by_distance' do
       it 'sorts events by distance from user' do
         Event.destroy_all
