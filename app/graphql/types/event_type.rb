@@ -24,6 +24,8 @@ module Types
     field :game_details, Types::GameType
     field :created_at, GraphQL::Types::ISO8601DateTime, null: false
     field :updated_at, GraphQL::Types::ISO8601DateTime, null: false
+    field :start_time, String
+    field :end_time, String
 
     def attendees
       object.users
