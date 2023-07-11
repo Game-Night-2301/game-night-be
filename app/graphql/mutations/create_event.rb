@@ -19,8 +19,10 @@ module Mutations
     argument :host, Integer, required: true
     argument :game, Integer, required: true
     argument :gameType, String, required: true
+    argument :startTime, String, required: true
+    argument :endTime, String, required: true
 
-    def resolve(date:, address:, city:, state:, zip:, title:, description:, host:, game:, gameType:)
+    def resolve(date:, address:, city:, state:, zip:, title:, description:, host:, game:, gameType:, startTime:, endTime:)
       event = Event.new(
         date:,
         address:,
@@ -31,7 +33,9 @@ module Mutations
         description:,
         host_id: host.to_i,
         game: game.to_i,
-        game_type: gameType
+        game_type: gameType,
+        start_time: startTime,
+        end_time: endTime
       )
 
       if event.save
