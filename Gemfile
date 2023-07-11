@@ -44,6 +44,7 @@ gem 'bootsnap', require: false
 gem 'faraday'
 gem 'figaro'
 gem 'geocoder'
+gem 'geokit-rails'
 gem 'pry'
 gem 'sprockets-rails'
 
