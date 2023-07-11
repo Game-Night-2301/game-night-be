@@ -47,7 +47,6 @@ gem 'geocoder'
 gem 'pry'
 gem 'sprockets-rails'
 
-
 group :test do
   gem 'capybara'
   gem 'launchy'

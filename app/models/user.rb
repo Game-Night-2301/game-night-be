@@ -6,7 +6,7 @@ class User < ApplicationRecord
   has_many :user_events
   has_many :events, through: :user_events
   has_many :games, through: :user_games
-  geocoded_by :resident_city, :latitude => :lat, :longitude => :lon
+  geocoded_by :resident_city, latitude: :lat, longitude: :lon
   after_validation :geocode
 
   validates_presence_of :username, :password, :city, :state

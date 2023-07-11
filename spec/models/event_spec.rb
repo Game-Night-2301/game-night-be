@@ -56,5 +56,4 @@ RSpec.describe Event, type: :model do
       expect(event.lon).to eq(-72.52738)
     end
   end
-
 end

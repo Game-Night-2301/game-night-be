@@ -7,9 +7,8 @@ class Event < ApplicationRecord
 
   validates_presence_of :date, :address, :city, :state, :zip, :title, :description, :host_id, :game, :game_type
 
-  geocoded_by :full_address, :latitude => :lat, :longitude => :lon
+  geocoded_by :full_address, latitude: :lat, longitude: :lon
   after_validation :geocode
-
 
   def find_host(host_id)
     users.find_by_id(host_id)
@@ -20,8 +19,6 @@ class Event < ApplicationRecord
   end
 
   def full_address
-    "#{address} #{city}, #{state} #{zip.to_s.rjust(5, "0")}"
+    "#{address} #{city}, #{state} #{zip.to_s.rjust(5, '0')}"
   end
-
-
 end
