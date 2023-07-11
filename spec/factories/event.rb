@@ -15,5 +15,7 @@ FactoryBot.define do
     game_type { Faker::Game.genre }
     lat { Faker::Address.latitude }
     lon { Faker::Address.longitude }
+    start_time { Faker::Time.between(from: DateTime.now - 1, to: DateTime.now, format: :default).split(' ')[4] }
+    end_time { Faker::Time.between(from: DateTime.now - 1, to: DateTime.now, format: :default).split(' ')[4] }
   end
 end

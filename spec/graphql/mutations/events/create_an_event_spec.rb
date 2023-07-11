@@ -24,6 +24,8 @@ module Mutations
           expect(result['data']['createEvent']['event']['hostId']).to eq(event.host_id)
           expect(result['data']['createEvent']['event']['game']).to eq(event.game)
           expect(result['data']['createEvent']['event']['gameType']).to eq(event.game_type)
+          expect(result['data']['createEvent']['event']['startTime']).to eq(event.start_time)
+          expect(result['data']['createEvent']['event']['endTime']).to eq(event.end_time)
         end
 
         it 'returns an error if missing a required field' do
@@ -49,7 +51,9 @@ module Mutations
               description: "We'll be playing caracasonne for 9 hours",
               host: 4744564,
               game: 97833646,
-              gameType: "board game"
+              gameType: "board game",
+              startTime: "12:00",
+              endTime: "15:00"
             }) {
               event {
                 id
@@ -63,6 +67,8 @@ module Mutations
                 hostId
                 game
                 gameType
+                startTime
+                endTime
               }
             }
           }
@@ -80,7 +86,10 @@ module Mutations
               description: "We'll be playing caracasonne for 9 hours",
               host: 4744564,
               game: 97833646,
-              gameType: "board game"
+              gameType: "board game",
+              startTime: "12:00",
+              endTime: "15:00"
+
             }) {
               event {
                 id
@@ -94,6 +103,8 @@ module Mutations
                 hostId
                 game
                 gameType
+                startTime
+                endTime
               }
             }
           }

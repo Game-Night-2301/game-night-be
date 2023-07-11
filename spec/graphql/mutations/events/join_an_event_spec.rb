@@ -34,7 +34,7 @@ module Mutations
 
           response = JSON.parse(@response.body, symbolize_names: true)
 
-          expect(response[:errors][0][:message]).to eq('Cannot return null for non-nullable field CreateUserEventPayload.userEvent')
+          expect(response[:errors][0][:message]).to eq('Already joined event.')
         end
       end
 
