@@ -11,6 +11,7 @@ module Types
     field :state, String
     field :lat, Float
     field :lon, Float
+    field :sorted_events, [Types::EventType]
     field :owned_games, [Types::GameType]
     field :attending_events, [Types::EventType]
     field :hosted_events, [Types::EventType]
@@ -27,6 +28,10 @@ module Types
 
     def owned_games
       object.games
+    end
+
+    def sorted_events
+      object.sort_events_by_distance
     end
   end
 end

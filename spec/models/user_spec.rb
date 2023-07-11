@@ -35,6 +35,20 @@ RSpec.describe User, type: :model do
       end
     end
 
+    describe '#sort_events_by_distance' do
+      it 'sorts events by distance from user' do
+        Event.destroy_all
+        user = create(:user, city: "Boulder", state: "Colorado")
+        event_1 = create(:event, title: "chipotle", address: "1100 Ken Pratt Blvd", city: "Longmont", state: "Colorado", zip: "80501")
+        event_2 = create(:event, title: "chipotle", address: "375 McCaslin Blvd D", city: "Louisville", state: "Colorado", zip: "80027")
+        event_3 = create(:event, title: "chipotle", address: "1650 28th St", city: "Boulder", state: "Colorado", zip: "80301")
+        event_4 = create(:event, title: "chipotle", address: "1940 Coalton Rd", city: "Superior", state: "Colorado", zip: "80027")
+        event_5 = create(:event, title: "chipotle", address: "548 W South Boulder Rd", city: "Lafayette", state: "Colorado", zip: "80026")
+
+        expect(user.sort_events_by_distance).to eq([event_3, event_2, event_4, event_5, event_1])
+      end
+    end
+
     describe '#resident_city' do
       it 'returns string with residents city and state' do
         user_1 = create(:user, city: "Seattle", state: "Washington")

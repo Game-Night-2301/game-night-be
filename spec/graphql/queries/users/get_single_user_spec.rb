@@ -26,6 +26,55 @@ RSpec.describe Types::QueryType do
 
       expect(result['errors'][0]['message']).to eq('User does not exist.')
     end
+
+    it 'returns events sorted by distance' do
+      Event.destroy_all
+      create(:user, id: 1000, city: "Boulder", state: "Colorado")
+      event_1 = create(:event, title: "chipotle", address: "1100 Ken Pratt Blvd", city: "Longmont", state: "Colorado", zip: "80501")
+      event_2 = create(:event, title: "chipotle", address: "375 McCaslin Blvd D", city: "Louisville", state: "Colorado", zip: "80027")
+      event_3 = create(:event, title: "chipotle", address: "1650 28th St", city: "Boulder", state: "Colorado", zip: "80301")
+      event_4 = create(:event, title: "chipotle", address: "1940 Coalton Rd", city: "Superior", state: "Colorado", zip: "80027")
+      event_5 = create(:event, title: "chipotle", address: "548 W South Boulder Rd", city: "Lafayette", state: "Colorado", zip: "80026")
+
+      result = GameNightBeSchema.execute(sorted_events_query).as_json
+
+      expect(result["data"]["user"]["sortedEvents"][0]["id"]).to eq(event_3.id.to_s)
+      expect(result["data"]["user"]["sortedEvents"][1]["id"]).to eq(event_2.id.to_s)
+      expect(result["data"]["user"]["sortedEvents"][2]["id"]).to eq(event_4.id.to_s)
+      expect(result["data"]["user"]["sortedEvents"][3]["id"]).to eq(event_5.id.to_s)
+      expect(result["data"]["user"]["sortedEvents"][4]["id"]).to eq(event_1.id.to_s)
+    end
+  end
+
+  def sorted_events_query
+    <<~GQL
+        query {
+        user(id: 1000 ) {
+          sortedEvents {
+            id
+            date
+            address
+            city
+            state
+            zip
+            title
+            cancelled
+            description
+            host {
+              id
+              username
+            }
+            game
+            gameType
+            attendees {
+              id
+              username
+            }
+            playerCount
+          }
+        }
+      }
+    GQL
   end
 
   def query

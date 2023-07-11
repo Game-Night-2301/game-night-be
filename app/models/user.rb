@@ -18,4 +18,8 @@ class User < ApplicationRecord
   def resident_city
     "#{city}, #{state}"
   end
+
+  def sort_events_by_distance
+    Event.by_distance(origin: [lat, lon]).to_a
+  end
 end
