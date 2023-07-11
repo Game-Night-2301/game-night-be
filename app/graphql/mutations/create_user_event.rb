@@ -20,6 +20,8 @@ module Mutations
 
       if user_event.save
         { user_event:, errors: [] }
+      elsif user_event.user_id == userId
+        raise GraphQL::ExecutionError, "Already joined event."
       else
         { user_event: nil, errors: user_event.errors.full_messages }
       end
