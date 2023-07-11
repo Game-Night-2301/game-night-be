@@ -35,4 +35,11 @@ RSpec.describe User, type: :model do
       end
     end
   end
+
+  describe 'geocoder' do
+    it "geocodes" do
+      user_1 = create(:user, city: "Boulder", state: "Colorado")
+      require 'pry'; binding.pry
+    end
+  end
 end
