@@ -6,7 +6,7 @@ RSpec.describe Types::QueryType do
   describe 'display events' do
     it 'can query a single event' do
       Event.destroy_all
-      host = create(:user)
+      host = create(:user, id: 2)
       user = create(:user, id: 1)
       event = create(:event, id: 1, host_id: host.id, game: 35)
       game = create(:game, id: 35)
