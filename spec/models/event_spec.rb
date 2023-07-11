@@ -39,5 +39,22 @@ RSpec.describe Event, type: :model do
         expect(@event.player_count).to eq(2)
       end
     end
+
+    describe '#full_address' do
+      it 'returns full address' do
+        event = create(:event, host_id: @user_1.id, address: "9464 county road", city: "Calais", state: "Vermont", zip: "05648")
+        expect(event.full_address).to eq("9464 county road Calais, Vermont 05648")
+      end
+    end
   end
+
+  describe 'geocoder' do
+    it 'geocodes' do
+      user = create(:user)
+      event = create(:event, host_id: user.id, address: "9464 county road", city: "Calais", state: "Vermont", zip: "05648")
+      expect(event.lat).to eq(44.325782)
+      expect(event.lon).to eq(-72.52738)
+    end
+  end
+
 end
