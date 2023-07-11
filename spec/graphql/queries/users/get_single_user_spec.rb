@@ -26,6 +26,10 @@ RSpec.describe Types::QueryType do
 
       expect(result['errors'][0]['message']).to eq('User does not exist.')
     end
+
+    it 'returns events sorted by distance' do
+      
+    end
   end
 
   def query
