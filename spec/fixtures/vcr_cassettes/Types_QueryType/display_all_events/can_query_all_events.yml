@@ -345,4 +345,118 @@ http_interactions:
       encoding: UTF-8
       string: "[]"
   recorded_at: Tue, 11 Jul 2023 23:19:16 GMT
+- request:
+    method: get
+    uri: https://nominatim.openstreetmap.org/search?accept-language=en&addressdetails=1&format=json&q=7713%20Spencer%20Crescent%20Port%20Kiptown,%20Nebraska%2048470
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Tue, 11 Jul 2023 23:29:33 GMT
+      Content-Type:
+      - application/json; charset=UTF-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Keep-Alive:
+      - timeout=20
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - OPTIONS,GET
+    body:
+      encoding: UTF-8
+      string: "[]"
+  recorded_at: Tue, 11 Jul 2023 23:29:33 GMT
+- request:
+    method: get
+    uri: https://nominatim.openstreetmap.org/search?accept-language=en&addressdetails=1&format=json&q=5294%20Latonia%20Estates%20Port%20Samathachester,%20Massachusetts%2064733
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Tue, 11 Jul 2023 23:29:33 GMT
+      Content-Type:
+      - application/json; charset=UTF-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Keep-Alive:
+      - timeout=20
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - OPTIONS,GET
+    body:
+      encoding: UTF-8
+      string: "[]"
+  recorded_at: Tue, 11 Jul 2023 23:29:33 GMT
+- request:
+    method: get
+    uri: https://nominatim.openstreetmap.org/search?accept-language=en&addressdetails=1&format=json&q=97879%20Kilback%20Union%20Derekhaven,%20Louisiana%2053189
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Tue, 11 Jul 2023 23:29:34 GMT
+      Content-Type:
+      - application/json; charset=UTF-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Keep-Alive:
+      - timeout=20
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - OPTIONS,GET
+    body:
+      encoding: UTF-8
+      string: "[]"
+  recorded_at: Tue, 11 Jul 2023 23:29:34 GMT
 recorded_with: VCR 6.2.0
