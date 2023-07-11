@@ -43,16 +43,16 @@ module Mutations
         <<~GQL
           mutation {
            createUserEvent(input: {
-               userId: 4
-               eventId: 1
-           }) {
-               userEvent {
-                 id
-                 userId
-                 eventId
-                 }
-               }
-             }
+              userId: 4
+              eventId: 1
+            }) {
+              userEvent {
+                id
+                userId
+                eventId
+                }
+              }
+            }
         GQL
       end
     end
