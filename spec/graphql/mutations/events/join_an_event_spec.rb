@@ -4,14 +4,14 @@ require 'rails_helper'
 
 module Mutations
   module Events
-    RSpec.describe CreateUserEvent, type: :request do
+    RSpec.describe CreateUserEvent, type: :request, vcr: { record: :new_episodes } do
       before(:each) do
-        @user_1 = create(:user, id: 1)
-        @user_2 = create(:user, id: 2)
-        @user_3 = create(:user, id: 3)
-        @user_4 = create(:user, id: 4)
+        @user_1 = create(:user, id: 1, city: "montpelier", state: "vermont")
+        @user_2 = create(:user, id: 2, city: "austin", state: "texas")
+        @user_3 = create(:user, id: 3, city: "san diego", state: "california")
+        @user_4 = create(:user, id: 4, city: "harlem", state: "georgia")
 
-        @event = create(:event, id: 1, host_id: 1)
+        @event = create(:event, id: 1, host_id: 1, address: "304 W 34th St", city: "new york", state: "new york", zip: "10001")
 
         UserEvent.create(user_id: @user_1.id, event_id: @event.id)
         UserEvent.create(user_id: @user_2.id, event_id: @event.id)

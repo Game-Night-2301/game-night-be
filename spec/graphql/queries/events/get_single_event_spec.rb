@@ -2,12 +2,12 @@
 
 require 'rails_helper'
 
-RSpec.describe Types::QueryType do
+RSpec.describe Types::QueryType, vcr: { record: :new_episodes } do
   describe 'display events' do
     it 'can query a single event' do
       Event.destroy_all
       user = create(:user, id: 1)
-      event = create(:event, id: 1, host_id: user.id, date: '2020-04-04T00:00:00Z')
+      event = create(:event, id: 1, host_id: user.id, date: '2020-04-04T00:00:00Z', address: "488 S High St", city: "columbus", state: "ohio", zip: "43215")
 
       result = GameNightBeSchema.execute(query).as_json
 

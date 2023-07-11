@@ -2,11 +2,11 @@
 
 require 'rails_helper'
 
-RSpec.describe Types::QueryType do
+RSpec.describe Types::QueryType, vcr: { record: :new_episodes } do
   describe 'display user' do
     it 'can query a single user' do
       User.destroy_all
-      user = create(:user, id: 1)
+      user = create(:user, id: 1, city: "montpelier", state: "vermont")
 
       result = GameNightBeSchema.execute(query).as_json
 

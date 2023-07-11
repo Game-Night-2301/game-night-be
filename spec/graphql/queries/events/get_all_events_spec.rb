@@ -2,15 +2,15 @@
 
 require 'rails_helper'
 
-RSpec.describe Types::QueryType do
+RSpec.describe Types::QueryType, vcr: { record: :new_episodes } do
   describe 'display all events' do
     it 'can query all events' do
       Event.destroy_all
-      user = create(:user, id: 1)
-      event_1 = create(:event, host_id: user.id)
+      user = create(:user, id: 1, city: "montpelier", state: "vermont")
+      event_1 = create(:event, host_id: user.id, address: "304 W 34th St", city: "new york", state: "new york", zip: "10001")
       UserEvent.create(user_id: user.id, event_id: event_1.id)
       create_list(:event, 3)
-      event_2 = create(:event, host_id: user.id)
+      event_2 = create(:event, host_id: user.id, address: "100 E Camelback Rd", city: "phoenix", state: "arizona", zip: "85012")
 
       result = GameNightBeSchema.execute(query).as_json
 

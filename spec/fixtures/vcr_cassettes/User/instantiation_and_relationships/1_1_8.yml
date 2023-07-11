@@ -1,0 +1,1035 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://nominatim.openstreetmap.org/search?accept-language=en&addressdetails=1&format=json&q=Greenland,%20Missouri
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Tue, 11 Jul 2023 22:24:06 GMT
+      Content-Type:
+      - application/json; charset=UTF-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Keep-Alive:
+      - timeout=20
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - OPTIONS,GET
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        W3sicGxhY2VfaWQiOjEwNzkzMzQwMywibGljZW5jZSI6IkRhdGEgwqkgT3BlblN0cmVldE1hcCBjb250cmlidXRvcnMsIE9EYkwgMS4wLiBodHRwczovL29zbS5vcmcvY29weXJpZ2h0Iiwib3NtX3R5cGUiOiJ3YXkiLCJvc21faWQiOjE4NzA5NTE2LCJib3VuZGluZ2JveCI6WyIzOC41MDc2MDE2IiwiMzguNTA4MDgyNSIsIi05MC4yOTI5Nzc3IiwiLTkwLjI5MTU4NjIiXSwibGF0IjoiMzguNTA4MDc5NiIsImxvbiI6Ii05MC4yOTIzODY5IiwiZGlzcGxheV9uYW1lIjoiR3JlZW5sYW5kIExhbmUsIFNvdXRod29vZCBFc3RhdGVzLCBNZWhsdmlsbGUsIFNhaW50IExvdWlzIENvdW50eSwgTWlzc291cmksIDYzMTI1LCBVbml0ZWQgU3RhdGVzIiwiY2xhc3MiOiJoaWdod2F5IiwidHlwZSI6InJlc2lkZW50aWFsIiwiaW1wb3J0YW5jZSI6MC4zMTAwMDk5OTk5OTk5OTk5NSwiYWRkcmVzcyI6eyJyb2FkIjoiR3JlZW5sYW5kIExhbmUiLCJyZXNpZGVudGlhbCI6IlNvdXRod29vZCBFc3RhdGVzIiwidG93biI6Ik1laGx2aWxsZSIsImNvdW50eSI6IlNhaW50IExvdWlzIENvdW50eSIsInN0YXRlIjoiTWlzc291cmkiLCJJU08zMTY2LTItbHZsNCI6IlVTLU1PIiwicG9zdGNvZGUiOiI2MzEyNSIsImNvdW50cnkiOiJVbml0ZWQgU3RhdGVzIiwiY291bnRyeV9jb2RlIjoidXMifX0seyJwbGFjZV9pZCI6MTA4NDEzMjgxLCJsaWNlbmNlIjoiRGF0YSDCqSBPcGVuU3RyZWV0TWFwIGNvbnRyaWJ1dG9ycywgT0RiTCAxLjAuIGh0dHBzOi8vb3NtLm9yZy9jb3B5cmlnaHQiLCJvc21fdHlwZSI6IndheSIsIm9zbV9pZCI6MTg1MTc0NjUsImJvdW5kaW5nYm94IjpbIjM4LjEyNTA3NTgiLCIzOC4xMzE1NzMiLCItOTAuMzE4NTE5OCIsIi05MC4zMTQzODMiXSwibGF0IjoiMzguMTI4NDYwOCIsImxvbiI6Ii05MC4zMTUzNDA1IiwiZGlzcGxheV9uYW1lIjoiR3JlZW5sYW5kIERyaXZlLCBQbGF0dGluIFRvd25zaGlwLCBKZWZmZXJzb24gQ291bnR5LCBNaXNzb3VyaSwgVW5pdGVkIFN0YXRlcyIsImNsYXNzIjoiaGlnaHdheSIsInR5cGUiOiJyZXNpZGVudGlhbCIsImltcG9ydGFuY2UiOjAuMzEwMDA5OTk5OTk5OTk5OTUsImFkZHJlc3MiOnsicm9hZCI6IkdyZWVubGFuZCBEcml2ZSIsIm11bmljaXBhbGl0eSI6IlBsYXR0aW4gVG93bnNoaXAiLCJjb3VudHkiOiJKZWZmZXJzb24gQ291bnR5Iiwic3RhdGUiOiJNaXNzb3VyaSIsIklTTzMxNjYtMi1sdmw0IjoiVVMtTU8iLCJjb3VudHJ5IjoiVW5pdGVkIFN0YXRlcyIsImNvdW50cnlfY29kZSI6InVzIn19LHsicGxhY2VfaWQiOjI1OTQ4NDI1OSwibGljZW5jZSI6IkRhdGEgwqkgT3BlblN0cmVldE1hcCBjb250cmlidXRvcnMsIE9EYkwgMS4wLiBodHRwczovL29zbS5vcmcvY29weXJpZ2h0Iiwib3NtX3R5cGUiOiJ3YXkiLCJvc21faWQiOjc4ODI4NzgyNSwiYm91bmRpbmdib3giOlsiMzcuMTU0Mzg2MyIsIjM3LjE1NDUyNjciLCItOTQuNTEyNTY5NCIsIi05NC41MTE5NDY5Il0sImxhdCI6IjM3LjE1NDUyNjciLCJsb24iOiItOTQuNTEyMzUzMiIsImRpc3BsYXlfbmFtZSI6IkdyZWVubGFuZCBBdmVudWUsIEFpcnBvcnQgRHJpdmUsIEphc3BlciBDb3VudHksIE1pc3NvdXJpLCA2NDgzNCwgVW5pdGVkIFN0YXRlcyIsImNsYXNzIjoiaGlnaHdheSIsInR5cGUiOiJyZXNpZGVudGlhbCIsImltcG9ydGFuY2UiOjAuMzEsImFkZHJlc3MiOnsicm9hZCI6IkdyZWVubGFuZCBBdmVudWUiLCJ2aWxsYWdlIjoiQWlycG9ydCBEcml2ZSIsImNvdW50eSI6Ikphc3BlciBDb3VudHkiLCJzdGF0ZSI6Ik1pc3NvdXJpIiwiSVNPMzE2Ni0yLWx2bDQiOiJVUy1NTyIsInBvc3Rjb2RlIjoiNjQ4MzQiLCJjb3VudHJ5IjoiVW5pdGVkIFN0YXRlcyIsImNvdW50cnlfY29kZSI6InVzIn19XQ==
+  recorded_at: Tue, 11 Jul 2023 22:24:06 GMT
+- request:
+    method: get
+    uri: https://nominatim.openstreetmap.org/search?accept-language=en&addressdetails=1&format=json&q=Guillerminaport,%20Louisiana
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Tue, 11 Jul 2023 22:24:06 GMT
+      Content-Type:
+      - application/json; charset=UTF-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Keep-Alive:
+      - timeout=20
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - OPTIONS,GET
+    body:
+      encoding: UTF-8
+      string: "[]"
+  recorded_at: Tue, 11 Jul 2023 22:24:06 GMT
+- request:
+    method: get
+    uri: https://nominatim.openstreetmap.org/search?accept-language=en&addressdetails=1&format=json&q=8775%20Odessa%20Trail%20Victorinaburgh,%20Kentucky%2044059
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Tue, 11 Jul 2023 22:24:07 GMT
+      Content-Type:
+      - application/json; charset=UTF-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Keep-Alive:
+      - timeout=20
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - OPTIONS,GET
+    body:
+      encoding: UTF-8
+      string: "[]"
+  recorded_at: Tue, 11 Jul 2023 22:24:07 GMT
+- request:
+    method: get
+    uri: https://nominatim.openstreetmap.org/search?accept-language=en&addressdetails=1&format=json&q=9909%20Eura%20Isle%20East%20Steveport,%20New%20Hampshire%2036411
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Tue, 11 Jul 2023 22:24:07 GMT
+      Content-Type:
+      - application/json; charset=UTF-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Keep-Alive:
+      - timeout=20
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - OPTIONS,GET
+    body:
+      encoding: UTF-8
+      string: "[]"
+  recorded_at: Tue, 11 Jul 2023 22:24:07 GMT
+- request:
+    method: get
+    uri: https://nominatim.openstreetmap.org/search?accept-language=en&addressdetails=1&format=json&q=3263%20Dicki%20Summit%20Port%20Dale,%20Nebraska%2096880
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Tue, 11 Jul 2023 22:24:08 GMT
+      Content-Type:
+      - application/json; charset=UTF-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Keep-Alive:
+      - timeout=20
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - OPTIONS,GET
+    body:
+      encoding: UTF-8
+      string: "[]"
+  recorded_at: Tue, 11 Jul 2023 22:24:08 GMT
+- request:
+    method: get
+    uri: https://nominatim.openstreetmap.org/search?accept-language=en&addressdetails=1&format=json&q=,%20
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Tue, 11 Jul 2023 22:24:08 GMT
+      Content-Type:
+      - application/json; charset=UTF-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Keep-Alive:
+      - timeout=20
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - OPTIONS,GET
+    body:
+      encoding: UTF-8
+      string: "[]"
+  recorded_at: Tue, 11 Jul 2023 22:24:08 GMT
+- request:
+    method: get
+    uri: https://nominatim.openstreetmap.org/search?accept-language=en&addressdetails=1&format=json&q=,%20
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Tue, 11 Jul 2023 22:24:09 GMT
+      Content-Type:
+      - application/json; charset=UTF-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Keep-Alive:
+      - timeout=20
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - OPTIONS,GET
+    body:
+      encoding: UTF-8
+      string: "[]"
+  recorded_at: Tue, 11 Jul 2023 22:24:09 GMT
+- request:
+    method: get
+    uri: https://nominatim.openstreetmap.org/search?accept-language=en&addressdetails=1&format=json&q=West%20Kia,%20Arizona
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Tue, 11 Jul 2023 22:26:54 GMT
+      Content-Type:
+      - application/json; charset=UTF-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Keep-Alive:
+      - timeout=20
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - OPTIONS,GET
+    body:
+      encoding: UTF-8
+      string: "[]"
+  recorded_at: Tue, 11 Jul 2023 22:26:54 GMT
+- request:
+    method: get
+    uri: https://nominatim.openstreetmap.org/search?accept-language=en&addressdetails=1&format=json&q=South%20Barry,%20Virginia
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Tue, 11 Jul 2023 22:26:54 GMT
+      Content-Type:
+      - application/json; charset=UTF-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Keep-Alive:
+      - timeout=20
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - OPTIONS,GET
+    body:
+      encoding: UTF-8
+      string: "[]"
+  recorded_at: Tue, 11 Jul 2023 22:26:54 GMT
+- request:
+    method: get
+    uri: https://nominatim.openstreetmap.org/search?accept-language=en&addressdetails=1&format=json&q=330%20Sherly%20Lane%20Pagacfort,%20North%20Dakota%2056674
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Tue, 11 Jul 2023 22:26:55 GMT
+      Content-Type:
+      - application/json; charset=UTF-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Keep-Alive:
+      - timeout=20
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - OPTIONS,GET
+    body:
+      encoding: UTF-8
+      string: "[]"
+  recorded_at: Tue, 11 Jul 2023 22:26:55 GMT
+- request:
+    method: get
+    uri: https://nominatim.openstreetmap.org/search?accept-language=en&addressdetails=1&format=json&q=614%20Dicki%20Landing%20Genemouth,%20Nebraska%2063253
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Tue, 11 Jul 2023 22:26:55 GMT
+      Content-Type:
+      - application/json; charset=UTF-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Keep-Alive:
+      - timeout=20
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - OPTIONS,GET
+    body:
+      encoding: UTF-8
+      string: "[]"
+  recorded_at: Tue, 11 Jul 2023 22:26:55 GMT
+- request:
+    method: get
+    uri: https://nominatim.openstreetmap.org/search?accept-language=en&addressdetails=1&format=json&q=882%20Alesia%20Turnpike%20Raymundoland,%20Arizona%2022745
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Tue, 11 Jul 2023 22:26:56 GMT
+      Content-Type:
+      - application/json; charset=UTF-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Keep-Alive:
+      - timeout=20
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - OPTIONS,GET
+    body:
+      encoding: UTF-8
+      string: "[]"
+  recorded_at: Tue, 11 Jul 2023 22:26:56 GMT
+- request:
+    method: get
+    uri: https://nominatim.openstreetmap.org/search?accept-language=en&addressdetails=1&format=json&q=Oberbrunnertown,%20Arizona
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Tue, 11 Jul 2023 22:54:30 GMT
+      Content-Type:
+      - application/json; charset=UTF-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Keep-Alive:
+      - timeout=20
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - OPTIONS,GET
+    body:
+      encoding: UTF-8
+      string: "[]"
+  recorded_at: Tue, 11 Jul 2023 22:54:30 GMT
+- request:
+    method: get
+    uri: https://nominatim.openstreetmap.org/search?accept-language=en&addressdetails=1&format=json&q=DuBuqueton,%20Maine
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Tue, 11 Jul 2023 22:54:30 GMT
+      Content-Type:
+      - application/json; charset=UTF-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Keep-Alive:
+      - timeout=20
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - OPTIONS,GET
+    body:
+      encoding: UTF-8
+      string: "[]"
+  recorded_at: Tue, 11 Jul 2023 22:54:30 GMT
+- request:
+    method: get
+    uri: https://nominatim.openstreetmap.org/search?accept-language=en&addressdetails=1&format=json&q=132%20Stanton%20Place%20Kertzmannborough,%20Hawaii%2079293
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Tue, 11 Jul 2023 22:54:31 GMT
+      Content-Type:
+      - application/json; charset=UTF-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Keep-Alive:
+      - timeout=20
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - OPTIONS,GET
+    body:
+      encoding: UTF-8
+      string: "[]"
+  recorded_at: Tue, 11 Jul 2023 22:54:31 GMT
+- request:
+    method: get
+    uri: https://nominatim.openstreetmap.org/search?accept-language=en&addressdetails=1&format=json&q=3194%20Peter%20Mountain%20Ramonitachester,%20Oklahoma%2000625
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Tue, 11 Jul 2023 22:54:31 GMT
+      Content-Type:
+      - application/json; charset=UTF-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Keep-Alive:
+      - timeout=20
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - OPTIONS,GET
+    body:
+      encoding: UTF-8
+      string: "[]"
+  recorded_at: Tue, 11 Jul 2023 22:54:31 GMT
+- request:
+    method: get
+    uri: https://nominatim.openstreetmap.org/search?accept-language=en&addressdetails=1&format=json&q=9652%20Heathcote%20Brooks%20Kubstad,%20Tennessee%2080527
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Tue, 11 Jul 2023 22:54:32 GMT
+      Content-Type:
+      - application/json; charset=UTF-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Keep-Alive:
+      - timeout=20
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - OPTIONS,GET
+    body:
+      encoding: UTF-8
+      string: "[]"
+  recorded_at: Tue, 11 Jul 2023 22:54:32 GMT
+- request:
+    method: get
+    uri: https://nominatim.openstreetmap.org/search?accept-language=en&addressdetails=1&format=json&q=Sheryshire,%20South%20Carolina
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Tue, 11 Jul 2023 22:58:13 GMT
+      Content-Type:
+      - application/json; charset=UTF-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Keep-Alive:
+      - timeout=20
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - OPTIONS,GET
+    body:
+      encoding: UTF-8
+      string: "[]"
+  recorded_at: Tue, 11 Jul 2023 22:58:13 GMT
+- request:
+    method: get
+    uri: https://nominatim.openstreetmap.org/search?accept-language=en&addressdetails=1&format=json&q=Augustinaton,%20Arkansas
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Tue, 11 Jul 2023 22:58:14 GMT
+      Content-Type:
+      - application/json; charset=UTF-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Keep-Alive:
+      - timeout=20
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - OPTIONS,GET
+    body:
+      encoding: UTF-8
+      string: "[]"
+  recorded_at: Tue, 11 Jul 2023 22:58:14 GMT
+- request:
+    method: get
+    uri: https://nominatim.openstreetmap.org/search?accept-language=en&addressdetails=1&format=json&q=490%20Connelly%20Overpass%20Amparoberg,%20Missouri%2082273
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Tue, 11 Jul 2023 22:58:14 GMT
+      Content-Type:
+      - application/json; charset=UTF-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Keep-Alive:
+      - timeout=20
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - OPTIONS,GET
+    body:
+      encoding: UTF-8
+      string: "[]"
+  recorded_at: Tue, 11 Jul 2023 22:58:14 GMT
+- request:
+    method: get
+    uri: https://nominatim.openstreetmap.org/search?accept-language=en&addressdetails=1&format=json&q=6437%20Bechtelar%20Island%20North%20Myron,%20Maine%2086881
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Tue, 11 Jul 2023 22:58:15 GMT
+      Content-Type:
+      - application/json; charset=UTF-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Keep-Alive:
+      - timeout=20
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - OPTIONS,GET
+    body:
+      encoding: UTF-8
+      string: "[]"
+  recorded_at: Tue, 11 Jul 2023 22:58:15 GMT
+- request:
+    method: get
+    uri: https://nominatim.openstreetmap.org/search?accept-language=en&addressdetails=1&format=json&q=93733%20Rutherford%20Islands%20West%20Rivaton,%20New%20Hampshire%2095277
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Tue, 11 Jul 2023 22:58:15 GMT
+      Content-Type:
+      - application/json; charset=UTF-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Keep-Alive:
+      - timeout=20
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - OPTIONS,GET
+    body:
+      encoding: UTF-8
+      string: "[]"
+  recorded_at: Tue, 11 Jul 2023 22:58:15 GMT
+- request:
+    method: get
+    uri: https://nominatim.openstreetmap.org/search?accept-language=en&addressdetails=1&format=json&q=austin,%20texas
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Tue, 11 Jul 2023 23:13:53 GMT
+      Content-Type:
+      - application/json; charset=UTF-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Keep-Alive:
+      - timeout=20
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - OPTIONS,GET
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        W3sicGxhY2VfaWQiOjM0NzEwMDU5NCwibGljZW5jZSI6IkRhdGEgwqkgT3BlblN0cmVldE1hcCBjb250cmlidXRvcnMsIE9EYkwgMS4wLiBodHRwczovL29zbS5vcmcvY29weXJpZ2h0Iiwib3NtX3R5cGUiOiJyZWxhdGlvbiIsIm9zbV9pZCI6MTEzMzE0LCJib3VuZGluZ2JveCI6WyIzMC4wOTg1MTMzIiwiMzAuNTE2NjI1NSIsIi05Ny45MzY3NjYzIiwiLTk3LjU2MDUyODgiXSwibGF0IjoiMzAuMjcxMTI4NiIsImxvbiI6Ii05Ny43NDM2OTk1IiwiZGlzcGxheV9uYW1lIjoiQXVzdGluLCBUcmF2aXMgQ291bnR5LCBUZXhhcywgVW5pdGVkIFN0YXRlcyIsImNsYXNzIjoiYm91bmRhcnkiLCJ0eXBlIjoiYWRtaW5pc3RyYXRpdmUiLCJpbXBvcnRhbmNlIjowLjg0OTQyNjU3MTc4NjY2NjksImljb24iOiJodHRwczovL25vbWluYXRpbS5vcGVuc3RyZWV0bWFwLm9yZy91aS9tYXBpY29ucy9wb2lfYm91bmRhcnlfYWRtaW5pc3RyYXRpdmUucC4yMC5wbmciLCJhZGRyZXNzIjp7ImNpdHkiOiJBdXN0aW4iLCJjb3VudHkiOiJUcmF2aXMgQ291bnR5Iiwic3RhdGUiOiJUZXhhcyIsIklTTzMxNjYtMi1sdmw0IjoiVVMtVFgiLCJjb3VudHJ5IjoiVW5pdGVkIFN0YXRlcyIsImNvdW50cnlfY29kZSI6InVzIn19LHsicGxhY2VfaWQiOjI5ODU3NTg5NywibGljZW5jZSI6IkRhdGEgwqkgT3BlblN0cmVldE1hcCBjb250cmlidXRvcnMsIE9EYkwgMS4wLiBodHRwczovL29zbS5vcmcvY29weXJpZ2h0Iiwib3NtX3R5cGUiOiJyZWxhdGlvbiIsIm9zbV9pZCI6MTgzNzc1NSwiYm91bmRpbmdib3giOlsiMjkuNjAxODQ1OCIsIjMwLjA5NzIyMDkiLCItOTYuNjIyMTk3MSIsIi05Ni4wMDQ3Njg3Il0sImxhdCI6IjI5Ljg5MTY0ODgiLCJsb24iOiItOTYuMjQ0MzQ2NyIsImRpc3BsYXlfbmFtZSI6IkF1c3RpbiBDb3VudHksIFRleGFzLCBVbml0ZWQgU3RhdGVzIiwiY2xhc3MiOiJib3VuZGFyeSIsInR5cGUiOiJhZG1pbmlzdHJhdGl2ZSIsImltcG9ydGFuY2UiOjAuNzU4NzAyODM3OTQ2NDEyOSwiaWNvbiI6Imh0dHBzOi8vbm9taW5hdGltLm9wZW5zdHJlZXRtYXAub3JnL3VpL21hcGljb25zL3BvaV9ib3VuZGFyeV9hZG1pbmlzdHJhdGl2ZS5wLjIwLnBuZyIsImFkZHJlc3MiOnsiY291bnR5IjoiQXVzdGluIENvdW50eSIsInN0YXRlIjoiVGV4YXMiLCJJU08zMTY2LTItbHZsNCI6IlVTLVRYIiwiY291bnRyeSI6IlVuaXRlZCBTdGF0ZXMiLCJjb3VudHJ5X2NvZGUiOiJ1cyJ9fSx7InBsYWNlX2lkIjozNDIwNzM3OTgsImxpY2VuY2UiOiJEYXRhIMKpIE9wZW5TdHJlZXRNYXAgY29udHJpYnV0b3JzLCBPRGJMIDEuMC4gaHR0cHM6Ly9vc20ub3JnL2NvcHlyaWdodCIsIm9zbV90eXBlIjoid2F5Iiwib3NtX2lkIjo2MTI4ODgzNjMsImJvdW5kaW5nYm94IjpbIjMwLjMwNDU3NTEiLCIzMC4zMzUzOTg1IiwiLTk3LjY0MzM1MDMiLCItOTcuNjAwNTU5Il0sImxhdCI6IjMwLjMyMTIwOTEiLCJsb24iOiItOTcuNjE5ODU0NzUyODQ2NDkiLCJkaXNwbGF5X25hbWUiOiJBdXN0aW4sIFRyYXZpcyBDb3VudHksIFRleGFzLCBVbml0ZWQgU3RhdGVzIiwiY2xhc3MiOiJib3VuZGFyeSIsInR5cGUiOiJhZG1pbmlzdHJhdGl2ZSIsImltcG9ydGFuY2UiOjAuNTUwMDA5OTk5OTk5OTk5OSwiaWNvbiI6Imh0dHBzOi8vbm9taW5hdGltLm9wZW5zdHJlZXRtYXAub3JnL3VpL21hcGljb25zL3BvaV9ib3VuZGFyeV9hZG1pbmlzdHJhdGl2ZS5wLjIwLnBuZyIsImFkZHJlc3MiOnsiY2l0eSI6IkF1c3RpbiIsImNvdW50eSI6IlRyYXZpcyBDb3VudHkiLCJzdGF0ZSI6IlRleGFzIiwiSVNPMzE2Ni0yLWx2bDQiOiJVUy1UWCIsImNvdW50cnkiOiJVbml0ZWQgU3RhdGVzIiwiY291bnRyeV9jb2RlIjoidXMifX0seyJwbGFjZV9pZCI6MjI2MjQ0MDM5LCJsaWNlbmNlIjoiRGF0YSDCqSBPcGVuU3RyZWV0TWFwIGNvbnRyaWJ1dG9ycywgT0RiTCAxLjAuIGh0dHBzOi8vb3NtLm9yZy9jb3B5cmlnaHQiLCJvc21fdHlwZSI6IndheSIsIm9zbV9pZCI6NTc1NTc5MjgwLCJib3VuZGluZ2JveCI6WyIzMC4yODE1Mzc1IiwiMzAuMjgxNzg2IiwiLTk3LjczNzkyNDciLCItOTcuNzM3NzA3NCJdLCJsYXQiOiIzMC4yODE2MDQ1NSIsImxvbiI6Ii05Ny43Mzc4MjU4ODY3NTc2NiIsImRpc3BsYXlfbmFtZSI6IkF1c3RpbiwgSmVzdGVyIENpcmNsZSwgTWVkaWNhbCBEaXN0cmljdCwgQXVzdGluLCBUcmF2aXMgQ291bnR5LCBUZXhhcywgNzg3MTIsIFVuaXRlZCBTdGF0ZXMiLCJjbGFzcyI6InRvdXJpc20iLCJ0eXBlIjoiYXJ0d29yayIsImltcG9ydGFuY2UiOjAuNTAxNDAzOTUwNTQxNDQzNSwiaWNvbiI6Imh0dHBzOi8vbm9taW5hdGltLm9wZW5zdHJlZXRtYXAub3JnL3VpL21hcGljb25zL3RvdXJpc3RfYXJ0X2dhbGxlcnkyLnAuMjAucG5nIiwiYWRkcmVzcyI6eyJ0b3VyaXNtIjoiQXVzdGluIiwicm9hZCI6Ikplc3RlciBDaXJjbGUiLCJuZWlnaGJvdXJob29kIjoiTWVkaWNhbCBEaXN0cmljdCIsImNpdHkiOiJBdXN0aW4iLCJjb3VudHkiOiJUcmF2aXMgQ291bnR5Iiwic3RhdGUiOiJUZXhhcyIsIklTTzMxNjYtMi1sdmw0IjoiVVMtVFgiLCJwb3N0Y29kZSI6Ijc4NzEyIiwiY291bnRyeSI6IlVuaXRlZCBTdGF0ZXMiLCJjb3VudHJ5X2NvZGUiOiJ1cyJ9fSx7InBsYWNlX2lkIjo2MjcwNzkzMiwibGljZW5jZSI6IkRhdGEgwqkgT3BlblN0cmVldE1hcCBjb250cmlidXRvcnMsIE9EYkwgMS4wLiBodHRwczovL29zbS5vcmcvY29weXJpZ2h0Iiwib3NtX3R5cGUiOiJub2RlIiwib3NtX2lkIjo1ODA5MDM2MTkyLCJib3VuZGluZ2JveCI6WyIzMC4yNjQ1ODYiLCIzMC4yNzQ1ODYiLCItOTcuNzYxOTkyNyIsIi05Ny43NTE5OTI3Il0sImxhdCI6IjMwLjI2OTU4NiIsImxvbiI6Ii05Ny43NTY5OTI3IiwiZGlzcGxheV9uYW1lIjoiQXVzdGluLCBXZXN0IDNyZCBTdHJlZXQsIFNlYWhvbG0sIEF1c3RpbiwgVHJhdmlzIENvdW50eSwgVGV4YXMsIDc4NzAxLCBVbml0ZWQgU3RhdGVzIiwiY2xhc3MiOiJyYWlsd2F5IiwidHlwZSI6InN0YXRpb24iLCJpbXBvcnRhbmNlIjowLjQyNTc5NDA5NDQ5OTk3ODMsImljb24iOiJodHRwczovL25vbWluYXRpbS5vcGVuc3RyZWV0bWFwLm9yZy91aS9tYXBpY29ucy90cmFuc3BvcnRfdHJhaW5fc3RhdGlvbjIucC4yMC5wbmciLCJhZGRyZXNzIjp7InJhaWx3YXkiOiJBdXN0aW4iLCJyb2FkIjoiV2VzdCAzcmQgU3RyZWV0IiwibmVpZ2hib3VyaG9vZCI6IlNlYWhvbG0iLCJjaXR5IjoiQXVzdGluIiwiY291bnR5IjoiVHJhdmlzIENvdW50eSIsInN0YXRlIjoiVGV4YXMiLCJJU08zMTY2LTItbHZsNCI6IlVTLVRYIiwicG9zdGNvZGUiOiI3ODcwMSIsImNvdW50cnkiOiJVbml0ZWQgU3RhdGVzIiwiY291bnRyeV9jb2RlIjoidXMifX0seyJwbGFjZV9pZCI6MTA4MjkzOTUzLCJsaWNlbmNlIjoiRGF0YSDCqSBPcGVuU3RyZWV0TWFwIGNvbnRyaWJ1dG9ycywgT0RiTCAxLjAuIGh0dHBzOi8vb3NtLm9yZy9jb3B5cmlnaHQiLCJvc21fdHlwZSI6IndheSIsIm9zbV9pZCI6MjA3NjM4NTksImJvdW5kaW5nYm94IjpbIjI2LjIwMTYzNTEiLCIyNi4yMDE3MTAyIiwiLTk3LjY2ODkzODUiLCItOTcuNjY2ODQ4MSJdLCJsYXQiOiIyNi4yMDE2OTEzIiwibG9uIjoiLTk3LjY2Nzk2IiwiZGlzcGxheV9uYW1lIjoiQXVzdGluLCBIYXJsaW5nZW4sIENhbWVyb24gQ291bnR5LCBUZXhhcywgNzg1NTAsIFVuaXRlZCBTdGF0ZXMiLCJjbGFzcyI6ImhpZ2h3YXkiLCJ0eXBlIjoicmVzaWRlbnRpYWwiLCJpbXBvcnRhbmNlIjowLjMsImFkZHJlc3MiOnsicm9hZCI6IkF1c3RpbiIsImNpdHkiOiJIYXJsaW5nZW4iLCJjb3VudHkiOiJDYW1lcm9uIENvdW50eSIsInN0YXRlIjoiVGV4YXMiLCJJU08zMTY2LTItbHZsNCI6IlVTLVRYIiwicG9zdGNvZGUiOiI3ODU1MCIsImNvdW50cnkiOiJVbml0ZWQgU3RhdGVzIiwiY291bnRyeV9jb2RlIjoidXMifX0seyJwbGFjZV9pZCI6MTA2MzI3NDE3LCJsaWNlbmNlIjoiRGF0YSDCqSBPcGVuU3RyZWV0TWFwIGNvbnRyaWJ1dG9ycywgT0RiTCAxLjAuIGh0dHBzOi8vb3NtLm9yZy9jb3B5cmlnaHQiLCJvc21fdHlwZSI6IndheSIsIm9zbV9pZCI6MTU0NDU2NDAsImJvdW5kaW5nYm94IjpbIjI5LjY4NTc2MDYiLCIyOS42ODU4NjIiLCItOTUuMTg1NDEzIiwiLTk1LjE3MjYwMTciXSwibGF0IjoiMjkuNjg1ODA4MiIsImxvbiI6Ii05NS4xNzkzOTU4IiwiZGlzcGxheV9uYW1lIjoiQXVzdGluLCBQYXNhZGVuYSwgSGFycmlzIENvdW50eSwgVGV4YXMsIDc3NTAyLCBVbml0ZWQgU3RhdGVzIiwiY2xhc3MiOiJoaWdod2F5IiwidHlwZSI6InJlc2lkZW50aWFsIiwiaW1wb3J0YW5jZSI6MC4zLCJhZGRyZXNzIjp7InJvYWQiOiJBdXN0aW4iLCJjaXR5IjoiUGFzYWRlbmEiLCJjb3VudHkiOiJIYXJyaXMgQ291bnR5Iiwic3RhdGUiOiJUZXhhcyIsIklTTzMxNjYtMi1sdmw0IjoiVVMtVFgiLCJwb3N0Y29kZSI6Ijc3NTAyIiwiY291bnRyeSI6IlVuaXRlZCBTdGF0ZXMiLCJjb3VudHJ5X2NvZGUiOiJ1cyJ9fSx7InBsYWNlX2lkIjoxMDg1MTc5NzcsImxpY2VuY2UiOiJEYXRhIMKpIE9wZW5TdHJlZXRNYXAgY29udHJpYnV0b3JzLCBPRGJMIDEuMC4gaHR0cHM6Ly9vc20ub3JnL2NvcHlyaWdodCIsIm9zbV90eXBlIjoid2F5Iiwib3NtX2lkIjoyMTE1NjQ3NCwiYm91bmRpbmdib3giOlsiMzAuODU5MzU0OCIsIjMwLjg2MTE5NjUiLCItOTMuNzYyMzU3NSIsIi05My43NjEyMjIiXSwibGF0IjoiMzAuODYwMjcwMSIsImxvbiI6Ii05My43NjE4MDEzIiwiZGlzcGxheV9uYW1lIjoiQXVzdGluLCBOZXd0b24sIE5ld3RvbiBDb3VudHksIFRleGFzLCA3NTk2NiwgVW5pdGVkIFN0YXRlcyIsImNsYXNzIjoiaGlnaHdheSIsInR5cGUiOiJyZXNpZGVudGlhbCIsImltcG9ydGFuY2UiOjAuMywiYWRkcmVzcyI6eyJyb2FkIjoiQXVzdGluIiwidmlsbGFnZSI6Ik5ld3RvbiIsImNvdW50eSI6Ik5ld3RvbiBDb3VudHkiLCJzdGF0ZSI6IlRleGFzIiwiSVNPMzE2Ni0yLWx2bDQiOiJVUy1UWCIsInBvc3Rjb2RlIjoiNzU5NjYiLCJjb3VudHJ5IjoiVW5pdGVkIFN0YXRlcyIsImNvdW50cnlfY29kZSI6InVzIn19LHsicGxhY2VfaWQiOjEzOTMzMjc3MywibGljZW5jZSI6IkRhdGEgwqkgT3BlblN0cmVldE1hcCBjb250cmlidXRvcnMsIE9EYkwgMS4wLiBodHRwczovL29zbS5vcmcvY29weXJpZ2h0Iiwib3NtX3R5cGUiOiJ3YXkiLCJvc21faWQiOjE0NjY0NzAwOSwiYm91bmRpbmdib3giOlsiMjYuMTg4NDM0MiIsIjI2LjE4ODU3NTMiLCItOTcuOTk2Nzk2MyIsIi05Ny45ODc1OTQzIl0sImxhdCI6IjI2LjE4ODUyNjYiLCJsb24iOiItOTcuOTkxMjEzOSIsImRpc3BsYXlfbmFtZSI6IkF1c3RpbiwgRGlhbmEgQ29sb25pYSBOdW1iZXIgMSwgV2VzbGFjbywgSGlkYWxnbyBDb3VudHksIFRleGFzLCA3ODU5NiwgVW5pdGVkIFN0YXRlcyIsImNsYXNzIjoiaGlnaHdheSIsInR5cGUiOiJyZXNpZGVudGlhbCIsImltcG9ydGFuY2UiOjAuMywiYWRkcmVzcyI6eyJyb2FkIjoiQXVzdGluIiwiaGFtbGV0IjoiRGlhbmEgQ29sb25pYSBOdW1iZXIgMSIsInRvd24iOiJXZXNsYWNvIiwiY291bnR5IjoiSGlkYWxnbyBDb3VudHkiLCJzdGF0ZSI6IlRleGFzIiwiSVNPMzE2Ni0yLWx2bDQiOiJVUy1UWCIsInBvc3Rjb2RlIjoiNzg1OTYiLCJjb3VudHJ5IjoiVW5pdGVkIFN0YXRlcyIsImNvdW50cnlfY29kZSI6InVzIn19LHsicGxhY2VfaWQiOjEwOTIyNDAwOCwibGljZW5jZSI6IkRhdGEgwqkgT3BlblN0cmVldE1hcCBjb250cmlidXRvcnMsIE9EYkwgMS4wLiBodHRwczovL29zbS5vcmcvY29weXJpZ2h0Iiwib3NtX3R5cGUiOiJ3YXkiLCJvc21faWQiOjIwOTE0NDE1LCJib3VuZGluZ2JveCI6WyIzMi4wNzY4OTQiLCIzMi4wNzgxNDUiLCItOTguMzQyNjY0IiwiLTk4LjM0MjM3MyJdLCJsYXQiOiIzMi4wNzc2NzEiLCJsb24iOiItOTguMzQyNjI2IiwiZGlzcGxheV9uYW1lIjoiQXVzdGluLCBEdWJsaW4sIEVyYXRoIENvdW50eSwgVGV4YXMsIDc2NDQ2LCBVbml0ZWQgU3RhdGVzIiwiY2xhc3MiOiJoaWdod2F5IiwidHlwZSI6InJlc2lkZW50aWFsIiwiaW1wb3J0YW5jZSI6MC4zLCJhZGRyZXNzIjp7InJvYWQiOiJBdXN0aW4iLCJ0b3duIjoiRHVibGluIiwiY291bnR5IjoiRXJhdGggQ291bnR5Iiwic3RhdGUiOiJUZXhhcyIsIklTTzMxNjYtMi1sdmw0IjoiVVMtVFgiLCJwb3N0Y29kZSI6Ijc2NDQ2IiwiY291bnRyeSI6IlVuaXRlZCBTdGF0ZXMiLCJjb3VudHJ5X2NvZGUiOiJ1cyJ9fV0=
+  recorded_at: Tue, 11 Jul 2023 23:13:53 GMT
+- request:
+    method: get
+    uri: https://nominatim.openstreetmap.org/search?accept-language=en&addressdetails=1&format=json&q=san%20diego,%20california
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Tue, 11 Jul 2023 23:13:54 GMT
+      Content-Type:
+      - application/json; charset=UTF-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Keep-Alive:
+      - timeout=20
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - OPTIONS,GET
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        W3sicGxhY2VfaWQiOjI5ODA2MzkwMSwibGljZW5jZSI6IkRhdGEgwqkgT3BlblN0cmVldE1hcCBjb250cmlidXRvcnMsIE9EYkwgMS4wLiBodHRwczovL29zbS5vcmcvY29weXJpZ2h0Iiwib3NtX3R5cGUiOiJyZWxhdGlvbiIsIm9zbV9pZCI6MjUzODMyLCJib3VuZGluZ2JveCI6WyIzMi41MzQ3NzM3IiwiMzMuMTE0MjQ5IiwiLTExNy4zMDk4MDUzIiwiLTExNi45MDU3MjI2Il0sImxhdCI6IjMyLjcxNzQyMDIiLCJsb24iOiItMTE3LjE2Mjc3MjgiLCJkaXNwbGF5X25hbWUiOiJTYW4gRGllZ28sIFNhbiBEaWVnbyBDb3VudHksIENBTCBGaXJlIFNvdXRoZXJuIFJlZ2lvbiwgQ2FsaWZvcm5pYSwgVW5pdGVkIFN0YXRlcyIsImNsYXNzIjoiYm91bmRhcnkiLCJ0eXBlIjoiYWRtaW5pc3RyYXRpdmUiLCJpbXBvcnRhbmNlIjowLjk3Mjc5NzAwNTk1MTg1ODcsImljb24iOiJodHRwczovL25vbWluYXRpbS5vcGVuc3RyZWV0bWFwLm9yZy91aS9tYXBpY29ucy9wb2lfYm91bmRhcnlfYWRtaW5pc3RyYXRpdmUucC4yMC5wbmciLCJhZGRyZXNzIjp7ImNpdHkiOiJTYW4gRGllZ28iLCJjb3VudHkiOiJTYW4gRGllZ28gQ291bnR5Iiwic3RhdGVfZGlzdHJpY3QiOiJDQUwgRmlyZSBTb3V0aGVybiBSZWdpb24iLCJzdGF0ZSI6IkNhbGlmb3JuaWEiLCJJU08zMTY2LTItbHZsNCI6IlVTLUNBIiwiY291bnRyeSI6IlVuaXRlZCBTdGF0ZXMiLCJjb3VudHJ5X2NvZGUiOiJ1cyJ9fSx7InBsYWNlX2lkIjoyOTgxMjk0MjksImxpY2VuY2UiOiJEYXRhIMKpIE9wZW5TdHJlZXRNYXAgY29udHJpYnV0b3JzLCBPRGJMIDEuMC4gaHR0cHM6Ly9vc20ub3JnL2NvcHlyaWdodCIsIm9zbV90eXBlIjoicmVsYXRpb24iLCJvc21faWQiOjM5NjQ4MiwiYm91bmRpbmdib3giOlsiMzIuNTI5NTIzNiIsIjMzLjUwNTI0MjMiLCItMTE3LjYxMDUzNjMiLCItMTE2LjA4MTA5NDEiXSwibGF0IjoiMzIuOTYzNzgzOCIsImxvbiI6Ii0xMTYuNzcwNjI3NyIsImRpc3BsYXlfbmFtZSI6IlNhbiBEaWVnbyBDb3VudHksIENBTCBGaXJlIFNvdXRoZXJuIFJlZ2lvbiwgQ2FsaWZvcm5pYSwgVW5pdGVkIFN0YXRlcyIsImNsYXNzIjoiYm91bmRhcnkiLCJ0eXBlIjoiYWRtaW5pc3RyYXRpdmUiLCJpbXBvcnRhbmNlIjowLjg4NTM5ODIzNzc5MTE5NDYsImljb24iOiJodHRwczovL25vbWluYXRpbS5vcGVuc3RyZWV0bWFwLm9yZy91aS9tYXBpY29ucy9wb2lfYm91bmRhcnlfYWRtaW5pc3RyYXRpdmUucC4yMC5wbmciLCJhZGRyZXNzIjp7ImNvdW50eSI6IlNhbiBEaWVnbyBDb3VudHkiLCJzdGF0ZV9kaXN0cmljdCI6IkNBTCBGaXJlIFNvdXRoZXJuIFJlZ2lvbiIsInN0YXRlIjoiQ2FsaWZvcm5pYSIsIklTTzMxNjYtMi1sdmw0IjoiVVMtQ0EiLCJjb3VudHJ5IjoiVW5pdGVkIFN0YXRlcyIsImNvdW50cnlfY29kZSI6InVzIn19LHsicGxhY2VfaWQiOjY1Njk5Mjg3LCJsaWNlbmNlIjoiRGF0YSDCqSBPcGVuU3RyZWV0TWFwIGNvbnRyaWJ1dG9ycywgT0RiTCAxLjAuIGh0dHBzOi8vb3NtLm9yZy9jb3B5cmlnaHQiLCJvc21fdHlwZSI6Im5vZGUiLCJvc21faWQiOjYxMDg0MDk3MjgsImJvdW5kaW5nYm94IjpbIjMyLjcxMTk2NDMiLCIzMi43MjE5NjQzIiwiLTExNy4xNzUwNjY4IiwiLTExNy4xNjUwNjY4Il0sImxhdCI6IjMyLjcxNjk2NDMiLCJsb24iOiItMTE3LjE3MDA2NjgiLCJkaXNwbGF5X25hbWUiOiJTYW4gRGllZ28sIEdyYW5kZSBQYWxtIENvdXJ0LCBDb3JlLUNvbHVtYmlhLCBCYW5rZXIncyBIaWxsLCBTYW4gRGllZ28sIFNhbiBEaWVnbyBDb3VudHksIENBTCBGaXJlIFNvdXRoZXJuIFJlZ2lvbiwgQ2FsaWZvcm5pYSwgOTIxMDEsIFVuaXRlZCBTdGF0ZXMiLCJjbGFzcyI6InJhaWx3YXkiLCJ0eXBlIjoic3RhdGlvbiIsImltcG9ydGFuY2UiOjAuNjM1NDI5MjYxODg2NzYwNywiaWNvbiI6Imh0dHBzOi8vbm9taW5hdGltLm9wZW5zdHJlZXRtYXAub3JnL3VpL21hcGljb25zL3RyYW5zcG9ydF90cmFpbl9zdGF0aW9uMi5wLjIwLnBuZyIsImFkZHJlc3MiOnsicmFpbHdheSI6IlNhbiBEaWVnbyIsInJvYWQiOiJHcmFuZGUgUGFsbSBDb3VydCIsIm5laWdoYm91cmhvb2QiOiJDb3JlLUNvbHVtYmlhIiwic3VidXJiIjoiQmFua2VyJ3MgSGlsbCIsImNpdHkiOiJTYW4gRGllZ28iLCJjb3VudHkiOiJTYW4gRGllZ28gQ291bnR5Iiwic3RhdGVfZGlzdHJpY3QiOiJDQUwgRmlyZSBTb3V0aGVybiBSZWdpb24iLCJzdGF0ZSI6IkNhbGlmb3JuaWEiLCJJU08zMTY2LTItbHZsNCI6IlVTLUNBIiwicG9zdGNvZGUiOiI5MjEwMSIsImNvdW50cnkiOiJVbml0ZWQgU3RhdGVzIiwiY291bnRyeV9jb2RlIjoidXMifX0seyJwbGFjZV9pZCI6MTEzMTE5NDg4LCJsaWNlbmNlIjoiRGF0YSDCqSBPcGVuU3RyZWV0TWFwIGNvbnRyaWJ1dG9ycywgT0RiTCAxLjAuIGh0dHBzOi8vb3NtLm9yZy9jb3B5cmlnaHQiLCJvc21fdHlwZSI6IndheSIsIm9zbV9pZCI6MzE0MjYxNjgsImJvdW5kaW5nYm94IjpbIjMyLjcxMzc5NTMiLCIzMi43MTQwNTg2IiwiLTExNy4xNjYyMzY5IiwiLTExNy4xNjU5MDQxIl0sImxhdCI6IjMyLjcxMzkyNjkwMDAwMDAwNCIsImxvbiI6Ii0xMTcuMTY2MDcwNDc0OTkwNzYiLCJkaXNwbGF5X25hbWUiOiJNZXRyb3BvbGl0YW4gQ29ycmVjdGlvbmFsIENlbnRlciwgU2FuIERpZWdvLCA4MDgsIFVuaW9uIFN0cmVldCwgTWFyaW5hLCBTYW4gRGllZ28sIFNhbiBEaWVnbyBDb3VudHksIENBTCBGaXJlIFNvdXRoZXJuIFJlZ2lvbiwgQ2FsaWZvcm5pYSwgOTIxMDEsIFVuaXRlZCBTdGF0ZXMiLCJjbGFzcyI6ImFtZW5pdHkiLCJ0eXBlIjoicHJpc29uIiwiaW1wb3J0YW5jZSI6MC42MTU0MzQyMzg2MzI3NzI5LCJpY29uIjoiaHR0cHM6Ly9ub21pbmF0aW0ub3BlbnN0cmVldG1hcC5vcmcvdWkvbWFwaWNvbnMvYW1lbml0eV9wcmlzb24ucC4yMC5wbmciLCJhZGRyZXNzIjp7ImFtZW5pdHkiOiJNZXRyb3BvbGl0YW4gQ29ycmVjdGlvbmFsIENlbnRlciwgU2FuIERpZWdvIiwiaG91c2VfbnVtYmVyIjoiODA4Iiwicm9hZCI6IlVuaW9uIFN0cmVldCIsIm5laWdoYm91cmhvb2QiOiJNYXJpbmEiLCJjaXR5IjoiU2FuIERpZWdvIiwiY291bnR5IjoiU2FuIERpZWdvIENvdW50eSIsInN0YXRlX2Rpc3RyaWN0IjoiQ0FMIEZpcmUgU291dGhlcm4gUmVnaW9uIiwic3RhdGUiOiJDYWxpZm9ybmlhIiwiSVNPMzE2Ni0yLWx2bDQiOiJVUy1DQSIsInBvc3Rjb2RlIjoiOTIxMDEiLCJjb3VudHJ5IjoiVW5pdGVkIFN0YXRlcyIsImNvdW50cnlfY29kZSI6InVzIn19LHsicGxhY2VfaWQiOjk3ODk4ODM5LCJsaWNlbmNlIjoiRGF0YSDCqSBPcGVuU3RyZWV0TWFwIGNvbnRyaWJ1dG9ycywgT0RiTCAxLjAuIGh0dHBzOi8vb3NtLm9yZy9jb3B5cmlnaHQiLCJvc21fdHlwZSI6Im5vZGUiLCJvc21faWQiOjk1MzI5NjE2ODAsImJvdW5kaW5nYm94IjpbIjI0LjA3NDE0ODQiLCIyNC4wNzQyNDg0IiwiLTExMC4zODU4NTc4IiwiLTExMC4zODU3NTc4Il0sImxhdCI6IjI0LjA3NDE5ODQiLCJsb24iOiItMTEwLjM4NTgwNzgiLCJkaXNwbGF5X25hbWUiOiJTYW4gRGllZ28sIENoYW1ldGxhLCBNdW5pY2lwaW8gZGUgTGEgUGF6LCBCYWphIENhbGlmb3JuaWEgU3VyLCAyMzIwNSwgTWV4aWNvIiwiY2xhc3MiOiJwbGFjZSIsInR5cGUiOiJpc29sYXRlZF9kd2VsbGluZyIsImltcG9ydGFuY2UiOjAuNSwiYWRkcmVzcyI6eyJpc29sYXRlZF9kd2VsbGluZyI6IlNhbiBEaWVnbyIsInRvd24iOiJDaGFtZXRsYSIsImNvdW50eSI6Ik11bmljaXBpbyBkZSBMYSBQYXoiLCJzdGF0ZSI6IkJhamEgQ2FsaWZvcm5pYSBTdXIiLCJJU08zMTY2LTItbHZsNCI6Ik1YLUJDUyIsInBvc3Rjb2RlIjoiMjMyMDUiLCJjb3VudHJ5IjoiTWV4aWNvIiwiY291bnRyeV9jb2RlIjoibXgifX0seyJwbGFjZV9pZCI6MTE3ODM4NDI5LCJsaWNlbmNlIjoiRGF0YSDCqSBPcGVuU3RyZWV0TWFwIGNvbnRyaWJ1dG9ycywgT0RiTCAxLjAuIGh0dHBzOi8vb3NtLm9yZy9jb3B5cmlnaHQiLCJvc21fdHlwZSI6IndheSIsIm9zbV9pZCI6NDQzODE0MjAsImJvdW5kaW5nYm94IjpbIjMyLjQ2NjU5OTEiLCIzMi40NjcyNzM1IiwiLTExNy4wNTU2NDIzIiwiLTExNy4wNTUyNjg3Il0sImxhdCI6IjMyLjQ2NzIyMjciLCJsb24iOiItMTE3LjA1NTI2ODciLCJkaXNwbGF5X25hbWUiOiJTYW4gRGllZ28sIFRpanVhbmEsIE11bmljaXBpbyBkZSBUaWp1YW5hLCBCYWphIENhbGlmb3JuaWEsIDIyNjA1LCBNZXhpY28iLCJjbGFzcyI6ImhpZ2h3YXkiLCJ0eXBlIjoicmVzaWRlbnRpYWwiLCJpbXBvcnRhbmNlIjowLjQsImFkZHJlc3MiOnsicm9hZCI6IlNhbiBEaWVnbyIsImNpdHkiOiJUaWp1YW5hIiwiY291bnR5IjoiTXVuaWNpcGlvIGRlIFRpanVhbmEiLCJzdGF0ZSI6IkJhamEgQ2FsaWZvcm5pYSIsIklTTzMxNjYtMi1sdmw0IjoiTVgtQkNOIiwicG9zdGNvZGUiOiIyMjYwNSIsImNvdW50cnkiOiJNZXhpY28iLCJjb3VudHJ5X2NvZGUiOiJteCJ9fSx7InBsYWNlX2lkIjoxNjQyNjE1OTYsImxpY2VuY2UiOiJEYXRhIMKpIE9wZW5TdHJlZXRNYXAgY29udHJpYnV0b3JzLCBPRGJMIDEuMC4gaHR0cHM6Ly9vc20ub3JnL2NvcHlyaWdodCIsIm9zbV90eXBlIjoid2F5Iiwib3NtX2lkIjoyMzcyOTAyNjQsImJvdW5kaW5nYm94IjpbIi0zMy4wMzkwOTM1IiwiLTMzLjAzODk1NjIiLCItNzEuNDI5OTA5NSIsIi03MS40Mjk4Njc2Il0sImxhdCI6Ii0zMy4wMzkwOTM1IiwibG9uIjoiLTcxLjQyOTg2NzYiLCJkaXNwbGF5X25hbWUiOiJTYW4gRGllZ28sIFZpbGxhIENhbGlmb3JuaWEsIFF1aWxwdcOpLCBQcm92aW5jaWEgZGUgTWFyZ2EgTWFyZ2EsIFZhbHBhcmFpc28gUmVnaW9uLCAyNDIwNjIyLCBDaGlsZSIsImNsYXNzIjoiaGlnaHdheSIsInR5cGUiOiJyZXNpZGVudGlhbCIsImltcG9ydGFuY2UiOjAuNCwiYWRkcmVzcyI6eyJyb2FkIjoiU2FuIERpZWdvIiwibmVpZ2hib3VyaG9vZCI6IlZpbGxhIENhbGlmb3JuaWEiLCJjaXR5IjoiUXVpbHB1w6kiLCJjb3VudHkiOiJQcm92aW5jaWEgZGUgTWFyZ2EgTWFyZ2EiLCJzdGF0ZSI6IlZhbHBhcmFpc28gUmVnaW9uIiwiSVNPMzE2Ni0yLWx2bDQiOiJDTC1WUyIsInBvc3Rjb2RlIjoiMjQyMDYyMiIsImNvdW50cnkiOiJDaGlsZSIsImNvdW50cnlfY29kZSI6ImNsIn19LHsicGxhY2VfaWQiOjI1MTAwMzk0MywibGljZW5jZSI6IkRhdGEgwqkgT3BlblN0cmVldE1hcCBjb250cmlidXRvcnMsIE9EYkwgMS4wLiBodHRwczovL29zbS5vcmcvY29weXJpZ2h0Iiwib3NtX3R5cGUiOiJ3YXkiLCJvc21faWQiOjczNzM3OTI5MywiYm91bmRpbmdib3giOlsiMzIuNDY1OTQzMSIsIjMyLjQ2NjU5OTEiLCItMTE3LjA1NjM4MTkiLCItMTE3LjA1NTY0MjMiXSwibGF0IjoiMzIuNDY2MjE1MiIsImxvbiI6Ii0xMTcuMDU1ODkwNiIsImRpc3BsYXlfbmFtZSI6IlNhbiBEaWVnbywgUMOzcnRpY29zIGRlIFNhbiBBbnRvbmlvLCBNdW5pY2lwaW8gZGUgVGlqdWFuYSwgQmFqYSBDYWxpZm9ybmlhLCAyMjYwNSwgTWV4aWNvIiwiY2xhc3MiOiJoaWdod2F5IiwidHlwZSI6InVuY2xhc3NpZmllZCIsImltcG9ydGFuY2UiOjAuNCwiYWRkcmVzcyI6eyJyb2FkIjoiU2FuIERpZWdvIiwidG93biI6IlDDs3J0aWNvcyBkZSBTYW4gQW50b25pbyIsImNvdW50eSI6Ik11bmljaXBpbyBkZSBUaWp1YW5hIiwic3RhdGUiOiJCYWphIENhbGlmb3JuaWEiLCJJU08zMTY2LTItbHZsNCI6Ik1YLUJDTiIsInBvc3Rjb2RlIjoiMjI2MDUiLCJjb3VudHJ5IjoiTWV4aWNvIiwiY291bnRyeV9jb2RlIjoibXgifX0seyJwbGFjZV9pZCI6NDQzODY3NCwibGljZW5jZSI6IkRhdGEgwqkgT3BlblN0cmVldE1hcCBjb250cmlidXRvcnMsIE9EYkwgMS4wLiBodHRwczovL29zbS5vcmcvY29weXJpZ2h0Iiwib3NtX3R5cGUiOiJub2RlIiwib3NtX2lkIjo1OTYyMTgyMTIsImJvdW5kaW5nYm94IjpbIjMyLjgwMzc2MiIsIjMyLjgwMzg2MiIsIi0xMTcuMjE2OTUxIiwiLTExNy4yMTY4NTEiXSwibGF0IjoiMzIuODAzODEyIiwibG9uIjoiLTExNy4yMTY5MDEiLCJkaXNwbGF5X25hbWUiOiJSZWQgUm9vZiBJbm4gLSBQYWNpZmljIEJlYWNoLCBTYW4gRGllZ28sIDQ1NDUsIE1pc3Npb24gQmF5IERyaXZlLCBTYW4gRGllZ28sIFNhbiBEaWVnbyBDb3VudHksIENhbGlmb3JuaWEsIDkyMTA5LCBVbml0ZWQgU3RhdGVzIiwiY2xhc3MiOiJ0b3VyaXNtIiwidHlwZSI6ImhvdGVsIiwiaW1wb3J0YW5jZSI6MC4zMDAxMDAwMDAwMDAwMDAwMywiaWNvbiI6Imh0dHBzOi8vbm9taW5hdGltLm9wZW5zdHJlZXRtYXAub3JnL3VpL21hcGljb25zL2FjY29tbW9kYXRpb25faG90ZWwyLnAuMjAucG5nIiwiYWRkcmVzcyI6eyJ0b3VyaXNtIjoiUmVkIFJvb2YgSW5uIC0gUGFjaWZpYyBCZWFjaCwgU2FuIERpZWdvIiwiaG91c2VfbnVtYmVyIjoiNDU0NSIsInJvYWQiOiJNaXNzaW9uIEJheSBEcml2ZSIsImNpdHkiOiJTYW4gRGllZ28iLCJjb3VudHkiOiJTYW4gRGllZ28gQ291bnR5Iiwic3RhdGUiOiJDYWxpZm9ybmlhIiwiSVNPMzE2Ni0yLWx2bDQiOiJVUy1DQSIsInBvc3Rjb2RlIjoiOTIxMDkiLCJjb3VudHJ5IjoiVW5pdGVkIFN0YXRlcyIsImNvdW50cnlfY29kZSI6InVzIn19LHsicGxhY2VfaWQiOjk2MTcxMTU4LCJsaWNlbmNlIjoiRGF0YSDCqSBPcGVuU3RyZWV0TWFwIGNvbnRyaWJ1dG9ycywgT0RiTCAxLjAuIGh0dHBzOi8vb3NtLm9yZy9jb3B5cmlnaHQiLCJvc21fdHlwZSI6Im5vZGUiLCJvc21faWQiOjkzMTA0Njk4MjAsImJvdW5kaW5nYm94IjpbIjMyLjcyODM2MTciLCIzMi43Mjg0NjE3IiwiLTExNy4xNTIzOTcyIiwiLTExNy4xNTIyOTcyIl0sImxhdCI6IjMyLjcyODQxMTciLCJsb24iOiItMTE3LjE1MjM0NzIiLCJkaXNwbGF5X25hbWUiOiJTYW4gRGllZ28gKEJhbGJvYSBQYXJrKSwgUHJlc2lkZW50cyBXYXksIEJhbmtlcidzIEhpbGwsIFNhbiBEaWVnbywgU2FuIERpZWdvIENvdW50eSwgQ2FsaWZvcm5pYSwgOTIxMzQsIFVuaXRlZCBTdGF0ZXMiLCJjbGFzcyI6ImhpZ2h3YXkiLCJ0eXBlIjoiYnVzX3N0b3AiLCJpbXBvcnRhbmNlIjowLjMwMDEwMDAwMDAwMDAwMDAzLCJpY29uIjoiaHR0cHM6Ly9ub21pbmF0aW0ub3BlbnN0cmVldG1hcC5vcmcvdWkvbWFwaWNvbnMvdHJhbnNwb3J0X2J1c19zdG9wMi5wLjIwLnBuZyIsImFkZHJlc3MiOnsiaGlnaHdheSI6IlNhbiBEaWVnbyAoQmFsYm9hIFBhcmspIiwicm9hZCI6IlByZXNpZGVudHMgV2F5Iiwic3VidXJiIjoiQmFua2VyJ3MgSGlsbCIsImNpdHkiOiJTYW4gRGllZ28iLCJjb3VudHkiOiJTYW4gRGllZ28gQ291bnR5Iiwic3RhdGUiOiJDYWxpZm9ybmlhIiwiSVNPMzE2Ni0yLWx2bDQiOiJVUy1DQSIsInBvc3Rjb2RlIjoiOTIxMzQiLCJjb3VudHJ5IjoiVW5pdGVkIFN0YXRlcyIsImNvdW50cnlfY29kZSI6InVzIn19XQ==
+  recorded_at: Tue, 11 Jul 2023 23:13:54 GMT
+- request:
+    method: get
+    uri: https://nominatim.openstreetmap.org/search?accept-language=en&addressdetails=1&format=json&q=304%20W%2034th%20St%20new%20york,%20new%20york%2010001
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Tue, 11 Jul 2023 23:13:56 GMT
+      Content-Type:
+      - application/json; charset=UTF-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Keep-Alive:
+      - timeout=20
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - OPTIONS,GET
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        W3sicGxhY2VfaWQiOjQ1NTQ3ODM0LCJsaWNlbmNlIjoiRGF0YSDCqSBPcGVuU3RyZWV0TWFwIGNvbnRyaWJ1dG9ycywgT0RiTCAxLjAuIGh0dHBzOi8vb3NtLm9yZy9jb3B5cmlnaHQiLCJvc21fdHlwZSI6Im5vZGUiLCJvc21faWQiOjM4MDkwMDA5NDIsImJvdW5kaW5nYm94IjpbIjQwLjc1MjMwNiIsIjQwLjc1MjQwNiIsIi03My45OTQzNjc1IiwiLTczLjk5NDI2NzUiXSwibGF0IjoiNDAuNzUyMzU2IiwibG9uIjoiLTczLjk5NDMxNzUiLCJkaXNwbGF5X25hbWUiOiJDaGlwb3RsZSwgMzA0LCBXZXN0IDM0dGggU3RyZWV0LCBNYW5oYXR0YW4gQ29tbXVuaXR5IEJvYXJkIDQsIE1hbmhhdHRhbiwgTmV3IFlvcmsgQ291bnR5LCBOZXcgWW9yaywgMTAwMDEsIFVuaXRlZCBTdGF0ZXMiLCJjbGFzcyI6ImFtZW5pdHkiLCJ0eXBlIjoiZmFzdF9mb29kIiwiaW1wb3J0YW5jZSI6MC45MjAwMDk5OTk5OTk5OTk5LCJpY29uIjoiaHR0cHM6Ly9ub21pbmF0aW0ub3BlbnN0cmVldG1hcC5vcmcvdWkvbWFwaWNvbnMvZm9vZF9mYXN0Zm9vZC5wLjIwLnBuZyIsImFkZHJlc3MiOnsiYW1lbml0eSI6IkNoaXBvdGxlIiwiaG91c2VfbnVtYmVyIjoiMzA0Iiwicm9hZCI6Ildlc3QgMzR0aCBTdHJlZXQiLCJuZWlnaGJvdXJob29kIjoiTWFuaGF0dGFuIENvbW11bml0eSBCb2FyZCA0Iiwic3VidXJiIjoiTWFuaGF0dGFuIiwiY291bnR5IjoiTmV3IFlvcmsgQ291bnR5IiwiY2l0eSI6Ik5ldyBZb3JrIiwic3RhdGUiOiJOZXcgWW9yayIsIklTTzMxNjYtMi1sdmw0IjoiVVMtTlkiLCJwb3N0Y29kZSI6IjEwMDAxIiwiY291bnRyeSI6IlVuaXRlZCBTdGF0ZXMiLCJjb3VudHJ5X2NvZGUiOiJ1cyJ9fSx7InBsYWNlX2lkIjoxMjM5NzAwMiwibGljZW5jZSI6IkRhdGEgwqkgT3BlblN0cmVldE1hcCBjb250cmlidXRvcnMsIE9EYkwgMS4wLiBodHRwczovL29zbS5vcmcvY29weXJpZ2h0Iiwib3NtX3R5cGUiOiJub2RlIiwib3NtX2lkIjoxMjcyNjc0OTczLCJib3VuZGluZ2JveCI6WyI0MC43NTIyNzY3IiwiNDAuNzUyMzc2NyIsIi03My45OTQyOTgyIiwiLTczLjk5NDE5ODIiXSwibGF0IjoiNDAuNzUyMzI2NyIsImxvbiI6Ii03My45OTQyNDgyIiwiZGlzcGxheV9uYW1lIjoiRmVkRXggT2ZmaWNlLCAzMDQsIFdlc3QgMzR0aCBTdHJlZXQsIE1hbmhhdHRhbiBDb21tdW5pdHkgQm9hcmQgNCwgTWFuaGF0dGFuLCBOZXcgWW9yayBDb3VudHksIE5ldyBZb3JrLCAxMDAwMSwgVW5pdGVkIFN0YXRlcyIsImNsYXNzIjoic2hvcCIsInR5cGUiOiJjb3B5c2hvcCIsImltcG9ydGFuY2UiOjAuOTIwMDA5OTk5OTk5OTk5OSwiYWRkcmVzcyI6eyJzaG9wIjoiRmVkRXggT2ZmaWNlIiwiaG91c2VfbnVtYmVyIjoiMzA0Iiwicm9hZCI6Ildlc3QgMzR0aCBTdHJlZXQiLCJuZWlnaGJvdXJob29kIjoiTWFuaGF0dGFuIENvbW11bml0eSBCb2FyZCA0Iiwic3VidXJiIjoiTWFuaGF0dGFuIiwiY291bnR5IjoiTmV3IFlvcmsgQ291bnR5IiwiY2l0eSI6Ik5ldyBZb3JrIiwic3RhdGUiOiJOZXcgWW9yayIsIklTTzMxNjYtMi1sdmw0IjoiVVMtTlkiLCJwb3N0Y29kZSI6IjEwMDAxIiwiY291bnRyeSI6IlVuaXRlZCBTdGF0ZXMiLCJjb3VudHJ5X2NvZGUiOiJ1cyJ9fSx7InBsYWNlX2lkIjozMDgyNTE0MjYsImxpY2VuY2UiOiJEYXRhIMKpIE9wZW5TdHJlZXRNYXAgY29udHJpYnV0b3JzLCBPRGJMIDEuMC4gaHR0cHM6Ly9vc20ub3JnL2NvcHlyaWdodCIsIm9zbV90eXBlIjoid2F5Iiwib3NtX2lkIjo0MjA1MDk0NzEsImJvdW5kaW5nYm94IjpbIjQwLjc1MjE3MjA0MDgxNiIsIjQwLjc1MjI3MjA0MDgxNiIsIi03My45OTM4MTMzMjY1MzEiLCItNzMuOTkzNzEzMzI2NTMxIl0sImxhdCI6IjQwLjc1MjIyMjA0MDgxNjMzIiwibG9uIjoiLTczLjk5Mzc2MzMyNjUzMDYxIiwiZGlzcGxheV9uYW1lIjoiMzA0LCBXZXN0IDM0dGggU3RyZWV0LCBNYW5oYXR0YW4gQ29tbXVuaXR5IEJvYXJkIDQsIE1hbmhhdHRhbiwgTmV3IFlvcmsgQ291bnR5LCBOZXcgWW9yaywgMTAwMDEsIFVuaXRlZCBTdGF0ZXMiLCJjbGFzcyI6InBsYWNlIiwidHlwZSI6ImhvdXNlIiwiaW1wb3J0YW5jZSI6LTAuMjI5OTk5OTk5OTk5OTk5OTgsImFkZHJlc3MiOnsiaG91c2VfbnVtYmVyIjoiMzA0Iiwicm9hZCI6Ildlc3QgMzR0aCBTdHJlZXQiLCJuZWlnaGJvdXJob29kIjoiTWFuaGF0dGFuIENvbW11bml0eSBCb2FyZCA0Iiwic3VidXJiIjoiTWFuaGF0dGFuIiwiY291bnR5IjoiTmV3IFlvcmsgQ291bnR5IiwiY2l0eSI6Ik5ldyBZb3JrIiwic3RhdGUiOiJOZXcgWW9yayIsIklTTzMxNjYtMi1sdmw0IjoiVVMtTlkiLCJwb3N0Y29kZSI6IjEwMDAxIiwiY291bnRyeSI6IlVuaXRlZCBTdGF0ZXMiLCJjb3VudHJ5X2NvZGUiOiJ1cyJ9fV0=
+  recorded_at: Tue, 11 Jul 2023 23:13:56 GMT
+- request:
+    method: get
+    uri: https://nominatim.openstreetmap.org/search?accept-language=en&addressdetails=1&format=json&q=100%20E%20Camelback%20Rd%20phoenix,%20arizona%2085012
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Tue, 11 Jul 2023 23:13:56 GMT
+      Content-Type:
+      - application/json; charset=UTF-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Keep-Alive:
+      - timeout=20
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - OPTIONS,GET
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        W3sicGxhY2VfaWQiOjk4OTkzMzcwLCJsaWNlbmNlIjoiRGF0YSDCqSBPcGVuU3RyZWV0TWFwIGNvbnRyaWJ1dG9ycywgT0RiTCAxLjAuIGh0dHBzOi8vb3NtLm9yZy9jb3B5cmlnaHQiLCJvc21fdHlwZSI6Im5vZGUiLCJvc21faWQiOjk2NzA4ODk5ODAsImJvdW5kaW5nYm94IjpbIjMzLjUxMDU1MjYiLCIzMy41MTA2NTI2IiwiLTExMi4wNzE4MDkyIiwiLTExMi4wNzE3MDkyIl0sImxhdCI6IjMzLjUxMDYwMjYiLCJsb24iOiItMTEyLjA3MTc1OTIiLCJkaXNwbGF5X25hbWUiOiJVcHRvd24gUGhvZW5peCBUYXByb29tICsgS2l0Y2hlbiwgMTAwLCBFYXN0IENhbWVsYmFjayBSb2FkLCBQaG9lbml4LCBNYXJpY29wYSBDb3VudHksIEFyaXpvbmEsIDg1MDEyLCBVbml0ZWQgU3RhdGVzIiwiY2xhc3MiOiJhbWVuaXR5IiwidHlwZSI6InB1YiIsImltcG9ydGFuY2UiOjAuNjIwMSwiaWNvbiI6Imh0dHBzOi8vbm9taW5hdGltLm9wZW5zdHJlZXRtYXAub3JnL3VpL21hcGljb25zL2Zvb2RfcHViLnAuMjAucG5nIiwiYWRkcmVzcyI6eyJhbWVuaXR5IjoiVXB0b3duIFBob2VuaXggVGFwcm9vbSArIEtpdGNoZW4iLCJob3VzZV9udW1iZXIiOiIxMDAiLCJyb2FkIjoiRWFzdCBDYW1lbGJhY2sgUm9hZCIsImNpdHkiOiJQaG9lbml4IiwiY291bnR5IjoiTWFyaWNvcGEgQ291bnR5Iiwic3RhdGUiOiJBcml6b25hIiwiSVNPMzE2Ni0yLWx2bDQiOiJVUy1BWiIsInBvc3Rjb2RlIjoiODUwMTIiLCJjb3VudHJ5IjoiVW5pdGVkIFN0YXRlcyIsImNvdW50cnlfY29kZSI6InVzIn19LHsicGxhY2VfaWQiOjk4NjQ5NDUyLCJsaWNlbmNlIjoiRGF0YSDCqSBPcGVuU3RyZWV0TWFwIGNvbnRyaWJ1dG9ycywgT0RiTCAxLjAuIGh0dHBzOi8vb3NtLm9yZy9jb3B5cmlnaHQiLCJvc21fdHlwZSI6Im5vZGUiLCJvc21faWQiOjk2NzA4ODk4OTIsImJvdW5kaW5nYm94IjpbIjMzLjUxMDI1MTciLCIzMy41MTAzNTE3IiwiLTExMi4wNzIxMjg1IiwiLTExMi4wNzIwMjg1Il0sImxhdCI6IjMzLjUxMDMwMTciLCJsb24iOiItMTEyLjA3MjA3ODUiLCJkaXNwbGF5X25hbWUiOiJDaHVsYSBTZWFmb29kIFVwdG93biwgMTAwLCBFYXN0IENhbWVsYmFjayBSb2FkLCBQaG9lbml4LCBNYXJpY29wYSBDb3VudHksIEFyaXpvbmEsIDg1MDEyLCBVbml0ZWQgU3RhdGVzIiwiY2xhc3MiOiJhbWVuaXR5IiwidHlwZSI6InJlc3RhdXJhbnQiLCJpbXBvcnRhbmNlIjowLjYyMDEsImljb24iOiJodHRwczovL25vbWluYXRpbS5vcGVuc3RyZWV0bWFwLm9yZy91aS9tYXBpY29ucy9mb29kX3Jlc3RhdXJhbnQucC4yMC5wbmciLCJhZGRyZXNzIjp7ImFtZW5pdHkiOiJDaHVsYSBTZWFmb29kIFVwdG93biIsImhvdXNlX251bWJlciI6IjEwMCIsInJvYWQiOiJFYXN0IENhbWVsYmFjayBSb2FkIiwiY2l0eSI6IlBob2VuaXgiLCJjb3VudHkiOiJNYXJpY29wYSBDb3VudHkiLCJzdGF0ZSI6IkFyaXpvbmEiLCJJU08zMTY2LTItbHZsNCI6IlVTLUFaIiwicG9zdGNvZGUiOiI4NTAxMiIsImNvdW50cnkiOiJVbml0ZWQgU3RhdGVzIiwiY291bnRyeV9jb2RlIjoidXMifX0seyJwbGFjZV9pZCI6MzM0MTM0NjI2LCJsaWNlbmNlIjoiRGF0YSDCqSBPcGVuU3RyZWV0TWFwIGNvbnRyaWJ1dG9ycywgT0RiTCAxLjAuIGh0dHBzOi8vb3NtLm9yZy9jb3B5cmlnaHQiLCJvc21fdHlwZSI6IndheSIsIm9zbV9pZCI6NDIwNzU5NzAzLCJib3VuZGluZ2JveCI6WyIzMy41MDkzMDMiLCIzMy41MDk0MDMiLCItMTEyLjA3MjQ2MSIsIi0xMTIuMDcyMzYxIl0sImxhdCI6IjMzLjUwOTM1MyIsImxvbiI6Ii0xMTIuMDcyNDExIiwiZGlzcGxheV9uYW1lIjoiMTAwLCBFYXN0IENhbWVsYmFjayBSb2FkLCBQaG9lbml4LCBNYXJpY29wYSBDb3VudHksIEFyaXpvbmEsIDg1MDEyLCBVbml0ZWQgU3RhdGVzIiwiY2xhc3MiOiJwbGFjZSIsInR5cGUiOiJob3VzZSIsImltcG9ydGFuY2UiOi0wLjUyOTk5OTk5OTk5OTk5OTksImFkZHJlc3MiOnsiaG91c2VfbnVtYmVyIjoiMTAwIiwicm9hZCI6IkVhc3QgQ2FtZWxiYWNrIFJvYWQiLCJjaXR5IjoiUGhvZW5peCIsImNvdW50eSI6Ik1hcmljb3BhIENvdW50eSIsInN0YXRlIjoiQXJpem9uYSIsIklTTzMxNjYtMi1sdmw0IjoiVVMtQVoiLCJwb3N0Y29kZSI6Ijg1MDEyIiwiY291bnRyeSI6IlVuaXRlZCBTdGF0ZXMiLCJjb3VudHJ5X2NvZGUiOiJ1cyJ9fV0=
+  recorded_at: Tue, 11 Jul 2023 23:13:56 GMT
+- request:
+    method: get
+    uri: https://nominatim.openstreetmap.org/search?accept-language=en&addressdetails=1&format=json&q=488%20S%20High%20St%20columbus,%20ohio%2043215
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Tue, 11 Jul 2023 23:13:57 GMT
+      Content-Type:
+      - application/json; charset=UTF-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Keep-Alive:
+      - timeout=20
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - OPTIONS,GET
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        W3sicGxhY2VfaWQiOjIyNzY2NDIxMSwibGljZW5jZSI6IkRhdGEgwqkgT3BlblN0cmVldE1hcCBjb250cmlidXRvcnMsIE9EYkwgMS4wLiBodHRwczovL29zbS5vcmcvY29weXJpZ2h0Iiwib3NtX3R5cGUiOiJ3YXkiLCJvc21faWQiOjU4ODQyNzc4NCwiYm91bmRpbmdib3giOlsiMzkuOTUyMDE1OCIsIjM5Ljk1MjExMDEiLCItODIuOTk4NTA5MiIsIi04Mi45OTgzNjUiXSwibGF0IjoiMzkuOTUyMDYyOTk5OTk5OTk1IiwibG9uIjoiLTgyLjk5ODQzNjk5Mzg0NDIyIiwiZGlzcGxheV9uYW1lIjoiQ2hpcG90bGUsIDQ4OCwgU291dGggSGlnaCBTdHJlZXQsIEJyZXdlcnkgRGlzdHJpY3QsIENvbHVtYnVzLCBGcmFua2xpbiBDb3VudHksIE9oaW8sIDQzMjE1LCBVbml0ZWQgU3RhdGVzIiwiY2xhc3MiOiJhbWVuaXR5IiwidHlwZSI6ImZhc3RfZm9vZCIsImltcG9ydGFuY2UiOjAuNzIwMDA5OTk5OTk5OTk5OSwiaWNvbiI6Imh0dHBzOi8vbm9taW5hdGltLm9wZW5zdHJlZXRtYXAub3JnL3VpL21hcGljb25zL2Zvb2RfZmFzdGZvb2QucC4yMC5wbmciLCJhZGRyZXNzIjp7ImFtZW5pdHkiOiJDaGlwb3RsZSIsImhvdXNlX251bWJlciI6IjQ4OCIsInJvYWQiOiJTb3V0aCBIaWdoIFN0cmVldCIsIm5laWdoYm91cmhvb2QiOiJCcmV3ZXJ5IERpc3RyaWN0IiwiY2l0eSI6IkNvbHVtYnVzIiwiY291bnR5IjoiRnJhbmtsaW4gQ291bnR5Iiwic3RhdGUiOiJPaGlvIiwiSVNPMzE2Ni0yLWx2bDQiOiJVUy1PSCIsInBvc3Rjb2RlIjoiNDMyMTUiLCJjb3VudHJ5IjoiVW5pdGVkIFN0YXRlcyIsImNvdW50cnlfY29kZSI6InVzIn19LHsicGxhY2VfaWQiOjMyNTkwNzc4NywibGljZW5jZSI6IkRhdGEgwqkgT3BlblN0cmVldE1hcCBjb250cmlidXRvcnMsIE9EYkwgMS4wLiBodHRwczovL29zbS5vcmcvY29weXJpZ2h0Iiwib3NtX3R5cGUiOiJ3YXkiLCJvc21faWQiOjU4ODQyNzc3NywiYm91bmRpbmdib3giOlsiMzkuOTUxODE3NTc4OTQ3IiwiMzkuOTUxOTE3NTc4OTQ3IiwiLTgyLjk5ODU4MjQ3MzY4NCIsIi04Mi45OTg0ODI0NzM2ODQiXSwibGF0IjoiMzkuOTUxODY3NTc4OTQ3MzciLCJsb24iOiItODIuOTk4NTMyNDczNjg0MjIiLCJkaXNwbGF5X25hbWUiOiI0ODgsIFNvdXRoIEhpZ2ggU3RyZWV0LCBCcmV3ZXJ5IERpc3RyaWN0LCBDb2x1bWJ1cywgRnJhbmtsaW4gQ291bnR5LCBPaGlvLCA0MzIxNSwgVW5pdGVkIFN0YXRlcyIsImNsYXNzIjoicGxhY2UiLCJ0eXBlIjoiaG91c2UiLCJpbXBvcnRhbmNlIjotMC40Mjk5OTk5OTk5OTk5OTk5NCwiYWRkcmVzcyI6eyJob3VzZV9udW1iZXIiOiI0ODgiLCJyb2FkIjoiU291dGggSGlnaCBTdHJlZXQiLCJuZWlnaGJvdXJob29kIjoiQnJld2VyeSBEaXN0cmljdCIsImNpdHkiOiJDb2x1bWJ1cyIsImNvdW50eSI6IkZyYW5rbGluIENvdW50eSIsInN0YXRlIjoiT2hpbyIsIklTTzMxNjYtMi1sdmw0IjoiVVMtT0giLCJwb3N0Y29kZSI6IjQzMjE1IiwiY291bnRyeSI6IlVuaXRlZCBTdGF0ZXMiLCJjb3VudHJ5X2NvZGUiOiJ1cyJ9fV0=
+  recorded_at: Tue, 11 Jul 2023 23:13:57 GMT
+recorded_with: VCR 6.2.0

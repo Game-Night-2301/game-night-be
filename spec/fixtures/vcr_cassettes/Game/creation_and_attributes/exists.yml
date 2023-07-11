@@ -1,0 +1,296 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.boardgameatlas.com/api/search?client_id=<BOARD_GAME_ATLAS_CLIENT_ID>&random=true
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Content-Type:
+      - application/json, <BOARD_GAME_ATLAS_CLIENT_ID>
+      User-Agent:
+      - Faraday v2.7.10
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Cowboy
+      Connection:
+      - keep-alive
+      X-Powered-By:
+      - Express
+      Content-Security-Policy:
+      - 'default-src ''self'' https://* s3.us-west-1.amazonaws.com www.google-analytics.com
+        stats.g.doubleclick.net www.youtube.com anchor.fm www.googletagmanager.com;script-src
+        * ''unsafe-inline'' ''unsafe-eval'';img-src * data:;frame-ancestors ''self''
+        https://*.mybigcommerce.com;upgrade-insecure-requests;base-uri ''self'';block-all-mixed-content;font-src
+        ''self'' https: data:;object-src ''none'';script-src-attr ''none'';style-src
+        ''self'' https: ''unsafe-inline'''
+      X-Ratelimit-Limit:
+      - '420'
+      X-Ratelimit-Remaining:
+      - '419'
+      Date:
+      - Tue, 11 Jul 2023 22:23:39 GMT
+      X-Ratelimit-Reset:
+      - '1689114263'
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Headers:
+      - Origin, X-Requested-With, Content-Type, Accept
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"23db-4EFGJjpTsnVSGKxvzMwLf92off0"
+      Vary:
+      - Accept-Encoding
+      Transfer-Encoding:
+      - chunked
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: ASCII-8BIT
+      string: |-
+        {
+          "games": [
+            {
+              "id": "mSKdkqCgs1",
+              "handle": "and-then-we-held-hands",
+              "url": "https://www.boardgameatlas.com/game/mSKdkqCgs1/and-then-we-held-hands",
+              "bga_edit_url": "https://www.boardgameatlas.com/game/mSKdkqCgs1/edit",
+              "template_url": "/products/listing?objectId=mSKdkqCgs1&product_line=Board Games&type=product",
+              "name": "...and then, we held hands.",
+              "price": "0.00",
+              "price_ca": "0.00",
+              "price_uk": "0.00",
+              "price_au": "0.00",
+              "msrp": 25,
+              "msrps": [
+                {
+                  "country": "US",
+                  "price": 25
+                }
+              ],
+              "discount": "0.00",
+              "year_published": 2015,
+              "min_players": 2,
+              "max_players": 2,
+              "player_counts": [
+                2
+              ],
+              "min_playtime": 30,
+              "max_playtime": 45,
+              "min_age": 12,
+              "description": "<p><em>...and then we held hands</em> is a co-operative game about finding balance. To win, the two players must complete objectives and reach the center of the board.<br /><br />The players take turns trying to fulfill the current common emotional objective by discarding emotion cards to move from node to node. They must do this without verbal communication, by empathizing and always considering each other's situation when making a move.<br /><br />A player can use their own cards or their partner's, but if their move causes their partner to be unable to move, the players lose and the game ends. While moving from node to node, their balance shifts, and they are not able to refill their hand.<br /><br />The game features a card-splaying mechanism in which players change their &quot;perspective&quot; to reveal a new set of options.<br /><br />The players win by meeting in the center while in a balanced state and within one turn of each other - something quite difficult, and therefore very rewarding when achieved.<br /><br /><em>...and then we held hands</em> features art by beloved French illustrator Marie Cardouat, known for the art found in beautiful games such as Dixit, Steam Park, and Marrakech.</p>",
+              "commentary": "",
+              "faq": "",
+              "thumb_url": "https://s3-us-west-1.amazonaws.com/5cc.images/games/uploaded/1540938539926",
+              "image_url": "https://s3-us-west-1.amazonaws.com/5cc.images/games/uploaded/1540938539926",
+              "matches_specs": null,
+              "specs": [],
+              "mechanics": [
+                {
+                  "id": "0ez69aUfuJ",
+                  "url": "https://www.boardgameatlas.com/mechanic/0ez69aUfuJ/undefined"
+                },
+                {
+                  "id": "9mNukNBxfZ",
+                  "url": "https://www.boardgameatlas.com/mechanic/9mNukNBxfZ/undefined"
+                },
+                {
+                  "id": "WPytek5P8l",
+                  "url": "https://www.boardgameatlas.com/mechanic/WPytek5P8l/undefined"
+                },
+                {
+                  "id": "MEAoOygZsA",
+                  "url": "https://www.boardgameatlas.com/mechanic/MEAoOygZsA/undefined"
+                }
+              ],
+              "categories": [
+                {
+                  "id": "eX8uuNlQkQ",
+                  "url": "https://www.boardgameatlas.com/category/eX8uuNlQkQ/undefined"
+                }
+              ],
+              "publishers": [
+                {
+                  "id": "lEj6AzyLEf",
+                  "num_games": null,
+                  "score": 9999999,
+                  "game": {},
+                  "url": "https://www.boardgameatlas.com/publisher/lEj6AzyLEf/undefined",
+                  "images": {
+                    "thumb": null,
+                    "small": null,
+                    "medium": null,
+                    "large": null,
+                    "original": null
+                  }
+                }
+              ],
+              "designers": [
+                {
+                  "id": "81u5rp1NOS",
+                  "num_games": null,
+                  "score": 9999999,
+                  "game": {},
+                  "url": "https://www.boardgameatlas.com/designer/81u5rp1NOS/undefined",
+                  "images": {
+                    "thumb": null,
+                    "small": null,
+                    "medium": null,
+                    "large": null,
+                    "original": null
+                  }
+                },
+                {
+                  "id": "VUwoUCwdU0",
+                  "num_games": null,
+                  "score": 9999999,
+                  "game": {},
+                  "url": "https://www.boardgameatlas.com/designer/VUwoUCwdU0/undefined",
+                  "images": {
+                    "thumb": null,
+                    "small": null,
+                    "medium": null,
+                    "large": null,
+                    "original": null
+                  }
+                }
+              ],
+              "primary_publisher": {
+                "id": "lEj6AzyLEf",
+                "name": "LudiCreations",
+                "url": "https://www.boardgameatlas.com/publisher/lEj6AzyLEf/ludicreations"
+              },
+              "primary_designer": {
+                "id": "81u5rp1NOS",
+                "name": "David Chircop",
+                "url": "https://www.boardgameatlas.com/designer/81u5rp1NOS/david-chircop"
+              },
+              "developers": [],
+              "related_to": [],
+              "related_as": [],
+              "artists": [
+                "Marie Cardouat",
+                "David Chircop",
+                "Todd Sanders"
+              ],
+              "names": [],
+              "rules_url": "http://ludicreations.com/wp-content/uploads/gamerules/11%20ATWHH/ATWHH_rules_EN_compressed.pdf",
+              "official_url": "http://ludicreations.com/product/and-then-we-held-hands/?utm_source=boardgameatlas.com&utm_medium=search&utm_campaign=bga_ads",
+              "comment_count": 0,
+              "num_user_ratings": 42,
+              "average_user_rating": 2.8964285714285714,
+              "weight_amount": 0.4,
+              "weight_units": "kg",
+              "size_height": 182,
+              "size_depth": 25,
+              "size_units": "mm",
+              "historical_low_prices": [
+                {
+                  "country": "CA",
+                  "date": "2021-05-27T21:09:02.021Z",
+                  "price": 267,
+                  "isLow": false
+                },
+                {
+                  "country": "UK",
+                  "date": "2021-06-12T17:39:26.756Z",
+                  "price": 14.29,
+                  "isLow": false
+                },
+                {
+                  "country": "US",
+                  "date": "2022-12-02T16:28:53.666Z",
+                  "price": 65.95,
+                  "isLow": false
+                }
+              ],
+              "active": true,
+              "num_user_complexity_votes": 0,
+              "average_learning_complexity": 0,
+              "average_strategy_complexity": 0,
+              "visits": 492,
+              "lists": 156,
+              "mentions": 0,
+              "links": 0,
+              "plays": 132,
+              "rank": 1580,
+              "type": "game",
+              "upc": "859573004249",
+              "num_distributors": 0,
+              "trending_rank": 0,
+              "listing_clicks": 0,
+              "is_historical_low": false,
+              "skus": [
+                "LDR1511000",
+                "111:18374",
+                "12006521345",
+                "2149061948",
+                "859573004249",
+                "boardlandia-0002",
+                "LDC1511000"
+              ],
+              "sku_objects": [
+                {
+                  "name": "Card Haus",
+                  "sku": "LDR1511000"
+                },
+                {
+                  "name": "BoardGameCo",
+                  "sku": "111:18374"
+                },
+                {
+                  "name": "BoardGameBliss Inc",
+                  "sku": "12006521345"
+                },
+                {
+                  "name": "Noble Knight Games",
+                  "sku": "2149061948"
+                },
+                {
+                  "name": "Good Games",
+                  "sku": "859573004249"
+                },
+                {
+                  "name": "Boardlandia",
+                  "sku": "boardlandia-0002"
+                },
+                {
+                  "name": "Miniature Market",
+                  "sku": "LDC1511000"
+                }
+              ],
+              "edit_url": "/products/listing-edit?objectId=mSKdkqCgs1&product_line=Board Games&type=product",
+              "players": "2",
+              "playtime": "30-45",
+              "msrp_text": "$25.00",
+              "price_text": "Price: N/A",
+              "tags": [
+                "... and then we held hands.",
+                "...and then, we held hands.",
+                "and then we held hands board game",
+                "And Then We Held Hands"
+              ],
+              "images": {
+                "thumb": "https://d2k4q26owzy373.cloudfront.net/40x40/games/uploaded/1540938539926",
+                "small": "https://d2k4q26owzy373.cloudfront.net/150x150/games/uploaded/1540938539926",
+                "medium": "https://d2k4q26owzy373.cloudfront.net/350x350/games/uploaded/1540938539926",
+                "large": "https://d2k4q26owzy373.cloudfront.net/700x700/games/uploaded/1540938539926",
+                "original": "https://s3-us-west-1.amazonaws.com/5cc.images/games/uploaded/1540938539926"
+              },
+              "description_preview": "  ...and then we held hands  is a co-operative game about finding balance. To win, the two players must complete objectives and reach the center of the board.  The players take turns trying to fulfill the current common emotional objective by discarding emotion cards to move from node to node. They must do this without verbal communication, by empathizing and always considering each other's situation when making a move.  A player can use their own cards or their partner's, but if their move causes their partner to be unable to move, the players lose and the game ends. While moving from node to node, their balance shifts, and they are not able to refill their hand.  The game features a card-splaying mechanism in which players change their \"perspective\" to reveal a new set of options.  The players win by meeting in the center while in a balanced state and within one turn of each other - something quite difficult, and therefore very rewarding when achieved.   ...and then we held hands  features art by beloved French illustrator Marie Cardouat, known for the art found in beautiful games such as Dixit, Steam Park, and Marrakech. "
+            }
+          ],
+          "count": 152988
+        }
+  recorded_at: Tue, 11 Jul 2023 22:23:40 GMT
+recorded_with: VCR 6.2.0

@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-RSpec.describe GameFactory do
+RSpec.describe GameFactory, vcr: { record: :new_episodes } do
   describe "creation" do
     before do
       @game_factory = GameFactory.new
