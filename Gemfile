@@ -43,6 +43,7 @@ gem 'bootsnap', require: false
 
 gem 'faraday'
 gem 'figaro'
+gem 'geocoder'
 gem 'pry'
 gem 'sprockets-rails'
 

@@ -34,5 +34,21 @@ RSpec.describe User, type: :model do
         expect(@host_2.hosted_events).to eq([@event_3])
       end
     end
+
+    describe '#resident_city' do
+      it 'returns string with residents city and state' do
+        user_1 = create(:user, city: "Seattle", state: "Washington")
+        expect(user_1.resident_city).to eq("Seattle, Washington")
+      end
+    end
+  end
+
+  describe 'geocoder' do
+    it "geocodes" do
+      user_1 = create(:user, city: "Boulder", state: "Colorado")
+      user_1.reload
+      expect(user_1.lat).to eq(40.0149856)
+      expect(user_1.lon).to eq(-105.270545)
+    end
   end
 end
