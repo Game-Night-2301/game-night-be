@@ -2,14 +2,14 @@
 
 require 'rails_helper'
 
-RSpec.describe User, type: :model do
+RSpec.describe User, type: :model, vcr: { record: :new_episodes } do
   before(:each) do
-    @host_1 = create(:user)
-    @host_2 = create(:user)
+    @host_1 = create(:user, city: "austin", state: "texas")
+    @host_2 = create(:user, city: "san diego", state: "california")
 
-    @event_1 = create(:event, host_id: @host_1.id)
-    @event_2 = create(:event, host_id: @host_1.id)
-    @event_3 = create(:event, host_id: @host_2.id)
+    @event_1 = create(:event, host_id: @host_1.id, address: "304 W 34th St", city: "new york", state: "new york", zip: "10001")
+    @event_2 = create(:event, host_id: @host_1.id, address: "100 E Camelback Rd", city: "phoenix", state: "arizona", zip: "85012")
+    @event_3 = create(:event, host_id: @host_2.id, address: "488 S High St", city: "columbus", state: "ohio", zip: "43215")
 
     UserEvent.create(user_id: @host_1.id, event_id: @event_1.id)
     UserEvent.create(user_id: @host_1.id, event_id: @event_2.id)

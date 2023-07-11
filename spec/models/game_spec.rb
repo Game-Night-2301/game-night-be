@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-RSpec.describe Game, type: :model do
+RSpec.describe Game, type: :model, vcr: { record: :new_episodes } do
   describe "creation and attributes" do
     before do
       game_data = GameService.new.one_random_game

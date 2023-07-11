@@ -4,7 +4,7 @@ require 'rails_helper'
 
 module Mutations
   module Events
-    RSpec.describe CreateEvent, type: :request do
+    RSpec.describe CreateEvent, type: :request, vcr: { record: :new_episodes } do
       describe 'resolve' do
         it 'can create an event' do
           host = create(:user, id: 4_744_564)

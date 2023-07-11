@@ -5,10 +5,10 @@ require 'rails_helper'
 module Mutations
   # This is the games module for testing
   module Games
-    RSpec.describe CreateUserGame, type: :request do
+    RSpec.describe CreateUserGame, type: :request, vcr: { record: :new_episodes } do
       describe 'resolve' do
         it 'can create a user game' do
-          user = create(:user, id: 1)
+          user = create(:user, id: 1, city: "montpelier", state: "vermont")
           game_1 = create(:game)
           game_2 = create(:game)
           game_3 = create(:game, id: 2000)

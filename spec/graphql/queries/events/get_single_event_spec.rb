@@ -2,13 +2,14 @@
 
 require 'rails_helper'
 
-RSpec.describe Types::QueryType do
+RSpec.describe Types::QueryType, vcr: { record: :new_episodes } do
   describe 'display events' do
     it 'can query a single event' do
       Event.destroy_all
       host = create(:user, id: 2)
       user = create(:user, id: 1)
-      event = create(:event, id: 1, host_id: host.id, game: 35)
+
+      event = create(:event, id: 1, host_id: host.id, game: 35, address: "488 S High St", city: "columbus", state: "ohio", zip: "43215")
       game = create(:game, id: 35)
       UserEvent.create(user_id: user.id, event_id: event.id)
       UserEvent.create(user_id: host.id, event_id: event.id)

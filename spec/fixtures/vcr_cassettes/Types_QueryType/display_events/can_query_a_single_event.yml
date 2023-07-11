@@ -1,0 +1,118 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://nominatim.openstreetmap.org/search?accept-language=en&addressdetails=1&format=json&q=Myrtlebury,%20California
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Tue, 11 Jul 2023 23:16:42 GMT
+      Content-Type:
+      - application/json; charset=UTF-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Keep-Alive:
+      - timeout=20
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - OPTIONS,GET
+    body:
+      encoding: UTF-8
+      string: "[]"
+  recorded_at: Tue, 11 Jul 2023 23:16:41 GMT
+- request:
+    method: get
+    uri: https://nominatim.openstreetmap.org/search?accept-language=en&addressdetails=1&format=json&q=488%20S%20High%20St%20columbus,%20ohio%2043215
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Tue, 11 Jul 2023 23:16:42 GMT
+      Content-Type:
+      - application/json; charset=UTF-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Keep-Alive:
+      - timeout=20
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - OPTIONS,GET
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        W3sicGxhY2VfaWQiOjIyNzY2NDIxMSwibGljZW5jZSI6IkRhdGEgwqkgT3BlblN0cmVldE1hcCBjb250cmlidXRvcnMsIE9EYkwgMS4wLiBodHRwczovL29zbS5vcmcvY29weXJpZ2h0Iiwib3NtX3R5cGUiOiJ3YXkiLCJvc21faWQiOjU4ODQyNzc4NCwiYm91bmRpbmdib3giOlsiMzkuOTUyMDE1OCIsIjM5Ljk1MjExMDEiLCItODIuOTk4NTA5MiIsIi04Mi45OTgzNjUiXSwibGF0IjoiMzkuOTUyMDYyOTk5OTk5OTk1IiwibG9uIjoiLTgyLjk5ODQzNjk5Mzg0NDIyIiwiZGlzcGxheV9uYW1lIjoiQ2hpcG90bGUsIDQ4OCwgU291dGggSGlnaCBTdHJlZXQsIEJyZXdlcnkgRGlzdHJpY3QsIENvbHVtYnVzLCBGcmFua2xpbiBDb3VudHksIE9oaW8sIDQzMjE1LCBVbml0ZWQgU3RhdGVzIiwiY2xhc3MiOiJhbWVuaXR5IiwidHlwZSI6ImZhc3RfZm9vZCIsImltcG9ydGFuY2UiOjAuNzIwMDA5OTk5OTk5OTk5OSwiaWNvbiI6Imh0dHBzOi8vbm9taW5hdGltLm9wZW5zdHJlZXRtYXAub3JnL3VpL21hcGljb25zL2Zvb2RfZmFzdGZvb2QucC4yMC5wbmciLCJhZGRyZXNzIjp7ImFtZW5pdHkiOiJDaGlwb3RsZSIsImhvdXNlX251bWJlciI6IjQ4OCIsInJvYWQiOiJTb3V0aCBIaWdoIFN0cmVldCIsIm5laWdoYm91cmhvb2QiOiJCcmV3ZXJ5IERpc3RyaWN0IiwiY2l0eSI6IkNvbHVtYnVzIiwiY291bnR5IjoiRnJhbmtsaW4gQ291bnR5Iiwic3RhdGUiOiJPaGlvIiwiSVNPMzE2Ni0yLWx2bDQiOiJVUy1PSCIsInBvc3Rjb2RlIjoiNDMyMTUiLCJjb3VudHJ5IjoiVW5pdGVkIFN0YXRlcyIsImNvdW50cnlfY29kZSI6InVzIn19LHsicGxhY2VfaWQiOjMyNTkwNzc4NywibGljZW5jZSI6IkRhdGEgwqkgT3BlblN0cmVldE1hcCBjb250cmlidXRvcnMsIE9EYkwgMS4wLiBodHRwczovL29zbS5vcmcvY29weXJpZ2h0Iiwib3NtX3R5cGUiOiJ3YXkiLCJvc21faWQiOjU4ODQyNzc3NywiYm91bmRpbmdib3giOlsiMzkuOTUxODE3NTc4OTQ3IiwiMzkuOTUxOTE3NTc4OTQ3IiwiLTgyLjk5ODU4MjQ3MzY4NCIsIi04Mi45OTg0ODI0NzM2ODQiXSwibGF0IjoiMzkuOTUxODY3NTc4OTQ3MzciLCJsb24iOiItODIuOTk4NTMyNDczNjg0MjIiLCJkaXNwbGF5X25hbWUiOiI0ODgsIFNvdXRoIEhpZ2ggU3RyZWV0LCBCcmV3ZXJ5IERpc3RyaWN0LCBDb2x1bWJ1cywgRnJhbmtsaW4gQ291bnR5LCBPaGlvLCA0MzIxNSwgVW5pdGVkIFN0YXRlcyIsImNsYXNzIjoicGxhY2UiLCJ0eXBlIjoiaG91c2UiLCJpbXBvcnRhbmNlIjotMC40Mjk5OTk5OTk5OTk5OTk5NCwiYWRkcmVzcyI6eyJob3VzZV9udW1iZXIiOiI0ODgiLCJyb2FkIjoiU291dGggSGlnaCBTdHJlZXQiLCJuZWlnaGJvdXJob29kIjoiQnJld2VyeSBEaXN0cmljdCIsImNpdHkiOiJDb2x1bWJ1cyIsImNvdW50eSI6IkZyYW5rbGluIENvdW50eSIsInN0YXRlIjoiT2hpbyIsIklTTzMxNjYtMi1sdmw0IjoiVVMtT0giLCJwb3N0Y29kZSI6IjQzMjE1IiwiY291bnRyeSI6IlVuaXRlZCBTdGF0ZXMiLCJjb3VudHJ5X2NvZGUiOiJ1cyJ9fV0=
+  recorded_at: Tue, 11 Jul 2023 23:16:42 GMT
+- request:
+    method: get
+    uri: https://nominatim.openstreetmap.org/search?accept-language=en&addressdetails=1&format=json&q=East%20Jerica,%20Georgia
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Tue, 11 Jul 2023 23:19:18 GMT
+      Content-Type:
+      - application/json; charset=UTF-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Keep-Alive:
+      - timeout=20
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - OPTIONS,GET
+    body:
+      encoding: UTF-8
+      string: "[]"
+  recorded_at: Tue, 11 Jul 2023 23:19:18 GMT
+recorded_with: VCR 6.2.0

@@ -2,11 +2,11 @@
 
 require 'rails_helper'
 
-RSpec.describe Event, type: :model do
+RSpec.describe Event, type: :model, vcr: { record: :new_episodes } do
   before(:each) do
-    @host = create(:user)
-    @user_1 = create(:user)
-    @event = create(:event, host_id: @host.id)
+    @host = create(:user, city: "montpelier", state: "vermont")
+    @user_1 = create(:user, city: "austin", state: "texas")
+    @event = create(:event, host_id: @host.id, address: "304 W 34th St", city: "new york", state: "new york", zip: "10001")
 
     UserEvent.create(user_id: @host.id, event_id: @event.id)
     UserEvent.create(user_id: @user_1.id, event_id: @event.id)
@@ -50,7 +50,7 @@ RSpec.describe Event, type: :model do
 
   describe 'geocoder' do
     it 'geocodes' do
-      user = create(:user)
+      user = create(:user, city: "harlem", state: "georgia")
       event = create(:event, host_id: user.id, address: "9464 county road", city: "Calais", state: "Vermont", zip: "05648")
       expect(event.lat).to eq(44.325782)
       expect(event.lon).to eq(-72.52738)
