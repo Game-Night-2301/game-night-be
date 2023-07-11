@@ -37,7 +37,8 @@ RSpec.describe User, type: :model do
 
     describe '#resident_city' do
       it 'returns string with residents city and state' do
-        user_1 = create(:user, city: "")
+        user_1 = create(:user, city: "Seattle", state: "Washington")
+        expect(user_1.resident_city).to eq("Seattle, Washington")
       end
     end
   end
