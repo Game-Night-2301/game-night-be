@@ -14,4 +14,6 @@ class Event < ApplicationRecord
   def player_count
     users.count
   end
+
+  
 end
