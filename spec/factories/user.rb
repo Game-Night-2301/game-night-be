@@ -2,7 +2,7 @@
 
 FactoryBot.define do
   factory :user do
-    username { Faker::Internet.username }
+    username { Faker::Fantasy::Tolkien.character }
     password { Faker::Internet.password }
     city { Faker::Address.city }
     state { Faker::Address.state }
