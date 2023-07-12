@@ -6,8 +6,8 @@ RSpec.describe Types::QueryType, vcr: { record: :new_episodes } do
   describe 'display events' do
     it 'can query a single event' do
       Event.destroy_all
-      host = create(:user, id: 2)
-      user = create(:user, id: 1)
+      host = create(:user, id: 2, city: "montpelier", state: "vermont")
+      user = create(:user, id: 1, city: "austin", state: "texas")
 
       event = create(:event, id: 1, host_id: host.id, game: 35, address: "488 S High St", city: "columbus", state: "ohio", zip: "43215")
       game = create(:game, id: 35)
