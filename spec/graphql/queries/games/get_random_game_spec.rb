@@ -6,7 +6,7 @@ RSpec.describe Types::QueryType do
   describe 'returns a random game' do
     it 'can query a random game' do
       create_list(:game, 5)
-      
+
       result = GameNightBeSchema.execute(query).as_json
 
       game = Game.find(result['data']['randomGame']['id'].to_i)
@@ -26,20 +26,20 @@ RSpec.describe Types::QueryType do
 
   def query
     <<~GQL
-    query {
-      randomGame {
-        id
-        name
-        minPlayers
-        maxPlayers
-        minPlaytime
-        maxPlaytime
-        description
-        imageUrl
-        averageUserRating
-        averageStrategyComplexity
+      query {
+        randomGame {
+          id
+          name
+          minPlayers
+          maxPlayers
+          minPlaytime
+          maxPlaytime
+          description
+          imageUrl
+          averageUserRating
+          averageStrategyComplexity
+        }
       }
-    }
     GQL
   end
 end
