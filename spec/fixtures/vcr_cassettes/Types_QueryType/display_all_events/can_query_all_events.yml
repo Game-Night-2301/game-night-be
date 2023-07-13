@@ -347,7 +347,7 @@ http_interactions:
   recorded_at: Tue, 11 Jul 2023 23:19:16 GMT
 - request:
     method: get
-    uri: https://nominatim.openstreetmap.org/search?accept-language=en&addressdetails=1&format=json&q=7713%20Spencer%20Crescent%20Port%20Kiptown,%20Nebraska%2048470
+    uri: https://nominatim.openstreetmap.org/search?accept-language=en&addressdetails=1&format=json&q=39782%20Gail%20Points%20East%20Keith,%20Washington%2066898
     body:
       encoding: US-ASCII
       string: ''
@@ -366,7 +366,7 @@ http_interactions:
       Server:
       - nginx
       Date:
-      - Tue, 11 Jul 2023 23:29:33 GMT
+      - Wed, 12 Jul 2023 21:47:38 GMT
       Content-Type:
       - application/json; charset=UTF-8
       Transfer-Encoding:
@@ -382,10 +382,10 @@ http_interactions:
     body:
       encoding: UTF-8
       string: "[]"
-  recorded_at: Tue, 11 Jul 2023 23:29:33 GMT
+  recorded_at: Wed, 12 Jul 2023 21:47:38 GMT
 - request:
     method: get
-    uri: https://nominatim.openstreetmap.org/search?accept-language=en&addressdetails=1&format=json&q=5294%20Latonia%20Estates%20Port%20Samathachester,%20Massachusetts%2064733
+    uri: https://nominatim.openstreetmap.org/search?accept-language=en&addressdetails=1&format=json&q=4457%20Kemmer%20Roads%20Kesslershire,%20Kentucky%2053392
     body:
       encoding: US-ASCII
       string: ''
@@ -404,7 +404,7 @@ http_interactions:
       Server:
       - nginx
       Date:
-      - Tue, 11 Jul 2023 23:29:33 GMT
+      - Wed, 12 Jul 2023 21:47:39 GMT
       Content-Type:
       - application/json; charset=UTF-8
       Transfer-Encoding:
@@ -420,10 +420,10 @@ http_interactions:
     body:
       encoding: UTF-8
       string: "[]"
-  recorded_at: Tue, 11 Jul 2023 23:29:33 GMT
+  recorded_at: Wed, 12 Jul 2023 21:47:38 GMT
 - request:
     method: get
-    uri: https://nominatim.openstreetmap.org/search?accept-language=en&addressdetails=1&format=json&q=97879%20Kilback%20Union%20Derekhaven,%20Louisiana%2053189
+    uri: https://nominatim.openstreetmap.org/search?accept-language=en&addressdetails=1&format=json&q=63152%20Kris%20Spurs%20North%20Buddy,%20Hawaii%2015614
     body:
       encoding: US-ASCII
       string: ''
@@ -442,7 +442,7 @@ http_interactions:
       Server:
       - nginx
       Date:
-      - Tue, 11 Jul 2023 23:29:34 GMT
+      - Wed, 12 Jul 2023 21:47:39 GMT
       Content-Type:
       - application/json; charset=UTF-8
       Transfer-Encoding:

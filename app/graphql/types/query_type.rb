@@ -37,6 +37,11 @@ module Types
     rescue ActiveRecord::RecordNotFound
       raise GraphQL::ExecutionError.new('Event does not exist.', extensions: { status_code: 404 })
     end
+
+    field :games, [GameType], null: false, description: 'List all games'
+    def games
+      Game.all
+    end
   end
 end
 
