@@ -19,9 +19,3 @@ FactoryBot.define do
     end_time { Faker::Time.between(from: DateTime.now - 1, to: DateTime.now, format: :default).split(' ')[4] }
   end
 end
-
-# Game of thrones
-# Hitchhiker's guide
-# Princess Bride
-# Tron
-# Shakespear

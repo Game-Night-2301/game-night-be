@@ -37,7 +37,6 @@ RSpec.describe Types::QueryType, vcr: { record: :new_episodes } do
       event_5 = create(:event, title: "chipotle", address: "548 W South Boulder Rd", city: "Lafayette", state: "Colorado", zip: "80026")
 
       result = GameNightBeSchema.execute(sorted_events_query).as_json
-      require 'pry'; binding.pry
 
       expect(result["data"]["user"]["sortedEvents"][0]["id"]).to eq(event_3.id.to_s)
       expect(result["data"]["user"]["sortedEvents"][1]["id"]).to eq(event_2.id.to_s)

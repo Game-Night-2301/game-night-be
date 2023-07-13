@@ -20,6 +20,10 @@ class User < ApplicationRecord
   end
 
   def sort_events_by_distance
-    Event.by_distance(origin: [lat, lon]).to_a
+    Event.by_distance(origin: [lat, lon]).to_a.map do |event|
+      json_event = event.as_json
+      json_event["distance_from"] = event.distance_from([lat, lon])
+      json_event
+    end
   end
 end
