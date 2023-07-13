@@ -3,7 +3,7 @@
 require 'rails_helper'
 
 module Mutations
-  module Events
+  module UserEvents
     RSpec.describe CreateUserEvent, type: :request, vcr: { record: :new_episodes } do
       before(:each) do
         @user_1 = create(:user, id: 1, city: "montpelier", state: "vermont")
