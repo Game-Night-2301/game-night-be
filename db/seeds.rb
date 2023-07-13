@@ -7,6 +7,9 @@
 #
 #   movies = Movie.FactoryBot.create([{ name: "Star Wars" }, { name: "Lord of the Rings" }])
 #   Character.create(name: "Luke", movie: movies.first)
+User.destroy_all
+Game.destroy_all
+Event.destroy_all
 
 GameFactory.new.build_games(GameService.new.all_games)
 

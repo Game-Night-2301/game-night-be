@@ -2,8 +2,8 @@
 
 # This is the user model
 class User < ApplicationRecord
-  has_many :user_games
-  has_many :user_events
+  has_many :user_games, dependent: :destroy
+  has_many :user_events, dependent: :destroy
   has_many :events, through: :user_events
   has_many :games, through: :user_games
   geocoded_by :resident_city, latitude: :lat, longitude: :lon
