@@ -9,7 +9,7 @@ FactoryBot.define do
     zip { Faker::Address.zip }
     title { Faker::Game.title }
     cancelled { Faker::Boolean.boolean }
-    description { Faker::Lorem.paragraph }
+    description { Faker::Movies::PrincessBride.quote }
     host_id { Faker::Number.number(digits: 1) }
     game { Faker::Number.number(digits: 1) }
     game_type { Faker::Game.genre }

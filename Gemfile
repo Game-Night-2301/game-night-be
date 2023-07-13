@@ -45,6 +45,7 @@ gem 'faraday'
 gem 'figaro'
 gem 'geocoder'
 gem 'geokit-rails'
+gem 'hirb'
 gem 'pry'
 gem 'sprockets-rails'
 
