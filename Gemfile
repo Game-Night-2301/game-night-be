@@ -60,9 +60,9 @@ group :test do
   gem 'webmock'
 end
 
-  # Test Factories
-  gem 'factory_bot_rails'
-  gem 'faker'
+# Test Factories
+gem 'factory_bot_rails'
+gem 'faker'
 
 group :development, :test do
   # See https://guides.rubyonrails.org/debugging_rails_applications.html#debugging-with-the-debug-gem
