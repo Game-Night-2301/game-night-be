@@ -24,6 +24,13 @@ module Mutations
           expect(result['data']['deleteUserEvent']['event']['attendees'][0]['id']).to eq(user_2.id.to_s)
           expect(result['data']['deleteUserEvent']['event']['attendees'][0]['username']).to eq(user_2.username)
         end
+
+        it 'returns an error when the user is not attending the event' do
+          result = GameNightBeSchema.execute(query).as_json
+
+          expect(result['data']['deleteUserEvent']).to eq(nil)
+          expect(result['errors'][0]['message']).to eq('UserEvent not found.')
+        end
       end
 
       def query
