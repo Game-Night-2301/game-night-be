@@ -16,10 +16,10 @@ module Mutations
 
           expect(UserEvent.count).to eq(2)
           expect(event.users).to eq([user_1, user_2])
-          
+
           result = GameNightBeSchema.execute(query).as_json
 
-          expect(UserEvent.count). to eq(1)
+          expect(UserEvent.count).to eq(1)
 
           expect(result['data']['deleteUserEvent']['event']['attendees'][0]['id']).to eq(user_2.id.to_s)
           expect(result['data']['deleteUserEvent']['event']['attendees'][0]['username']).to eq(user_2.username)
@@ -28,19 +28,19 @@ module Mutations
 
       def query
         <<~GQL
-        mutation {
-          deleteUserEvent(input: {
-              userId: 1
-              eventId: 1
-          }) {
-          event {
-              attendees {
-              id
-              username
+            mutation {
+              deleteUserEvent(input: {
+                  userId: 1
+                  eventId: 1
+              }) {
+              event {
+                  attendees {
+                  id
+                  username
+                  }
               }
-          }
-      } }
-      GQL
+          } }
+        GQL
       end
     end
   end
