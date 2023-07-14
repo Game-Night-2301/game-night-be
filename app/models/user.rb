@@ -26,4 +26,9 @@ class User < ApplicationRecord
       json_event
     end
   end
+
+  def recommended_games
+    game_list = AiService.new.get_games(games.map(&:name))
+    Game.verify_games(game_list)
+  end
 end
