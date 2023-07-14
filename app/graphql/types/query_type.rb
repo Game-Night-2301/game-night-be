@@ -43,33 +43,22 @@ module Types
       Game.all
     end
 
+    field :game_search, [GameType], null: false, description: 'Searched games' do
+      argument :term, String, required: true
+    end
+
+    def game_search(term:)
+      results = Game.search_results(term)
+      if results.empty?
+        raise GraphQL::ExecutionError.new("I'm sorry, no games in our database match your search!",
+                                          extensions: { status_code: 404 })
+      end
+      results
+    end
+
     field :random_game, GameType, null: false, description: 'Get a random game'
     def random_game
       Game.order("RANDOM()").limit(1).first
     end
   end
 end
-
-# Try this query!!
-
-# {
-#   users {
-#     id
-#     events {
-#       id
-#       date
-#       address
-#       city
-#       state
-#       zip
-#       title
-#       cancelled
-#       description
-#       hostId
-#       game
-#       gameType
-#       lat
-#       lon
-#     }
-#   }
-# }
