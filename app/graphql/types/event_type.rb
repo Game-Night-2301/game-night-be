@@ -48,7 +48,9 @@ module Types
     end
 
     def game_details
-      Game.find_by_id(object.game)
+      return Game.find_by_id(object.game) if object.instance_of?(Event)
+
+      Game.find_by_id(object["game"])
     end
 
     def distance_from
@@ -56,7 +58,9 @@ module Types
     end
 
     def full
-      player_count >= Game.find(object.game).max_players
+      return player_count >= Game.find(object.game).max_players if object.instance_of?(Event)
+
+      player_count >= Game.find(object["game"].to_i).max_players
     end
   end
 end
