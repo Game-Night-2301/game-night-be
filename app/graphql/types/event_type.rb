@@ -48,7 +48,9 @@ module Types
     end
 
     def game_details
-      Game.find_by_id(object.game)
+      return Game.find_by_id(object.game) if object.instance_of?(Event)
+
+      Game.find_by_id(object["game"])
     end
 
     def distance_from
