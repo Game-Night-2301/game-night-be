@@ -42,29 +42,15 @@ module Types
     def games
       Game.all
     end
+
+    field :game_search, [GameType], null: false, description: 'Searched games' do
+      argument :term, String, required: true
+    end
+
+    def game_search(term:)
+      Game.search_results(term)
+    end
   end
 end
 
-# Try this query!!
 
-# {
-#   users {
-#     id
-#     events {
-#       id
-#       date
-#       address
-#       city
-#       state
-#       zip
-#       title
-#       cancelled
-#       description
-#       hostId
-#       game
-#       gameType
-#       lat
-#       lon
-#     }
-#   }
-# }
