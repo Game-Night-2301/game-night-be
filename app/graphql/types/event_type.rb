@@ -27,6 +27,7 @@ module Types
     field :start_time, String
     field :end_time, String
     field :distance_from, Float, null: true
+    field :full, Boolean, null: false
 
     def attendees
       return object.users if object.instance_of?(Event)
@@ -52,6 +53,10 @@ module Types
 
     def distance_from
       object["distance_from"]
+    end
+
+    def full
+      player_count >= Game.find(object.game).max_players
     end
   end
 end
