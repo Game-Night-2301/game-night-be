@@ -85,7 +85,7 @@ RSpec.describe Types::QueryType, vcr: { record: :new_episodes } do
           full
         }
       }
-      GQL
+    GQL
   end
 
   def query
