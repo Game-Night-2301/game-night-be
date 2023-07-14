@@ -49,11 +49,11 @@ module Types
 
     def game_search(term:)
       results = Game.search_results(term)
-      raise GraphQL::ExecutionError.new("I'm sorry, no games in our database match your search!",
-         extensions: { status_code: 404 }) if results.empty?
+      if results.empty?
+        raise GraphQL::ExecutionError.new("I'm sorry, no games in our database match your search!",
+                                          extensions: { status_code: 404 })
+      end
       results
     end
   end
 end
-
-
