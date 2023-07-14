@@ -15,6 +15,7 @@ module Types
     field :owned_games, [Types::GameType]
     field :attending_events, [Types::EventType]
     field :hosted_events, [Types::EventType]
+    field :recommended_games, [Types::GameType]
     field :created_at, GraphQL::Types::ISO8601DateTime, null: false
     field :updated_at, GraphQL::Types::ISO8601DateTime, null: false
 
@@ -32,6 +33,10 @@ module Types
 
     def sorted_events
       object.sort_events_by_distance
+    end
+
+    def recommended_games
+      object.recommended_games
     end
   end
 end
