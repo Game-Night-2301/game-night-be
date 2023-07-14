@@ -58,7 +58,9 @@ module Types
     end
 
     def full
-      player_count >= Game.find(object.game).max_players
+      return player_count >= Game.find(object.game).max_players if object.instance_of?(Event)
+
+      player_count >= Game.find(object["game"].to_i).max_players
     end
   end
 end

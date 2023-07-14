@@ -30,11 +30,12 @@ RSpec.describe Types::QueryType, vcr: { record: :new_episodes } do
     it 'returns events sorted by distance' do
       Event.destroy_all
       create(:user, id: 1000, city: "Boulder", state: "Colorado")
-      event_1 = create(:event, title: "chipotle", address: "1100 Ken Pratt Blvd", city: "Longmont", state: "Colorado", zip: "80501")
-      event_2 = create(:event, title: "chipotle", address: "375 McCaslin Blvd D", city: "Louisville", state: "Colorado", zip: "80027")
-      event_3 = create(:event, title: "chipotle", address: "1650 28th St", city: "Boulder", state: "Colorado", zip: "80301")
-      event_4 = create(:event, title: "chipotle", address: "1940 Coalton Rd", city: "Superior", state: "Colorado", zip: "80027")
-      event_5 = create(:event, title: "chipotle", address: "548 W South Boulder Rd", city: "Lafayette", state: "Colorado", zip: "80026")
+      game = create(:game)
+      event_1 = create(:event, game: game.id, title: "chipotle", address: "1100 Ken Pratt Blvd", city: "Longmont", state: "Colorado", zip: "80501")
+      event_2 = create(:event, game: game.id, title: "chipotle", address: "375 McCaslin Blvd D", city: "Louisville", state: "Colorado", zip: "80027")
+      event_3 = create(:event, game: game.id, title: "chipotle", address: "1650 28th St", city: "Boulder", state: "Colorado", zip: "80301")
+      event_4 = create(:event, game: game.id, title: "chipotle", address: "1940 Coalton Rd", city: "Superior", state: "Colorado", zip: "80027")
+      event_5 = create(:event, game: game.id, title: "chipotle", address: "548 W South Boulder Rd", city: "Lafayette", state: "Colorado", zip: "80026")
 
       result = GameNightBeSchema.execute(sorted_events_query).as_json
 
@@ -71,6 +72,13 @@ RSpec.describe Types::QueryType, vcr: { record: :new_episodes } do
               username
             }
             playerCount
+            gameDetails {
+              id
+            }
+            startTime
+            endTime
+            distanceFrom
+            full
           }
         }
       }
