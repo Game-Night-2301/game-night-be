@@ -1561,7 +1561,11 @@ http_interactions:
   recorded_at: Thu, 13 Jul 2023 20:55:04 GMT
 - request:
     method: get
+<<<<<<< HEAD
     uri: https://nominatim.openstreetmap.org/search?accept-language=en&addressdetails=1&format=json&q=West%20Augustus,%20Virginia
+=======
+    uri: https://nominatim.openstreetmap.org/search?accept-language=en&addressdetails=1&format=json&q=West%20Lawerenceland,%20Connecticut
+>>>>>>> cf9668c1a3c871055d3e3655a9ffea2e7286d2da
     body:
       encoding: US-ASCII
       string: ''
@@ -1580,7 +1584,11 @@ http_interactions:
       Server:
       - nginx
       Date:
+<<<<<<< HEAD
       - Fri, 14 Jul 2023 00:59:20 GMT
+=======
+      - Thu, 13 Jul 2023 21:07:19 GMT
+>>>>>>> cf9668c1a3c871055d3e3655a9ffea2e7286d2da
       Content-Type:
       - application/json; charset=UTF-8
       Transfer-Encoding:
@@ -1596,10 +1604,17 @@ http_interactions:
     body:
       encoding: UTF-8
       string: "[]"
+<<<<<<< HEAD
   recorded_at: Fri, 14 Jul 2023 00:59:20 GMT
 - request:
     method: get
     uri: https://nominatim.openstreetmap.org/search?accept-language=en&addressdetails=1&format=json&q=South%20Silasfort,%20Wyoming
+=======
+  recorded_at: Thu, 13 Jul 2023 21:07:19 GMT
+- request:
+    method: get
+    uri: https://nominatim.openstreetmap.org/search?accept-language=en&addressdetails=1&format=json&q=New%20Felipa,%20South%20Dakota
+>>>>>>> cf9668c1a3c871055d3e3655a9ffea2e7286d2da
     body:
       encoding: US-ASCII
       string: ''
@@ -1618,7 +1633,11 @@ http_interactions:
       Server:
       - nginx
       Date:
+<<<<<<< HEAD
       - Fri, 14 Jul 2023 00:59:20 GMT
+=======
+      - Thu, 13 Jul 2023 21:07:21 GMT
+>>>>>>> cf9668c1a3c871055d3e3655a9ffea2e7286d2da
       Content-Type:
       - application/json; charset=UTF-8
       Transfer-Encoding:
@@ -1634,10 +1653,17 @@ http_interactions:
     body:
       encoding: UTF-8
       string: "[]"
+<<<<<<< HEAD
   recorded_at: Fri, 14 Jul 2023 00:59:20 GMT
 - request:
     method: get
     uri: https://nominatim.openstreetmap.org/search?accept-language=en&addressdetails=1&format=json&q=5184%20Torphy%20Curve%20Lake%20Emerson,%20Washington%2042345
+=======
+  recorded_at: Thu, 13 Jul 2023 21:07:21 GMT
+- request:
+    method: get
+    uri: https://nominatim.openstreetmap.org/search?accept-language=en&addressdetails=1&format=json&q=5963%20Coral%20Branch%20Toneystad,%20New%20Mexico%2036253
+>>>>>>> cf9668c1a3c871055d3e3655a9ffea2e7286d2da
     body:
       encoding: US-ASCII
       string: ''
@@ -1656,7 +1682,11 @@ http_interactions:
       Server:
       - nginx
       Date:
+<<<<<<< HEAD
       - Fri, 14 Jul 2023 00:59:21 GMT
+=======
+      - Thu, 13 Jul 2023 21:07:21 GMT
+>>>>>>> cf9668c1a3c871055d3e3655a9ffea2e7286d2da
       Content-Type:
       - application/json; charset=UTF-8
       Transfer-Encoding:
@@ -1672,10 +1702,17 @@ http_interactions:
     body:
       encoding: UTF-8
       string: "[]"
+<<<<<<< HEAD
   recorded_at: Fri, 14 Jul 2023 00:59:21 GMT
 - request:
     method: get
     uri: https://nominatim.openstreetmap.org/search?accept-language=en&addressdetails=1&format=json&q=New%20Blainestad,%20Kansas
+=======
+  recorded_at: Thu, 13 Jul 2023 21:07:21 GMT
+- request:
+    method: get
+    uri: https://nominatim.openstreetmap.org/search?accept-language=en&addressdetails=1&format=json&q=Ardenburgh,%20Florida
+>>>>>>> cf9668c1a3c871055d3e3655a9ffea2e7286d2da
     body:
       encoding: US-ASCII
       string: ''
@@ -1694,7 +1731,11 @@ http_interactions:
       Server:
       - nginx
       Date:
+<<<<<<< HEAD
       - Fri, 14 Jul 2023 01:02:32 GMT
+=======
+      - Thu, 13 Jul 2023 21:08:12 GMT
+>>>>>>> cf9668c1a3c871055d3e3655a9ffea2e7286d2da
       Content-Type:
       - application/json; charset=UTF-8
       Transfer-Encoding:
@@ -1710,10 +1751,17 @@ http_interactions:
     body:
       encoding: UTF-8
       string: "[]"
+<<<<<<< HEAD
   recorded_at: Fri, 14 Jul 2023 01:02:32 GMT
 - request:
     method: get
     uri: https://nominatim.openstreetmap.org/search?accept-language=en&addressdetails=1&format=json&q=North%20Bryant,%20Massachusetts
+=======
+  recorded_at: Thu, 13 Jul 2023 21:08:12 GMT
+- request:
+    method: get
+    uri: https://nominatim.openstreetmap.org/search?accept-language=en&addressdetails=1&format=json&q=Domingoview,%20Kansas
+>>>>>>> cf9668c1a3c871055d3e3655a9ffea2e7286d2da
     body:
       encoding: US-ASCII
       string: ''
@@ -1732,7 +1780,11 @@ http_interactions:
       Server:
       - nginx
       Date:
+<<<<<<< HEAD
       - Fri, 14 Jul 2023 01:02:32 GMT
+=======
+      - Thu, 13 Jul 2023 21:08:13 GMT
+>>>>>>> cf9668c1a3c871055d3e3655a9ffea2e7286d2da
       Content-Type:
       - application/json; charset=UTF-8
       Transfer-Encoding:
@@ -1748,10 +1800,17 @@ http_interactions:
     body:
       encoding: UTF-8
       string: "[]"
+<<<<<<< HEAD
   recorded_at: Fri, 14 Jul 2023 01:02:32 GMT
 - request:
     method: get
     uri: https://nominatim.openstreetmap.org/search?accept-language=en&addressdetails=1&format=json&q=3907%20Murphy%20Loop%20Fritschshire,%20Wisconsin%2069504
+=======
+  recorded_at: Thu, 13 Jul 2023 21:08:13 GMT
+- request:
+    method: get
+    uri: https://nominatim.openstreetmap.org/search?accept-language=en&addressdetails=1&format=json&q=30016%20Barabara%20Underpass%20Lake%20Elvis,%20North%20Carolina%2093589
+>>>>>>> cf9668c1a3c871055d3e3655a9ffea2e7286d2da
     body:
       encoding: US-ASCII
       string: ''
@@ -1770,7 +1829,11 @@ http_interactions:
       Server:
       - nginx
       Date:
+<<<<<<< HEAD
       - Fri, 14 Jul 2023 01:02:33 GMT
+=======
+      - Thu, 13 Jul 2023 21:08:14 GMT
+>>>>>>> cf9668c1a3c871055d3e3655a9ffea2e7286d2da
       Content-Type:
       - application/json; charset=UTF-8
       Transfer-Encoding:
@@ -1786,5 +1849,123 @@ http_interactions:
     body:
       encoding: UTF-8
       string: "[]"
+<<<<<<< HEAD
   recorded_at: Fri, 14 Jul 2023 01:02:33 GMT
+=======
+  recorded_at: Thu, 13 Jul 2023 21:08:14 GMT
+- request:
+    method: get
+    uri: https://nominatim.openstreetmap.org/search?accept-language=en&addressdetails=1&format=json&q=Albertburgh,%20Alaska
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Thu, 13 Jul 2023 21:08:36 GMT
+      Content-Type:
+      - application/json; charset=UTF-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Keep-Alive:
+      - timeout=20
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - OPTIONS,GET
+    body:
+      encoding: UTF-8
+      string: "[]"
+  recorded_at: Thu, 13 Jul 2023 21:08:36 GMT
+- request:
+    method: get
+    uri: https://nominatim.openstreetmap.org/search?accept-language=en&addressdetails=1&format=json&q=Port%20Debby,%20North%20Dakota
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Thu, 13 Jul 2023 21:08:37 GMT
+      Content-Type:
+      - application/json; charset=UTF-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Keep-Alive:
+      - timeout=20
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - OPTIONS,GET
+    body:
+      encoding: UTF-8
+      string: "[]"
+  recorded_at: Thu, 13 Jul 2023 21:08:37 GMT
+- request:
+    method: get
+    uri: https://nominatim.openstreetmap.org/search?accept-language=en&addressdetails=1&format=json&q=1304%20Doyle%20Groves%20Wendellshire,%20Utah%2023792
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Thu, 13 Jul 2023 21:08:37 GMT
+      Content-Type:
+      - application/json; charset=UTF-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Keep-Alive:
+      - timeout=20
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - OPTIONS,GET
+    body:
+      encoding: UTF-8
+      string: "[]"
+  recorded_at: Thu, 13 Jul 2023 21:08:37 GMT
+>>>>>>> cf9668c1a3c871055d3e3655a9ffea2e7286d2da
 recorded_with: VCR 6.2.0

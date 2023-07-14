@@ -55,5 +55,10 @@ module Types
       end
       results
     end
+
+    field :random_game, GameType, null: false, description: 'Get a random game'
+    def random_game
+      Game.order("RANDOM()").limit(1).first
+    end
   end
 end
