@@ -6,4 +6,10 @@ class Game < ApplicationRecord
   def self.search_results(term)
     Game.where("LOWER(name) ILIKE ?", "%#{term.downcase}%")
   end
+
+  def verify_game(names)
+    names.map do |name|
+      Game.where("LOWER(name) ILIKE ?", "%#{name.downcase}%").first
+    end
+  end
 end
