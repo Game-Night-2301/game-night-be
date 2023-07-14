@@ -22,4 +22,11 @@ RSpec.describe Game, type: :model, vcr: { record: :new_episodes } do
       expect(@game.average_strategy_complexity).to be_a(Float)
     end
   end
+
+  it 'can verify a game' do
+    collection = ["Catan", "Betrayal at House on the Hill", "Gloom Haven", "Brass: Birmingham", "Survive: Escape from Atlantis"]
+    user_collection = AiService.new.get_games(collection)
+
+    Game.verify_games(user_collection)
+  end
 end
