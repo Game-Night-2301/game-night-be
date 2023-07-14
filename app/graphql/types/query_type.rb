@@ -43,6 +43,13 @@ module Types
       Game.all
     end
 
+    field :random_game, GameType, null: false, description: 'Get a random game'
+    def random_game
+      Game.order("RANDOM()").limit(1).first
+    end
+  end
+end
+
     field :game_search, [GameType], null: false, description: 'Searched games' do
       argument :term, String, required: true
     end
