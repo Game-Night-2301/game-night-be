@@ -56,6 +56,36 @@ RSpec.describe Types::QueryType, vcr: { record: :new_episodes } do
 
       expect(result['errors'][0]['message']).to eq('Event does not exist.')
     end
+
+    it "shows whether game is currently full" do
+      Event.destroy_all
+      user_1 = create(:user)
+      user_2 = create(:user)
+      user_3 = create(:user)
+      user_4 = create(:user)
+      game = create(:game, max_players: 4)
+      event = create(:event, id: 1, game: game.id)
+      user_1.user_events.create(event_id: event.id)
+      user_2.user_events.create(event_id: event.id)
+      user_3.user_events.create(event_id: event.id)
+
+      result = GameNightBeSchema.execute(full_query).as_json
+      expect(result["data"]["event"]["full"]).to eq(false)
+
+      user_4.user_events.create(event_id: event.id)
+      result = GameNightBeSchema.execute(full_query).as_json
+      expect(result["data"]["event"]["full"]).to eq(true)
+    end
+  end
+
+  def full_query
+    <<~GQL
+      query {
+        event(id: 1) {
+          full
+        }
+      }
+    GQL
   end
 
   def query
