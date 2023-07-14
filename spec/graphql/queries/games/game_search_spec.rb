@@ -20,10 +20,44 @@ RSpec.describe Types::QueryType do
     end
   end
 
+  describe "sad paths" do
+    it "empty results" do
+      create_list(:game, 40)
+      
+      result = GameNightBeSchema.execute(query).as_json
+      expect(result["errors"].first["message"]).to eq("I'm sorry, no games in our database match your search!")
+    end
+
+    it "bad data type" do
+      result = GameNightBeSchema.execute(wrong_data_type_query).as_json
+      expect(result["errors"].first["message"]).to eq(
+        "Argument 'term' on Field 'gameSearch' has an invalid value (982374). Expected type 'String!'.")
+    end
+  end
+
   def query
     <<~GQL
       query {
         gameSearch(term: "bohnanza") {
+          id
+          name
+          minPlayers
+          maxPlayers
+          minPlaytime
+          maxPlaytime
+          description
+          imageUrl
+          averageUserRating
+          averageStrategyComplexity
+        }
+      }
+    GQL
+  end
+
+  def wrong_data_type_query
+    <<~GQL
+      query {
+        gameSearch(term: 982374) {
           id
           name
           minPlayers
