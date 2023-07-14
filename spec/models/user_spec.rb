@@ -66,4 +66,27 @@ RSpec.describe User, type: :model, vcr: { record: :new_episodes } do
       expect(user_1.lon).to eq(-105.270545)
     end
   end
+
+  describe 'game names' do
+    it 'collects user game names' do
+      user = create(:user)
+      game_1 = create(:game, name: "Catan")
+      game_2 = create(:game, name: "Stone Age")
+      game_3 = create(:game, name: "Irish Gauge")
+      game_4 = create(:game, name: "Elder Sign")
+      game_5 = create(:game, name: "Ca$h 'n Gun$")
+
+      game_6 = create(:game, name: "Ticket to Ride")
+      game_7 = create(:game, name: "Pandemic")
+      game_8 = create(:game, name: "7 Wonders")
+
+      UserGame.create(user_id: user.id, game_id: game_1.id)
+      UserGame.create(user_id: user.id, game_id: game_2.id)
+      UserGame.create(user_id: user.id, game_id: game_3.id)
+      UserGame.create(user_id: user.id, game_id: game_4.id)
+      UserGame.create(user_id: user.id, game_id: game_5.id)
+
+      expect(user.recommended_games.sort).to eq([game_6, game_7, game_8].sort)
+    end
+  end
 end
