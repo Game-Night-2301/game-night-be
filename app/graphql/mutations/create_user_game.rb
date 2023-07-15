@@ -15,7 +15,7 @@ module Mutations
         user_id: userId,
         game_id: gameId
       )
-      
+
       if user_game.save
         { user_game:, errors: [] }
       elsif user_game.game_id == gameId
