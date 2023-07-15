@@ -38,6 +38,7 @@ module Mutations
         it "user is not host" do
           post '/graphql', params: { query: query_user_is_not_host }
           response = JSON.parse(@response.body, symbolize_names: true)
+
           expect(response[:errors].first[:message]).to eq("Event not found or user id does not match event host id.")
         end
       end
