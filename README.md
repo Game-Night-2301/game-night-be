@@ -366,6 +366,32 @@ Additional features, functionality, and potential refactors:
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
+
+<!-- CONTACT -->
+## Contact
+
+### Back-end Team
+
+| [<img alt="Dyson Breakstone" width="100" src="https://user-images.githubusercontent.com/120869196/253776345-1471e248-ddc1-461b-aeee-d8ac4d59bba4.jpeg"/>](https://www.linkedin.com/in/dyson-breakstone-4978291a2/) | [<img alt="Brian Guthrie" width="100" src="https://user-images.githubusercontent.com/120869196/253776434-25807eec-dbb2-49f8-a1fd-3fda117a3685.png"/>](https://www.linkedin.com/in/brian-guthrie-1bba73232/) | [<img alt="Stephen McPhee" width="100" height="100" src="https://user-images.githubusercontent.com/120869196/253776524-926e2f5e-eccb-4e19-8ea0-f521224991ef.jpg"/>](https://www.linkedin.com/in/smcphee19/) |
+| ------------------ | ------------ | ---------------- | 
+| Dyson Breakstone | Brian Guthrie | Stephen McPhee |
+| Back-end Developer | Back-end Developer | Back-end Developer |
+| [GitHub](https://github.com/DysonBreakstone) | [GitHub](https://github.com/Brianisthebest) | [GitHub](https://github.com/SMcPhee19) |
+| [LinkedIn](https://www.linkedin.com/in/dyson-breakstone-4978291a2/) |  [LinkedIn](https://www.linkedin.com/in/brian-guthrie-1bba73232/) | [LinkedIn](https://www.linkedin.com/in/smcphee19/) |
+
+<br>
+
+### Front-end Team
+
+| [<img alt="Ashlee Webb" width="100" src="https://user-images.githubusercontent.com/120869196/253776976-0bae2ece-d4c5-4272-a584-b0353fbc6302.jpeg"/>](https://www.linkedin.com/in/ashlee-webb/) | [<img alt="Adriane Sutherland" width="100" src="https://user-images.githubusercontent.com/120869196/253777040-2a305d4d-c3f4-427d-a2d0-6d345b628f86.jpeg"/>](https://www.linkedin.com/in/adriane-sutherland/) | [<img alt="Trey Marshall" width="100" src="https://user-images.githubusercontent.com/120869196/253777102-92b26459-2e10-497c-91f2-7bb784de7d66.png"/>](https://www.linkedin.com/in/tdmars/) | [<img alt="John Featherstone" width="100" src="https://user-images.githubusercontent.com/120869196/253777161-8d90b254-594f-4178-8ac1-5699ccbe38ce.jpeg"/>](https://www.linkedin.com/in/john-w-featherstone/) |
+| ------------ | ------------------ | ------------- | ----------------- |
+| Ashlee Webb | Adriane Sutherland | Trey Marshall | John Featherstone |
+| Front-end Developer | Front-end Developer | Front-end Developer | Front-end Developer |
+| [GitHub](https://github.com/AshleeAWebb) | [GitHub](https://github.com/asutherland91) | [GitHub](https://github.com/tdmburr) | [GitHub](https://github.com/JWFeatherstone) |
+| [LinkedIn](https://www.linkedin.com/in/ashlee-webb/) | [LinkedIn](https://www.linkedin.com/in/adriane-sutherland/) | [LinkedIn](https://www.linkedin.com/in/tdmars/) | [LinkedIn](https://www.linkedin.com/in/john-w-featherstone/) |
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
 <!-- MARKDOWN LINKS & IMAGES -->
 [contributors-shield]: https://img.shields.io/github/contributors/Game-Night-2301/game-night-be.svg?style=for-the-badge
 [contributors-url]: https://github.com/Game-Night-2301/game-night-be/graphs/contributors
