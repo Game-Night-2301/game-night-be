@@ -8,13 +8,13 @@ http_interactions:
       string: '{"model":"gpt-3.5-turbo","messages":[{"role":"user","content":"recommend
         me 3 board games based on the following collection of games. [\"Catan\", \"Betrayal
         at House on the Hill\", \"Gloom Haven\", \"Brass: Birmingham\", \"Survive:
-        Escape from Atlantis\"] \n          #                 Please include only
-        the name of the games, in the form of strings within an array."}],"temperature":0.8}'
+        Escape from Atlantis\"]\n          #                 Please include only the
+        name of the games, in the form of strings within an array."}],"temperature":0.8}'
     headers:
       Content-Type:
       - application/json
       Authorization:
-      - Bearer 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
+      - Bearer DONT_SHARE_MY_DATA_2
       User-Agent:
       - Faraday v2.7.10
       Accept-Encoding:
@@ -27,7 +27,7 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Fri, 14 Jul 2023 23:09:14 GMT
+      - Sat, 15 Jul 2023 17:13:53 GMT
       Content-Type:
       - application/json
       Transfer-Encoding:
@@ -43,7 +43,7 @@ http_interactions:
       Openai-Organization:
       - game-night-tiwtpu
       Openai-Processing-Ms:
-      - '571'
+      - '874'
       Openai-Version:
       - '2020-10-01'
       Strict-Transport-Security:
@@ -61,38 +61,38 @@ http_interactions:
       X-Ratelimit-Reset-Tokens:
       - 91ms
       X-Request-Id:
-      - d97321b75a0d9695a04a3ac3f3cf0aec
+      - 72c21f01214e018e765b9779c800cf12
       Cf-Cache-Status:
       - DYNAMIC
       Server:
       - cloudflare
       Cf-Ray:
-      - 7e6d6e9e8c49276f-DEN
+      - 7e73a37658c41f35-DEN
       Alt-Svc:
       - h3=":443"; ma=86400
     body:
       encoding: ASCII-8BIT
       string: |
         {
-          "id": "chatcmpl-7cMCPoa1oOzh7iTZ7X4G1Nl2t2Uoa",
+          "id": "chatcmpl-7cd855Yv40d3d8575Ryy1MdGxiw61",
           "object": "chat.completion",
-          "created": 1689376153,
+          "created": 1689441233,
           "model": "gpt-3.5-turbo-0613",
           "choices": [
             {
               "index": 0,
               "message": {
                 "role": "assistant",
-                "content": "[\"Ticket to Ride\", \"Pandemic\", \"7 Wonders\"]"
+                "content": "[\"Ticket to Ride\", \"Pandemic\", \"Codenames\"]"
               },
               "finish_reason": "stop"
             }
           ],
           "usage": {
-            "prompt_tokens": 76,
-            "completion_tokens": 15,
-            "total_tokens": 91
+            "prompt_tokens": 75,
+            "completion_tokens": 14,
+            "total_tokens": 89
           }
         }
-  recorded_at: Fri, 14 Jul 2023 23:09:14 GMT
+  recorded_at: Sat, 15 Jul 2023 17:13:53 GMT
 recorded_with: VCR 6.2.0

@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: https://nominatim.openstreetmap.org/search?accept-language=en&addressdetails=1&format=json&q=West%20Rosenda,%20Rhode%20Island
+    uri: https://nominatim.openstreetmap.org/search?accept-language=en&addressdetails=1&format=json&q=Colefurt,%20Oregon
     body:
       encoding: US-ASCII
       string: ''
@@ -21,7 +21,7 @@ http_interactions:
       Server:
       - nginx
       Date:
-      - Sat, 15 Jul 2023 17:12:22 GMT
+      - Sat, 15 Jul 2023 03:23:43 GMT
       Content-Type:
       - application/json; charset=UTF-8
       Transfer-Encoding:
@@ -37,7 +37,7 @@ http_interactions:
     body:
       encoding: UTF-8
       string: "[]"
-  recorded_at: Sat, 15 Jul 2023 17:12:22 GMT
+  recorded_at: Sat, 15 Jul 2023 03:23:43 GMT
 - request:
     method: post
     uri: https://api.openai.com/v1/chat/completions
@@ -64,7 +64,7 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Sat, 15 Jul 2023 17:12:23 GMT
+      - Sat, 15 Jul 2023 03:23:44 GMT
       Content-Type:
       - application/json
       Transfer-Encoding:
@@ -80,7 +80,7 @@ http_interactions:
       Openai-Organization:
       - game-night-tiwtpu
       Openai-Processing-Ms:
-      - '728'
+      - '759'
       Openai-Version:
       - '2020-10-01'
       Strict-Transport-Security:
@@ -98,43 +98,43 @@ http_interactions:
       X-Ratelimit-Reset-Tokens:
       - 80ms
       X-Request-Id:
-      - e085a213f9cb40a9a6ed9f857d3aefd7
+      - 4a6e7168000a3a562daf3ad58430005d
       Cf-Cache-Status:
       - DYNAMIC
       Server:
       - cloudflare
       Cf-Ray:
-      - 7e73a1470e888eae-DEN
+      - 7e6ee36c0fb22908-DEN
       Alt-Svc:
       - h3=":443"; ma=86400
     body:
       encoding: ASCII-8BIT
       string: |
         {
-          "id": "chatcmpl-7cd6dSgtMj48AkJEg0nBqiMlW7iaZ",
+          "id": "chatcmpl-7cQAhSlHgGPqHourrWIdmFrkN5kIM",
           "object": "chat.completion",
-          "created": 1689441143,
+          "created": 1689391423,
           "model": "gpt-3.5-turbo-0613",
           "choices": [
             {
               "index": 0,
               "message": {
                 "role": "assistant",
-                "content": "[\"Carcassonne\", \"Ticket to Ride\", \"Pandemic\"]"
+                "content": "[\"Ticket to Ride\", \"Pandemic\", \"7 Wonders\"]"
               },
               "finish_reason": "stop"
             }
           ],
           "usage": {
             "prompt_tokens": 68,
-            "completion_tokens": 16,
-            "total_tokens": 84
+            "completion_tokens": 15,
+            "total_tokens": 83
           }
         }
-  recorded_at: Sat, 15 Jul 2023 17:12:23 GMT
+  recorded_at: Sat, 15 Jul 2023 03:23:44 GMT
 - request:
     method: get
-    uri: https://nominatim.openstreetmap.org/search?accept-language=en&addressdetails=1&format=json&q=Ricoton,%20Massachusetts
+    uri: https://nominatim.openstreetmap.org/search?accept-language=en&addressdetails=1&format=json&q=Basilport,%20Kentucky
     body:
       encoding: US-ASCII
       string: ''
@@ -153,7 +153,7 @@ http_interactions:
       Server:
       - nginx
       Date:
-      - Sat, 15 Jul 2023 17:17:54 GMT
+      - Sat, 15 Jul 2023 03:25:27 GMT
       Content-Type:
       - application/json; charset=UTF-8
       Transfer-Encoding:
@@ -169,10 +169,162 @@ http_interactions:
     body:
       encoding: UTF-8
       string: "[]"
-  recorded_at: Sat, 15 Jul 2023 17:17:54 GMT
+  recorded_at: Sat, 15 Jul 2023 03:25:27 GMT
 - request:
     method: get
-    uri: https://nominatim.openstreetmap.org/search?accept-language=en&addressdetails=1&format=json&q=North%20Octavio,%20Michigan
+    uri: https://nominatim.openstreetmap.org/search?accept-language=en&addressdetails=1&format=json&q=New%20Thora,%20Texas
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Sat, 15 Jul 2023 03:34:44 GMT
+      Content-Type:
+      - application/json; charset=UTF-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Keep-Alive:
+      - timeout=20
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - OPTIONS,GET
+    body:
+      encoding: UTF-8
+      string: "[]"
+  recorded_at: Sat, 15 Jul 2023 03:34:44 GMT
+- request:
+    method: get
+    uri: https://nominatim.openstreetmap.org/search?accept-language=en&addressdetails=1&format=json&q=Kiethport,%20Tennessee
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Sat, 15 Jul 2023 03:35:51 GMT
+      Content-Type:
+      - application/json; charset=UTF-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Keep-Alive:
+      - timeout=20
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - OPTIONS,GET
+    body:
+      encoding: UTF-8
+      string: "[]"
+  recorded_at: Sat, 15 Jul 2023 03:35:51 GMT
+- request:
+    method: get
+    uri: https://nominatim.openstreetmap.org/search?accept-language=en&addressdetails=1&format=json&q=West%20Timika,%20Florida
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Sat, 15 Jul 2023 17:12:29 GMT
+      Content-Type:
+      - application/json; charset=UTF-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Keep-Alive:
+      - timeout=20
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - OPTIONS,GET
+    body:
+      encoding: UTF-8
+      string: "[]"
+  recorded_at: Sat, 15 Jul 2023 17:12:29 GMT
+- request:
+    method: get
+    uri: https://nominatim.openstreetmap.org/search?accept-language=en&addressdetails=1&format=json&q=Quitzonland,%20Minnesota
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Sat, 15 Jul 2023 17:18:33 GMT
+      Content-Type:
+      - application/json; charset=UTF-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Keep-Alive:
+      - timeout=20
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - OPTIONS,GET
+    body:
+      encoding: UTF-8
+      string: "[]"
+  recorded_at: Sat, 15 Jul 2023 17:18:33 GMT
+- request:
+    method: get
+    uri: https://nominatim.openstreetmap.org/search?accept-language=en&addressdetails=1&format=json&q=Twilafurt,%20Nebraska
     body:
       encoding: US-ASCII
       string: ''
@@ -210,7 +362,7 @@ http_interactions:
   recorded_at: Sat, 15 Jul 2023 17:22:11 GMT
 - request:
     method: get
-    uri: https://nominatim.openstreetmap.org/search?accept-language=en&addressdetails=1&format=json&q=West%20Phoebe,%20Montana
+    uri: https://nominatim.openstreetmap.org/search?accept-language=en&addressdetails=1&format=json&q=Lake%20Nickburgh,%20New%20Mexico
     body:
       encoding: US-ASCII
       string: ''
@@ -229,7 +381,7 @@ http_interactions:
       Server:
       - nginx
       Date:
-      - Sat, 15 Jul 2023 17:23:43 GMT
+      - Sat, 15 Jul 2023 17:24:18 GMT
       Content-Type:
       - application/json; charset=UTF-8
       Transfer-Encoding:
@@ -245,10 +397,10 @@ http_interactions:
     body:
       encoding: UTF-8
       string: "[]"
-  recorded_at: Sat, 15 Jul 2023 17:23:43 GMT
+  recorded_at: Sat, 15 Jul 2023 17:24:18 GMT
 - request:
     method: get
-    uri: https://nominatim.openstreetmap.org/search?accept-language=en&addressdetails=1&format=json&q=West%20Omarland,%20Nevada
+    uri: https://nominatim.openstreetmap.org/search?accept-language=en&addressdetails=1&format=json&q=Tillieshire,%20Wisconsin
     body:
       encoding: US-ASCII
       string: ''
@@ -267,7 +419,7 @@ http_interactions:
       Server:
       - nginx
       Date:
-      - Sat, 15 Jul 2023 17:26:04 GMT
+      - Sat, 15 Jul 2023 17:33:34 GMT
       Content-Type:
       - application/json; charset=UTF-8
       Transfer-Encoding:
@@ -283,10 +435,10 @@ http_interactions:
     body:
       encoding: UTF-8
       string: "[]"
-  recorded_at: Sat, 15 Jul 2023 17:26:04 GMT
+  recorded_at: Sat, 15 Jul 2023 17:33:34 GMT
 - request:
     method: get
-    uri: https://nominatim.openstreetmap.org/search?accept-language=en&addressdetails=1&format=json&q=Windlertown,%20California
+    uri: https://nominatim.openstreetmap.org/search?accept-language=en&addressdetails=1&format=json&q=Thomasenashire,%20Wisconsin
     body:
       encoding: US-ASCII
       string: ''
@@ -305,7 +457,7 @@ http_interactions:
       Server:
       - nginx
       Date:
-      - Sat, 15 Jul 2023 17:26:16 GMT
+      - Sat, 15 Jul 2023 17:34:11 GMT
       Content-Type:
       - application/json; charset=UTF-8
       Transfer-Encoding:
@@ -321,10 +473,10 @@ http_interactions:
     body:
       encoding: UTF-8
       string: "[]"
-  recorded_at: Sat, 15 Jul 2023 17:26:16 GMT
+  recorded_at: Sat, 15 Jul 2023 17:34:11 GMT
 - request:
     method: get
-    uri: https://nominatim.openstreetmap.org/search?accept-language=en&addressdetails=1&format=json&q=North%20Jeanett,%20Mississippi
+    uri: https://nominatim.openstreetmap.org/search?accept-language=en&addressdetails=1&format=json&q=Alfredchester,%20West%20Virginia
     body:
       encoding: US-ASCII
       string: ''
@@ -343,7 +495,7 @@ http_interactions:
       Server:
       - nginx
       Date:
-      - Sat, 15 Jul 2023 17:27:42 GMT
+      - Sat, 15 Jul 2023 17:36:00 GMT
       Content-Type:
       - application/json; charset=UTF-8
       Transfer-Encoding:
@@ -359,10 +511,104 @@ http_interactions:
     body:
       encoding: UTF-8
       string: "[]"
-  recorded_at: Sat, 15 Jul 2023 17:27:42 GMT
+  recorded_at: Sat, 15 Jul 2023 17:36:00 GMT
+- request:
+    method: post
+    uri: https://api.openai.com/v1/chat/completions
+    body:
+      encoding: UTF-8
+      string: '{"model":"gpt-3.5-turbo","messages":[{"role":"user","content":"recommend
+        me 3 board games based on the following collection of games. [\"Catan\", \"Stone
+        Age\", \"Irish Gauge\", \"Elder Sign\", \"Ca$h ''n Gun$\"]\n          #                 Please
+        include only the name of the games, in the form of strings within an array."}],"temperature":0.8}'
+    headers:
+      Content-Type:
+      - application/json
+      Authorization:
+      - Bearer DONT_SHARE_MY_DATA_2
+      User-Agent:
+      - Faraday v2.7.10
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sat, 15 Jul 2023 17:37:01 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Access-Control-Allow-Origin:
+      - "*"
+      Cache-Control:
+      - no-cache, must-revalidate
+      Openai-Model:
+      - gpt-3.5-turbo-0613
+      Openai-Organization:
+      - game-night-tiwtpu
+      Openai-Processing-Ms:
+      - '738'
+      Openai-Version:
+      - '2020-10-01'
+      Strict-Transport-Security:
+      - max-age=15724800; includeSubDomains
+      X-Ratelimit-Limit-Requests:
+      - '2000'
+      X-Ratelimit-Limit-Tokens:
+      - '60000'
+      X-Ratelimit-Remaining-Requests:
+      - '1999'
+      X-Ratelimit-Remaining-Tokens:
+      - '59920'
+      X-Ratelimit-Reset-Requests:
+      - 43.2s
+      X-Ratelimit-Reset-Tokens:
+      - 80ms
+      X-Request-Id:
+      - dbdd2dfd1f325221c7fc38756426b375
+      Cf-Cache-Status:
+      - DYNAMIC
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 7e73c551bace2723-DEN
+      Alt-Svc:
+      - h3=":443"; ma=86400
+    body:
+      encoding: ASCII-8BIT
+      string: |
+        {
+          "id": "chatcmpl-7cdUSXjMhaGCBO1n1fFzS2Z9NQIOz",
+          "object": "chat.completion",
+          "created": 1689442620,
+          "model": "gpt-3.5-turbo-0613",
+          "choices": [
+            {
+              "index": 0,
+              "message": {
+                "role": "assistant",
+                "content": "[\"Ticket to Ride\", \"Lords of Waterdeep\", \"7 Wonders\"]"
+              },
+              "finish_reason": "stop"
+            }
+          ],
+          "usage": {
+            "prompt_tokens": 68,
+            "completion_tokens": 17,
+            "total_tokens": 85
+          }
+        }
+  recorded_at: Sat, 15 Jul 2023 17:37:01 GMT
 - request:
     method: get
-    uri: https://nominatim.openstreetmap.org/search?accept-language=en&addressdetails=1&format=json&q=Kuhlmanton,%20Delaware
+    uri: https://nominatim.openstreetmap.org/search?accept-language=en&addressdetails=1&format=json&q=Jerroldchester,%20Vermont
     body:
       encoding: US-ASCII
       string: ''
@@ -381,7 +627,7 @@ http_interactions:
       Server:
       - nginx
       Date:
-      - Sat, 15 Jul 2023 17:27:50 GMT
+      - Sat, 15 Jul 2023 17:38:22 GMT
       Content-Type:
       - application/json; charset=UTF-8
       Transfer-Encoding:
@@ -397,10 +643,10 @@ http_interactions:
     body:
       encoding: UTF-8
       string: "[]"
-  recorded_at: Sat, 15 Jul 2023 17:27:50 GMT
+  recorded_at: Sat, 15 Jul 2023 17:38:22 GMT
 - request:
     method: get
-    uri: https://nominatim.openstreetmap.org/search?accept-language=en&addressdetails=1&format=json&q=Bergnaummouth,%20Texas
+    uri: https://nominatim.openstreetmap.org/search?accept-language=en&addressdetails=1&format=json&q=Selmafort,%20New%20York
     body:
       encoding: US-ASCII
       string: ''
@@ -419,7 +665,7 @@ http_interactions:
       Server:
       - nginx
       Date:
-      - Sat, 15 Jul 2023 17:28:30 GMT
+      - Sat, 15 Jul 2023 17:39:37 GMT
       Content-Type:
       - application/json; charset=UTF-8
       Transfer-Encoding:
@@ -435,10 +681,10 @@ http_interactions:
     body:
       encoding: UTF-8
       string: "[]"
-  recorded_at: Sat, 15 Jul 2023 17:28:30 GMT
+  recorded_at: Sat, 15 Jul 2023 17:39:37 GMT
 - request:
     method: get
-    uri: https://nominatim.openstreetmap.org/search?accept-language=en&addressdetails=1&format=json&q=Lake%20Sibylberg,%20Nebraska
+    uri: https://nominatim.openstreetmap.org/search?accept-language=en&addressdetails=1&format=json&q=Lake%20Akilahstad,%20Ohio
     body:
       encoding: US-ASCII
       string: ''
@@ -457,7 +703,7 @@ http_interactions:
       Server:
       - nginx
       Date:
-      - Sat, 15 Jul 2023 17:29:05 GMT
+      - Sat, 15 Jul 2023 17:40:42 GMT
       Content-Type:
       - application/json; charset=UTF-8
       Transfer-Encoding:
@@ -473,10 +719,10 @@ http_interactions:
     body:
       encoding: UTF-8
       string: "[]"
-  recorded_at: Sat, 15 Jul 2023 17:29:05 GMT
+  recorded_at: Sat, 15 Jul 2023 17:40:42 GMT
 - request:
     method: get
-    uri: https://nominatim.openstreetmap.org/search?accept-language=en&addressdetails=1&format=json&q=South%20Bettyannhaven,%20North%20Dakota
+    uri: https://nominatim.openstreetmap.org/search?accept-language=en&addressdetails=1&format=json&q=Lake%20Colleenmouth,%20Alaska
     body:
       encoding: US-ASCII
       string: ''
@@ -495,7 +741,7 @@ http_interactions:
       Server:
       - nginx
       Date:
-      - Sat, 15 Jul 2023 17:29:34 GMT
+      - Sat, 15 Jul 2023 17:59:21 GMT
       Content-Type:
       - application/json; charset=UTF-8
       Transfer-Encoding:
@@ -511,10 +757,10 @@ http_interactions:
     body:
       encoding: UTF-8
       string: "[]"
-  recorded_at: Sat, 15 Jul 2023 17:29:34 GMT
+  recorded_at: Sat, 15 Jul 2023 17:59:21 GMT
 - request:
     method: get
-    uri: https://nominatim.openstreetmap.org/search?accept-language=en&addressdetails=1&format=json&q=North%20Demetra,%20South%20Dakota
+    uri: https://nominatim.openstreetmap.org/search?accept-language=en&addressdetails=1&format=json&q=West%20Arielletown,%20Wisconsin
     body:
       encoding: US-ASCII
       string: ''
@@ -533,7 +779,7 @@ http_interactions:
       Server:
       - nginx
       Date:
-      - Sat, 15 Jul 2023 17:31:37 GMT
+      - Sat, 15 Jul 2023 18:00:24 GMT
       Content-Type:
       - application/json; charset=UTF-8
       Transfer-Encoding:
@@ -549,10 +795,10 @@ http_interactions:
     body:
       encoding: UTF-8
       string: "[]"
-  recorded_at: Sat, 15 Jul 2023 17:31:37 GMT
+  recorded_at: Sat, 15 Jul 2023 18:00:24 GMT
 - request:
     method: get
-    uri: https://nominatim.openstreetmap.org/search?accept-language=en&addressdetails=1&format=json&q=East%20Jacquelineville,%20Georgia
+    uri: https://nominatim.openstreetmap.org/search?accept-language=en&addressdetails=1&format=json&q=Lylemouth,%20Colorado
     body:
       encoding: US-ASCII
       string: ''
@@ -571,7 +817,7 @@ http_interactions:
       Server:
       - nginx
       Date:
-      - Sat, 15 Jul 2023 17:32:51 GMT
+      - Sat, 15 Jul 2023 18:01:45 GMT
       Content-Type:
       - application/json; charset=UTF-8
       Transfer-Encoding:
@@ -587,10 +833,10 @@ http_interactions:
     body:
       encoding: UTF-8
       string: "[]"
-  recorded_at: Sat, 15 Jul 2023 17:32:50 GMT
+  recorded_at: Sat, 15 Jul 2023 18:01:45 GMT
 - request:
     method: get
-    uri: https://nominatim.openstreetmap.org/search?accept-language=en&addressdetails=1&format=json&q=Port%20Melitamouth,%20Delaware
+    uri: https://nominatim.openstreetmap.org/search?accept-language=en&addressdetails=1&format=json&q=Hamillborough,%20Wisconsin
     body:
       encoding: US-ASCII
       string: ''
@@ -609,7 +855,7 @@ http_interactions:
       Server:
       - nginx
       Date:
-      - Sat, 15 Jul 2023 17:51:41 GMT
+      - Sat, 15 Jul 2023 18:06:04 GMT
       Content-Type:
       - application/json; charset=UTF-8
       Transfer-Encoding:
@@ -625,86 +871,10 @@ http_interactions:
     body:
       encoding: UTF-8
       string: "[]"
-  recorded_at: Sat, 15 Jul 2023 17:51:41 GMT
+  recorded_at: Sat, 15 Jul 2023 18:06:04 GMT
 - request:
     method: get
-    uri: https://nominatim.openstreetmap.org/search?accept-language=en&addressdetails=1&format=json&q=Wizaville,%20Wyoming
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-      Accept:
-      - "*/*"
-      User-Agent:
-      - Ruby
-  response:
-    status:
-      code: 200
-      message: OK
-    headers:
-      Server:
-      - nginx
-      Date:
-      - Sat, 15 Jul 2023 17:56:03 GMT
-      Content-Type:
-      - application/json; charset=UTF-8
-      Transfer-Encoding:
-      - chunked
-      Connection:
-      - keep-alive
-      Keep-Alive:
-      - timeout=20
-      Access-Control-Allow-Origin:
-      - "*"
-      Access-Control-Allow-Methods:
-      - OPTIONS,GET
-    body:
-      encoding: UTF-8
-      string: "[]"
-  recorded_at: Sat, 15 Jul 2023 17:56:02 GMT
-- request:
-    method: get
-    uri: https://nominatim.openstreetmap.org/search?accept-language=en&addressdetails=1&format=json&q=Henrietteview,%20Indiana
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-      Accept:
-      - "*/*"
-      User-Agent:
-      - Ruby
-  response:
-    status:
-      code: 200
-      message: OK
-    headers:
-      Server:
-      - nginx
-      Date:
-      - Sat, 15 Jul 2023 17:58:48 GMT
-      Content-Type:
-      - application/json; charset=UTF-8
-      Transfer-Encoding:
-      - chunked
-      Connection:
-      - keep-alive
-      Keep-Alive:
-      - timeout=20
-      Access-Control-Allow-Origin:
-      - "*"
-      Access-Control-Allow-Methods:
-      - OPTIONS,GET
-    body:
-      encoding: UTF-8
-      string: "[]"
-  recorded_at: Sat, 15 Jul 2023 17:58:48 GMT
-- request:
-    method: get
-    uri: https://nominatim.openstreetmap.org/search?accept-language=en&addressdetails=1&format=json&q=Douglashaven,%20Hawaii
+    uri: https://nominatim.openstreetmap.org/search?accept-language=en&addressdetails=1&format=json&q=West%20Phillip,%20Alabama
     body:
       encoding: US-ASCII
       string: ''
@@ -742,7 +912,7 @@ http_interactions:
   recorded_at: Sat, 15 Jul 2023 18:06:37 GMT
 - request:
     method: get
-    uri: https://nominatim.openstreetmap.org/search?accept-language=en&addressdetails=1&format=json&q=Fritschtown,%20Oregon
+    uri: https://nominatim.openstreetmap.org/search?accept-language=en&addressdetails=1&format=json&q=East%20Albertineview,%20Idaho
     body:
       encoding: US-ASCII
       string: ''
@@ -780,7 +950,7 @@ http_interactions:
   recorded_at: Sat, 15 Jul 2023 18:14:39 GMT
 - request:
     method: get
-    uri: https://nominatim.openstreetmap.org/search?accept-language=en&addressdetails=1&format=json&q=West%20Hector,%20Tennessee
+    uri: https://nominatim.openstreetmap.org/search?accept-language=en&addressdetails=1&format=json&q=Conroyhaven,%20Louisiana
     body:
       encoding: US-ASCII
       string: ''
@@ -818,7 +988,7 @@ http_interactions:
   recorded_at: Sat, 15 Jul 2023 18:26:01 GMT
 - request:
     method: get
-    uri: https://nominatim.openstreetmap.org/search?accept-language=en&addressdetails=1&format=json&q=East%20Anibal,%20West%20Virginia
+    uri: https://nominatim.openstreetmap.org/search?accept-language=en&addressdetails=1&format=json&q=Luettgenshire,%20Maryland
     body:
       encoding: US-ASCII
       string: ''

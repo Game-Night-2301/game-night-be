@@ -36,7 +36,7 @@ module Types
     end
 
     def recommended_games
-      object.recommended_games
+      object.recommended_games.flatten
     end
   end
 end
