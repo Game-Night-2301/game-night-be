@@ -154,7 +154,7 @@ module Mutations
             }
           }
         GQL
-      end 
+      end
     end
   end
 end

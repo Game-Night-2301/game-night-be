@@ -27,7 +27,7 @@ RSpec.describe Types::QueryType do
 
       expect(result["errors"].first["message"]).to eq("I'm sorry, no games in our database match your search!")
     end
-    
+
     it "bad data type" do
       result = GameNightBeSchema.execute(wrong_data_type_query).as_json
 
