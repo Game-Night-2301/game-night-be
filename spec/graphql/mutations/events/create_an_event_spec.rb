@@ -42,7 +42,7 @@ module Mutations
           post '/graphql', params: { query: query_wrong_data_type }
           result = JSON.parse(response.body)
 
-          require 'pry'; binding.pry
+          expect(result["errors"].first["message"]).to eq("Argument 'zip' on InputObject 'CreateEventInput' has an invalid value (\"What's up!\"). Expected type 'Int!'.")
         end
       end
 
