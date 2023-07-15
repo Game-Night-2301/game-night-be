@@ -9,7 +9,11 @@ class Game < ApplicationRecord
 
   def self.verify_games(names)
     names.map do |game_name|
-      Game.where("name ILIKE ?", "%#{game_name}%").first
+      if (this_game = Game.where("name ILIKE ?", "%#{game_name}%").first)
+        this_game
+      else
+        Game.last
+      end
     end
   end
 end

@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: https://nominatim.openstreetmap.org/search?accept-language=en&addressdetails=1&format=json&q=Hershelport,%20California
+    uri: https://nominatim.openstreetmap.org/search?accept-language=en&addressdetails=1&format=json&q=New%20Coreybury,%20Louisiana
     body:
       encoding: US-ASCII
       string: ''
@@ -21,7 +21,7 @@ http_interactions:
       Server:
       - nginx
       Date:
-      - Fri, 14 Jul 2023 23:06:01 GMT
+      - Sat, 15 Jul 2023 17:12:01 GMT
       Content-Type:
       - application/json; charset=UTF-8
       Transfer-Encoding:
@@ -37,7 +37,7 @@ http_interactions:
     body:
       encoding: UTF-8
       string: "[]"
-  recorded_at: Fri, 14 Jul 2023 23:06:01 GMT
+  recorded_at: Sat, 15 Jul 2023 17:12:01 GMT
 - request:
     method: get
     uri: https://nominatim.openstreetmap.org/search?accept-language=en&addressdetails=1&format=json&q=123%20This%20street%20Denver,%20Colorado%2015555
@@ -59,7 +59,7 @@ http_interactions:
       Server:
       - nginx
       Date:
-      - Fri, 14 Jul 2023 23:06:02 GMT
+      - Sat, 15 Jul 2023 17:12:02 GMT
       Content-Type:
       - application/json; charset=UTF-8
       Transfer-Encoding:
@@ -75,10 +75,10 @@ http_interactions:
     body:
       encoding: UTF-8
       string: "[]"
-  recorded_at: Fri, 14 Jul 2023 23:06:02 GMT
+  recorded_at: Sat, 15 Jul 2023 17:12:02 GMT
 - request:
     method: get
-    uri: https://nominatim.openstreetmap.org/search?accept-language=en&addressdetails=1&format=json&q=South%20Carlton,%20South%20Carolina
+    uri: https://nominatim.openstreetmap.org/search?accept-language=en&addressdetails=1&format=json&q=Mohrfort,%20Mississippi
     body:
       encoding: US-ASCII
       string: ''
@@ -97,7 +97,7 @@ http_interactions:
       Server:
       - nginx
       Date:
-      - Fri, 14 Jul 2023 23:15:10 GMT
+      - Sat, 15 Jul 2023 18:14:33 GMT
       Content-Type:
       - application/json; charset=UTF-8
       Transfer-Encoding:
@@ -113,10 +113,10 @@ http_interactions:
     body:
       encoding: UTF-8
       string: "[]"
-  recorded_at: Fri, 14 Jul 2023 23:15:10 GMT
+  recorded_at: Sat, 15 Jul 2023 18:14:33 GMT
 - request:
     method: get
-    uri: https://nominatim.openstreetmap.org/search?accept-language=en&addressdetails=1&format=json&q=South%20Hayleyhaven,%20New%20Jersey
+    uri: https://nominatim.openstreetmap.org/search?accept-language=en&addressdetails=1&format=json&q=Estelamouth,%20West%20Virginia
     body:
       encoding: US-ASCII
       string: ''
@@ -135,7 +135,7 @@ http_interactions:
       Server:
       - nginx
       Date:
-      - Fri, 14 Jul 2023 23:15:57 GMT
+      - Sat, 15 Jul 2023 18:25:55 GMT
       Content-Type:
       - application/json; charset=UTF-8
       Transfer-Encoding:
@@ -151,10 +151,10 @@ http_interactions:
     body:
       encoding: UTF-8
       string: "[]"
-  recorded_at: Fri, 14 Jul 2023 23:15:57 GMT
+  recorded_at: Sat, 15 Jul 2023 18:25:55 GMT
 - request:
     method: get
-    uri: https://nominatim.openstreetmap.org/search?accept-language=en&addressdetails=1&format=json&q=Port%20Efrain,%20Wisconsin
+    uri: https://nominatim.openstreetmap.org/search?accept-language=en&addressdetails=1&format=json&q=Rodrigomouth,%20North%20Carolina
     body:
       encoding: US-ASCII
       string: ''
@@ -173,7 +173,7 @@ http_interactions:
       Server:
       - nginx
       Date:
-      - Fri, 14 Jul 2023 23:19:51 GMT
+      - Sat, 15 Jul 2023 18:29:52 GMT
       Content-Type:
       - application/json; charset=UTF-8
       Transfer-Encoding:
@@ -189,5 +189,5 @@ http_interactions:
     body:
       encoding: UTF-8
       string: "[]"
-  recorded_at: Fri, 14 Jul 2023 23:19:51 GMT
+  recorded_at: Sat, 15 Jul 2023 18:29:52 GMT
 recorded_with: VCR 6.2.0

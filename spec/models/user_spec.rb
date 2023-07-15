@@ -86,7 +86,7 @@ RSpec.describe User, type: :model, vcr: { record: :new_episodes } do
       UserGame.create(user_id: user.id, game_id: game_4.id)
       UserGame.create(user_id: user.id, game_id: game_5.id)
 
-      expect(user.recommended_games.sort).to eq([game_6, game_7, game_8].sort)
+      expect(user.recommended_games.map(&:name).sort).to eq([game_6, game_7, game_8].map(&:name).sort)
     end
   end
 end

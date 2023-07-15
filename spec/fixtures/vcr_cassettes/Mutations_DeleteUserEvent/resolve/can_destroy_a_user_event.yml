@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: https://nominatim.openstreetmap.org/search?accept-language=en&addressdetails=1&format=json&q=Welchfort,%20Utah
+    uri: https://nominatim.openstreetmap.org/search?accept-language=en&addressdetails=1&format=json&q=New%20Kent,%20Arizona
     body:
       encoding: US-ASCII
       string: ''
@@ -21,7 +21,7 @@ http_interactions:
       Server:
       - nginx
       Date:
-      - Fri, 14 Jul 2023 23:06:11 GMT
+      - Sat, 15 Jul 2023 17:12:10 GMT
       Content-Type:
       - application/json; charset=UTF-8
       Transfer-Encoding:
@@ -37,10 +37,10 @@ http_interactions:
     body:
       encoding: UTF-8
       string: "[]"
-  recorded_at: Fri, 14 Jul 2023 23:06:11 GMT
+  recorded_at: Sat, 15 Jul 2023 17:12:10 GMT
 - request:
     method: get
-    uri: https://nominatim.openstreetmap.org/search?accept-language=en&addressdetails=1&format=json&q=Port%20Inesfort,%20Alabama
+    uri: https://nominatim.openstreetmap.org/search?accept-language=en&addressdetails=1&format=json&q=East%20Susanne,%20Nevada
     body:
       encoding: US-ASCII
       string: ''
@@ -59,7 +59,7 @@ http_interactions:
       Server:
       - nginx
       Date:
-      - Fri, 14 Jul 2023 23:06:11 GMT
+      - Sat, 15 Jul 2023 17:12:10 GMT
       Content-Type:
       - application/json; charset=UTF-8
       Transfer-Encoding:
@@ -75,10 +75,10 @@ http_interactions:
     body:
       encoding: UTF-8
       string: "[]"
-  recorded_at: Fri, 14 Jul 2023 23:06:11 GMT
+  recorded_at: Sat, 15 Jul 2023 17:12:10 GMT
 - request:
     method: get
-    uri: https://nominatim.openstreetmap.org/search?accept-language=en&addressdetails=1&format=json&q=6453%20Charla%20Lodge%20Emardmouth,%20Massachusetts%2007996
+    uri: https://nominatim.openstreetmap.org/search?accept-language=en&addressdetails=1&format=json&q=974%20Goyette%20Square%20East%20Gladymouth,%20Missouri%2062308
     body:
       encoding: US-ASCII
       string: ''
@@ -97,7 +97,7 @@ http_interactions:
       Server:
       - nginx
       Date:
-      - Fri, 14 Jul 2023 23:06:12 GMT
+      - Sat, 15 Jul 2023 17:12:11 GMT
       Content-Type:
       - application/json; charset=UTF-8
       Transfer-Encoding:
@@ -113,10 +113,10 @@ http_interactions:
     body:
       encoding: UTF-8
       string: "[]"
-  recorded_at: Fri, 14 Jul 2023 23:06:12 GMT
+  recorded_at: Sat, 15 Jul 2023 17:12:11 GMT
 - request:
     method: get
-    uri: https://nominatim.openstreetmap.org/search?accept-language=en&addressdetails=1&format=json&q=Lake%20Kurtberg,%20North%20Dakota
+    uri: https://nominatim.openstreetmap.org/search?accept-language=en&addressdetails=1&format=json&q=East%20Jaestad,%20Wisconsin
     body:
       encoding: US-ASCII
       string: ''
@@ -135,7 +135,7 @@ http_interactions:
       Server:
       - nginx
       Date:
-      - Fri, 14 Jul 2023 23:15:11 GMT
+      - Sat, 15 Jul 2023 18:14:33 GMT
       Content-Type:
       - application/json; charset=UTF-8
       Transfer-Encoding:
@@ -151,10 +151,10 @@ http_interactions:
     body:
       encoding: UTF-8
       string: "[]"
-  recorded_at: Fri, 14 Jul 2023 23:15:10 GMT
+  recorded_at: Sat, 15 Jul 2023 18:14:33 GMT
 - request:
     method: get
-    uri: https://nominatim.openstreetmap.org/search?accept-language=en&addressdetails=1&format=json&q=Dallasmouth,%20Alabama
+    uri: https://nominatim.openstreetmap.org/search?accept-language=en&addressdetails=1&format=json&q=Port%20Chantellburgh,%20Arkansas
     body:
       encoding: US-ASCII
       string: ''
@@ -173,7 +173,7 @@ http_interactions:
       Server:
       - nginx
       Date:
-      - Fri, 14 Jul 2023 23:15:11 GMT
+      - Sat, 15 Jul 2023 18:14:34 GMT
       Content-Type:
       - application/json; charset=UTF-8
       Transfer-Encoding:
@@ -189,10 +189,10 @@ http_interactions:
     body:
       encoding: UTF-8
       string: "[]"
-  recorded_at: Fri, 14 Jul 2023 23:15:11 GMT
+  recorded_at: Sat, 15 Jul 2023 18:14:34 GMT
 - request:
     method: get
-    uri: https://nominatim.openstreetmap.org/search?accept-language=en&addressdetails=1&format=json&q=68494%20Quigley%20Ports%20Rutherfordstad,%20New%20Hampshire%2007680
+    uri: https://nominatim.openstreetmap.org/search?accept-language=en&addressdetails=1&format=json&q=77098%20Willette%20Street%20East%20Dalenestad,%20Nebraska%2064790
     body:
       encoding: US-ASCII
       string: ''
@@ -211,7 +211,7 @@ http_interactions:
       Server:
       - nginx
       Date:
-      - Fri, 14 Jul 2023 23:15:12 GMT
+      - Sat, 15 Jul 2023 18:14:34 GMT
       Content-Type:
       - application/json; charset=UTF-8
       Transfer-Encoding:
@@ -227,10 +227,10 @@ http_interactions:
     body:
       encoding: UTF-8
       string: "[]"
-  recorded_at: Fri, 14 Jul 2023 23:15:11 GMT
+  recorded_at: Sat, 15 Jul 2023 18:14:34 GMT
 - request:
     method: get
-    uri: https://nominatim.openstreetmap.org/search?accept-language=en&addressdetails=1&format=json&q=Beckerport,%20Alabama
+    uri: https://nominatim.openstreetmap.org/search?accept-language=en&addressdetails=1&format=json&q=South%20Carlosberg,%20Illinois
     body:
       encoding: US-ASCII
       string: ''
@@ -249,7 +249,7 @@ http_interactions:
       Server:
       - nginx
       Date:
-      - Fri, 14 Jul 2023 23:15:57 GMT
+      - Sat, 15 Jul 2023 18:25:55 GMT
       Content-Type:
       - application/json; charset=UTF-8
       Transfer-Encoding:
@@ -265,10 +265,10 @@ http_interactions:
     body:
       encoding: UTF-8
       string: "[]"
-  recorded_at: Fri, 14 Jul 2023 23:15:57 GMT
+  recorded_at: Sat, 15 Jul 2023 18:25:55 GMT
 - request:
     method: get
-    uri: https://nominatim.openstreetmap.org/search?accept-language=en&addressdetails=1&format=json&q=South%20Tamela,%20Michigan
+    uri: https://nominatim.openstreetmap.org/search?accept-language=en&addressdetails=1&format=json&q=South%20Cristietown,%20Idaho
     body:
       encoding: US-ASCII
       string: ''
@@ -287,7 +287,7 @@ http_interactions:
       Server:
       - nginx
       Date:
-      - Fri, 14 Jul 2023 23:15:58 GMT
+      - Sat, 15 Jul 2023 18:25:56 GMT
       Content-Type:
       - application/json; charset=UTF-8
       Transfer-Encoding:
@@ -303,10 +303,10 @@ http_interactions:
     body:
       encoding: UTF-8
       string: "[]"
-  recorded_at: Fri, 14 Jul 2023 23:15:58 GMT
+  recorded_at: Sat, 15 Jul 2023 18:25:56 GMT
 - request:
     method: get
-    uri: https://nominatim.openstreetmap.org/search?accept-language=en&addressdetails=1&format=json&q=520%20Klein%20Keys%20Port%20Anisa,%20Washington%2052460
+    uri: https://nominatim.openstreetmap.org/search?accept-language=en&addressdetails=1&format=json&q=51556%20Rice%20Square%20North%20Darnellmouth,%20Vermont%2053141
     body:
       encoding: US-ASCII
       string: ''
@@ -325,7 +325,7 @@ http_interactions:
       Server:
       - nginx
       Date:
-      - Fri, 14 Jul 2023 23:15:59 GMT
+      - Sat, 15 Jul 2023 18:25:56 GMT
       Content-Type:
       - application/json; charset=UTF-8
       Transfer-Encoding:
@@ -341,10 +341,10 @@ http_interactions:
     body:
       encoding: UTF-8
       string: "[]"
-  recorded_at: Fri, 14 Jul 2023 23:15:58 GMT
+  recorded_at: Sat, 15 Jul 2023 18:25:56 GMT
 - request:
     method: get
-    uri: https://nominatim.openstreetmap.org/search?accept-language=en&addressdetails=1&format=json&q=New%20Vernellmouth,%20California
+    uri: https://nominatim.openstreetmap.org/search?accept-language=en&addressdetails=1&format=json&q=Feeneyshire,%20Louisiana
     body:
       encoding: US-ASCII
       string: ''
@@ -363,7 +363,7 @@ http_interactions:
       Server:
       - nginx
       Date:
-      - Fri, 14 Jul 2023 23:19:52 GMT
+      - Sat, 15 Jul 2023 18:29:52 GMT
       Content-Type:
       - application/json; charset=UTF-8
       Transfer-Encoding:
@@ -379,10 +379,10 @@ http_interactions:
     body:
       encoding: UTF-8
       string: "[]"
-  recorded_at: Fri, 14 Jul 2023 23:19:52 GMT
+  recorded_at: Sat, 15 Jul 2023 18:29:52 GMT
 - request:
     method: get
-    uri: https://nominatim.openstreetmap.org/search?accept-language=en&addressdetails=1&format=json&q=Lake%20Perryville,%20Indiana
+    uri: https://nominatim.openstreetmap.org/search?accept-language=en&addressdetails=1&format=json&q=Port%20Mitchel,%20Maryland
     body:
       encoding: US-ASCII
       string: ''
@@ -401,7 +401,7 @@ http_interactions:
       Server:
       - nginx
       Date:
-      - Fri, 14 Jul 2023 23:19:53 GMT
+      - Sat, 15 Jul 2023 18:29:53 GMT
       Content-Type:
       - application/json; charset=UTF-8
       Transfer-Encoding:
@@ -417,10 +417,10 @@ http_interactions:
     body:
       encoding: UTF-8
       string: "[]"
-  recorded_at: Fri, 14 Jul 2023 23:19:52 GMT
+  recorded_at: Sat, 15 Jul 2023 18:29:53 GMT
 - request:
     method: get
-    uri: https://nominatim.openstreetmap.org/search?accept-language=en&addressdetails=1&format=json&q=685%20Shana%20Springs%20Brownville,%20New%20York%2016707
+    uri: https://nominatim.openstreetmap.org/search?accept-language=en&addressdetails=1&format=json&q=392%20Ratke%20Pike%20Port%20Floretta,%20Mississippi%2052324
     body:
       encoding: US-ASCII
       string: ''
@@ -439,7 +439,7 @@ http_interactions:
       Server:
       - nginx
       Date:
-      - Fri, 14 Jul 2023 23:19:53 GMT
+      - Sat, 15 Jul 2023 18:29:53 GMT
       Content-Type:
       - application/json; charset=UTF-8
       Transfer-Encoding:
@@ -455,5 +455,5 @@ http_interactions:
     body:
       encoding: UTF-8
       string: "[]"
-  recorded_at: Fri, 14 Jul 2023 23:19:53 GMT
+  recorded_at: Sat, 15 Jul 2023 18:29:53 GMT
 recorded_with: VCR 6.2.0

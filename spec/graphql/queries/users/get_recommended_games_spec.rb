@@ -29,6 +29,30 @@ RSpec.describe Types::QueryType, vcr: { record: :new_episodes } do
     end
   end
 
+  describe "sad paths" do
+    it "recommended games not in database" do
+      user = create(:user, id: 1)
+
+      game_1 = create(:game, name: "Catan")
+      game_2 = create(:game, name: "Stone Age")
+      game_3 = create(:game, name: "Irish Gauge")
+      game_4 = create(:game, name: "Elder Sign")
+      game_5 = create(:game, name: "Ca$h 'n Gun$")
+
+      UserGame.create(user_id: user.id, game_id: game_1.id)
+      UserGame.create(user_id: user.id, game_id: game_2.id)
+      UserGame.create(user_id: user.id, game_id: game_3.id)
+      UserGame.create(user_id: user.id, game_id: game_4.id)
+      UserGame.create(user_id: user.id, game_id: game_5.id)
+
+      result = GameNightBeSchema.execute(recommended_games_query).as_json
+
+      expect(result["data"]["user"]["recommendedGames"]).to be_an(Array)
+      expect(result["data"]["user"]["recommendedGames"]).to all(be_a(Hash))
+      expect(result["data"]["user"]["recommendedGames"].length).to eq(3)
+    end
+  end
+
   def recommended_games_query
     <<~GQL
         query {
