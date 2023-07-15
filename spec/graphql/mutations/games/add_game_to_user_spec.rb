@@ -66,6 +66,22 @@ module Mutations
           expect(response[:data][:createUserGame][:userGame][:newGame][:averageStrategyComplexity]).to be_a(Float)
           expect(response[:data][:createUserGame][:userGame][:newGame][:averageStrategyComplexity]).to eq(game_3.average_strategy_complexity)
         end
+
+        it 'returns an error if the game is already in their collection' do
+          user = create(:user, id: 1, city: "montpelier", state: "vermont")
+          game_1 = create(:game)
+          game_2 = create(:game)
+          game_3 = create(:game, id: 2000)
+          UserGame.create(user_id: user.id, game_id: game_1.id)
+          UserGame.create(user_id: user.id, game_id: game_2.id)
+          UserGame.create(user_id: user.id, game_id: game_3.id)
+
+          post '/graphql', params: { query: }
+
+          response = JSON.parse(@response.body, symbolize_names: true)
+
+          expect(response[:errors][0][:message]).to eq("Game already in collection.")
+        end
       end
 
       def query

@@ -15,9 +15,11 @@ module Mutations
         user_id: userId,
         game_id: gameId
       )
-
+      
       if user_game.save
         { user_game:, errors: [] }
+      elsif user_game.game_id == gameId
+        raise GraphQL::ExecutionError, "Game already in collection."
       else
         { user_game: nil, errors: user_game.errors.full_messages }
       end
