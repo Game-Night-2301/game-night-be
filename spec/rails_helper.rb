@@ -14,6 +14,8 @@ VCR.configure do |config|
   config.filter_sensitive_data('<BOARD_GAME_ATLAS_CLIENT_ID>') { ENV["BOARD_GAME_ATLAS_CLIENT_ID"] }
   config.default_cassette_options = { re_record_interval: 7.days }
   config.configure_rspec_metadata!
+  config.filter_sensitive_data('DONT_SHARE_MY_DATA_1') { ENV['BOARD_GAME_ATLAS_CLIENT_ID'] }
+  config.filter_sensitive_data('DONT_SHARE_MY_DATA_2') { ENV['OPENAI_ACCESS_TOKEN'] }
 end
 # Add additional requires below this line. Rails is not loaded until this point!
 
