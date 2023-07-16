@@ -110,7 +110,7 @@ To demo Game Night on your local machine, follow these steps:
 <!-- Testing -->
 ## Testing
  
-`bundle exec rspec` will run the entire test suite. *All tests are passing at the time of writing.*
+`bundle exec rspec` will run the entire test suite. *All tests are passing at the time of writing. At above 98% coverage*
 
 The team tested happy paths, sad paths, and edge cases when needed. Error responses were added where applicable. 
 
