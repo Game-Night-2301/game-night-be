@@ -35,7 +35,7 @@
     <li><a href="#testing">Testing</a></li>
     <li><a href="#db-design">DB Design</a></li>
     <li><a href="#endpoint">Endpoint</a></li>
-    <li><a href="#technical_solutions">Technical Solutions</a></li>
+    <li><a href="#technical-solutions">Technical Solutions</a></li>
     <li><a href="#roadmap">Roadmap</a></li>
     <li><a href="#contact">Contact</a></li>
   </ol>
