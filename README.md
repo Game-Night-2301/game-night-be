@@ -31,20 +31,13 @@
         <li><a href="#built-with">Built With</a></li>
       </ul>
     </li>
-    <li>
-      <a href="#getting-started">Getting Started</a>
-      <ul>
-        <li><a href="#installation">Installation</a></li>
-      </ul>
-    </li>
+    <li><a href="#getting-started">Getting Started</a></li>
     <li><a href="#testing">Testing</a></li>
     <li><a href="#dbdesign">DB Design</a></li>
-    <li><a href="#endpoints">Endpoints</a></li>
-    <li><a href="#tech">Technical Solutions</a></li>
+    <li><a href="#endpoint">Endpoint</a></li>
+    <li><a href="#technical_solutions">Technical Solutions</a></li>
     <li><a href="#roadmap">Roadmap</a></li>
-    <li><a href="#license">License</a></li>
     <li><a href="#contact">Contact</a></li>
-    <li><a href="#acknowledgments">Acknowledgments</a></li>
   </ol>
 </details>
 
@@ -69,8 +62,8 @@ Game night is an excellent way to take the hassle out of scheduling get-together
 * [![Rails][Rails]][Rails-url]
 * [![PostgreSQL][Postgres]][Postgres-url]
 * [![Github_Actions]][GHA_url]
-* <img src="https://user-images.githubusercontent.com/120869196/253420930-fa40df17-082f-4cb4-92a2-97986e1cd676.png"     width="85" height="28"/>
-* <img src="https://user-images.githubusercontent.com/120869196/253767245-15d1faeb-4585-4b7a-adba-33d42190a172.jpg" witdth="500" height="28"/>
+* <img src="https://user-images.githubusercontent.com/120869196/253420930-fa40df17-082f-4cb4-92a2-97986e1cd676.png" width="85" height="28"/>
+* <img src="https://user-images.githubusercontent.com/120869196/253767245-15d1faeb-4585-4b7a-adba-33d42190a172.jpg" witdth="auto" height="28"/>
 * <img src="https://user-images.githubusercontent.com/116964982/238382095-7d4a3eeb-c907-4e1c-b8cf-abf6b8c20c6e.png"/>
 * <img src="https://img.shields.io/badge/Postman-FF6C37?style=for-the-badge&logo=postman&logoColor=white"/>
 * <img src="https://user-images.githubusercontent.com/120869196/253767662-710a07ce-2cee-41e1-8c4e-ade25a38f86d.png" width="auto" height="28"/>
@@ -137,37 +130,37 @@ The team tested happy paths, sad paths, and edge cases when needed. Error respon
 ### graphQL Queries
 
 #### Get a User
-   ``` 
-query {
-        user(id: 1 ) {
-          id
-          username
-          password
-          city
-          state
-          lat
-          lon
-          attendingEvents {
+``` 
+  query {
+          user(id: 1 ) {
             id
-          }
-          hostedEvents {
-            id
-          }
-          recommendedGames {
-            id
-            name
-            minPlayers
-            maxPlayers
-            minPlaytime
-            maxPlaytime
-            description
-            imageUrl
-            averageUserRating
-            averageStrategyComplexity
+            username
+            password
+            city
+            state
+            lat
+            lon
+            attendingEvents {
+              id
+            }
+            hostedEvents {
+              id
+            }
+            recommendedGames {
+              id
+              name
+              minPlayers
+              maxPlayers
+              minPlaytime
+              maxPlaytime
+              description
+              imageUrl
+              averageUserRating
+              averageStrategyComplexity
+            }
           }
         }
-      }
-```
+  ```
 #### Get Events
 
   ```
@@ -372,7 +365,7 @@ Additional features, functionality, and potential refactors:
 
 ### Back-end Team
 
-| [<img alt="Dyson Breakstone" width="100" src="https://user-images.githubusercontent.com/120869196/253776345-1471e248-ddc1-461b-aeee-d8ac4d59bba4.jpeg"/>](https://www.linkedin.com/in/dyson-breakstone-4978291a2/) | [<img alt="Brian Guthrie" width="100" src="https://user-images.githubusercontent.com/120869196/253776434-25807eec-dbb2-49f8-a1fd-3fda117a3685.png"/>](https://www.linkedin.com/in/brian-guthrie-1bba73232/) | [<img alt="Stephen McPhee" width="100" height="100" src="https://user-images.githubusercontent.com/120869196/253776524-926e2f5e-eccb-4e19-8ea0-f521224991ef.jpg"/>](https://www.linkedin.com/in/smcphee19/) |
+| [<img alt="Dyson Breakstone" width="100" src="https://user-images.githubusercontent.com/120869196/253776345-1471e248-ddc1-461b-aeee-d8ac4d59bba4.jpeg"/>](https://www.linkedin.com/in/dyson-breakstone-4978291a2/) | [<img alt="Brian Guthrie" width="100" src="https://user-images.githubusercontent.com/120869196/253776434-25807eec-dbb2-49f8-a1fd-3fda117a3685.png"/>](https://www.linkedin.com/in/brian-guthrie-1bba73232/) | [<img alt="Stephen McPhee" width="100" src="https://user-images.githubusercontent.com/120869196/253780562-bdea39b0-2222-448b-bdb3-83f47804a79c.jpg"/>](https://www.linkedin.com/in/smcphee19/) |
 | ------------------ | ------------ | ---------------- | 
 | Dyson Breakstone | Brian Guthrie | Stephen McPhee |
 | Back-end Developer | Back-end Developer | Back-end Developer |
