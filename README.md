@@ -9,7 +9,7 @@
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
-  <a href="https://github.com/RentInform/BE-Rent-Inform">
+  <a href="https://github.com/Game-Night-2301">
     <img src="https://user-images.githubusercontent.com/120869196/253766698-18414249-a92b-4b58-9032-ac67ce3b26b0.png" alt="Logo" >
   </a>
 
@@ -58,15 +58,7 @@ Game night is an excellent way to take the hassle out of scheduling get-together
 
 ### Built With:
 
-* [![Ruby][Ruby]][Ruby-url]
-* [![Rails][Rails]][Rails-url]
-* [![PostgreSQL][Postgres]][Postgres-url]
-* [![Github_Actions]][GHA_url]
-* <img src="https://user-images.githubusercontent.com/120869196/253420930-fa40df17-082f-4cb4-92a2-97986e1cd676.png" width="85" height="28"/>
-* <img src="https://user-images.githubusercontent.com/120869196/253767245-15d1faeb-4585-4b7a-adba-33d42190a172.jpg" witdth="auto" height="28"/>
-* <img src="https://user-images.githubusercontent.com/116964982/238382095-7d4a3eeb-c907-4e1c-b8cf-abf6b8c20c6e.png"/>
-* <img src="https://img.shields.io/badge/Postman-FF6C37?style=for-the-badge&logo=postman&logoColor=white"/>
-* <img src="https://user-images.githubusercontent.com/120869196/253767662-710a07ce-2cee-41e1-8c4e-ade25a38f86d.png" width="auto" height="28"/>
+[![Ruby][Ruby]][Ruby-url] [![Rails][Rails]][Rails-url] [![PostgreSQL][Postgres]][Postgres-url] [![Github_Actions]][GHA_url] <img src="https://user-images.githubusercontent.com/120869196/253420930-fa40df17-082f-4cb4-92a2-97986e1cd676.png" width="85" height="28"/> <img src="https://user-images.githubusercontent.com/120869196/253767245-15d1faeb-4585-4b7a-adba-33d42190a172.jpg" witdth="auto" height="28"/> <img src="https://user-images.githubusercontent.com/116964982/238382095-7d4a3eeb-c907-4e1c-b8cf-abf6b8c20c6e.png"/> <img src="https://img.shields.io/badge/Postman-FF6C37?style=for-the-badge&logo=postman&logoColor=white"/> <img src="https://user-images.githubusercontent.com/120869196/253767662-710a07ce-2cee-41e1-8c4e-ade25a38f86d.png" width="auto" height="28"/>
 
 
 Game Night's back-end application uses these integrations:
