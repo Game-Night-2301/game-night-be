@@ -353,9 +353,13 @@ WRITE SOME PARAGRAPHS ABOUT STRETCH TECH, OPENAI, ETC...
 
 Additional features, functionality, and potential refactors:
 * User Authentication
+  * Google OAuth and/or Board Game Atlas OAuth
 * Cache external API calls to improve performance
-* Expand beyond just tabletop games to video games and alike
-  * LAN parties?
+* Consume additional external API to expand beyond just tabletop games to video games and alike
+  * Set up functionality to organize and plan, similar to board game nights:
+    * Video Game tournaments
+    * LAN Parties
+    * TTRPG Sessions
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
