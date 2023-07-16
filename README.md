@@ -33,7 +33,7 @@
     </li>
     <li><a href="#getting-started">Getting Started</a></li>
     <li><a href="#testing">Testing</a></li>
-    <li><a href="#dbdesign">DB Design</a></li>
+    <li><a href="#db-design">DB Design</a></li>
     <li><a href="#endpoint">Endpoint</a></li>
     <li><a href="#technical_solutions">Technical Solutions</a></li>
     <li><a href="#roadmap">Roadmap</a></li>
@@ -117,7 +117,7 @@ The team tested happy paths, sad paths, and edge cases when needed. Error respon
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-<!-- DBDesign -->
+<!-- DB Design -->
 ## DB Design
  
  <img src="https://user-images.githubusercontent.com/120869196/253768623-2ce6305e-bd65-49d5-a87b-5d0199824f3c.png" alt="Schema" width="100%">
