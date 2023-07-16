@@ -21,6 +21,26 @@ RSpec.describe User, type: :model, vcr: { record: :new_episodes } do
     it { should have_many(:events).through(:user_events) }
     it { should have_many(:user_games) }
     it { should have_many(:games).through(:user_games) }
+    
+    it 'validates presense of username' do
+      user = User.new(username: "", city: "austin", state: "texas", password: "password")
+      expect(user.valid?).to eq(false)
+    end
+
+    it 'validates presense of password' do
+      user = User.new(username: "name", city: "austin", state: "texas", password: "")
+      expect(user.valid?).to eq(false)
+    end
+
+    it 'validates presense of city' do
+      user = User.new(username: "name", city: "", state: "texas", password: "password")
+      expect(user.valid?).to eq(false)
+    end
+
+    it 'validates presense of state' do
+      user = User.new(username: "name", city: "austin", state: "", password: "password")
+      expect(user.valid?).to eq(false)
+    end
     # it { should validate_presence_of(:username) }
     # it { should validate_presence_of(:password) }
     # it { should validate_presence_of(:city) }
