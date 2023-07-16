@@ -684,4 +684,120 @@ http_interactions:
       encoding: UTF-8
       string: "[]"
   recorded_at: Sat, 15 Jul 2023 23:50:19 GMT
+- request:
+    method: get
+    uri: https://nominatim.openstreetmap.org/search?accept-language=en&addressdetails=1&format=json&q=South%20Roy,%20Wisconsin
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Sun, 16 Jul 2023 00:32:09 GMT
+      Content-Type:
+      - application/json; charset=UTF-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Keep-Alive:
+      - timeout=20
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - OPTIONS,GET
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        W3sicGxhY2VfaWQiOjEwODc0Nzk0NiwibGljZW5jZSI6IkRhdGEgwqkgT3BlblN0cmVldE1hcCBjb250cmlidXRvcnMsIE9EYkwgMS4wLiBodHRwczovL29zbS5vcmcvY29weXJpZ2h0Iiwib3NtX3R5cGUiOiJ3YXkiLCJvc21faWQiOjIxNTgwNDE0LCJib3VuZGluZ2JveCI6WyI0Mi40OTc4OTQ4IiwiNDIuNTA1MzMwMyIsIi04OS4yMjgzMTMiLCItODkuMjI2MTg0Il0sImxhdCI6IjQyLjQ5OTkwNDciLCJsb24iOiItODkuMjI4MjgwNSIsImRpc3BsYXlfbmFtZSI6IlNvdXRoIFJveSBSb2FkLCBUb3duIG9mIE5ld2FyaywgU2hpcmxhbmQgVG93bnNoaXAsIFJvY2sgQ291bnR5LCBXaXNjb25zaW4sIDUzNTExLCBVbml0ZWQgU3RhdGVzIiwiY2xhc3MiOiJoaWdod2F5IiwidHlwZSI6InJlc2lkZW50aWFsIiwiaW1wb3J0YW5jZSI6MC40MTAwMDAwMDAwMDAwMDAwMywiYWRkcmVzcyI6eyJyb2FkIjoiU291dGggUm95IFJvYWQiLCJ2aWxsYWdlIjoiVG93biBvZiBOZXdhcmsiLCJtdW5pY2lwYWxpdHkiOiJTaGlybGFuZCBUb3duc2hpcCIsImNvdW50eSI6IlJvY2sgQ291bnR5Iiwic3RhdGUiOiJXaXNjb25zaW4iLCJJU08zMTY2LTItbHZsNCI6IlVTLVdJIiwicG9zdGNvZGUiOiI1MzUxMSIsImNvdW50cnkiOiJVbml0ZWQgU3RhdGVzIiwiY291bnRyeV9jb2RlIjoidXMifX1d
+  recorded_at: Sun, 16 Jul 2023 00:32:09 GMT
+- request:
+    method: get
+    uri: https://nominatim.openstreetmap.org/search?accept-language=en&addressdetails=1&format=json&q=South%20Roy,%20Wisconsin
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Sun, 16 Jul 2023 00:32:10 GMT
+      Content-Type:
+      - application/json; charset=UTF-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Keep-Alive:
+      - timeout=20
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - OPTIONS,GET
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        W3sicGxhY2VfaWQiOjEwODc0Nzk0NiwibGljZW5jZSI6IkRhdGEgwqkgT3BlblN0cmVldE1hcCBjb250cmlidXRvcnMsIE9EYkwgMS4wLiBodHRwczovL29zbS5vcmcvY29weXJpZ2h0Iiwib3NtX3R5cGUiOiJ3YXkiLCJvc21faWQiOjIxNTgwNDE0LCJib3VuZGluZ2JveCI6WyI0Mi40OTc4OTQ4IiwiNDIuNTA1MzMwMyIsIi04OS4yMjgzMTMiLCItODkuMjI2MTg0Il0sImxhdCI6IjQyLjQ5OTkwNDciLCJsb24iOiItODkuMjI4MjgwNSIsImRpc3BsYXlfbmFtZSI6IlNvdXRoIFJveSBSb2FkLCBUb3duIG9mIE5ld2FyaywgU2hpcmxhbmQgVG93bnNoaXAsIFJvY2sgQ291bnR5LCBXaXNjb25zaW4sIDUzNTExLCBVbml0ZWQgU3RhdGVzIiwiY2xhc3MiOiJoaWdod2F5IiwidHlwZSI6InJlc2lkZW50aWFsIiwiaW1wb3J0YW5jZSI6MC40MTAwMDAwMDAwMDAwMDAwMywiYWRkcmVzcyI6eyJyb2FkIjoiU291dGggUm95IFJvYWQiLCJ2aWxsYWdlIjoiVG93biBvZiBOZXdhcmsiLCJtdW5pY2lwYWxpdHkiOiJTaGlybGFuZCBUb3duc2hpcCIsImNvdW50eSI6IlJvY2sgQ291bnR5Iiwic3RhdGUiOiJXaXNjb25zaW4iLCJJU08zMTY2LTItbHZsNCI6IlVTLVdJIiwicG9zdGNvZGUiOiI1MzUxMSIsImNvdW50cnkiOiJVbml0ZWQgU3RhdGVzIiwiY291bnRyeV9jb2RlIjoidXMifX1d
+  recorded_at: Sun, 16 Jul 2023 00:32:10 GMT
+- request:
+    method: get
+    uri: https://nominatim.openstreetmap.org/search?accept-language=en&addressdetails=1&format=json&q=Jocelynstad,%20Minnesota
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Sun, 16 Jul 2023 00:32:10 GMT
+      Content-Type:
+      - application/json; charset=UTF-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Keep-Alive:
+      - timeout=20
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - OPTIONS,GET
+    body:
+      encoding: UTF-8
+      string: "[]"
+  recorded_at: Sun, 16 Jul 2023 00:32:10 GMT
 recorded_with: VCR 6.2.0

@@ -7,7 +7,7 @@ module Mutations
     RSpec.describe CreateEvent, type: :request, vcr: { record: :new_episodes } do
       describe 'resolve' do
         it 'can create an event' do
-          host = create(:user, id: 4_744_564)
+          host = create(:user, id: 4_744_564, city: "Denver", state: "Colorado")
           post '/graphql', params: { query: }
 
           result = JSON.parse(response.body)
@@ -44,6 +44,13 @@ module Mutations
 
           expect(result["errors"].first["message"]).to eq("Argument 'zip' on InputObject 'CreateEventInput' has an invalid value (\"What's up!\"). Expected type 'Int!'.")
         end
+
+        it 'illegitimate address' do
+          post '/graphql', params: { query: query_illegitimate_address }
+          result = JSON.parse(response.body)
+
+          expect(result["errors"].first["message"]).to eq("This address does not appear to exist")
+        end
       end
 
       def query
@@ -51,10 +58,10 @@ module Mutations
           mutation {
             createEvent(input: {
               date: "2023/11/7",
-              address: "123 This street",
+              address: "1000 36th street",
               state: "Colorado",
-              city: "Denver",
-              zip: 15555,
+              city: "Boulder",
+              zip: 80302,
               title: "Grandma's basement",
               description: "We'll be playing caracasonne for 9 hours",
               host: 4744564,
@@ -88,9 +95,9 @@ module Mutations
           mutation {
             createEvent(input: {
               date: "2023/11/7",
-              address: "123 This street",
+              address: "1000 36th street",
               state: "Colorado",
-              city: "Denver",
+              city: "Boulder",
               zip: "What's up!",
               title: "Grandma's basement",
               description: "We'll be playing caracasonne for 9 hours",
@@ -125,7 +132,7 @@ module Mutations
           mutation {
             createEvent(input: {
               date: "2023/11/7",
-              address: "123 This street",
+              address: "1000 36th street",
               state: "Colorado",
               title: "Grandma's basement",
               description: "We'll be playing caracasonne for 9 hours",
@@ -135,6 +142,43 @@ module Mutations
               startTime: "12:00",
               endTime: "15:00"
 
+            }) {
+              event {
+                id
+                date
+                address
+                state
+                city
+                zip
+                title
+                description
+                hostId
+                game
+                gameType
+                startTime
+                endTime
+              }
+            }
+          }
+        GQL
+      end
+
+      def query_illegitimate_address
+        <<~GQL
+          mutation {
+            createEvent(input: {
+              date: "2023/11/7",
+              address: "123 This street",
+              state: "Colorado",
+              city: "Denver",
+              zip: 80302,
+              title: "Grandma's basement",
+              description: "We'll be playing caracasonne for 9 hours",
+              host: 4744564,
+              game: 97833646,
+              gameType: "board game",
+              startTime: "12:00",
+              endTime: "15:00"
             }) {
               event {
                 id

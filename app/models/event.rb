@@ -7,6 +7,8 @@ class Event < ApplicationRecord
 
   validates_presence_of :date, :address, :city, :state, :zip, :title, :description, :host_id, :game, :game_type
 
+  before_validation :verify_address
+
   geocoded_by :full_address, latitude: :lat, longitude: :lon
   after_validation :geocode
   acts_as_mappable default_units: :miles,
@@ -25,5 +27,13 @@ class Event < ApplicationRecord
 
   def full_address
     "#{address} #{city}, #{state} #{zip.to_s.rjust(5, '0')}"
+  end
+
+  def verify_address
+    verifier = MainStreet::AddressVerifier.new(full_address)
+    if verifier.failure_message
+      errors.add(:base, "This address does not appear to exist")
+      throw(:abort)
+    end
   end
 end

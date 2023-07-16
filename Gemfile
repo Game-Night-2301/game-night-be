@@ -48,6 +48,7 @@ gem 'geokit-rails'
 gem 'hirb'
 gem 'pry'
 gem 'sprockets-rails'
+gem 'mainstreet'
 
 group :test do
   gem 'capybara'
