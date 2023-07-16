@@ -3,7 +3,7 @@ require 'rails_helper'
 RSpec.describe Types::QueryType, vcr: { record: :new_episodes } do
   describe 'ai recommendations' do
     it 'can return a list of recommended games' do
-      user = create(:user, id: 1)
+      user = create(:user, id: 1, city: "Denver", state: "Colorado")
 
       game_1 = create(:game, name: "Catan")
       game_2 = create(:game, name: "Stone Age")
@@ -31,7 +31,7 @@ RSpec.describe Types::QueryType, vcr: { record: :new_episodes } do
 
   describe "sad paths" do
     it "recommended games not in database" do
-      user = create(:user, id: 1)
+      user = create(:user, id: 1, city: "Denver", state: "Colorado")
 
       game_1 = create(:game, name: "Catan")
       game_2 = create(:game, name: "Stone Age")

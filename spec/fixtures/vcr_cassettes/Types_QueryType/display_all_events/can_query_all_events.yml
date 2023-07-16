@@ -801,4 +801,507 @@ http_interactions:
       encoding: UTF-8
       string: "[]"
   recorded_at: Sat, 15 Jul 2023 23:50:20 GMT
+- request:
+    method: get
+    uri: https://nominatim.openstreetmap.org/search?accept-language=en&addressdetails=1&format=json&q=montpelier,%20vermont
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Sun, 16 Jul 2023 00:32:11 GMT
+      Content-Type:
+      - application/json; charset=UTF-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Keep-Alive:
+      - timeout=20
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - OPTIONS,GET
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        W3sicGxhY2VfaWQiOjI5ODA1MTY1NiwibGljZW5jZSI6IkRhdGEgwqkgT3BlblN0cmVldE1hcCBjb250cmlidXRvcnMsIE9EYkwgMS4wLiBodHRwczovL29zbS5vcmcvY29weXJpZ2h0Iiwib3NtX3R5cGUiOiJyZWxhdGlvbiIsIm9zbV9pZCI6MTk5MDg4LCJib3VuZGluZ2JveCI6WyI0NC4yMzQ5MjMyIiwiNDQuMzEzMzE0OCIsIi03Mi42MTI0NDc3IiwiLTcyLjUyNTA4NzEiXSwibGF0IjoiNDQuMjYwMjE2NCIsImxvbiI6Ii03Mi41NzUxMjA4IiwiZGlzcGxheV9uYW1lIjoiTW9udHBlbGllciwgV2FzaGluZ3RvbiBDb3VudHksIFZlcm1vbnQsIDA1NjAyLCBVbml0ZWQgU3RhdGVzIiwiY2xhc3MiOiJib3VuZGFyeSIsInR5cGUiOiJhZG1pbmlzdHJhdGl2ZSIsImltcG9ydGFuY2UiOjAuNzA0NTM0Mjg0NTMzNTc5NCwiaWNvbiI6Imh0dHBzOi8vbm9taW5hdGltLm9wZW5zdHJlZXRtYXAub3JnL3VpL21hcGljb25zL3BvaV9ib3VuZGFyeV9hZG1pbmlzdHJhdGl2ZS5wLjIwLnBuZyIsImFkZHJlc3MiOnsiY2l0eSI6Ik1vbnRwZWxpZXIiLCJjb3VudHkiOiJXYXNoaW5ndG9uIENvdW50eSIsInN0YXRlIjoiVmVybW9udCIsIklTTzMxNjYtMi1sdmw0IjoiVVMtVlQiLCJwb3N0Y29kZSI6IjA1NjAyIiwiY291bnRyeSI6IlVuaXRlZCBTdGF0ZXMiLCJjb3VudHJ5X2NvZGUiOiJ1cyJ9fSx7InBsYWNlX2lkIjo3MzA3NzI1OCwibGljZW5jZSI6IkRhdGEgwqkgT3BlblN0cmVldE1hcCBjb250cmlidXRvcnMsIE9EYkwgMS4wLiBodHRwczovL29zbS5vcmcvY29weXJpZ2h0Iiwib3NtX3R5cGUiOiJub2RlIiwib3NtX2lkIjo2OTk3ODE4NTEzLCJib3VuZGluZ2JveCI6WyI0NC4yNTA3MDEzIiwiNDQuMjYwNzAxMyIsIi03Mi42MTEzNzM2IiwiLTcyLjYwMTM3MzYiXSwibGF0IjoiNDQuMjU1NzAxMyIsImxvbiI6Ii03Mi42MDYzNzM2IiwiZGlzcGxheV9uYW1lIjoiTW9udHBlbGllciwgMjk3LCBKdW5jdGlvbiBSb2FkLCBNb250cGVsaWVyIEp1bmN0aW9uLCBCZXJsaW4sIFdhc2hpbmd0b24gQ291bnR5LCBWZXJtb250LCAwNTYwMiwgVW5pdGVkIFN0YXRlcyIsImNsYXNzIjoicmFpbHdheSIsInR5cGUiOiJzdGF0aW9uIiwiaW1wb3J0YW5jZSI6MC40MDA4MDQzMDcwMjU0NDg0NSwiaWNvbiI6Imh0dHBzOi8vbm9taW5hdGltLm9wZW5zdHJlZXRtYXAub3JnL3VpL21hcGljb25zL3RyYW5zcG9ydF90cmFpbl9zdGF0aW9uMi5wLjIwLnBuZyIsImFkZHJlc3MiOnsicmFpbHdheSI6Ik1vbnRwZWxpZXIiLCJob3VzZV9udW1iZXIiOiIyOTciLCJyb2FkIjoiSnVuY3Rpb24gUm9hZCIsImhhbWxldCI6Ik1vbnRwZWxpZXIgSnVuY3Rpb24iLCJjaXR5IjoiQmVybGluIiwiY291bnR5IjoiV2FzaGluZ3RvbiBDb3VudHkiLCJzdGF0ZSI6IlZlcm1vbnQiLCJJU08zMTY2LTItbHZsNCI6IlVTLVZUIiwicG9zdGNvZGUiOiIwNTYwMiIsImNvdW50cnkiOiJVbml0ZWQgU3RhdGVzIiwiY291bnRyeV9jb2RlIjoidXMifX0seyJwbGFjZV9pZCI6NDI0MDExOSwibGljZW5jZSI6IkRhdGEgwqkgT3BlblN0cmVldE1hcCBjb250cmlidXRvcnMsIE9EYkwgMS4wLiBodHRwczovL29zbS5vcmcvY29weXJpZ2h0Iiwib3NtX3R5cGUiOiJub2RlIiwib3NtX2lkIjo1NjY3NDMzNDYsImJvdW5kaW5nYm94IjpbIjQ0LjI1NTYwNDEiLCI0NC4yNTU3MDQxIiwiLTcyLjYwNjQ4MTMiLCItNzIuNjA2MzgxMyJdLCJsYXQiOiI0NC4yNTU2NTQxIiwibG9uIjoiLTcyLjYwNjQzMTMiLCJkaXNwbGF5X25hbWUiOiJNb250cGVsaWVyLCBTaG9ydCBSb2FkLCBNb250cGVsaWVyIEp1bmN0aW9uLCBCZXJsaW4sIFdhc2hpbmd0b24gQ291bnR5LCBWZXJtb250LCAwNTYwMiwgVW5pdGVkIFN0YXRlcyIsImNsYXNzIjoicmFpbHdheSIsInR5cGUiOiJzdG9wIiwiaW1wb3J0YW5jZSI6MC4yMDAxLCJhZGRyZXNzIjp7InJhaWx3YXkiOiJNb250cGVsaWVyIiwicm9hZCI6IlNob3J0IFJvYWQiLCJoYW1sZXQiOiJNb250cGVsaWVyIEp1bmN0aW9uIiwiY2l0eSI6IkJlcmxpbiIsImNvdW50eSI6Ildhc2hpbmd0b24gQ291bnR5Iiwic3RhdGUiOiJWZXJtb250IiwiSVNPMzE2Ni0yLWx2bDQiOiJVUy1WVCIsInBvc3Rjb2RlIjoiMDU2MDIiLCJjb3VudHJ5IjoiVW5pdGVkIFN0YXRlcyIsImNvdW50cnlfY29kZSI6InVzIn19XQ==
+  recorded_at: Sun, 16 Jul 2023 00:32:11 GMT
+- request:
+    method: get
+    uri: https://nominatim.openstreetmap.org/search?accept-language=en&addressdetails=1&format=json&q=304%20W%2034th%20St%20new%20york,%20new%20york%2010001
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Sun, 16 Jul 2023 00:32:13 GMT
+      Content-Type:
+      - application/json; charset=UTF-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Keep-Alive:
+      - timeout=20
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - OPTIONS,GET
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        W3sicGxhY2VfaWQiOjQ1NTQ3ODM0LCJsaWNlbmNlIjoiRGF0YSDCqSBPcGVuU3RyZWV0TWFwIGNvbnRyaWJ1dG9ycywgT0RiTCAxLjAuIGh0dHBzOi8vb3NtLm9yZy9jb3B5cmlnaHQiLCJvc21fdHlwZSI6Im5vZGUiLCJvc21faWQiOjM4MDkwMDA5NDIsImJvdW5kaW5nYm94IjpbIjQwLjc1MjMwNiIsIjQwLjc1MjQwNiIsIi03My45OTQzNjc1IiwiLTczLjk5NDI2NzUiXSwibGF0IjoiNDAuNzUyMzU2IiwibG9uIjoiLTczLjk5NDMxNzUiLCJkaXNwbGF5X25hbWUiOiJDaGlwb3RsZSwgMzA0LCBXZXN0IDM0dGggU3RyZWV0LCBNYW5oYXR0YW4gQ29tbXVuaXR5IEJvYXJkIDQsIE1hbmhhdHRhbiwgTmV3IFlvcmsgQ291bnR5LCBOZXcgWW9yaywgMTAwMDEsIFVuaXRlZCBTdGF0ZXMiLCJjbGFzcyI6ImFtZW5pdHkiLCJ0eXBlIjoiZmFzdF9mb29kIiwiaW1wb3J0YW5jZSI6MC45MjAwMDk5OTk5OTk5OTk5LCJpY29uIjoiaHR0cHM6Ly9ub21pbmF0aW0ub3BlbnN0cmVldG1hcC5vcmcvdWkvbWFwaWNvbnMvZm9vZF9mYXN0Zm9vZC5wLjIwLnBuZyIsImFkZHJlc3MiOnsiYW1lbml0eSI6IkNoaXBvdGxlIiwiaG91c2VfbnVtYmVyIjoiMzA0Iiwicm9hZCI6Ildlc3QgMzR0aCBTdHJlZXQiLCJuZWlnaGJvdXJob29kIjoiTWFuaGF0dGFuIENvbW11bml0eSBCb2FyZCA0Iiwic3VidXJiIjoiTWFuaGF0dGFuIiwiY291bnR5IjoiTmV3IFlvcmsgQ291bnR5IiwiY2l0eSI6Ik5ldyBZb3JrIiwic3RhdGUiOiJOZXcgWW9yayIsIklTTzMxNjYtMi1sdmw0IjoiVVMtTlkiLCJwb3N0Y29kZSI6IjEwMDAxIiwiY291bnRyeSI6IlVuaXRlZCBTdGF0ZXMiLCJjb3VudHJ5X2NvZGUiOiJ1cyJ9fSx7InBsYWNlX2lkIjoxMjM5NzAwMiwibGljZW5jZSI6IkRhdGEgwqkgT3BlblN0cmVldE1hcCBjb250cmlidXRvcnMsIE9EYkwgMS4wLiBodHRwczovL29zbS5vcmcvY29weXJpZ2h0Iiwib3NtX3R5cGUiOiJub2RlIiwib3NtX2lkIjoxMjcyNjc0OTczLCJib3VuZGluZ2JveCI6WyI0MC43NTIyNzY3IiwiNDAuNzUyMzc2NyIsIi03My45OTQyOTgyIiwiLTczLjk5NDE5ODIiXSwibGF0IjoiNDAuNzUyMzI2NyIsImxvbiI6Ii03My45OTQyNDgyIiwiZGlzcGxheV9uYW1lIjoiRmVkRXggT2ZmaWNlLCAzMDQsIFdlc3QgMzR0aCBTdHJlZXQsIE1hbmhhdHRhbiBDb21tdW5pdHkgQm9hcmQgNCwgTWFuaGF0dGFuLCBOZXcgWW9yayBDb3VudHksIE5ldyBZb3JrLCAxMDAwMSwgVW5pdGVkIFN0YXRlcyIsImNsYXNzIjoic2hvcCIsInR5cGUiOiJjb3B5c2hvcCIsImltcG9ydGFuY2UiOjAuOTIwMDA5OTk5OTk5OTk5OSwiYWRkcmVzcyI6eyJzaG9wIjoiRmVkRXggT2ZmaWNlIiwiaG91c2VfbnVtYmVyIjoiMzA0Iiwicm9hZCI6Ildlc3QgMzR0aCBTdHJlZXQiLCJuZWlnaGJvdXJob29kIjoiTWFuaGF0dGFuIENvbW11bml0eSBCb2FyZCA0Iiwic3VidXJiIjoiTWFuaGF0dGFuIiwiY291bnR5IjoiTmV3IFlvcmsgQ291bnR5IiwiY2l0eSI6Ik5ldyBZb3JrIiwic3RhdGUiOiJOZXcgWW9yayIsIklTTzMxNjYtMi1sdmw0IjoiVVMtTlkiLCJwb3N0Y29kZSI6IjEwMDAxIiwiY291bnRyeSI6IlVuaXRlZCBTdGF0ZXMiLCJjb3VudHJ5X2NvZGUiOiJ1cyJ9fSx7InBsYWNlX2lkIjozMDgyNTE0MjYsImxpY2VuY2UiOiJEYXRhIMKpIE9wZW5TdHJlZXRNYXAgY29udHJpYnV0b3JzLCBPRGJMIDEuMC4gaHR0cHM6Ly9vc20ub3JnL2NvcHlyaWdodCIsIm9zbV90eXBlIjoid2F5Iiwib3NtX2lkIjo0MjA1MDk0NzEsImJvdW5kaW5nYm94IjpbIjQwLjc1MjE3MjA0MDgxNiIsIjQwLjc1MjI3MjA0MDgxNiIsIi03My45OTM4MTMzMjY1MzEiLCItNzMuOTkzNzEzMzI2NTMxIl0sImxhdCI6IjQwLjc1MjIyMjA0MDgxNjMzIiwibG9uIjoiLTczLjk5Mzc2MzMyNjUzMDYxIiwiZGlzcGxheV9uYW1lIjoiMzA0LCBXZXN0IDM0dGggU3RyZWV0LCBNYW5oYXR0YW4gQ29tbXVuaXR5IEJvYXJkIDQsIE1hbmhhdHRhbiwgTmV3IFlvcmsgQ291bnR5LCBOZXcgWW9yaywgMTAwMDEsIFVuaXRlZCBTdGF0ZXMiLCJjbGFzcyI6InBsYWNlIiwidHlwZSI6ImhvdXNlIiwiaW1wb3J0YW5jZSI6LTAuMjI5OTk5OTk5OTk5OTk5OTgsImFkZHJlc3MiOnsiaG91c2VfbnVtYmVyIjoiMzA0Iiwicm9hZCI6Ildlc3QgMzR0aCBTdHJlZXQiLCJuZWlnaGJvdXJob29kIjoiTWFuaGF0dGFuIENvbW11bml0eSBCb2FyZCA0Iiwic3VidXJiIjoiTWFuaGF0dGFuIiwiY291bnR5IjoiTmV3IFlvcmsgQ291bnR5IiwiY2l0eSI6Ik5ldyBZb3JrIiwic3RhdGUiOiJOZXcgWW9yayIsIklTTzMxNjYtMi1sdmw0IjoiVVMtTlkiLCJwb3N0Y29kZSI6IjEwMDAxIiwiY291bnRyeSI6IlVuaXRlZCBTdGF0ZXMiLCJjb3VudHJ5X2NvZGUiOiJ1cyJ9fV0=
+  recorded_at: Sun, 16 Jul 2023 00:32:13 GMT
+- request:
+    method: get
+    uri: https://nominatim.openstreetmap.org/search?accept-language=en&addressdetails=1&format=json&q=3548%20Koepp%20Plaza%20North%20Haroldbury,%20Wisconsin%2037488
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Sun, 16 Jul 2023 00:32:13 GMT
+      Content-Type:
+      - application/json; charset=UTF-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Keep-Alive:
+      - timeout=20
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - OPTIONS,GET
+    body:
+      encoding: UTF-8
+      string: "[]"
+  recorded_at: Sun, 16 Jul 2023 00:32:13 GMT
+- request:
+    method: get
+    uri: https://nominatim.openstreetmap.org/search?accept-language=en&addressdetails=1&format=json&q=3799%20Latesha%20Causeway%20North%20Dave,%20Virginia%2056179
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Sun, 16 Jul 2023 01:48:20 GMT
+      Content-Type:
+      - application/json; charset=UTF-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Keep-Alive:
+      - timeout=20
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - OPTIONS,GET
+    body:
+      encoding: UTF-8
+      string: "[]"
+  recorded_at: Sun, 16 Jul 2023 01:48:20 GMT
+- request:
+    method: get
+    uri: https://nominatim.openstreetmap.org/search?accept-language=en&addressdetails=1&format=json&q=867%20Leslie%20Locks%20Dorrisshire,%20New%20Jersey%2093842
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Sun, 16 Jul 2023 01:50:29 GMT
+      Content-Type:
+      - application/json; charset=UTF-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Keep-Alive:
+      - timeout=20
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - OPTIONS,GET
+    body:
+      encoding: UTF-8
+      string: "[]"
+  recorded_at: Sun, 16 Jul 2023 01:50:29 GMT
+- request:
+    method: get
+    uri: https://nominatim.openstreetmap.org/search?accept-language=en&addressdetails=1&format=json&q=871%20Tawanda%20Plaza%20Cliffordberg,%20Indiana%2096007
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Sun, 16 Jul 2023 01:51:29 GMT
+      Content-Type:
+      - application/json; charset=UTF-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Keep-Alive:
+      - timeout=20
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - OPTIONS,GET
+    body:
+      encoding: UTF-8
+      string: "[]"
+  recorded_at: Sun, 16 Jul 2023 01:51:29 GMT
+- request:
+    method: get
+    uri: https://nominatim.openstreetmap.org/search?accept-language=en&addressdetails=1&format=json&q=1000%2036th%20street%20Boulder,%20Colorado%2080302
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Sun, 16 Jul 2023 01:53:08 GMT
+      Content-Type:
+      - application/json; charset=UTF-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Keep-Alive:
+      - timeout=20
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - OPTIONS,GET
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        W3sicGxhY2VfaWQiOjMxMjczNDM4MSwibGljZW5jZSI6IkRhdGEgwqkgT3BlblN0cmVldE1hcCBjb250cmlidXRvcnMsIE9EYkwgMS4wLiBodHRwczovL29zbS5vcmcvY29weXJpZ2h0Iiwib3NtX3R5cGUiOiJ3YXkiLCJvc21faWQiOjE3MDI1NDE5LCJib3VuZGluZ2JveCI6WyI0MC4wMDQ3MDk5MDM2NDEiLCI0MC4wMDQ4MDk5MDM2NDEiLCItMTA1LjI0NzM2NTAzMTg2IiwiLTEwNS4yNDcyNjUwMzE4NiJdLCJsYXQiOiI0MC4wMDQ3NTk5MDM2NDExIiwibG9uIjoiLTEwNS4yNDczMTUwMzE4NTk4NiIsImRpc3BsYXlfbmFtZSI6IjEwMDAsIDM2dGggU3RyZWV0LCBFYXN0IEF1cm9yYSwgQm91bGRlciwgQm91bGRlciBDb3VudHksIENvbG9yYWRvLCA4MDMwMywgVW5pdGVkIFN0YXRlcyIsImNsYXNzIjoicGxhY2UiLCJ0eXBlIjoiaG91c2UiLCJpbXBvcnRhbmNlIjotMC42MiwiYWRkcmVzcyI6eyJob3VzZV9udW1iZXIiOiIxMDAwIiwicm9hZCI6IjM2dGggU3RyZWV0IiwibmVpZ2hib3VyaG9vZCI6IkVhc3QgQXVyb3JhIiwiY2l0eSI6IkJvdWxkZXIiLCJjb3VudHkiOiJCb3VsZGVyIENvdW50eSIsInN0YXRlIjoiQ29sb3JhZG8iLCJJU08zMTY2LTItbHZsNCI6IlVTLUNPIiwicG9zdGNvZGUiOiI4MDMwMyIsImNvdW50cnkiOiJVbml0ZWQgU3RhdGVzIiwiY291bnRyeV9jb2RlIjoidXMifX1d
+  recorded_at: Sun, 16 Jul 2023 01:53:08 GMT
+- request:
+    method: get
+    uri: https://nominatim.openstreetmap.org/search?accept-language=en&addressdetails=1&format=json&q=1000%2036th%20street%20Boulder,%20Colorado%2080302
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Sun, 16 Jul 2023 01:53:09 GMT
+      Content-Type:
+      - application/json; charset=UTF-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Keep-Alive:
+      - timeout=20
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - OPTIONS,GET
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        W3sicGxhY2VfaWQiOjMxMjczNDM4MSwibGljZW5jZSI6IkRhdGEgwqkgT3BlblN0cmVldE1hcCBjb250cmlidXRvcnMsIE9EYkwgMS4wLiBodHRwczovL29zbS5vcmcvY29weXJpZ2h0Iiwib3NtX3R5cGUiOiJ3YXkiLCJvc21faWQiOjE3MDI1NDE5LCJib3VuZGluZ2JveCI6WyI0MC4wMDQ3MDk5MDM2NDEiLCI0MC4wMDQ4MDk5MDM2NDEiLCItMTA1LjI0NzM2NTAzMTg2IiwiLTEwNS4yNDcyNjUwMzE4NiJdLCJsYXQiOiI0MC4wMDQ3NTk5MDM2NDExIiwibG9uIjoiLTEwNS4yNDczMTUwMzE4NTk4NiIsImRpc3BsYXlfbmFtZSI6IjEwMDAsIDM2dGggU3RyZWV0LCBFYXN0IEF1cm9yYSwgQm91bGRlciwgQm91bGRlciBDb3VudHksIENvbG9yYWRvLCA4MDMwMywgVW5pdGVkIFN0YXRlcyIsImNsYXNzIjoicGxhY2UiLCJ0eXBlIjoiaG91c2UiLCJpbXBvcnRhbmNlIjotMC42MiwiYWRkcmVzcyI6eyJob3VzZV9udW1iZXIiOiIxMDAwIiwicm9hZCI6IjM2dGggU3RyZWV0IiwibmVpZ2hib3VyaG9vZCI6IkVhc3QgQXVyb3JhIiwiY2l0eSI6IkJvdWxkZXIiLCJjb3VudHkiOiJCb3VsZGVyIENvdW50eSIsInN0YXRlIjoiQ29sb3JhZG8iLCJJU08zMTY2LTItbHZsNCI6IlVTLUNPIiwicG9zdGNvZGUiOiI4MDMwMyIsImNvdW50cnkiOiJVbml0ZWQgU3RhdGVzIiwiY291bnRyeV9jb2RlIjoidXMifX1d
+  recorded_at: Sun, 16 Jul 2023 01:53:09 GMT
+- request:
+    method: get
+    uri: https://nominatim.openstreetmap.org/search?accept-language=en&addressdetails=1&format=json&q=1000%2036th%20street%20Boulder,%20Colorado%2080302
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Sun, 16 Jul 2023 01:53:09 GMT
+      Content-Type:
+      - application/json; charset=UTF-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Keep-Alive:
+      - timeout=20
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - OPTIONS,GET
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        W3sicGxhY2VfaWQiOjMxMjczNDM4MSwibGljZW5jZSI6IkRhdGEgwqkgT3BlblN0cmVldE1hcCBjb250cmlidXRvcnMsIE9EYkwgMS4wLiBodHRwczovL29zbS5vcmcvY29weXJpZ2h0Iiwib3NtX3R5cGUiOiJ3YXkiLCJvc21faWQiOjE3MDI1NDE5LCJib3VuZGluZ2JveCI6WyI0MC4wMDQ3MDk5MDM2NDEiLCI0MC4wMDQ4MDk5MDM2NDEiLCItMTA1LjI0NzM2NTAzMTg2IiwiLTEwNS4yNDcyNjUwMzE4NiJdLCJsYXQiOiI0MC4wMDQ3NTk5MDM2NDExIiwibG9uIjoiLTEwNS4yNDczMTUwMzE4NTk4NiIsImRpc3BsYXlfbmFtZSI6IjEwMDAsIDM2dGggU3RyZWV0LCBFYXN0IEF1cm9yYSwgQm91bGRlciwgQm91bGRlciBDb3VudHksIENvbG9yYWRvLCA4MDMwMywgVW5pdGVkIFN0YXRlcyIsImNsYXNzIjoicGxhY2UiLCJ0eXBlIjoiaG91c2UiLCJpbXBvcnRhbmNlIjotMC42MiwiYWRkcmVzcyI6eyJob3VzZV9udW1iZXIiOiIxMDAwIiwicm9hZCI6IjM2dGggU3RyZWV0IiwibmVpZ2hib3VyaG9vZCI6IkVhc3QgQXVyb3JhIiwiY2l0eSI6IkJvdWxkZXIiLCJjb3VudHkiOiJCb3VsZGVyIENvdW50eSIsInN0YXRlIjoiQ29sb3JhZG8iLCJJU08zMTY2LTItbHZsNCI6IlVTLUNPIiwicG9zdGNvZGUiOiI4MDMwMyIsImNvdW50cnkiOiJVbml0ZWQgU3RhdGVzIiwiY291bnRyeV9jb2RlIjoidXMifX1d
+  recorded_at: Sun, 16 Jul 2023 01:53:09 GMT
+- request:
+    method: get
+    uri: https://nominatim.openstreetmap.org/search?accept-language=en&addressdetails=1&format=json&q=1000%2036th%20street%20Boulder,%20Colorado%2080302
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Sun, 16 Jul 2023 01:53:10 GMT
+      Content-Type:
+      - application/json; charset=UTF-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Keep-Alive:
+      - timeout=20
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - OPTIONS,GET
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        W3sicGxhY2VfaWQiOjMxMjczNDM4MSwibGljZW5jZSI6IkRhdGEgwqkgT3BlblN0cmVldE1hcCBjb250cmlidXRvcnMsIE9EYkwgMS4wLiBodHRwczovL29zbS5vcmcvY29weXJpZ2h0Iiwib3NtX3R5cGUiOiJ3YXkiLCJvc21faWQiOjE3MDI1NDE5LCJib3VuZGluZ2JveCI6WyI0MC4wMDQ3MDk5MDM2NDEiLCI0MC4wMDQ4MDk5MDM2NDEiLCItMTA1LjI0NzM2NTAzMTg2IiwiLTEwNS4yNDcyNjUwMzE4NiJdLCJsYXQiOiI0MC4wMDQ3NTk5MDM2NDExIiwibG9uIjoiLTEwNS4yNDczMTUwMzE4NTk4NiIsImRpc3BsYXlfbmFtZSI6IjEwMDAsIDM2dGggU3RyZWV0LCBFYXN0IEF1cm9yYSwgQm91bGRlciwgQm91bGRlciBDb3VudHksIENvbG9yYWRvLCA4MDMwMywgVW5pdGVkIFN0YXRlcyIsImNsYXNzIjoicGxhY2UiLCJ0eXBlIjoiaG91c2UiLCJpbXBvcnRhbmNlIjotMC42MiwiYWRkcmVzcyI6eyJob3VzZV9udW1iZXIiOiIxMDAwIiwicm9hZCI6IjM2dGggU3RyZWV0IiwibmVpZ2hib3VyaG9vZCI6IkVhc3QgQXVyb3JhIiwiY2l0eSI6IkJvdWxkZXIiLCJjb3VudHkiOiJCb3VsZGVyIENvdW50eSIsInN0YXRlIjoiQ29sb3JhZG8iLCJJU08zMTY2LTItbHZsNCI6IlVTLUNPIiwicG9zdGNvZGUiOiI4MDMwMyIsImNvdW50cnkiOiJVbml0ZWQgU3RhdGVzIiwiY291bnRyeV9jb2RlIjoidXMifX1d
+  recorded_at: Sun, 16 Jul 2023 01:53:10 GMT
+- request:
+    method: get
+    uri: https://nominatim.openstreetmap.org/search?accept-language=en&addressdetails=1&format=json&q=1000%2036th%20street%20Boulder,%20Colorado%2080302
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Sun, 16 Jul 2023 01:53:10 GMT
+      Content-Type:
+      - application/json; charset=UTF-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Keep-Alive:
+      - timeout=20
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - OPTIONS,GET
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        W3sicGxhY2VfaWQiOjMxMjczNDM4MSwibGljZW5jZSI6IkRhdGEgwqkgT3BlblN0cmVldE1hcCBjb250cmlidXRvcnMsIE9EYkwgMS4wLiBodHRwczovL29zbS5vcmcvY29weXJpZ2h0Iiwib3NtX3R5cGUiOiJ3YXkiLCJvc21faWQiOjE3MDI1NDE5LCJib3VuZGluZ2JveCI6WyI0MC4wMDQ3MDk5MDM2NDEiLCI0MC4wMDQ4MDk5MDM2NDEiLCItMTA1LjI0NzM2NTAzMTg2IiwiLTEwNS4yNDcyNjUwMzE4NiJdLCJsYXQiOiI0MC4wMDQ3NTk5MDM2NDExIiwibG9uIjoiLTEwNS4yNDczMTUwMzE4NTk4NiIsImRpc3BsYXlfbmFtZSI6IjEwMDAsIDM2dGggU3RyZWV0LCBFYXN0IEF1cm9yYSwgQm91bGRlciwgQm91bGRlciBDb3VudHksIENvbG9yYWRvLCA4MDMwMywgVW5pdGVkIFN0YXRlcyIsImNsYXNzIjoicGxhY2UiLCJ0eXBlIjoiaG91c2UiLCJpbXBvcnRhbmNlIjotMC42MiwiYWRkcmVzcyI6eyJob3VzZV9udW1iZXIiOiIxMDAwIiwicm9hZCI6IjM2dGggU3RyZWV0IiwibmVpZ2hib3VyaG9vZCI6IkVhc3QgQXVyb3JhIiwiY2l0eSI6IkJvdWxkZXIiLCJjb3VudHkiOiJCb3VsZGVyIENvdW50eSIsInN0YXRlIjoiQ29sb3JhZG8iLCJJU08zMTY2LTItbHZsNCI6IlVTLUNPIiwicG9zdGNvZGUiOiI4MDMwMyIsImNvdW50cnkiOiJVbml0ZWQgU3RhdGVzIiwiY291bnRyeV9jb2RlIjoidXMifX1d
+  recorded_at: Sun, 16 Jul 2023 01:53:10 GMT
+- request:
+    method: get
+    uri: https://nominatim.openstreetmap.org/search?accept-language=en&addressdetails=1&format=json&q=1000%2036th%20street%20Boulder,%20Colorado%2080302
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Sun, 16 Jul 2023 01:53:11 GMT
+      Content-Type:
+      - application/json; charset=UTF-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Keep-Alive:
+      - timeout=20
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - OPTIONS,GET
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        W3sicGxhY2VfaWQiOjMxMjczNDM4MSwibGljZW5jZSI6IkRhdGEgwqkgT3BlblN0cmVldE1hcCBjb250cmlidXRvcnMsIE9EYkwgMS4wLiBodHRwczovL29zbS5vcmcvY29weXJpZ2h0Iiwib3NtX3R5cGUiOiJ3YXkiLCJvc21faWQiOjE3MDI1NDE5LCJib3VuZGluZ2JveCI6WyI0MC4wMDQ3MDk5MDM2NDEiLCI0MC4wMDQ4MDk5MDM2NDEiLCItMTA1LjI0NzM2NTAzMTg2IiwiLTEwNS4yNDcyNjUwMzE4NiJdLCJsYXQiOiI0MC4wMDQ3NTk5MDM2NDExIiwibG9uIjoiLTEwNS4yNDczMTUwMzE4NTk4NiIsImRpc3BsYXlfbmFtZSI6IjEwMDAsIDM2dGggU3RyZWV0LCBFYXN0IEF1cm9yYSwgQm91bGRlciwgQm91bGRlciBDb3VudHksIENvbG9yYWRvLCA4MDMwMywgVW5pdGVkIFN0YXRlcyIsImNsYXNzIjoicGxhY2UiLCJ0eXBlIjoiaG91c2UiLCJpbXBvcnRhbmNlIjotMC42MiwiYWRkcmVzcyI6eyJob3VzZV9udW1iZXIiOiIxMDAwIiwicm9hZCI6IjM2dGggU3RyZWV0IiwibmVpZ2hib3VyaG9vZCI6IkVhc3QgQXVyb3JhIiwiY2l0eSI6IkJvdWxkZXIiLCJjb3VudHkiOiJCb3VsZGVyIENvdW50eSIsInN0YXRlIjoiQ29sb3JhZG8iLCJJU08zMTY2LTItbHZsNCI6IlVTLUNPIiwicG9zdGNvZGUiOiI4MDMwMyIsImNvdW50cnkiOiJVbml0ZWQgU3RhdGVzIiwiY291bnRyeV9jb2RlIjoidXMifX1d
+  recorded_at: Sun, 16 Jul 2023 01:53:11 GMT
+- request:
+    method: get
+    uri: https://nominatim.openstreetmap.org/search?accept-language=en&addressdetails=1&format=json&q=100%20E%20Camelback%20Rd%20phoenix,%20arizona%2085012
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Sun, 16 Jul 2023 01:53:12 GMT
+      Content-Type:
+      - application/json; charset=UTF-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Keep-Alive:
+      - timeout=20
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - OPTIONS,GET
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        W3sicGxhY2VfaWQiOjk4OTkzMzcwLCJsaWNlbmNlIjoiRGF0YSDCqSBPcGVuU3RyZWV0TWFwIGNvbnRyaWJ1dG9ycywgT0RiTCAxLjAuIGh0dHBzOi8vb3NtLm9yZy9jb3B5cmlnaHQiLCJvc21fdHlwZSI6Im5vZGUiLCJvc21faWQiOjk2NzA4ODk5ODAsImJvdW5kaW5nYm94IjpbIjMzLjUxMDU1MjYiLCIzMy41MTA2NTI2IiwiLTExMi4wNzE4MDkyIiwiLTExMi4wNzE3MDkyIl0sImxhdCI6IjMzLjUxMDYwMjYiLCJsb24iOiItMTEyLjA3MTc1OTIiLCJkaXNwbGF5X25hbWUiOiJVcHRvd24gUGhvZW5peCBUYXByb29tICsgS2l0Y2hlbiwgMTAwLCBFYXN0IENhbWVsYmFjayBSb2FkLCBQaG9lbml4LCBNYXJpY29wYSBDb3VudHksIEFyaXpvbmEsIDg1MDEyLCBVbml0ZWQgU3RhdGVzIiwiY2xhc3MiOiJhbWVuaXR5IiwidHlwZSI6InB1YiIsImltcG9ydGFuY2UiOjAuNjIwMSwiaWNvbiI6Imh0dHBzOi8vbm9taW5hdGltLm9wZW5zdHJlZXRtYXAub3JnL3VpL21hcGljb25zL2Zvb2RfcHViLnAuMjAucG5nIiwiYWRkcmVzcyI6eyJhbWVuaXR5IjoiVXB0b3duIFBob2VuaXggVGFwcm9vbSArIEtpdGNoZW4iLCJob3VzZV9udW1iZXIiOiIxMDAiLCJyb2FkIjoiRWFzdCBDYW1lbGJhY2sgUm9hZCIsImNpdHkiOiJQaG9lbml4IiwiY291bnR5IjoiTWFyaWNvcGEgQ291bnR5Iiwic3RhdGUiOiJBcml6b25hIiwiSVNPMzE2Ni0yLWx2bDQiOiJVUy1BWiIsInBvc3Rjb2RlIjoiODUwMTIiLCJjb3VudHJ5IjoiVW5pdGVkIFN0YXRlcyIsImNvdW50cnlfY29kZSI6InVzIn19LHsicGxhY2VfaWQiOjk4NjQ5NDUyLCJsaWNlbmNlIjoiRGF0YSDCqSBPcGVuU3RyZWV0TWFwIGNvbnRyaWJ1dG9ycywgT0RiTCAxLjAuIGh0dHBzOi8vb3NtLm9yZy9jb3B5cmlnaHQiLCJvc21fdHlwZSI6Im5vZGUiLCJvc21faWQiOjk2NzA4ODk4OTIsImJvdW5kaW5nYm94IjpbIjMzLjUxMDI1MTciLCIzMy41MTAzNTE3IiwiLTExMi4wNzIxMjg1IiwiLTExMi4wNzIwMjg1Il0sImxhdCI6IjMzLjUxMDMwMTciLCJsb24iOiItMTEyLjA3MjA3ODUiLCJkaXNwbGF5X25hbWUiOiJDaHVsYSBTZWFmb29kIFVwdG93biwgMTAwLCBFYXN0IENhbWVsYmFjayBSb2FkLCBQaG9lbml4LCBNYXJpY29wYSBDb3VudHksIEFyaXpvbmEsIDg1MDEyLCBVbml0ZWQgU3RhdGVzIiwiY2xhc3MiOiJhbWVuaXR5IiwidHlwZSI6InJlc3RhdXJhbnQiLCJpbXBvcnRhbmNlIjowLjYyMDEsImljb24iOiJodHRwczovL25vbWluYXRpbS5vcGVuc3RyZWV0bWFwLm9yZy91aS9tYXBpY29ucy9mb29kX3Jlc3RhdXJhbnQucC4yMC5wbmciLCJhZGRyZXNzIjp7ImFtZW5pdHkiOiJDaHVsYSBTZWFmb29kIFVwdG93biIsImhvdXNlX251bWJlciI6IjEwMCIsInJvYWQiOiJFYXN0IENhbWVsYmFjayBSb2FkIiwiY2l0eSI6IlBob2VuaXgiLCJjb3VudHkiOiJNYXJpY29wYSBDb3VudHkiLCJzdGF0ZSI6IkFyaXpvbmEiLCJJU08zMTY2LTItbHZsNCI6IlVTLUFaIiwicG9zdGNvZGUiOiI4NTAxMiIsImNvdW50cnkiOiJVbml0ZWQgU3RhdGVzIiwiY291bnRyeV9jb2RlIjoidXMifX0seyJwbGFjZV9pZCI6MzM0MTM0NjI2LCJsaWNlbmNlIjoiRGF0YSDCqSBPcGVuU3RyZWV0TWFwIGNvbnRyaWJ1dG9ycywgT0RiTCAxLjAuIGh0dHBzOi8vb3NtLm9yZy9jb3B5cmlnaHQiLCJvc21fdHlwZSI6IndheSIsIm9zbV9pZCI6NDIwNzU5NzAzLCJib3VuZGluZ2JveCI6WyIzMy41MDkzMDMiLCIzMy41MDk0MDMiLCItMTEyLjA3MjQ2MSIsIi0xMTIuMDcyMzYxIl0sImxhdCI6IjMzLjUwOTM1MyIsImxvbiI6Ii0xMTIuMDcyNDExIiwiZGlzcGxheV9uYW1lIjoiMTAwLCBFYXN0IENhbWVsYmFjayBSb2FkLCBQaG9lbml4LCBNYXJpY29wYSBDb3VudHksIEFyaXpvbmEsIDg1MDEyLCBVbml0ZWQgU3RhdGVzIiwiY2xhc3MiOiJwbGFjZSIsInR5cGUiOiJob3VzZSIsImltcG9ydGFuY2UiOi0wLjUyOTk5OTk5OTk5OTk5OTksImFkZHJlc3MiOnsiaG91c2VfbnVtYmVyIjoiMTAwIiwicm9hZCI6IkVhc3QgQ2FtZWxiYWNrIFJvYWQiLCJjaXR5IjoiUGhvZW5peCIsImNvdW50eSI6Ik1hcmljb3BhIENvdW50eSIsInN0YXRlIjoiQXJpem9uYSIsIklTTzMxNjYtMi1sdmw0IjoiVVMtQVoiLCJwb3N0Y29kZSI6Ijg1MDEyIiwiY291bnRyeSI6IlVuaXRlZCBTdGF0ZXMiLCJjb3VudHJ5X2NvZGUiOiJ1cyJ9fV0=
+  recorded_at: Sun, 16 Jul 2023 01:53:12 GMT
 recorded_with: VCR 6.2.0

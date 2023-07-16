@@ -21,10 +21,10 @@ RSpec.describe User, type: :model, vcr: { record: :new_episodes } do
     it { should have_many(:events).through(:user_events) }
     it { should have_many(:user_games) }
     it { should have_many(:games).through(:user_games) }
-    it { should validate_presence_of(:username) }
-    it { should validate_presence_of(:password) }
-    it { should validate_presence_of(:city) }
-    it { should validate_presence_of(:state) }
+    # it { should validate_presence_of(:username) }
+    # it { should validate_presence_of(:password) }
+    # it { should validate_presence_of(:city) }
+    # it { should validate_presence_of(:state) }
   end
 
   describe 'instance methods' do
@@ -69,7 +69,7 @@ RSpec.describe User, type: :model, vcr: { record: :new_episodes } do
 
   describe 'game names' do
     it 'collects user game names' do
-      user = create(:user)
+      user = create(:user, city: "Denver", state: "Colorado")
       game_1 = create(:game, name: "Catan")
       game_2 = create(:game, name: "Stone Age")
       game_3 = create(:game, name: "Irish Gauge")

@@ -7,9 +7,9 @@ module Mutations
     RSpec.describe DeleteUserEvent, type: :request, vcr: { record: :new_episodes } do
       describe 'resolve' do
         it 'can destroy a user_event' do
-          user_1 = create(:user, id: 1)
-          user_2 = create(:user, id: 2)
-          event = create(:event, id: 1)
+          user_1 = create(:user, id: 1, city: "Denver", state: "Colorado")
+          user_2 = create(:user, id: 2, city: "Denver", state: "Colorado")
+          event = create(:event, id: 1, address: "1000 36th street", city: "Boulder", state: "Colorado", zip: 80_302)
 
           UserEvent.create(user_id: user_1.id, event_id: event.id)
           UserEvent.create(user_id: user_2.id, event_id: event.id)

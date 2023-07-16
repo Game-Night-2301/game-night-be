@@ -6,8 +6,8 @@ module Mutations
   class CreateEvent < BaseMutation
     # TODO: define return fields
     # field :post, Types::PostType, null: false
-    field :event, Types::EventType, null: false
-    field :errors, [String], null: false
+    field :event, Types::EventType, null: true
+    field :errors, String, null: false
 
     argument :date, String, required: true
     argument :address, String, required: true
@@ -38,12 +38,10 @@ module Mutations
         end_time: endTime
       )
 
-      if event.save
-        UserEvent.create(user_id: host, event_id: event.id)
-        { event:, errors: [] }
-      else
-        { event: nil, errors: event.errors.full_messages }
-      end
+      raise GraphQL::ExecutionError, event.errors.full_messages.join(",") unless event.save
+
+      UserEvent.create(user_id: host, event_id: event.id)
+      { event:, errors: [] }
     end
   end
 end

@@ -59,12 +59,12 @@ RSpec.describe Types::QueryType, vcr: { record: :new_episodes } do
 
     it "shows whether game is currently full" do
       Event.destroy_all
-      user_1 = create(:user)
-      user_2 = create(:user)
-      user_3 = create(:user)
-      user_4 = create(:user)
+      user_1 = create(:user, city: "Denver", state: "Colorado")
+      user_2 = create(:user, city: "Denver", state: "Colorado")
+      user_3 = create(:user, city: "Denver", state: "Colorado")
+      user_4 = create(:user, city: "Denver", state: "Colorado")
       game = create(:game, max_players: 4)
-      event = create(:event, id: 1, game: game.id)
+      event = create(:event, id: 1, game: game.id, address: "1000 36th street", city: "Boulder", state: "Colorado", zip: 80_302)
       user_1.user_events.create(event_id: event.id)
       user_2.user_events.create(event_id: event.id)
       user_3.user_events.create(event_id: event.id)
