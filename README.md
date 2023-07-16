@@ -335,8 +335,17 @@ mutation {
 <!-- Technical Solutions -->
 ## Technical Solutions
 
+As a part of the Capstone project requirements, the Game Night team challenged ourselves to implement a novel stretch tech that we, a full stack team, agreed on during our two-week design and development process. We selected this technology based on the challenges we expected to face while building out our MVP. Back-end and Front-end both decided to use `GraphQL` as our novel stretch tech. Not included in that stretch tech category, but a stretch goal for the group was to implement the use of AI.
 
-WRITE SOME PARAGRAPHS ABOUT STRETCH TECH, OPENAI, ETC...
+### GraphQL
+* <b>Challenge</b>: The biggest challenge for us as a back-end team came from the fact that, to this point, we had been taught and only built RESTful APIs. Transitioning from RESTful APIs to a GraphQL API presents several challenges. Firstly, one of the main hurdles is the change in mindset and approach to data fetching. With RESTful APIs, the server defines a fixed set of endpoints and response structures, which can lead to over-fetching or under-fetching of data. GraphQL, on the other hand, allows clients to specify their exact data requirements, enabling more efficient and precise data retrieval.
+* <b>Solution</b>: We researched multiple articles on building basic queries and mutations. Then decided to install `GraphiQL` to build out queries and mutations on our server to get more comfortable with writing, structuring, and returning queries correctly. So that the data we exposed for the Front-end was readable, useable, and correct.
+
+### Artificial Intelligence 
+* <b>Challenge</b>: This challenge was us working with something completely novel to us but popular in the real world. We wanted to implement the AI to give us recommendations based on a collection of games that the user owned. The challenge being we didn't want to send, specifically ChatGPT, the entire game object that was stored in our database. We only wanted to send the names of the games that they owned. This while also having ChatGPT return us only the names of the games that it is suggesting in a usable format for us to take and then expose for the Front-end. Before the data was sent to the FE, we needed to make sure that the game being recommended actually existed in our database and figure out how to handle recommending a different game if the game happens to not be one that we don't have. 
+* <b>Solution</b>: After struggling for quite literally hours. We figured out the hard way that adjusting headers in a request wasn't enough to make `VCR` re-record a response to the cassette. Once we got past the same error because of VCR, we began to actually implement the AI the way we want to. We started by making a method called `get_games` that took the collection of games that were associated with a user and shoveled only the names of the games into an array that would be passed as an argument to the method that was actually querying the OpenAI API. We then specifically asked ChatGPT to, based on the collection we just gave it, only return the recommendations as the names of the games as strings inside an array. From there, we passed that data to the `Games` model and validated whether or not that game was in our database. We used an ActiveRecord to take each name in the array given to us by ChatGPT to attempt to match it to the name of a game in our database. If there was a match, we sent this game on to be exposed to the FE. If the game didn't exist in our database of 1100 games, we picked another game from our database and sent that on with the games that did match.   
+
+
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -347,6 +356,7 @@ Additional features, functionality, and potential refactors:
 * User Authentication
   * Google OAuth and/or Board Game Atlas OAuth
 * Cache external API calls to improve performance
+* Implement a friends list for users (Add people they know)
 * Consume additional external API to expand beyond just tabletop games to video games and alike
   * Set up functionality to organize and plan, similar to board game nights:
     * Video Game tournaments
