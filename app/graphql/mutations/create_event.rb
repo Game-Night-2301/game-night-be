@@ -38,12 +38,10 @@ module Mutations
         end_time: endTime
       )
 
-      if event.save
-        UserEvent.create(user_id: host, event_id: event.id)
-        { event:, errors: [] }
-      else
-        raise GraphQL::ExecutionError, event.errors.full_messages.join(",")
-      end
+      raise GraphQL::ExecutionError, event.errors.full_messages.join(",") unless event.save
+
+      UserEvent.create(user_id: host, event_id: event.id)
+      { event:, errors: [] }
     end
   end
 end

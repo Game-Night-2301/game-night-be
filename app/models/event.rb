@@ -31,9 +31,9 @@ class Event < ApplicationRecord
 
   def verify_address
     verifier = MainStreet::AddressVerifier.new(full_address)
-    if verifier.failure_message
-      errors.add(:base, "This address does not appear to exist")
-      throw(:abort)
-    end
+    return unless verifier.failure_message
+
+    errors.add(:base, "This address does not appear to exist")
+    throw(:abort)
   end
 end

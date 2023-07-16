@@ -46,9 +46,9 @@ gem 'figaro'
 gem 'geocoder'
 gem 'geokit-rails'
 gem 'hirb'
+gem 'mainstreet'
 gem 'pry'
 gem 'sprockets-rails'
-gem 'mainstreet'
 
 group :test do
   gem 'capybara'
