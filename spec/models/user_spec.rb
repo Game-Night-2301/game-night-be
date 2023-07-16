@@ -21,7 +21,7 @@ RSpec.describe User, type: :model, vcr: { record: :new_episodes } do
     it { should have_many(:events).through(:user_events) }
     it { should have_many(:user_games) }
     it { should have_many(:games).through(:user_games) }
-    
+
     it 'validates presense of username' do
       user = User.new(username: "", city: "austin", state: "texas", password: "password")
       expect(user.valid?).to eq(false)
