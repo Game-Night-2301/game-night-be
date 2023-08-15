@@ -16,7 +16,8 @@ class AiService
         {
           'role': 'user',
           'content': "recommend me 3 board games based on the following collection of games. #{collection}
-          #                 Please include only the name of the games, in the form of strings within an array."
+                      Do not recommend games that are already in the collection you've been given.
+                      Please include only the name of the games, in the form of strings within an array."
         }
       ],
       'temperature': 0.8
