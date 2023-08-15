@@ -21,21 +21,17 @@ http_interactions:
       Server:
       - nginx
       Date:
-      - Sun, 16 Jul 2023 00:26:20 GMT
+      - Tue, 15 Aug 2023 17:11:24 GMT
       Content-Type:
-      - application/json; charset=UTF-8
-      Transfer-Encoding:
-      - chunked
+      - application/json
+      Content-Length:
+      - '2'
       Connection:
       - keep-alive
       Keep-Alive:
       - timeout=20
-      Access-Control-Allow-Origin:
-      - "*"
-      Access-Control-Allow-Methods:
-      - OPTIONS,GET
     body:
       encoding: UTF-8
       string: "[]"
-  recorded_at: Sun, 16 Jul 2023 00:26:20 GMT
+  recorded_at: Tue, 15 Aug 2023 17:11:24 GMT
 recorded_with: VCR 6.2.0
