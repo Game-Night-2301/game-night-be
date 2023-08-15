@@ -52,8 +52,8 @@ RSpec.describe Event, type: :model, vcr: { record: :new_episodes } do
     it 'geocodes' do
       user = create(:user, city: "harlem", state: "georgia")
       event = create(:event, host_id: user.id, address: "9464 county road", city: "Calais", state: "Vermont", zip: "05648")
-      expect(event.lat).to eq(44.325782)
-      expect(event.lon).to eq(-72.52738)
+      expect(event.lat).to eq(44.3257532)
+      expect(event.lon).to eq(-72.5273934)
     end
   end
 end

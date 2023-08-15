@@ -8,8 +8,10 @@ http_interactions:
       string: '{"model":"gpt-3.5-turbo","messages":[{"role":"user","content":"recommend
         me 3 board games based on the following collection of games. [\"Catan\", \"Betrayal
         at House on the Hill\", \"Gloom Haven\", \"Brass: Birmingham\", \"Survive:
-        Escape from Atlantis\"]\n          #                 Please include only the
-        name of the games, in the form of strings within an array."}],"temperature":0.8}'
+        Escape from Atlantis\"]\n                      Do not recommend games that
+        are already in the collection you''ve been given and only recommend each game
+        once.\n                      Please include only the name of the games, in
+        the form of strings within an array."}],"temperature":0.8}'
     headers:
       Content-Type:
       - application/json
@@ -27,7 +29,7 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Sat, 15 Jul 2023 17:15:15 GMT
+      - Tue, 15 Aug 2023 17:29:28 GMT
       Content-Type:
       - application/json
       Transfer-Encoding:
@@ -43,40 +45,40 @@ http_interactions:
       Openai-Organization:
       - game-night-tiwtpu
       Openai-Processing-Ms:
-      - '871'
+      - '713'
       Openai-Version:
       - '2020-10-01'
       Strict-Transport-Security:
       - max-age=15724800; includeSubDomains
       X-Ratelimit-Limit-Requests:
-      - '2000'
+      - '3500'
       X-Ratelimit-Limit-Tokens:
-      - '60000'
+      - '90000'
       X-Ratelimit-Remaining-Requests:
-      - '1998'
+      - '3499'
       X-Ratelimit-Remaining-Tokens:
-      - '59909'
+      - '89878'
       X-Ratelimit-Reset-Requests:
-      - 1m20.216s
+      - 17ms
       X-Ratelimit-Reset-Tokens:
-      - 91ms
+      - 81ms
       X-Request-Id:
-      - cc6f878c58e78fe03535ad04f098cbb4
+      - 38f851c9cfaf88be3999d3f367ce9f04
       Cf-Cache-Status:
       - DYNAMIC
       Server:
       - cloudflare
       Cf-Ray:
-      - 7e73a56defbb2900-DEN
+      - 7f7328e99d731f4a-DEN
       Alt-Svc:
       - h3=":443"; ma=86400
     body:
       encoding: ASCII-8BIT
       string: |
         {
-          "id": "chatcmpl-7cd9ONNqQ4i5wkid744O8uu98lz0C",
+          "id": "chatcmpl-7ns99xm5m0dEuMFe31TphGuByTWjw",
           "object": "chat.completion",
-          "created": 1689441314,
+          "created": 1692120567,
           "model": "gpt-3.5-turbo-0613",
           "choices": [
             {
@@ -89,10 +91,10 @@ http_interactions:
             }
           ],
           "usage": {
-            "prompt_tokens": 75,
+            "prompt_tokens": 95,
             "completion_tokens": 14,
-            "total_tokens": 89
+            "total_tokens": 109
           }
         }
-  recorded_at: Sat, 15 Jul 2023 17:15:15 GMT
+  recorded_at: Tue, 15 Aug 2023 17:29:28 GMT
 recorded_with: VCR 6.2.0
