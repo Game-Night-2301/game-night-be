@@ -6,7 +6,7 @@
 # run tests and linters.
 env:
   BOARD_GAME_ATLAS_CLIENT_ID: hgt0qVtR4Y
-  OPENAI_ACCESS_TOKEN: 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
+  OPENAI_ACCESS_TOKEN: ${{ secrets.AI_API_KEY }}
 
 name: "Ruby on Rails CI"
 on:
