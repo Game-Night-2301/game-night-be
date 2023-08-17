@@ -102,9 +102,9 @@ http_interactions:
       X-Ratelimit-Remaining:
       - '407'
       Date:
-      - Wed, 16 Aug 2023 18:04:49 GMT
+      - Wed, 16 Aug 2023 21:18:53 GMT
       X-Ratelimit-Reset:
-      - '1692209111'
+      - '1692220754'
       Access-Control-Allow-Origin:
       - "*"
       Access-Control-Allow-Headers:
@@ -112,7 +112,7 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - W/"1fc1-aSfnw2NTBzhLFc/ZpajnwlN9e8g"
+      - W/"28a8-FEFhckCKknU2Vv6Wf1Kq0HKLA3w"
       Vary:
       - Accept-Encoding
       Transfer-Encoding:
@@ -121,7 +121,231 @@ http_interactions:
       - 1.1 vegur
     body:
       encoding: ASCII-8BIT
-      string: !binary |-
-        ewogICJnYW1lcyI6IFsKICAgIHsKICAgICAgImlkIjogInVvMEdUd1FqUlIiLAogICAgICAiaGFuZGxlIjogImNhc3RsZXMtb2YtbWFkLWtpbmctbHVkd2lnLXNlY3JldHMtZXhwYW5zaW9uIiwKICAgICAgInVybCI6ICJodHRwczovL3d3dy5ib2FyZGdhbWVhdGxhcy5jb20vZ2FtZS91bzBHVHdRalJSL2Nhc3RsZXMtb2YtbWFkLWtpbmctbHVkd2lnLXNlY3JldHMtZXhwYW5zaW9uIiwKICAgICAgImJnYV9lZGl0X3VybCI6ICJodHRwczovL3d3dy5ib2FyZGdhbWVhdGxhcy5jb20vZ2FtZS91bzBHVHdRalJSL2VkaXQiLAogICAgICAidGVtcGxhdGVfdXJsIjogIi9wcm9kdWN0cy9saXN0aW5nP29iamVjdElkPXVvMEdUd1FqUlImcHJvZHVjdF9saW5lPUJvYXJkIEdhbWVzJnR5cGU9cHJvZHVjdCIsCiAgICAgICJuYW1lIjogIkNhc3RsZXMgb2YgTWFkIEtpbmcgTHVkd2lnOiBTZWNyZXRzIEV4cGFuc2lvbiIsCiAgICAgICJwcmljZSI6ICIyMS45OSIsCiAgICAgICJwcmljZV9jYSI6ICIyMC40OSIsCiAgICAgICJwcmljZV91ayI6ICIxOS4xNiIsCiAgICAgICJwcmljZV9hdSI6ICIzNy45OSIsCiAgICAgICJtc3JwIjogMjkuOTUsCiAgICAgICJtc3JwcyI6IFsKICAgICAgICB7CiAgICAgICAgICAiY291bnRyeSI6ICJVUyIsCiAgICAgICAgICAicHJpY2UiOiAyOS45NQogICAgICAgIH0sCiAgICAgICAgewogICAgICAgICAgImNvdW50cnkiOiAiQ0EiLAogICAgICAgICAgInByaWNlIjogMAogICAgICAgIH0sCiAgICAgICAgewogICAgICAgICAgImNvdW50cnkiOiAiVUsiLAogICAgICAgICAgInByaWNlIjogMAogICAgICAgIH0KICAgICAgXSwKICAgICAgImRpc2NvdW50IjogIjAuMjciLAogICAgICAieWVhcl9wdWJsaXNoZWQiOiAyMDE1LAogICAgICAibWluX3BsYXllcnMiOiAxLAogICAgICAibWF4X3BsYXllcnMiOiA0LAogICAgICAicGxheWVyX2NvdW50cyI6IFsKICAgICAgICAxLAogICAgICAgIDIsCiAgICAgICAgMywKICAgICAgICA0CiAgICAgIF0sCiAgICAgICJtaW5fcGxheXRpbWUiOiA5MCwKICAgICAgIm1heF9wbGF5dGltZSI6IDEyMCwKICAgICAgIm1pbl9hZ2UiOiAxMywKICAgICAgImRlc2NyaXB0aW9uIjogIjxwPlRoZSBleHBhbnNpb24gdG8gdGhlIGJlc3Qtc2VsbGluZyBDYXN0bGVzIG9mIE1hZCBLaW5nIEx1ZHdpZyE8YnIgLz48YnIgLz5TZWNyZXRzIGx1cmsgaW4gdGhlIHNoYWRvd3Mgb2YgdGhlIEtpbmcncyBjYXN0bGUuIERvemVucyBvZiBoaWRkZW4gU3dhbnMgYXJlIHNjYXR0ZXJlZCBhbW9uZyB0aGlydHkgbmV3IHJvb21zIG9mIGV2ZXJ5IHNoYXBlIGFuZCBzaXplLiBTdXJyb3VuZGluZyBhbmQgcHJvdGVjdGluZyB5b3VyIGNhc3RsZSBhcmUgbmV3IEJhcmJpY2FucyBhbmQgTW9hdHMsIG1ha2luZyBldmVyeSByb29tIGluc2lkZSB0aGUgY2FzdGxlIGV2ZW4gbW9yZSB2YWx1YWJsZS4gVGhlIEtpbmcgaGFzIGNvbWUgdXAgd2l0aCBtb3JlIEZhdm9ycywgaW5jbHVkaW5nIG9uZSBmb3IgY3JlYXRpbmcgY291cnR5YXJkcy4gRmluYWxseSwgY2xldmVyIFNlY3JldCBQYXNzYWdlcyBlbmhhbmNlIGNvbm5lY3Rpb25zIGFuZCBtdWZmbGUgc291bmQgZnJvbSBBY3Rpdml0eSByb29tcy48L3A+IiwKICAgICAgImNvbW1lbnRhcnkiOiAiIiwKICAgICAgImZhcSI6ICIiLAogICAgICAidGh1bWJfdXJsIjogImh0dHBzOi8vczMtdXMtd2VzdC0xLmFtYXpvbmF3cy5jb20vNWNjLmltYWdlcy9nYW1lcy91cGxvYWRlZC8xNTU5MjU0OTUzMTM5LTUxWTB1N1dVd1pMLmpwZyIsCiAgICAgICJpbWFnZV91cmwiOiAiaHR0cHM6Ly9zMy11cy13ZXN0LTEuYW1hem9uYXdzLmNvbS81Y2MuaW1hZ2VzL2dhbWVzL3VwbG9hZGVkLzE1NTkyNTQ5NTMxMzktNTFZMHU3V1V3WkwuanBnIiwKICAgICAgIm1hdGNoZXNfc3BlY3MiOiBudWxsLAogICAgICAic3BlY3MiOiBbXSwKICAgICAgIm1lY2hhbmljcyI6IFtdLAogICAgICAiY2F0ZWdvcmllcyI6IFsKICAgICAgICB7CiAgICAgICAgICAiaWQiOiAidjRTZll0UzJMciIsCiAgICAgICAgICAidXJsIjogImh0dHBzOi8vd3d3LmJvYXJkZ2FtZWF0bGFzLmNvbS9jYXRlZ29yeS92NFNmWXRTMkxyL3VuZGVmaW5lZCIKICAgICAgICB9CiAgICAgIF0sCiAgICAgICJwdWJsaXNoZXJzIjogWwogICAgICAgIHsKICAgICAgICAgICJpZCI6ICJESUxZd3Fvd0tJIiwKICAgICAgICAgICJudW1fZ2FtZXMiOiBudWxsLAogICAgICAgICAgInNjb3JlIjogOTk5OTk5OSwKICAgICAgICAgICJnYW1lIjoge30sCiAgICAgICAgICAidXJsIjogImh0dHBzOi8vd3d3LmJvYXJkZ2FtZWF0bGFzLmNvbS9wdWJsaXNoZXIvRElMWXdxb3dLSS91bmRlZmluZWQiLAogICAgICAgICAgImltYWdlcyI6IHsKICAgICAgICAgICAgInRodW1iIjogbnVsbCwKICAgICAgICAgICAgInNtYWxsIjogbnVsbCwKICAgICAgICAgICAgIm1lZGl1bSI6IG51bGwsCiAgICAgICAgICAgICJsYXJnZSI6IG51bGwsCiAgICAgICAgICAgICJvcmlnaW5hbCI6IG51bGwKICAgICAgICAgIH0KICAgICAgICB9CiAgICAgIF0sCiAgICAgICJkZXNpZ25lcnMiOiBbCiAgICAgICAgewogICAgICAgICAgImlkIjogIkZFYmZ0SFpKMloiLAogICAgICAgICAgIm51bV9nYW1lcyI6IG51bGwsCiAgICAgICAgICAic2NvcmUiOiA5OTk5OTk5LAogICAgICAgICAgImdhbWUiOiB7fSwKICAgICAgICAgICJ1cmwiOiAiaHR0cHM6Ly93d3cuYm9hcmRnYW1lYXRsYXMuY29tL2Rlc2lnbmVyL0ZFYmZ0SFpKMlovdW5kZWZpbmVkIiwKICAgICAgICAgICJpbWFnZXMiOiB7CiAgICAgICAgICAgICJ0aHVtYiI6IG51bGwsCiAgICAgICAgICAgICJzbWFsbCI6IG51bGwsCiAgICAgICAgICAgICJtZWRpdW0iOiBudWxsLAogICAgICAgICAgICAibGFyZ2UiOiBudWxsLAogICAgICAgICAgICAib3JpZ2luYWwiOiBudWxsCiAgICAgICAgICB9CiAgICAgICAgfQogICAgICBdLAogICAgICAicHJpbWFyeV9wdWJsaXNoZXIiOiB7CiAgICAgICAgImlkIjogIkRJTFl3cW93S0kiLAogICAgICAgICJuYW1lIjogIkLDqXppZXIgR2FtZXMiLAogICAgICAgICJ1cmwiOiAiaHR0cHM6Ly93d3cuYm9hcmRnYW1lYXRsYXMuY29tL3B1Ymxpc2hlci9ESUxZd3Fvd0tJL2J6aWVyLWdhbWVzIgogICAgICB9LAogICAgICAicHJpbWFyeV9kZXNpZ25lciI6IHsKICAgICAgICAiaWQiOiAiRkViZnRIWkoyWiIsCiAgICAgICAgIm5hbWUiOiAiVGVkIEFsc3BhY2giLAogICAgICAgICJ1cmwiOiAiaHR0cHM6Ly93d3cuYm9hcmRnYW1lYXRsYXMuY29tL2Rlc2lnbmVyL0ZFYmZ0SFpKMlovdGVkLWFsc3BhY2giCiAgICAgIH0sCiAgICAgICJkZXZlbG9wZXJzIjogW10sCiAgICAgICJyZWxhdGVkX3RvIjogW10sCiAgICAgICJyZWxhdGVkX2FzIjogWwogICAgICAgICJleHBhbnNpb24iCiAgICAgIF0sCiAgICAgICJhcnRpc3RzIjogWwogICAgICAgICJLZWl0aCBDdXJ0aXMiLAogICAgICAgICJPbGxpbiBUaW1tIgogICAgICBdLAogICAgICAibmFtZXMiOiBbXSwKICAgICAgInJ1bGVzX3VybCI6IG51bGwsCiAgICAgICJhbWF6b25fcmFuayI6IDEwOTg3NywKICAgICAgImNzX3JhdGluZyI6IDQuNCwKICAgICAgIm9mZmljaWFsX3VybCI6IG51bGwsCiAgICAgICJjb21tZW50X2NvdW50IjogMCwKICAgICAgIm51bV91c2VyX3JhdGluZ3MiOiAzNywKICAgICAgImF2ZXJhZ2VfdXNlcl9yYXRpbmciOiAzLjU1NDA1NDA1NDA1NDA1MzUsCiAgICAgICJoaXN0b3JpY2FsX2xvd19wcmljZXMiOiBbCiAgICAgICAgewogICAgICAgICAgImNvdW50cnkiOiAiQVUiLAogICAgICAgICAgImRhdGUiOiAiMjAyMS0xMi0zMFQwNTowNDozOC4xMTVaIiwKICAgICAgICAgICJwcmljZSI6IDQxLjI5LAogICAgICAgICAgImlzTG93IjogZmFsc2UKICAgICAgICB9LAogICAgICAgIHsKICAgICAgICAgICJjb3VudHJ5IjogIkNBIiwKICAgICAgICAgICJkYXRlIjogIjIwMjItMDYtMDlUMjA6Mzc6MDYuMDkwWiIsCiAgICAgICAgICAicHJpY2UiOiAyMC40OSwKICAgICAgICAgICJpc0xvdyI6IGZhbHNlCiAgICAgICAgfSwKICAgICAgICB7CiAgICAgICAgICAiY291bnRyeSI6ICJVSyIsCiAgICAgICAgICAiZGF0ZSI6ICIyMDIyLTEyLTI0VDE0OjU3OjEzLjE3N1oiLAogICAgICAgICAgInByaWNlIjogMTkuMTYsCiAgICAgICAgICAiaXNMb3ciOiB0cnVlCiAgICAgICAgfSwKICAgICAgICB7CiAgICAgICAgICAiY291bnRyeSI6ICJVUyIsCiAgICAgICAgICAiZGF0ZSI6ICIyMDIzLTA0LTA0VDE1OjM0OjQ5LjExNloiLAogICAgICAgICAgInByaWNlIjogMjEuOTksCiAgICAgICAgICAiaXNMb3ciOiBmYWxzZQogICAgICAgIH0KICAgICAgXSwKICAgICAgImFjdGl2ZSI6IHRydWUsCiAgICAgICJudW1fdXNlcl9jb21wbGV4aXR5X3ZvdGVzIjogMCwKICAgICAgImF2ZXJhZ2VfbGVhcm5pbmdfY29tcGxleGl0eSI6IDAsCiAgICAgICJhdmVyYWdlX3N0cmF0ZWd5X2NvbXBsZXhpdHkiOiAwLAogICAgICAidmlzaXRzIjogNzM3LAogICAgICAibGlzdHMiOiAyMzgsCiAgICAgICJtZW50aW9ucyI6IDAsCiAgICAgICJsaW5rcyI6IDEsCiAgICAgICJwbGF5cyI6IDQ4LAogICAgICAicmFuayI6IDEyMjgsCiAgICAgICJ0eXBlIjogImV4cGFuc2lvbiIsCiAgICAgICJ1cGMiOiAiNjg5MDcwMDE1NDIwIiwKICAgICAgIm51bV9kaXN0cmlidXRvcnMiOiAxLAogICAgICAidHJlbmRpbmdfcmFuayI6IDAsCiAgICAgICJsaXN0aW5nX2NsaWNrcyI6IDAsCiAgICAgICJpc19oaXN0b3JpY2FsX2xvdyI6IGZhbHNlLAogICAgICAic2t1cyI6IFsKICAgICAgICAiQkVaQ0FTUyIsCiAgICAgICAgIjY4OTA3MDAxNTQyMCIsCiAgICAgICAgIjIxNDg3MTMzNDciLAogICAgICAgICIwNjg5MDcwMDE1NDIwIiwKICAgICAgICAiMTUwNC0wMTIiLAogICAgICAgICJMVURTRUMwMSIsCiAgICAgICAgIkJFWjE1MDQwMTIiLAogICAgICAgICIyNTAwNCIsCiAgICAgICAgIkFTRDExNiIsCiAgICAgICAgIjQ2OTU3ICMwRUNHIiwKICAgICAgICAiNjEzNjA6NjQ2MzAiLAogICAgICAgICJCRVoxNTQyIgogICAgICBdLAogICAgICAic2t1X29iamVjdHMiOiBbCiAgICAgICAgewogICAgICAgICAgIm5hbWUiOiAiQ2FyZCBIYXVzIiwKICAgICAgICAgICJza3UiOiAiQkVaQ0FTUyIKICAgICAgICB9LAogICAgICAgIHsKICAgICAgICAgICJuYW1lIjogIjQwMSBHYW1lcyIsCiAgICAgICAgICAic2t1IjogIjY4OTA3MDAxNTQyMCIKICAgICAgICB9LAogICAgICAgIHsKICAgICAgICAgICJuYW1lIjogIk5vYmxlIEtuaWdodCBHYW1lcyIsCiAgICAgICAgICAic2t1IjogIjIxNDg3MTMzNDciCiAgICAgICAgfSwKICAgICAgICB7CiAgICAgICAgICAibmFtZSI6ICJJbWFnaW5haXJlIFNob3AiLAogICAgICAgICAgInNrdSI6ICIwNjg5MDcwMDE1NDIwIgogICAgICAgIH0sCiAgICAgICAgewogICAgICAgICAgIm5hbWUiOiAiRHJhZ29u4oCZcyBEZW4gR2FtZXMiLAogICAgICAgICAgInNrdSI6ICIxNTA0LTAxMiIKICAgICAgICB9LAogICAgICAgIHsKICAgICAgICAgICJuYW1lIjogIkFkdmVudCBHYW1lcyIsCiAgICAgICAgICAic2t1IjogIkxVRFNFQzAxIgogICAgICAgIH0sCiAgICAgICAgewogICAgICAgICAgIm5hbWUiOiAiR3VtbnV0IiwKICAgICAgICAgICJza3UiOiAiQkVaMTUwNDAxMiIKICAgICAgICB9LAogICAgICAgIHsKICAgICAgICAgICJuYW1lIjogIkhhbmFiZWUiLAogICAgICAgICAgInNrdSI6ICIyNTAwNCIKICAgICAgICB9LAogICAgICAgIHsKICAgICAgICAgICJuYW1lIjogIkdhbWVzIFBhcmFkaXNlIiwKICAgICAgICAgICJza3UiOiAiQVNEMTE2IgogICAgICAgIH0sCiAgICAgICAgewogICAgICAgICAgIm5hbWUiOiAiRnVuYWdhaW4gR2FtZXMiLAogICAgICAgICAgInNrdSI6ICI0Njk1NyAjMEVDRyIKICAgICAgICB9LAogICAgICAgIHsKICAgICAgICAgICJuYW1lIjogIkJvYXJkR2FtZUNvIiwKICAgICAgICAgICJza3UiOiAiNjEzNjA6NjQ2MzAiCiAgICAgICAgfSwKICAgICAgICB7CiAgICAgICAgICAibmFtZSI6ICJNaW5pYXR1cmUgTWFya2V0IiwKICAgICAgICAgICJza3UiOiAiQkVaMTU0MiIKICAgICAgICB9CiAgICAgIF0sCiAgICAgICJlZGl0X3VybCI6ICIvcHJvZHVjdHMvbGlzdGluZy1lZGl0P29iamVjdElkPXVvMEdUd1FqUlImcHJvZHVjdF9saW5lPUJvYXJkIEdhbWVzJnR5cGU9cHJvZHVjdCIsCiAgICAgICJwbGF5ZXJzIjogIjEtNCIsCiAgICAgICJwbGF5dGltZSI6ICI5MC0xMjAiLAogICAgICAibXNycF90ZXh0IjogIiQyOS45NSIsCiAgICAgICJwcmljZV90ZXh0IjogIiQyMS45OSIsCiAgICAgICJ0YWdzIjogWwogICAgICAgICJDYXN0bGVzIG9mIE1hZCBLaW5nIEx1ZHdpZyAtIFNlY3JldHMgRXhwYW5zaW9uIGJ5IEJlemllciBHYW1lcyIsCiAgICAgICAgIkNhc3RsZXMgb2YgTWFkIEtpbmcgTHVkd2lnOiBTZWNyZXRzIiwKICAgICAgICAiQ2FzdGxlcyBvZiBNYWQgS2luZyBMdWR3aWcgU2VjcmV0cyIsCiAgICAgICAgIkNhc3RsZXMgT2YgTWFkIEtpbmcgTHVkd2lnIFNlY3JldHMiLAogICAgICAgICJDYXN0bGVzIG9mIE1hZCBLaW5nIEx1ZHdpZyBTZWNyZXRzIEV4cGFuc2lvbiBDYXN0bGVzIG9mIE1hZCBLaW5nIEx1ZHdpZyBTZWNyZXRzIEV4cGFuc2lvbiIsCiAgICAgICAgIkNhc3RsZXMgb2YgTWFkIEtpbmcgTHVkd2lnIFNlY3JldHMgR2FtZSIsCiAgICAgICAgIkNhc3RsZXMgb2YgTWFkIEtpbmcgTHVkd2lnIFNlY3JldHMgRXhwYW5zaW9uIiwKICAgICAgICAiQ0FTVExFUyBPRiBNQUQgS0lORyBMVURXSUcgU0VDUkVUUyBFWFBBTlNJT04iLAogICAgICAgICJDQVNUTEVTIE9GIE1BRCBLSU5HIExVRFdJRyBTRUNSRVRTIEVOR0xJU0giLAogICAgICAgICJDQVNUTEVTIE9GIE1BRCBLSU5HIExVRFdJRyBTZWNyZXRzIiwKICAgICAgICAiQ0FTVExFUyBPRiBNQUQgS0lORyBMVURXSUc6IFNFQ1JFVFMgRVhQQU5TSU9OIiwKICAgICAgICAiQ2FzdGxlcyBvZiBNYWQgS2luZyBMdWR3aWcgLSBTZWNyZXRzIEV4cGFuc2lvbiIKICAgICAgXSwKICAgICAgImltYWdlcyI6IHsKICAgICAgICAidGh1bWIiOiAiaHR0cHM6Ly9kMms0cTI2b3d6eTM3My5jbG91ZGZyb250Lm5ldC80MHg0MC9nYW1lcy91cGxvYWRlZC8xNTU5MjU0OTUzMTM5LTUxWTB1N1dVd1pMLmpwZyIsCiAgICAgICAgInNtYWxsIjogImh0dHBzOi8vZDJrNHEyNm93enkzNzMuY2xvdWRmcm9udC5uZXQvMTUweDE1MC9nYW1lcy91cGxvYWRlZC8xNTU5MjU0OTUzMTM5LTUxWTB1N1dVd1pMLmpwZyIsCiAgICAgICAgIm1lZGl1bSI6ICJodHRwczovL2QyazRxMjZvd3p5MzczLmNsb3VkZnJvbnQubmV0LzM1MHgzNTAvZ2FtZXMvdXBsb2FkZWQvMTU1OTI1NDk1MzEzOS01MVkwdTdXVXdaTC5qcGciLAogICAgICAgICJsYXJnZSI6ICJodHRwczovL2QyazRxMjZvd3p5MzczLmNsb3VkZnJvbnQubmV0LzcwMHg3MDAvZ2FtZXMvdXBsb2FkZWQvMTU1OTI1NDk1MzEzOS01MVkwdTdXVXdaTC5qcGciLAogICAgICAgICJvcmlnaW5hbCI6ICJodHRwczovL3MzLXVzLXdlc3QtMS5hbWF6b25hd3MuY29tLzVjYy5pbWFnZXMvZ2FtZXMvdXBsb2FkZWQvMTU1OTI1NDk1MzEzOS01MVkwdTdXVXdaTC5qcGciCiAgICAgIH0sCiAgICAgICJkZXNjcmlwdGlvbl9wcmV2aWV3IjogIiBUaGUgZXhwYW5zaW9uIHRvIHRoZSBiZXN0LXNlbGxpbmcgQ2FzdGxlcyBvZiBNYWQgS2luZyBMdWR3aWchICBTZWNyZXRzIGx1cmsgaW4gdGhlIHNoYWRvd3Mgb2YgdGhlIEtpbmcncyBjYXN0bGUuIERvemVucyBvZiBoaWRkZW4gU3dhbnMgYXJlIHNjYXR0ZXJlZCBhbW9uZyB0aGlydHkgbmV3IHJvb21zIG9mIGV2ZXJ5IHNoYXBlIGFuZCBzaXplLiBTdXJyb3VuZGluZyBhbmQgcHJvdGVjdGluZyB5b3VyIGNhc3RsZSBhcmUgbmV3IEJhcmJpY2FucyBhbmQgTW9hdHMsIG1ha2luZyBldmVyeSByb29tIGluc2lkZSB0aGUgY2FzdGxlIGV2ZW4gbW9yZSB2YWx1YWJsZS4gVGhlIEtpbmcgaGFzIGNvbWUgdXAgd2l0aCBtb3JlIEZhdm9ycywgaW5jbHVkaW5nIG9uZSBmb3IgY3JlYXRpbmcgY291cnR5YXJkcy4gRmluYWxseSwgY2xldmVyIFNlY3JldCBQYXNzYWdlcyBlbmhhbmNlIGNvbm5lY3Rpb25zIGFuZCBtdWZmbGUgc291bmQgZnJvbSBBY3Rpdml0eSByb29tcy4gIgogICAgfQogIF0sCiAgImNvdW50IjogMTUyOTkxCn0=
-  recorded_at: Wed, 16 Aug 2023 18:04:50 GMT
+      string: |-
+        {
+          "games": [
+            {
+              "id": "xYMo2BYgk2",
+              "handle": "quests-of-valeria",
+              "url": "https://www.boardgameatlas.com/game/xYMo2BYgk2/quests-of-valeria",
+              "bga_edit_url": "https://www.boardgameatlas.com/game/xYMo2BYgk2/edit",
+              "template_url": "/products/listing?objectId=xYMo2BYgk2&product_line=Board Games&type=product",
+              "name": "Quests of Valeria",
+              "price": "0.00",
+              "price_ca": "21.95",
+              "price_uk": "0.00",
+              "price_au": "29.99",
+              "msrp": 25,
+              "msrps": [
+                {
+                  "country": "UK",
+                  "price": 24.99
+                },
+                {
+                  "country": "US",
+                  "price": 25
+                }
+              ],
+              "discount": "0.00",
+              "year_published": 2017,
+              "min_players": 1,
+              "max_players": 5,
+              "player_counts": [
+                1,
+                2,
+                3,
+                4,
+                5
+              ],
+              "min_playtime": 30,
+              "max_playtime": 45,
+              "min_age": 14,
+              "description": "A unique tableau-building game where players hire adventurers from a tavern to complete epic quests and gain glory for their guild!<br />\r\n<br />\r\nIn Quests of Valeria you play the role of a Guild Master, recruiting and dispatching Citizens to complete quests posted in a tavern in the Capital City of Valeria to earn Victory Points. The player with the most Victory Points at the end of the game wins. <br />\r\n<br />\r\nQuests of Valeria is a unique set collection game where players gather Citizens to fill requirements on a Quest. Hire Citizens from the line in the Tavern that provide you with additional actions to build combo's of free actions!  <br />\r\n<br />\r\nQuests of Valeria is a stand alone game set in the world of Valeria and takes place just after Valeria: Card Kingdoms. Amid the onslaught of monsters and petty squabbles of the Dukes and Duchesses, the Guild Masters of New Shilina work behind the scenes to make sure the Kingdom prospers. As one of the famous Guild Masters of Valeria, you conduct most of your business in the glorious Gutrot Tavern located in the heart of New Shilina. It's not enough to hire the best citizens to send on quests - you must also leverage their skills to gain the upper hand.<br />\r\n<br />\r\nOutwit your fellow Guild Masters by creating a cascade of fruitful actions to bring prestige to your guild and win the admiration of the King and the citizens of Valeria!<br />\r\n<br />\r\nPlayers take turns taking 2 actions from the following: Drawing cards, Hiring Citizens, Reserving a Quest, or Completing a Quest. When Hiring a Citizen, players pay the cost by discarding cards in their hand and taking the Citizen from the Tavern to their Guild (tableau). Some Citizens have bonus actions and they trigger as soon as they enter a player's Guild. When Completing a Quest, players must send Citizens from their Guild that match the requirements on the Quest to the discard pile. When a player completes 5 Quests, the game ends and player's reveal their Guild Master and count up Victory Points.",
+              "commentary": "",
+              "faq": "",
+              "thumb_url": "https://s3-us-west-1.amazonaws.com/5cc.images/games/uploaded/1559254950316-61FSma0UioL.jpg",
+              "image_url": "https://s3-us-west-1.amazonaws.com/5cc.images/games/uploaded/1559254950316-61FSma0UioL.jpg",
+              "matches_specs": null,
+              "specs": [],
+              "mechanics": [
+                {
+                  "id": "iWODHwRGuU",
+                  "url": "https://www.boardgameatlas.com/mechanic/iWODHwRGuU/undefined"
+                },
+                {
+                  "id": "WPytek5P8l",
+                  "url": "https://www.boardgameatlas.com/mechanic/WPytek5P8l/undefined"
+                },
+                {
+                  "id": "lA3KUtVFCy",
+                  "url": "https://www.boardgameatlas.com/mechanic/lA3KUtVFCy/undefined"
+                }
+              ],
+              "categories": [],
+              "publishers": [
+                {
+                  "id": "1mOFkrecKk",
+                  "num_games": null,
+                  "score": 9999999,
+                  "game": {},
+                  "url": "https://www.boardgameatlas.com/publisher/1mOFkrecKk/undefined",
+                  "images": {
+                    "thumb": null,
+                    "small": null,
+                    "medium": null,
+                    "large": null,
+                    "original": null
+                  }
+                }
+              ],
+              "designers": [
+                {
+                  "id": "0I9jwoXcpl",
+                  "num_games": null,
+                  "score": 9999999,
+                  "game": {},
+                  "url": "https://www.boardgameatlas.com/designer/0I9jwoXcpl/undefined",
+                  "images": {
+                    "thumb": null,
+                    "small": null,
+                    "medium": null,
+                    "large": null,
+                    "original": null
+                  }
+                }
+              ],
+              "primary_publisher": {
+                "name": "Daily Magic Games",
+                "id": "1mOFkrecKk",
+                "url": "https://www.boardgameatlas.com/publisher/1mOFkrecKk/daily-magic-games"
+              },
+              "primary_designer": {
+                "name": "Isaias Vallejo",
+                "id": "0I9jwoXcpl",
+                "url": "https://www.boardgameatlas.com/designer/0I9jwoXcpl/isaias-vallejo"
+              },
+              "developers": [],
+              "related_to": [],
+              "related_as": [],
+              "artists": [
+                "Mihajlo Dimitrievski"
+              ],
+              "names": [
+                "Valeria: Wyprawy"
+              ],
+              "rules_url": "",
+              "amazon_rank": 215522,
+              "cs_rating": 4.1,
+              "official_url": "http://www.dailymagicgames.com/quests-of-valeria/?utm_source=boardgameatlas.com&utm_medium=search&utm_campaign=bga_ads",
+              "comment_count": 0,
+              "num_user_ratings": 37,
+              "average_user_rating": 3.504504504504504,
+              "historical_low_prices": [
+                {
+                  "country": "AU",
+                  "date": "2021-02-16T18:49:17.349Z",
+                  "price": 29.99,
+                  "isLow": false
+                },
+                {
+                  "country": "UK",
+                  "date": "2021-10-16T08:21:05.642Z",
+                  "price": 22.37,
+                  "isLow": false
+                },
+                {
+                  "country": "US",
+                  "date": "2023-03-25T01:10:58.546Z",
+                  "price": 218.67,
+                  "isLow": false
+                }
+              ],
+              "active": true,
+              "num_user_complexity_votes": 0,
+              "average_learning_complexity": 0,
+              "average_strategy_complexity": 0,
+              "visits": 411,
+              "lists": 197,
+              "mentions": 0,
+              "links": 0,
+              "plays": 182,
+              "rank": 1307,
+              "type": "game",
+              "upc": "013964890457",
+              "num_distributors": 0,
+              "trending_rank": 0,
+              "listing_clicks": 0,
+              "is_historical_low": false,
+              "skus": [
+                "13964890457",
+                "2149207899",
+                "013964890457",
+                "QOV001",
+                "2148692026",
+                "63139:179150",
+                "DMGQOV001",
+                "HPSDMGQOV001",
+                "2148713120"
+              ],
+              "sku_objects": [
+                {
+                  "name": "401 Games",
+                  "sku": "13964890457"
+                },
+                {
+                  "name": "Noble Knight Games",
+                  "sku": "2149207899"
+                },
+                {
+                  "name": "Boardgame Master",
+                  "sku": "013964890457"
+                },
+                {
+                  "name": "Apt to Game",
+                  "sku": "QOV001"
+                },
+                {
+                  "name": "Noble Knight Games",
+                  "sku": "2148692026"
+                },
+                {
+                  "name": "BoardGameCo",
+                  "sku": "63139:179150"
+                },
+                {
+                  "name": "BoardGameBliss Inc",
+                  "sku": "DMGQOV001"
+                },
+                {
+                  "name": "Miniature Market",
+                  "sku": "HPSDMGQOV001"
+                },
+                {
+                  "name": "Noble Knight Games",
+                  "sku": "2148713120"
+                }
+              ],
+              "edit_url": "/products/listing-edit?objectId=xYMo2BYgk2&product_line=Board Games&type=product",
+              "players": "1-5",
+              "playtime": "30-45",
+              "msrp_text": "$25.00",
+              "price_text": "Price: N/A",
+              "tags": [
+                "Quests of Valeria",
+                "QUESTS OF VALERIA",
+                "Valeria: Wyprawy"
+              ],
+              "images": {
+                "thumb": "https://d2k4q26owzy373.cloudfront.net/40x40/games/uploaded/1559254950316-61FSma0UioL.jpg",
+                "small": "https://d2k4q26owzy373.cloudfront.net/150x150/games/uploaded/1559254950316-61FSma0UioL.jpg",
+                "medium": "https://d2k4q26owzy373.cloudfront.net/350x350/games/uploaded/1559254950316-61FSma0UioL.jpg",
+                "large": "https://d2k4q26owzy373.cloudfront.net/700x700/games/uploaded/1559254950316-61FSma0UioL.jpg",
+                "original": "https://s3-us-west-1.amazonaws.com/5cc.images/games/uploaded/1559254950316-61FSma0UioL.jpg"
+              },
+              "description_preview": "A unique tableau-building game where players hire adventurers from a tavern to complete epic quests and gain glory for their guild! \r\n \r\nIn Quests of Valeria you play the role of a Guild Master, recruiting and dispatching Citizens to complete quests posted in a tavern in the Capital City of Valeria to earn Victory Points. The player with the most Victory Points at the end of the game wins.  \r\n \r\nQuests of Valeria is a unique set collection game where players gather Citizens to fill requirements on a Quest. Hire Citizens from the line in the Tavern that provide you with additional actions to build combo's of free actions!   \r\n \r\nQuests of Valeria is a stand alone game set in the world of Valeria and takes place just after Valeria: Card Kingdoms. Amid the onslaught of monsters and petty squabbles of the Dukes and Duchesses, the Guild Masters of New Shilina work behind the scenes to make sure the Kingdom prospers. As one of the famous Guild Masters of Valeria, you conduct most of your business in the glorious Gutrot Tavern located in the heart of New Shilina. It's not enough to hire the best citizens to send on quests - you must also leverage their skills to gain the upper hand. \r\n \r\nOutwit your fellow Guild Masters by creating a cascade of fruitful actions to bring prestige to your guild and win the admiration of the King and the citizens of Valeria! \r\n \r\nPlayers take turns taking 2 actions from the following: Drawing cards, Hiring Citizens, Reserving a Quest, or Completing a Quest. When Hiring a Citizen, players pay the cost by discarding cards in their hand and taking the Citizen from the Tavern to their Guild (tableau). Some Citizens have bonus actions and they trigger as soon as they enter a player's Guild. When Completing a Quest, players must send Citizens from their Guild that match the requirements on the Quest to the discard pile. When a player completes 5 Quests, the game ends and player's reveal their Guild Master and count up Victory Points."
+            }
+          ],
+          "count": 152991
+        }
+  recorded_at: Wed, 16 Aug 2023 21:18:54 GMT
 recorded_with: VCR 6.2.0

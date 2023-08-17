@@ -1012,137 +1012,6 @@ http_interactions:
       - "*/*"
   response:
     status:
-      code: 429
-      message: Too Many Requests
-    headers:
-      Date:
-      - Wed, 16 Aug 2023 17:54:23 GMT
-      Content-Type:
-      - application/json; charset=utf-8
-      Content-Length:
-      - '222'
-      Connection:
-      - keep-alive
-      Vary:
-      - Origin
-      X-Request-Id:
-      - f9982be2a5d465c4fa9f1392a5dc53c7
-      Strict-Transport-Security:
-      - max-age=15724800; includeSubDomains
-      Cf-Cache-Status:
-      - DYNAMIC
-      Server:
-      - cloudflare
-      Cf-Ray:
-      - 7f7b8acedf3a1f38-DEN
-      Alt-Svc:
-      - h3=":443"; ma=86400
-    body:
-      encoding: UTF-8
-      string: |
-        {
-            "error": {
-                "message": "You exceeded your current quota, please check your plan and billing details.",
-                "type": "insufficient_quota",
-                "param": null,
-                "code": "insufficient_quota"
-            }
-        }
-  recorded_at: Wed, 16 Aug 2023 17:54:23 GMT
-- request:
-    method: get
-    uri: https://nominatim.openstreetmap.org/search?accept-language=en&addressdetails=1&format=json&q=Denver,%20Colorado
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-      Accept:
-      - "*/*"
-      User-Agent:
-      - Ruby
-  response:
-    status:
-      code: 200
-      message: OK
-    headers:
-      Server:
-      - nginx
-      Date:
-      - Wed, 16 Aug 2023 18:03:54 GMT
-      Content-Type:
-      - application/json
-      Content-Length:
-      - '551'
-      Connection:
-      - keep-alive
-      Keep-Alive:
-      - timeout=20
-    body:
-      encoding: ASCII-8BIT
-      string: !binary |-
-        W3sicGxhY2VfaWQiOjM2NDc1NzAyMywibGljZW5jZSI6IkRhdGEgwqkgT3BlblN0cmVldE1hcCBjb250cmlidXRvcnMsIE9EYkwgMS4wLiBodHRwOi8vb3NtLm9yZy9jb3B5cmlnaHQiLCJvc21fdHlwZSI6InJlbGF0aW9uIiwib3NtX2lkIjoxNDExMzM5LCJsYXQiOiIzOS43MzkyMzY0IiwibG9uIjoiLTEwNC45ODQ4NjIiLCJjbGFzcyI6ImJvdW5kYXJ5IiwidHlwZSI6ImFkbWluaXN0cmF0aXZlIiwicGxhY2VfcmFuayI6MTIsImltcG9ydGFuY2UiOjAuNTk1NDc1ODczOTA5NTc5LCJhZGRyZXNzdHlwZSI6ImNpdHkiLCJuYW1lIjoiRGVudmVyIiwiZGlzcGxheV9uYW1lIjoiRGVudmVyLCBDb2xvcmFkbywgVW5pdGVkIFN0YXRlcyIsImFkZHJlc3MiOnsiY2l0eSI6IkRlbnZlciIsInN0YXRlIjoiQ29sb3JhZG8iLCJJU08zMTY2LTItbHZsNCI6IlVTLUNPIiwiY291bnRyeSI6IlVuaXRlZCBTdGF0ZXMiLCJjb3VudHJ5X2NvZGUiOiJ1cyJ9LCJib3VuZGluZ2JveCI6WyIzOS42MTQzMDA4IiwiMzkuOTE0MjA4NyIsIi0xMDUuMTA5ODg0NSIsIi0xMDQuNTk5Njk5NyJdfV0=
-  recorded_at: Wed, 16 Aug 2023 18:03:53 GMT
-- request:
-    method: get
-    uri: https://nominatim.openstreetmap.org/search?accept-language=en&addressdetails=1&format=json&q=Denver,%20Colorado
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-      Accept:
-      - "*/*"
-      User-Agent:
-      - Ruby
-  response:
-    status:
-      code: 200
-      message: OK
-    headers:
-      Server:
-      - nginx
-      Date:
-      - Wed, 16 Aug 2023 18:03:54 GMT
-      Content-Type:
-      - application/json
-      Content-Length:
-      - '551'
-      Connection:
-      - keep-alive
-      Keep-Alive:
-      - timeout=20
-    body:
-      encoding: ASCII-8BIT
-      string: !binary |-
-        W3sicGxhY2VfaWQiOjM2NDc1NzAyMywibGljZW5jZSI6IkRhdGEgwqkgT3BlblN0cmVldE1hcCBjb250cmlidXRvcnMsIE9EYkwgMS4wLiBodHRwOi8vb3NtLm9yZy9jb3B5cmlnaHQiLCJvc21fdHlwZSI6InJlbGF0aW9uIiwib3NtX2lkIjoxNDExMzM5LCJsYXQiOiIzOS43MzkyMzY0IiwibG9uIjoiLTEwNC45ODQ4NjIiLCJjbGFzcyI6ImJvdW5kYXJ5IiwidHlwZSI6ImFkbWluaXN0cmF0aXZlIiwicGxhY2VfcmFuayI6MTIsImltcG9ydGFuY2UiOjAuNTk1NDc1ODczOTA5NTc5LCJhZGRyZXNzdHlwZSI6ImNpdHkiLCJuYW1lIjoiRGVudmVyIiwiZGlzcGxheV9uYW1lIjoiRGVudmVyLCBDb2xvcmFkbywgVW5pdGVkIFN0YXRlcyIsImFkZHJlc3MiOnsiY2l0eSI6IkRlbnZlciIsInN0YXRlIjoiQ29sb3JhZG8iLCJJU08zMTY2LTItbHZsNCI6IlVTLUNPIiwiY291bnRyeSI6IlVuaXRlZCBTdGF0ZXMiLCJjb3VudHJ5X2NvZGUiOiJ1cyJ9LCJib3VuZGluZ2JveCI6WyIzOS42MTQzMDA4IiwiMzkuOTE0MjA4NyIsIi0xMDUuMTA5ODg0NSIsIi0xMDQuNTk5Njk5NyJdfV0=
-  recorded_at: Wed, 16 Aug 2023 18:03:54 GMT
-- request:
-    method: post
-    uri: https://api.openai.com/v1/chat/completions
-    body:
-      encoding: UTF-8
-      string: '{"model":"gpt-3.5-turbo","messages":[{"role":"user","content":"recommend
-        me 3 board games based on the following collection of games. [\"Catan\", \"Stone
-        Age\", \"Irish Gauge\", \"Elder Sign\", \"Ca$h ''n Gun$\"]\n                      Do
-        not recommend games that are already in the collection you''ve been given
-        and only recommend each game once.\n                      Please include only
-        the name of the games, in the form of strings within an array."}],"temperature":0.8}'
-    headers:
-      Content-Type:
-      - application/json
-      Authorization:
-      - Bearer DONT_SHARE_MY_DATA_2
-      User-Agent:
-      - Faraday v2.7.10
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-      Accept:
-      - "*/*"
-  response:
-    status:
       code: 200
       message: OK
     headers:
@@ -1215,4 +1084,170 @@ http_interactions:
           }
         }
   recorded_at: Wed, 16 Aug 2023 18:03:56 GMT
+- request:
+    method: get
+    uri: https://nominatim.openstreetmap.org/search?accept-language=en&addressdetails=1&format=json&q=Denver,%20Colorado
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Wed, 16 Aug 2023 21:18:24 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '551'
+      Connection:
+      - keep-alive
+      Keep-Alive:
+      - timeout=20
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        W3sicGxhY2VfaWQiOjM2NDc1NzAyMywibGljZW5jZSI6IkRhdGEgwqkgT3BlblN0cmVldE1hcCBjb250cmlidXRvcnMsIE9EYkwgMS4wLiBodHRwOi8vb3NtLm9yZy9jb3B5cmlnaHQiLCJvc21fdHlwZSI6InJlbGF0aW9uIiwib3NtX2lkIjoxNDExMzM5LCJsYXQiOiIzOS43MzkyMzY0IiwibG9uIjoiLTEwNC45ODQ4NjIiLCJjbGFzcyI6ImJvdW5kYXJ5IiwidHlwZSI6ImFkbWluaXN0cmF0aXZlIiwicGxhY2VfcmFuayI6MTIsImltcG9ydGFuY2UiOjAuNTk1NDc1ODczOTA5NTc5LCJhZGRyZXNzdHlwZSI6ImNpdHkiLCJuYW1lIjoiRGVudmVyIiwiZGlzcGxheV9uYW1lIjoiRGVudmVyLCBDb2xvcmFkbywgVW5pdGVkIFN0YXRlcyIsImFkZHJlc3MiOnsiY2l0eSI6IkRlbnZlciIsInN0YXRlIjoiQ29sb3JhZG8iLCJJU08zMTY2LTItbHZsNCI6IlVTLUNPIiwiY291bnRyeSI6IlVuaXRlZCBTdGF0ZXMiLCJjb3VudHJ5X2NvZGUiOiJ1cyJ9LCJib3VuZGluZ2JveCI6WyIzOS42MTQzMDA4IiwiMzkuOTE0MjA4NyIsIi0xMDUuMTA5ODg0NSIsIi0xMDQuNTk5Njk5NyJdfV0=
+  recorded_at: Wed, 16 Aug 2023 21:18:24 GMT
+- request:
+    method: get
+    uri: https://nominatim.openstreetmap.org/search?accept-language=en&addressdetails=1&format=json&q=Denver,%20Colorado
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Wed, 16 Aug 2023 21:18:25 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '551'
+      Connection:
+      - keep-alive
+      Keep-Alive:
+      - timeout=20
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        W3sicGxhY2VfaWQiOjM2NDc1NzAyMywibGljZW5jZSI6IkRhdGEgwqkgT3BlblN0cmVldE1hcCBjb250cmlidXRvcnMsIE9EYkwgMS4wLiBodHRwOi8vb3NtLm9yZy9jb3B5cmlnaHQiLCJvc21fdHlwZSI6InJlbGF0aW9uIiwib3NtX2lkIjoxNDExMzM5LCJsYXQiOiIzOS43MzkyMzY0IiwibG9uIjoiLTEwNC45ODQ4NjIiLCJjbGFzcyI6ImJvdW5kYXJ5IiwidHlwZSI6ImFkbWluaXN0cmF0aXZlIiwicGxhY2VfcmFuayI6MTIsImltcG9ydGFuY2UiOjAuNTk1NDc1ODczOTA5NTc5LCJhZGRyZXNzdHlwZSI6ImNpdHkiLCJuYW1lIjoiRGVudmVyIiwiZGlzcGxheV9uYW1lIjoiRGVudmVyLCBDb2xvcmFkbywgVW5pdGVkIFN0YXRlcyIsImFkZHJlc3MiOnsiY2l0eSI6IkRlbnZlciIsInN0YXRlIjoiQ29sb3JhZG8iLCJJU08zMTY2LTItbHZsNCI6IlVTLUNPIiwiY291bnRyeSI6IlVuaXRlZCBTdGF0ZXMiLCJjb3VudHJ5X2NvZGUiOiJ1cyJ9LCJib3VuZGluZ2JveCI6WyIzOS42MTQzMDA4IiwiMzkuOTE0MjA4NyIsIi0xMDUuMTA5ODg0NSIsIi0xMDQuNTk5Njk5NyJdfV0=
+  recorded_at: Wed, 16 Aug 2023 21:18:25 GMT
+- request:
+    method: post
+    uri: https://api.openai.com/v1/chat/completions
+    body:
+      encoding: UTF-8
+      string: '{"model":"gpt-3.5-turbo","messages":[{"role":"user","content":"recommend
+        me 3 board games based on the following collection of games. [\"Catan\", \"Stone
+        Age\", \"Irish Gauge\", \"Elder Sign\", \"Ca$h ''n Gun$\"]\n                      Do
+        not recommend games that are already in the collection you''ve been given
+        and only recommend each game once.\n                      Please include only
+        the name of the games, in the form of strings within an array."}],"temperature":0.8}'
+    headers:
+      Content-Type:
+      - application/json
+      Authorization:
+      - Bearer DONT_SHARE_MY_DATA_2
+      User-Agent:
+      - Faraday v2.7.10
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 16 Aug 2023 21:18:26 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Access-Control-Allow-Origin:
+      - "*"
+      Cache-Control:
+      - no-cache, must-revalidate
+      Openai-Model:
+      - gpt-3.5-turbo-0613
+      Openai-Organization:
+      - game-night-tiwtpu
+      Openai-Processing-Ms:
+      - '749'
+      Openai-Version:
+      - '2020-10-01'
+      Strict-Transport-Security:
+      - max-age=15724800; includeSubDomains
+      X-Ratelimit-Limit-Requests:
+      - '3500'
+      X-Ratelimit-Limit-Tokens:
+      - '90000'
+      X-Ratelimit-Remaining-Requests:
+      - '3499'
+      X-Ratelimit-Remaining-Tokens:
+      - '89889'
+      X-Ratelimit-Reset-Requests:
+      - 17ms
+      X-Ratelimit-Reset-Tokens:
+      - 74ms
+      X-Request-Id:
+      - 61291c4d8e4741a55b28f0d88eed01e1
+      Cf-Cache-Status:
+      - DYNAMIC
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 7f7cb5b20c081466-STL
+      Alt-Svc:
+      - h3=":443"; ma=86400
+    body:
+      encoding: ASCII-8BIT
+      string: |
+        {
+          "id": "chatcmpl-7oICIZGjEM4Xxfskym4Bg2nR0ZBHR",
+          "object": "chat.completion",
+          "created": 1692220706,
+          "model": "gpt-3.5-turbo-0613",
+          "choices": [
+            {
+              "index": 0,
+              "message": {
+                "role": "assistant",
+                "content": "[\"Ticket to Ride\", \"Pandemic\", \"7 Wonders\"]"
+              },
+              "finish_reason": "stop"
+            }
+          ],
+          "usage": {
+            "prompt_tokens": 88,
+            "completion_tokens": 15,
+            "total_tokens": 103
+          }
+        }
+  recorded_at: Wed, 16 Aug 2023 21:18:26 GMT
 recorded_with: VCR 6.2.0
