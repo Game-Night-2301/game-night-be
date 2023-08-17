@@ -13,17 +13,17 @@ Event.destroy_all
 
 GameFactory.new.build_games(GameService.new.all_games)
 
-@user_1 = User.create!(username: "RollTheRebellion", password: 'password', city: 'Denver', state: "Colorado" )
-@user_2 = User.create!(username: "DiceyDebauchery", password: 'password', city: 'Denver', state: "Colorado" )
-@user_3 = User.create!(username: "PawnSacrilege", password: 'password', city: 'Denver', state: "Colorado" )
-@user_4 = User.create!(username: "KnightsErrantLaughs", password: 'password', city: 'Denver', state: "Colorado" )
-@user_5 = User.create!(username: "TabletopTurbulence", password: 'password', city: 'Denver', state: "Colorado" )
-@user_6 = User.create!(username: "SaucyTileTriumph", password: 'password', city: 'Denver', state: "Colorado" )
-@user_7 = User.create!(username: "CatanControversy", password: 'password', city: 'Denver', state: "Colorado" )
-@user_8 = User.create!(username: "MeepleMayhem", password: 'password', city: 'Denver', state: "Colorado" )
-@user_9 = User.create!(username: "RollinRuckus", password: 'password', city: 'Denver', state: "Colorado" )
-@user_10 = User.create!(username: "BoardgameBedlam", password: 'password', city: 'Denver', state: "Colorado" )
-@user_11 = User.create!(username: "BrewHaha", password: 'password', city: 'Denver', state: "Colorado" )
+@user_1 = User.create!(username: "RollTheRebellion", password: 'password', city: 'Denver', state: "Colorado")
+@user_2 = User.create!(username: "DiceyDebauchery", password: 'password', city: 'Denver', state: "Colorado")
+@user_3 = User.create!(username: "PawnSacrilege", password: 'password', city: 'Denver', state: "Colorado")
+@user_4 = User.create!(username: "KnightsErrantLaughs", password: 'password', city: 'Denver', state: "Colorado")
+@user_5 = User.create!(username: "TabletopTurbulence", password: 'password', city: 'Denver', state: "Colorado")
+@user_6 = User.create!(username: "SaucyTileTriumph", password: 'password', city: 'Denver', state: "Colorado")
+@user_7 = User.create!(username: "CatanControversy", password: 'password', city: 'Denver', state: "Colorado")
+@user_8 = User.create!(username: "MeepleMayhem", password: 'password', city: 'Denver', state: "Colorado")
+@user_9 = User.create!(username: "RollinRuckus", password: 'password', city: 'Denver', state: "Colorado")
+@user_10 = User.create!(username: "BoardgameBedlam", password: 'password', city: 'Denver', state: "Colorado")
+@user_11 = User.create!(username: "BrewHaha", password: 'password', city: 'Denver', state: "Colorado")
 
 @games = Game.limit(25)
 
@@ -80,21 +80,29 @@ GameFactory.new.build_games(GameService.new.all_games)
 @user_game_25 = UserGame.create!(user_id: @user_2.id, game: @game_25)
 
 @event_1 = Event.create!(address: "3360 Alcott St", city: "Denver", state: "Colorado", zip: "80221", title: 'The crash pad', cancelled: false,
-host_id: @user_1.id, game: @game_1.id, game_type: 'board game', date: "2023/10/01", start_time: "12:00", end_time: "14:00", description: "Welcome back one and all to the weekly Scythe game at the Crash Pad. BYOB but no outside food!")
+                         host_id: @user_1.id, game: @game_1.id, game_type: 'board game', date: "2023/10/01", start_time: "12:00", end_time: "14:00",
+                         description: "Welcome back one and all to the weekly Scythe game at the Crash Pad. BYOB but no outside food!")
 @event_2 = Event.create!(address: "2211 Hooker St", city: "Denver", state: "Colorado", zip: "80221", title: 'Casa del sol', cancelled: false,
-host_id: @user_2.id, game: @game_2.id, game_type: 'board game', date: "2023/10/28", start_time: "18:00", end_time: "23:00", description: "Wingspan meetup! We've got several copies so all you need to bring is your smile and your finest plumage.")
+                         host_id: @user_2.id, game: @game_2.id, game_type: 'board game', date: "2023/10/28", start_time: "18:00", end_time: "23:00",
+                         description: "Wingspan meetup! We've got several copies so all you need to bring is your smile and your finest plumage.")
 @event_3 = Event.create!(address: "2342 W Caley Ave", city: "Littleton", state: "Colorado", zip: "80120", title: "My mom's house", cancelled: false,
-host_id: @user_3.id, game: @game_3.id, game_type: 'board game', date: "2023/10/15", start_time: "19:30", end_time: "22:00", description: "Do you think you can beat my mom at Root? Come by at 7:30 pm and let's put that to the test.")
+                         host_id: @user_3.id, game: @game_3.id, game_type: 'board game', date: "2023/10/15", start_time: "19:30", end_time: "22:00",
+                         description: "Do you think you can beat my mom at Root? Come by at 7:30 pm and let's put that to the test.")
 @event_4 = Event.create!(address: "4913 Steele St", city: "Denver", state: "Colorado", zip: "80216", title: 'The Game Den', cancelled: false,
-host_id: @user_4.id, game: @game_4.id, game_type: 'board game', date: "2023/10/16", start_time: "12:00", end_time: "15:00", description: "The inhabitants of mars need oxygen, heat, and oceans. But you know what they need most of all? Friends. Come meet the coolest game crew you'll ever know.")
+                         host_id: @user_4.id, game: @game_4.id, game_type: 'board game', date: "2023/10/16", start_time: "12:00", end_time: "15:00",
+                         description: "The inhabitants of mars need oxygen, heat, and oceans. But you know what they need most of all? Friends. Come meet the coolest game crew you'll ever know.")
 @event_5 = Event.create!(address: "3122 Lawrence St", city: "Denver", state: "Colorado", zip: "80205", title: 'House of the Dragon', cancelled: false,
-host_id: @user_5.id, game: @game_5.id, game_type: 'board game', date: "2023/10/15", start_time: "12:00", end_time: "19:00", description: "We're starting early, so we should have plenty of time to get through the quest. If you're dropping in, reach out the event host ahead of time to talk about your character.")
+                         host_id: @user_5.id, game: @game_5.id, game_type: 'board game', date: "2023/10/15", start_time: "12:00", end_time: "19:00",
+                         description: "We're starting early, so we should have plenty of time. If you're dropping in, reach out the event host ahead of time to talk about your character.")
 @event_6 = Event.create!(address: "1325 Teller St", city: "Lakewood", state: "Colorado", zip: "80214", title: 'Rivendell Books', cancelled: false,
-host_id: @user_6.id, game: @game_6.id, game_type: 'board game', date: "2023/10/04", start_time: "17:00", end_time: "21:00", description: "We think it's been long enough since Covid that the idea of a pandemic can be fun again. Join in at Rivendell books! There's a tea shop next door.")
+                         host_id: @user_6.id, game: @game_6.id, game_type: 'board game', date: "2023/10/04", start_time: "17:00", end_time: "21:00",
+                         description: "We think it's been long enough since Covid that the idea of a pandemic can be fun again. Join in at Rivendell books! There's a tea shop next door.")
 @event_7 = Event.create!(address: "3706 S Knox Ct", city: "Englewood", state: "Colorado", zip: "80110", title: 'Board of the Rings', cancelled: false,
-host_id: @user_1.id, game: @game_8.id, game_type: 'board game', date: "2023/10/21", start_time: "08:00", end_time: "12:00", description: "No jerks and no Johns! Come join our inviting crew at Board of the rings where we'll help defend the island from invaders. All are welcome!")
+                         host_id: @user_1.id, game: @game_8.id, game_type: 'board game', date: "2023/10/21", start_time: "08:00", end_time: "12:00",
+                         description: "No jerks and no Johns! Come join our inviting crew at Board of the rings where we'll help defend the island from invaders. All are welcome!")
 @event_8 = Event.create!(address: "1900 S Raritan St", city: "Denver", state: "Colorado", zip: "80223", title: 'The Game Knight', cancelled: false,
-host_id: @user_2.id, game: @game_20.id, game_type: 'board game', date: "2023/10/08", start_time: "09:00", end_time: "17:00", description: "Everdell today starting at 9 am. Bring nuts and berries to imitate the woodland creatures!")
+                         host_id: @user_2.id, game: @game_20.id, game_type: 'board game', date: "2023/10/08", start_time: "09:00", end_time: "17:00",
+                         description: "Everdell today starting at 9 am. Bring nuts and berries to imitate the woodland creatures!")
 
 @user_event_1 = UserEvent.create!(user_id: @user_1.id, event_id: @event_1.id)
 @user_event_2 = UserEvent.create!(user_id: @user_2.id, event_id: @event_1.id)
@@ -118,7 +126,6 @@ host_id: @user_2.id, game: @game_20.id, game_type: 'board game', date: "2023/10/
 @user_event_20 = UserEvent.create!(user_id: @user_4.id, event_id: @event_7.id)
 @user_event_21 = UserEvent.create!(user_id: @user_10.id, event_id: @event_8.id)
 @user_event_22 = UserEvent.create!(user_id: @user_5.id, event_id: @event_8.id)
-
 
 Game.create(bga_id: "12k3jbhgk235kjh", name: "Candy Land", min_players: 2, max_players: 4, min_playtime: 15, max_playtime: 21,
             description: "<p><em>Candy Land</em> Candy Land (also Candyland) is a simple racing board game published by Hasbro. The game requires no reading and minimal counting skills,
