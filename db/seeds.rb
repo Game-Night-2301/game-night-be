@@ -11,7 +11,12 @@ User.destroy_all
 Game.destroy_all
 Event.destroy_all
 
-GameFactory.new.build_games(GameService.new.all_games)
+# GameFactory.new.build_games(GameService.new.all_games)
+file = File.read('./db/games.json')
+games = JSON.parse(file, symbolize_names: true)
+games.each do |game|
+  Game.create!(game)
+end
 
 @user_1 = User.create!(username: "RollTheRebellion", password: 'password', city: 'Denver', state: "Colorado")
 @user_2 = User.create!(username: "DiceyDebauchery", password: 'password', city: 'Denver', state: "Colorado")
@@ -127,9 +132,9 @@ GameFactory.new.build_games(GameService.new.all_games)
 @user_event_21 = UserEvent.create!(user_id: @user_10.id, event_id: @event_8.id)
 @user_event_22 = UserEvent.create!(user_id: @user_5.id, event_id: @event_8.id)
 
-Game.create(bga_id: "12k3jbhgk235kjh", name: "Candy Land", min_players: 2, max_players: 4, min_playtime: 15, max_playtime: 21,
-            description: "<p><em>Candy Land</em> Candy Land (also Candyland) is a simple racing board game published by Hasbro. The game requires no reading and minimal counting skills,
-            making it suitable for young children. No strategy is involved as players are never required to make choices; only following directions is required. About one million copies
-            per year are sold</p>",
-            image_url: 'https://upload.wikimedia.org/wikipedia/en/thumb/d/de/Classic_Candy_Land_by_Winning_Moves.jpg/220px-Classic_Candy_Land_by_Winning_Moves.jpg', average_user_rating: 5,
-            average_strategy_complexity: 5)
+# Game.create(bga_id: "12k3jbhgk235kjh", name: "Candy Land", min_players: 2, max_players: 4, min_playtime: 15, max_playtime: 21,
+#             description: "<p><em>Candy Land</em> Candy Land (also Candyland) is a simple racing board game published by Hasbro. The game requires no reading and minimal counting skills,
+#             making it suitable for young children. No strategy is involved as players are never required to make choices; only following directions is required. About one million copies
+#             per year are sold</p>",
+#             image_url: 'https://upload.wikimedia.org/wikipedia/en/thumb/d/de/Classic_Candy_Land_by_Winning_Moves.jpg/220px-Classic_Candy_Land_by_Winning_Moves.jpg', average_user_rating: 5,
+#             average_strategy_complexity: 5)

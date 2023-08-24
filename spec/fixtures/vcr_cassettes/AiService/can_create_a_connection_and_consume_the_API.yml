@@ -29,7 +29,7 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Tue, 15 Aug 2023 17:29:28 GMT
+      - Thu, 24 Aug 2023 17:51:31 GMT
       Content-Type:
       - application/json
       Transfer-Encoding:
@@ -45,7 +45,7 @@ http_interactions:
       Openai-Organization:
       - game-night-tiwtpu
       Openai-Processing-Ms:
-      - '713'
+      - '784'
       Openai-Version:
       - '2020-10-01'
       Strict-Transport-Security:
@@ -63,29 +63,29 @@ http_interactions:
       X-Ratelimit-Reset-Tokens:
       - 81ms
       X-Request-Id:
-      - 38f851c9cfaf88be3999d3f367ce9f04
+      - 278be566be4276205093ee35734d9921
       Cf-Cache-Status:
       - DYNAMIC
       Server:
       - cloudflare
       Cf-Ray:
-      - 7f7328e99d731f4a-DEN
+      - 7fbd719ad880518b-DEN
       Alt-Svc:
       - h3=":443"; ma=86400
     body:
       encoding: ASCII-8BIT
       string: |
         {
-          "id": "chatcmpl-7ns99xm5m0dEuMFe31TphGuByTWjw",
+          "id": "chatcmpl-7r8mRHrLZ8Z5kDo2ru2yS5HLMIPpC",
           "object": "chat.completion",
-          "created": 1692120567,
+          "created": 1692899491,
           "model": "gpt-3.5-turbo-0613",
           "choices": [
             {
               "index": 0,
               "message": {
                 "role": "assistant",
-                "content": "[\"Ticket to Ride\", \"Pandemic\", \"Codenames\"]"
+                "content": "[\"Ticket to Ride\", \"Pandemic\", \"Splendor\"]"
               },
               "finish_reason": "stop"
             }
@@ -96,5 +96,5 @@ http_interactions:
             "total_tokens": 109
           }
         }
-  recorded_at: Tue, 15 Aug 2023 17:29:28 GMT
+  recorded_at: Thu, 24 Aug 2023 17:51:31 GMT
 recorded_with: VCR 6.2.0

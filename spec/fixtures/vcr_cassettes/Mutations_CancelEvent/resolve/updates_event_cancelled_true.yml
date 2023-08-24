@@ -80,7 +80,7 @@ http_interactions:
   recorded_at: Sun, 16 Jul 2023 00:31:19 GMT
 - request:
     method: get
-    uri: https://nominatim.openstreetmap.org/search?accept-language=en&addressdetails=1&format=json&q=montpelier,%20vermont
+    uri: https://nominatim.openstreetmap.org/search?accept-language=en&addressdetails=1&format=json&q=100%20E%20Camelback%20Rd%20phoenix,%20arizona%2085012
     body:
       encoding: US-ASCII
       string: ''
@@ -99,11 +99,11 @@ http_interactions:
       Server:
       - nginx
       Date:
-      - Thu, 17 Aug 2023 14:57:54 GMT
+      - Wed, 23 Aug 2023 16:29:11 GMT
       Content-Type:
       - application/json
       Content-Length:
-      - '633'
+      - '1562'
       Connection:
       - keep-alive
       Keep-Alive:
@@ -111,323 +111,8 @@ http_interactions:
     body:
       encoding: ASCII-8BIT
       string: !binary |-
-        W3sicGxhY2VfaWQiOjI5ODA1MTY1NiwibGljZW5jZSI6IkRhdGEgwqkgT3BlblN0cmVldE1hcCBjb250cmlidXRvcnMsIE9EYkwgMS4wLiBodHRwOi8vb3NtLm9yZy9jb3B5cmlnaHQiLCJvc21fdHlwZSI6InJlbGF0aW9uIiwib3NtX2lkIjoxOTkwODgsImxhdCI6IjQ0LjI2MDIxNjQiLCJsb24iOiItNzIuNTc1MTIwOCIsImNsYXNzIjoiYm91bmRhcnkiLCJ0eXBlIjoiYWRtaW5pc3RyYXRpdmUiLCJwbGFjZV9yYW5rIjoxNiwiaW1wb3J0YW5jZSI6MC41MDQ1MzQyODQ1MzM1NzkzLCJhZGRyZXNzdHlwZSI6ImNpdHkiLCJuYW1lIjoiTW9udHBlbGllciIsImRpc3BsYXlfbmFtZSI6Ik1vbnRwZWxpZXIsIFdhc2hpbmd0b24gQ291bnR5LCBWZXJtb250LCAwNTYwMiwgVW5pdGVkIFN0YXRlcyIsImFkZHJlc3MiOnsiY2l0eSI6Ik1vbnRwZWxpZXIiLCJjb3VudHkiOiJXYXNoaW5ndG9uIENvdW50eSIsInN0YXRlIjoiVmVybW9udCIsIklTTzMxNjYtMi1sdmw0IjoiVVMtVlQiLCJwb3N0Y29kZSI6IjA1NjAyIiwiY291bnRyeSI6IlVuaXRlZCBTdGF0ZXMiLCJjb3VudHJ5X2NvZGUiOiJ1cyJ9LCJib3VuZGluZ2JveCI6WyI0NC4yMzQ5MjMyIiwiNDQuMzEzMzE0OCIsIi03Mi42MTI0NDc3IiwiLTcyLjUyNTA4NzEiXX1d
-  recorded_at: Thu, 17 Aug 2023 14:57:54 GMT
-- request:
-    method: get
-    uri: https://nominatim.openstreetmap.org/search?accept-language=en&addressdetails=1&format=json&q=montpelier,%20vermont
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-      Accept:
-      - "*/*"
-      User-Agent:
-      - Ruby
-  response:
-    status:
-      code: 200
-      message: OK
-    headers:
-      Server:
-      - nginx
-      Date:
-      - Thu, 17 Aug 2023 14:57:55 GMT
-      Content-Type:
-      - application/json
-      Content-Length:
-      - '633'
-      Connection:
-      - keep-alive
-      Keep-Alive:
-      - timeout=20
-    body:
-      encoding: ASCII-8BIT
-      string: !binary |-
-        W3sicGxhY2VfaWQiOjI5ODA1MTY1NiwibGljZW5jZSI6IkRhdGEgwqkgT3BlblN0cmVldE1hcCBjb250cmlidXRvcnMsIE9EYkwgMS4wLiBodHRwOi8vb3NtLm9yZy9jb3B5cmlnaHQiLCJvc21fdHlwZSI6InJlbGF0aW9uIiwib3NtX2lkIjoxOTkwODgsImxhdCI6IjQ0LjI2MDIxNjQiLCJsb24iOiItNzIuNTc1MTIwOCIsImNsYXNzIjoiYm91bmRhcnkiLCJ0eXBlIjoiYWRtaW5pc3RyYXRpdmUiLCJwbGFjZV9yYW5rIjoxNiwiaW1wb3J0YW5jZSI6MC41MDQ1MzQyODQ1MzM1NzkzLCJhZGRyZXNzdHlwZSI6ImNpdHkiLCJuYW1lIjoiTW9udHBlbGllciIsImRpc3BsYXlfbmFtZSI6Ik1vbnRwZWxpZXIsIFdhc2hpbmd0b24gQ291bnR5LCBWZXJtb250LCAwNTYwMiwgVW5pdGVkIFN0YXRlcyIsImFkZHJlc3MiOnsiY2l0eSI6Ik1vbnRwZWxpZXIiLCJjb3VudHkiOiJXYXNoaW5ndG9uIENvdW50eSIsInN0YXRlIjoiVmVybW9udCIsIklTTzMxNjYtMi1sdmw0IjoiVVMtVlQiLCJwb3N0Y29kZSI6IjA1NjAyIiwiY291bnRyeSI6IlVuaXRlZCBTdGF0ZXMiLCJjb3VudHJ5X2NvZGUiOiJ1cyJ9LCJib3VuZGluZ2JveCI6WyI0NC4yMzQ5MjMyIiwiNDQuMzEzMzE0OCIsIi03Mi42MTI0NDc3IiwiLTcyLjUyNTA4NzEiXX1d
-  recorded_at: Thu, 17 Aug 2023 14:57:55 GMT
-- request:
-    method: get
-    uri: https://nominatim.openstreetmap.org/search?accept-language=en&addressdetails=1&format=json&q=austin,%20texas
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-      Accept:
-      - "*/*"
-      User-Agent:
-      - Ruby
-  response:
-    status:
-      code: 200
-      message: OK
-    headers:
-      Server:
-      - nginx
-      Date:
-      - Thu, 17 Aug 2023 14:57:55 GMT
-      Content-Type:
-      - application/json
-      Content-Length:
-      - '1739'
-      Connection:
-      - keep-alive
-      Keep-Alive:
-      - timeout=20
-    body:
-      encoding: ASCII-8BIT
-      string: !binary |-
-        W3sicGxhY2VfaWQiOjM0NzEwMDU5NCwibGljZW5jZSI6IkRhdGEgwqkgT3BlblN0cmVldE1hcCBjb250cmlidXRvcnMsIE9EYkwgMS4wLiBodHRwOi8vb3NtLm9yZy9jb3B5cmlnaHQiLCJvc21fdHlwZSI6InJlbGF0aW9uIiwib3NtX2lkIjoxMTMzMTQsImxhdCI6IjMwLjI3MTEyODYiLCJsb24iOiItOTcuNzQzNjk5NSIsImNsYXNzIjoiYm91bmRhcnkiLCJ0eXBlIjoiYWRtaW5pc3RyYXRpdmUiLCJwbGFjZV9yYW5rIjoxNiwiaW1wb3J0YW5jZSI6MC42NDk0MjY1NzE3ODY2NjY5LCJhZGRyZXNzdHlwZSI6ImNpdHkiLCJuYW1lIjoiQXVzdGluIiwiZGlzcGxheV9uYW1lIjoiQXVzdGluLCBUcmF2aXMgQ291bnR5LCBUZXhhcywgVW5pdGVkIFN0YXRlcyIsImFkZHJlc3MiOnsiY2l0eSI6IkF1c3RpbiIsImNvdW50eSI6IlRyYXZpcyBDb3VudHkiLCJzdGF0ZSI6IlRleGFzIiwiSVNPMzE2Ni0yLWx2bDQiOiJVUy1UWCIsImNvdW50cnkiOiJVbml0ZWQgU3RhdGVzIiwiY291bnRyeV9jb2RlIjoidXMifSwiYm91bmRpbmdib3giOlsiMzAuMDk4NTEzMyIsIjMwLjUxNjYyNTUiLCItOTcuOTM2NzY2MyIsIi05Ny41NjA1Mjg4Il19LHsicGxhY2VfaWQiOjI5ODU3NTg5NywibGljZW5jZSI6IkRhdGEgwqkgT3BlblN0cmVldE1hcCBjb250cmlidXRvcnMsIE9EYkwgMS4wLiBodHRwOi8vb3NtLm9yZy9jb3B5cmlnaHQiLCJvc21fdHlwZSI6InJlbGF0aW9uIiwib3NtX2lkIjoxODM3NzU1LCJsYXQiOiIyOS44OTE2NDg4IiwibG9uIjoiLTk2LjI0NDM0NjciLCJjbGFzcyI6ImJvdW5kYXJ5IiwidHlwZSI6ImFkbWluaXN0cmF0aXZlIiwicGxhY2VfcmFuayI6MTIsImltcG9ydGFuY2UiOjAuNTU4NzAyODM3OTQ2NDEyOCwiYWRkcmVzc3R5cGUiOiJjb3VudHkiLCJuYW1lIjoiQXVzdGluIENvdW50eSIsImRpc3BsYXlfbmFtZSI6IkF1c3RpbiBDb3VudHksIFRleGFzLCBVbml0ZWQgU3RhdGVzIiwiYWRkcmVzcyI6eyJjb3VudHkiOiJBdXN0aW4gQ291bnR5Iiwic3RhdGUiOiJUZXhhcyIsIklTTzMxNjYtMi1sdmw0IjoiVVMtVFgiLCJjb3VudHJ5IjoiVW5pdGVkIFN0YXRlcyIsImNvdW50cnlfY29kZSI6InVzIn0sImJvdW5kaW5nYm94IjpbIjI5LjYwMTg0NTgiLCIzMC4wOTcyMjA5IiwiLTk2LjYyMjE5NzEiLCItOTYuMDA0NzY4NyJdfSx7InBsYWNlX2lkIjozNzM2NTQ3MTEsImxpY2VuY2UiOiJEYXRhIMKpIE9wZW5TdHJlZXRNYXAgY29udHJpYnV0b3JzLCBPRGJMIDEuMC4gaHR0cDovL29zbS5vcmcvY29weXJpZ2h0Iiwib3NtX3R5cGUiOiJ3YXkiLCJvc21faWQiOjYxMjg4ODQwMywibGF0IjoiMzAuMTQxNzYyOSIsImxvbiI6Ii05Ny44MDc2NDM4MDgxMjIzNCIsImNsYXNzIjoiYm91bmRhcnkiLCJ0eXBlIjoiYWRtaW5pc3RyYXRpdmUiLCJwbGFjZV9yYW5rIjoxNiwiaW1wb3J0YW5jZSI6MC4zNTAwMDk5OTk5OTk5OTk5MywiYWRkcmVzc3R5cGUiOiJjaXR5IiwibmFtZSI6IkF1c3RpbiIsImRpc3BsYXlfbmFtZSI6IkF1c3RpbiwgVHJhdmlzIENvdW50eSwgVGV4YXMsIFVuaXRlZCBTdGF0ZXMiLCJhZGRyZXNzIjp7ImNpdHkiOiJBdXN0aW4iLCJjb3VudHkiOiJUcmF2aXMgQ291bnR5Iiwic3RhdGUiOiJUZXhhcyIsIklTTzMxNjYtMi1sdmw0IjoiVVMtVFgiLCJjb3VudHJ5IjoiVW5pdGVkIFN0YXRlcyIsImNvdW50cnlfY29kZSI6InVzIn0sImJvdW5kaW5nYm94IjpbIjMwLjEzOTE4NzUiLCIzMC4xNDQzMTg3IiwiLTk3LjgxMDE5MTkiLCItOTcuODA1MDM3NyJdfV0=
-  recorded_at: Thu, 17 Aug 2023 14:57:55 GMT
-- request:
-    method: get
-    uri: https://nominatim.openstreetmap.org/search?accept-language=en&addressdetails=1&format=json&q=austin,%20texas
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-      Accept:
-      - "*/*"
-      User-Agent:
-      - Ruby
-  response:
-    status:
-      code: 200
-      message: OK
-    headers:
-      Server:
-      - nginx
-      Date:
-      - Thu, 17 Aug 2023 14:57:56 GMT
-      Content-Type:
-      - application/json
-      Content-Length:
-      - '1739'
-      Connection:
-      - keep-alive
-      Keep-Alive:
-      - timeout=20
-    body:
-      encoding: ASCII-8BIT
-      string: !binary |-
-        W3sicGxhY2VfaWQiOjM0NzEwMDU5NCwibGljZW5jZSI6IkRhdGEgwqkgT3BlblN0cmVldE1hcCBjb250cmlidXRvcnMsIE9EYkwgMS4wLiBodHRwOi8vb3NtLm9yZy9jb3B5cmlnaHQiLCJvc21fdHlwZSI6InJlbGF0aW9uIiwib3NtX2lkIjoxMTMzMTQsImxhdCI6IjMwLjI3MTEyODYiLCJsb24iOiItOTcuNzQzNjk5NSIsImNsYXNzIjoiYm91bmRhcnkiLCJ0eXBlIjoiYWRtaW5pc3RyYXRpdmUiLCJwbGFjZV9yYW5rIjoxNiwiaW1wb3J0YW5jZSI6MC42NDk0MjY1NzE3ODY2NjY5LCJhZGRyZXNzdHlwZSI6ImNpdHkiLCJuYW1lIjoiQXVzdGluIiwiZGlzcGxheV9uYW1lIjoiQXVzdGluLCBUcmF2aXMgQ291bnR5LCBUZXhhcywgVW5pdGVkIFN0YXRlcyIsImFkZHJlc3MiOnsiY2l0eSI6IkF1c3RpbiIsImNvdW50eSI6IlRyYXZpcyBDb3VudHkiLCJzdGF0ZSI6IlRleGFzIiwiSVNPMzE2Ni0yLWx2bDQiOiJVUy1UWCIsImNvdW50cnkiOiJVbml0ZWQgU3RhdGVzIiwiY291bnRyeV9jb2RlIjoidXMifSwiYm91bmRpbmdib3giOlsiMzAuMDk4NTEzMyIsIjMwLjUxNjYyNTUiLCItOTcuOTM2NzY2MyIsIi05Ny41NjA1Mjg4Il19LHsicGxhY2VfaWQiOjI5ODU3NTg5NywibGljZW5jZSI6IkRhdGEgwqkgT3BlblN0cmVldE1hcCBjb250cmlidXRvcnMsIE9EYkwgMS4wLiBodHRwOi8vb3NtLm9yZy9jb3B5cmlnaHQiLCJvc21fdHlwZSI6InJlbGF0aW9uIiwib3NtX2lkIjoxODM3NzU1LCJsYXQiOiIyOS44OTE2NDg4IiwibG9uIjoiLTk2LjI0NDM0NjciLCJjbGFzcyI6ImJvdW5kYXJ5IiwidHlwZSI6ImFkbWluaXN0cmF0aXZlIiwicGxhY2VfcmFuayI6MTIsImltcG9ydGFuY2UiOjAuNTU4NzAyODM3OTQ2NDEyOCwiYWRkcmVzc3R5cGUiOiJjb3VudHkiLCJuYW1lIjoiQXVzdGluIENvdW50eSIsImRpc3BsYXlfbmFtZSI6IkF1c3RpbiBDb3VudHksIFRleGFzLCBVbml0ZWQgU3RhdGVzIiwiYWRkcmVzcyI6eyJjb3VudHkiOiJBdXN0aW4gQ291bnR5Iiwic3RhdGUiOiJUZXhhcyIsIklTTzMxNjYtMi1sdmw0IjoiVVMtVFgiLCJjb3VudHJ5IjoiVW5pdGVkIFN0YXRlcyIsImNvdW50cnlfY29kZSI6InVzIn0sImJvdW5kaW5nYm94IjpbIjI5LjYwMTg0NTgiLCIzMC4wOTcyMjA5IiwiLTk2LjYyMjE5NzEiLCItOTYuMDA0NzY4NyJdfSx7InBsYWNlX2lkIjozNzM2NTQ3MTEsImxpY2VuY2UiOiJEYXRhIMKpIE9wZW5TdHJlZXRNYXAgY29udHJpYnV0b3JzLCBPRGJMIDEuMC4gaHR0cDovL29zbS5vcmcvY29weXJpZ2h0Iiwib3NtX3R5cGUiOiJ3YXkiLCJvc21faWQiOjYxMjg4ODQwMywibGF0IjoiMzAuMTQxNzYyOSIsImxvbiI6Ii05Ny44MDc2NDM4MDgxMjIzNCIsImNsYXNzIjoiYm91bmRhcnkiLCJ0eXBlIjoiYWRtaW5pc3RyYXRpdmUiLCJwbGFjZV9yYW5rIjoxNiwiaW1wb3J0YW5jZSI6MC4zNTAwMDk5OTk5OTk5OTk5MywiYWRkcmVzc3R5cGUiOiJjaXR5IiwibmFtZSI6IkF1c3RpbiIsImRpc3BsYXlfbmFtZSI6IkF1c3RpbiwgVHJhdmlzIENvdW50eSwgVGV4YXMsIFVuaXRlZCBTdGF0ZXMiLCJhZGRyZXNzIjp7ImNpdHkiOiJBdXN0aW4iLCJjb3VudHkiOiJUcmF2aXMgQ291bnR5Iiwic3RhdGUiOiJUZXhhcyIsIklTTzMxNjYtMi1sdmw0IjoiVVMtVFgiLCJjb3VudHJ5IjoiVW5pdGVkIFN0YXRlcyIsImNvdW50cnlfY29kZSI6InVzIn0sImJvdW5kaW5nYm94IjpbIjMwLjEzOTE4NzUiLCIzMC4xNDQzMTg3IiwiLTk3LjgxMDE5MTkiLCItOTcuODA1MDM3NyJdfV0=
-  recorded_at: Thu, 17 Aug 2023 14:57:56 GMT
-- request:
-    method: get
-    uri: https://nominatim.openstreetmap.org/search?accept-language=en&addressdetails=1&format=json&q=san%20diego,%20california
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-      Accept:
-      - "*/*"
-      User-Agent:
-      - Ruby
-  response:
-    status:
-      code: 200
-      message: OK
-    headers:
-      Server:
-      - nginx
-      Date:
-      - Thu, 17 Aug 2023 14:57:56 GMT
-      Content-Type:
-      - application/json
-      Content-Length:
-      - '1340'
-      Connection:
-      - keep-alive
-      Keep-Alive:
-      - timeout=20
-    body:
-      encoding: ASCII-8BIT
-      string: !binary |-
-        W3sicGxhY2VfaWQiOjI5ODA2MzkwMSwibGljZW5jZSI6IkRhdGEgwqkgT3BlblN0cmVldE1hcCBjb250cmlidXRvcnMsIE9EYkwgMS4wLiBodHRwOi8vb3NtLm9yZy9jb3B5cmlnaHQiLCJvc21fdHlwZSI6InJlbGF0aW9uIiwib3NtX2lkIjoyNTM4MzIsImxhdCI6IjMyLjcxNzQyMDIiLCJsb24iOiItMTE3LjE2Mjc3MjgiLCJjbGFzcyI6ImJvdW5kYXJ5IiwidHlwZSI6ImFkbWluaXN0cmF0aXZlIiwicGxhY2VfcmFuayI6MTYsImltcG9ydGFuY2UiOjAuNjcyNzk3MDA1OTUxODU4NywiYWRkcmVzc3R5cGUiOiJjaXR5IiwibmFtZSI6IlNhbiBEaWVnbyIsImRpc3BsYXlfbmFtZSI6IlNhbiBEaWVnbywgU2FuIERpZWdvIENvdW50eSwgQ0FMIEZpcmUgU291dGhlcm4gUmVnaW9uLCBDYWxpZm9ybmlhLCBVbml0ZWQgU3RhdGVzIiwiYWRkcmVzcyI6eyJjaXR5IjoiU2FuIERpZWdvIiwiY291bnR5IjoiU2FuIERpZWdvIENvdW50eSIsInN0YXRlX2Rpc3RyaWN0IjoiQ0FMIEZpcmUgU291dGhlcm4gUmVnaW9uIiwic3RhdGUiOiJDYWxpZm9ybmlhIiwiSVNPMzE2Ni0yLWx2bDQiOiJVUy1DQSIsImNvdW50cnkiOiJVbml0ZWQgU3RhdGVzIiwiY291bnRyeV9jb2RlIjoidXMifSwiYm91bmRpbmdib3giOlsiMzIuNTM0NzczNyIsIjMzLjExNDI0OTAiLCItMTE3LjMwOTgwNTMiLCItMTE2LjkwNTcyMjYiXX0seyJwbGFjZV9pZCI6Mjk4MTI5NDI5LCJsaWNlbmNlIjoiRGF0YSDCqSBPcGVuU3RyZWV0TWFwIGNvbnRyaWJ1dG9ycywgT0RiTCAxLjAuIGh0dHA6Ly9vc20ub3JnL2NvcHlyaWdodCIsIm9zbV90eXBlIjoicmVsYXRpb24iLCJvc21faWQiOjM5NjQ4MiwibGF0IjoiMzIuOTYzNzgzOCIsImxvbiI6Ii0xMTYuNzcwNjI3NyIsImNsYXNzIjoiYm91bmRhcnkiLCJ0eXBlIjoiYWRtaW5pc3RyYXRpdmUiLCJwbGFjZV9yYW5rIjoxMiwiaW1wb3J0YW5jZSI6MC41ODUzOTgyMzc3OTExOTQ2LCJhZGRyZXNzdHlwZSI6ImNvdW50eSIsIm5hbWUiOiJTYW4gRGllZ28gQ291bnR5IiwiZGlzcGxheV9uYW1lIjoiU2FuIERpZWdvIENvdW50eSwgQ0FMIEZpcmUgU291dGhlcm4gUmVnaW9uLCBDYWxpZm9ybmlhLCBVbml0ZWQgU3RhdGVzIiwiYWRkcmVzcyI6eyJjb3VudHkiOiJTYW4gRGllZ28gQ291bnR5Iiwic3RhdGVfZGlzdHJpY3QiOiJDQUwgRmlyZSBTb3V0aGVybiBSZWdpb24iLCJzdGF0ZSI6IkNhbGlmb3JuaWEiLCJJU08zMTY2LTItbHZsNCI6IlVTLUNBIiwiY291bnRyeSI6IlVuaXRlZCBTdGF0ZXMiLCJjb3VudHJ5X2NvZGUiOiJ1cyJ9LCJib3VuZGluZ2JveCI6WyIzMi41Mjk1MjM2IiwiMzMuNTA1MjQyMyIsIi0xMTcuNjEwNTM2MyIsIi0xMTYuMDgxMDk0MSJdfV0=
-  recorded_at: Thu, 17 Aug 2023 14:57:56 GMT
-- request:
-    method: get
-    uri: https://nominatim.openstreetmap.org/search?accept-language=en&addressdetails=1&format=json&q=san%20diego,%20california
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-      Accept:
-      - "*/*"
-      User-Agent:
-      - Ruby
-  response:
-    status:
-      code: 200
-      message: OK
-    headers:
-      Server:
-      - nginx
-      Date:
-      - Thu, 17 Aug 2023 14:57:57 GMT
-      Content-Type:
-      - application/json
-      Content-Length:
-      - '1340'
-      Connection:
-      - keep-alive
-      Keep-Alive:
-      - timeout=20
-    body:
-      encoding: ASCII-8BIT
-      string: !binary |-
-        W3sicGxhY2VfaWQiOjI5ODA2MzkwMSwibGljZW5jZSI6IkRhdGEgwqkgT3BlblN0cmVldE1hcCBjb250cmlidXRvcnMsIE9EYkwgMS4wLiBodHRwOi8vb3NtLm9yZy9jb3B5cmlnaHQiLCJvc21fdHlwZSI6InJlbGF0aW9uIiwib3NtX2lkIjoyNTM4MzIsImxhdCI6IjMyLjcxNzQyMDIiLCJsb24iOiItMTE3LjE2Mjc3MjgiLCJjbGFzcyI6ImJvdW5kYXJ5IiwidHlwZSI6ImFkbWluaXN0cmF0aXZlIiwicGxhY2VfcmFuayI6MTYsImltcG9ydGFuY2UiOjAuNjcyNzk3MDA1OTUxODU4NywiYWRkcmVzc3R5cGUiOiJjaXR5IiwibmFtZSI6IlNhbiBEaWVnbyIsImRpc3BsYXlfbmFtZSI6IlNhbiBEaWVnbywgU2FuIERpZWdvIENvdW50eSwgQ0FMIEZpcmUgU291dGhlcm4gUmVnaW9uLCBDYWxpZm9ybmlhLCBVbml0ZWQgU3RhdGVzIiwiYWRkcmVzcyI6eyJjaXR5IjoiU2FuIERpZWdvIiwiY291bnR5IjoiU2FuIERpZWdvIENvdW50eSIsInN0YXRlX2Rpc3RyaWN0IjoiQ0FMIEZpcmUgU291dGhlcm4gUmVnaW9uIiwic3RhdGUiOiJDYWxpZm9ybmlhIiwiSVNPMzE2Ni0yLWx2bDQiOiJVUy1DQSIsImNvdW50cnkiOiJVbml0ZWQgU3RhdGVzIiwiY291bnRyeV9jb2RlIjoidXMifSwiYm91bmRpbmdib3giOlsiMzIuNTM0NzczNyIsIjMzLjExNDI0OTAiLCItMTE3LjMwOTgwNTMiLCItMTE2LjkwNTcyMjYiXX0seyJwbGFjZV9pZCI6Mjk4MTI5NDI5LCJsaWNlbmNlIjoiRGF0YSDCqSBPcGVuU3RyZWV0TWFwIGNvbnRyaWJ1dG9ycywgT0RiTCAxLjAuIGh0dHA6Ly9vc20ub3JnL2NvcHlyaWdodCIsIm9zbV90eXBlIjoicmVsYXRpb24iLCJvc21faWQiOjM5NjQ4MiwibGF0IjoiMzIuOTYzNzgzOCIsImxvbiI6Ii0xMTYuNzcwNjI3NyIsImNsYXNzIjoiYm91bmRhcnkiLCJ0eXBlIjoiYWRtaW5pc3RyYXRpdmUiLCJwbGFjZV9yYW5rIjoxMiwiaW1wb3J0YW5jZSI6MC41ODUzOTgyMzc3OTExOTQ2LCJhZGRyZXNzdHlwZSI6ImNvdW50eSIsIm5hbWUiOiJTYW4gRGllZ28gQ291bnR5IiwiZGlzcGxheV9uYW1lIjoiU2FuIERpZWdvIENvdW50eSwgQ0FMIEZpcmUgU291dGhlcm4gUmVnaW9uLCBDYWxpZm9ybmlhLCBVbml0ZWQgU3RhdGVzIiwiYWRkcmVzcyI6eyJjb3VudHkiOiJTYW4gRGllZ28gQ291bnR5Iiwic3RhdGVfZGlzdHJpY3QiOiJDQUwgRmlyZSBTb3V0aGVybiBSZWdpb24iLCJzdGF0ZSI6IkNhbGlmb3JuaWEiLCJJU08zMTY2LTItbHZsNCI6IlVTLUNBIiwiY291bnRyeSI6IlVuaXRlZCBTdGF0ZXMiLCJjb3VudHJ5X2NvZGUiOiJ1cyJ9LCJib3VuZGluZ2JveCI6WyIzMi41Mjk1MjM2IiwiMzMuNTA1MjQyMyIsIi0xMTcuNjEwNTM2MyIsIi0xMTYuMDgxMDk0MSJdfV0=
-  recorded_at: Thu, 17 Aug 2023 14:57:57 GMT
-- request:
-    method: get
-    uri: https://nominatim.openstreetmap.org/search?accept-language=en&addressdetails=1&format=json&q=harlem,%20georgia
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-      Accept:
-      - "*/*"
-      User-Agent:
-      - Ruby
-  response:
-    status:
-      code: 200
-      message: OK
-    headers:
-      Server:
-      - nginx
-      Date:
-      - Thu, 17 Aug 2023 14:57:57 GMT
-      Content-Type:
-      - application/json
-      Content-Length:
-      - '1190'
-      Connection:
-      - keep-alive
-      Keep-Alive:
-      - timeout=20
-    body:
-      encoding: ASCII-8BIT
-      string: !binary |-
-        W3sicGxhY2VfaWQiOjI5ODU1NTI1MCwibGljZW5jZSI6IkRhdGEgwqkgT3BlblN0cmVldE1hcCBjb250cmlidXRvcnMsIE9EYkwgMS4wLiBodHRwOi8vb3NtLm9yZy9jb3B5cmlnaHQiLCJvc21fdHlwZSI6InJlbGF0aW9uIiwib3NtX2lkIjoxMTk4MDAsImxhdCI6IjMzLjQxNDU4MzQiLCJsb24iOiItODIuMzEyNjIzNyIsImNsYXNzIjoiYm91bmRhcnkiLCJ0eXBlIjoiYWRtaW5pc3RyYXRpdmUiLCJwbGFjZV9yYW5rIjoxNiwiaW1wb3J0YW5jZSI6MC40MDQ1NDYxNjUyMzQ1MTYyLCJhZGRyZXNzdHlwZSI6ImNpdHkiLCJuYW1lIjoiSGFybGVtIiwiZGlzcGxheV9uYW1lIjoiSGFybGVtLCBDb2x1bWJpYSBDb3VudHksIEdlb3JnaWEsIFVuaXRlZCBTdGF0ZXMiLCJhZGRyZXNzIjp7InZpbGxhZ2UiOiJIYXJsZW0iLCJjb3VudHkiOiJDb2x1bWJpYSBDb3VudHkiLCJzdGF0ZSI6Ikdlb3JnaWEiLCJJU08zMTY2LTItbHZsNCI6IlVTLUdBIiwiY291bnRyeSI6IlVuaXRlZCBTdGF0ZXMiLCJjb3VudHJ5X2NvZGUiOiJ1cyJ9LCJib3VuZGluZ2JveCI6WyIzMy4zOTU5NTIwIiwiMzMuNDQyMDY4NSIsIi04Mi4zNDA2MDYwIiwiLTgyLjI4NTY0NTAiXX0seyJwbGFjZV9pZCI6MTg3ODA0NzI5LCJsaWNlbmNlIjoiRGF0YSDCqSBPcGVuU3RyZWV0TWFwIGNvbnRyaWJ1dG9ycywgT0RiTCAxLjAuIGh0dHA6Ly9vc20ub3JnL2NvcHlyaWdodCIsIm9zbV90eXBlIjoid2F5Iiwib3NtX2lkIjozNDA1MTkzMTYsImxhdCI6IjMzLjQxODg5OTU1IiwibG9uIjoiLTgyLjMwNzQxNTQ2NTUyMDQ2IiwiY2xhc3MiOiJib3VuZGFyeSIsInR5cGUiOiJhZG1pbmlzdHJhdGl2ZSIsInBsYWNlX3JhbmsiOjE2LCJpbXBvcnRhbmNlIjowLjM1MDAwMDA5OTk5OTk5OTksImFkZHJlc3N0eXBlIjoiY2l0eSIsIm5hbWUiOiJIYXJsZW0iLCJkaXNwbGF5X25hbWUiOiJIYXJsZW0sIENvbHVtYmlhIENvdW50eSwgR2VvcmdpYSwgVW5pdGVkIFN0YXRlcyIsImFkZHJlc3MiOnsiY2l0eSI6IkhhcmxlbSIsImNvdW50eSI6IkNvbHVtYmlhIENvdW50eSIsInN0YXRlIjoiR2VvcmdpYSIsIklTTzMxNjYtMi1sdmw0IjoiVVMtR0EiLCJjb3VudHJ5IjoiVW5pdGVkIFN0YXRlcyIsImNvdW50cnlfY29kZSI6InVzIn0sImJvdW5kaW5nYm94IjpbIjMzLjM5NTk1MjAiLCIzMy40NDE1ODQwIiwiLTgyLjM0MDYwNjAiLCItODIuMjg1NjQ1MCJdfV0=
-  recorded_at: Thu, 17 Aug 2023 14:57:57 GMT
-- request:
-    method: get
-    uri: https://nominatim.openstreetmap.org/search?accept-language=en&addressdetails=1&format=json&q=harlem,%20georgia
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-      Accept:
-      - "*/*"
-      User-Agent:
-      - Ruby
-  response:
-    status:
-      code: 200
-      message: OK
-    headers:
-      Server:
-      - nginx
-      Date:
-      - Thu, 17 Aug 2023 14:57:58 GMT
-      Content-Type:
-      - application/json
-      Content-Length:
-      - '1190'
-      Connection:
-      - keep-alive
-      Keep-Alive:
-      - timeout=20
-    body:
-      encoding: ASCII-8BIT
-      string: !binary |-
-        W3sicGxhY2VfaWQiOjI5ODU1NTI1MCwibGljZW5jZSI6IkRhdGEgwqkgT3BlblN0cmVldE1hcCBjb250cmlidXRvcnMsIE9EYkwgMS4wLiBodHRwOi8vb3NtLm9yZy9jb3B5cmlnaHQiLCJvc21fdHlwZSI6InJlbGF0aW9uIiwib3NtX2lkIjoxMTk4MDAsImxhdCI6IjMzLjQxNDU4MzQiLCJsb24iOiItODIuMzEyNjIzNyIsImNsYXNzIjoiYm91bmRhcnkiLCJ0eXBlIjoiYWRtaW5pc3RyYXRpdmUiLCJwbGFjZV9yYW5rIjoxNiwiaW1wb3J0YW5jZSI6MC40MDQ1NDYxNjUyMzQ1MTYyLCJhZGRyZXNzdHlwZSI6ImNpdHkiLCJuYW1lIjoiSGFybGVtIiwiZGlzcGxheV9uYW1lIjoiSGFybGVtLCBDb2x1bWJpYSBDb3VudHksIEdlb3JnaWEsIFVuaXRlZCBTdGF0ZXMiLCJhZGRyZXNzIjp7InZpbGxhZ2UiOiJIYXJsZW0iLCJjb3VudHkiOiJDb2x1bWJpYSBDb3VudHkiLCJzdGF0ZSI6Ikdlb3JnaWEiLCJJU08zMTY2LTItbHZsNCI6IlVTLUdBIiwiY291bnRyeSI6IlVuaXRlZCBTdGF0ZXMiLCJjb3VudHJ5X2NvZGUiOiJ1cyJ9LCJib3VuZGluZ2JveCI6WyIzMy4zOTU5NTIwIiwiMzMuNDQyMDY4NSIsIi04Mi4zNDA2MDYwIiwiLTgyLjI4NTY0NTAiXX0seyJwbGFjZV9pZCI6MTg3ODA0NzI5LCJsaWNlbmNlIjoiRGF0YSDCqSBPcGVuU3RyZWV0TWFwIGNvbnRyaWJ1dG9ycywgT0RiTCAxLjAuIGh0dHA6Ly9vc20ub3JnL2NvcHlyaWdodCIsIm9zbV90eXBlIjoid2F5Iiwib3NtX2lkIjozNDA1MTkzMTYsImxhdCI6IjMzLjQxODg5OTU1IiwibG9uIjoiLTgyLjMwNzQxNTQ2NTUyMDQ2IiwiY2xhc3MiOiJib3VuZGFyeSIsInR5cGUiOiJhZG1pbmlzdHJhdGl2ZSIsInBsYWNlX3JhbmsiOjE2LCJpbXBvcnRhbmNlIjowLjM1MDAwMDA5OTk5OTk5OTksImFkZHJlc3N0eXBlIjoiY2l0eSIsIm5hbWUiOiJIYXJsZW0iLCJkaXNwbGF5X25hbWUiOiJIYXJsZW0sIENvbHVtYmlhIENvdW50eSwgR2VvcmdpYSwgVW5pdGVkIFN0YXRlcyIsImFkZHJlc3MiOnsiY2l0eSI6IkhhcmxlbSIsImNvdW50eSI6IkNvbHVtYmlhIENvdW50eSIsInN0YXRlIjoiR2VvcmdpYSIsIklTTzMxNjYtMi1sdmw0IjoiVVMtR0EiLCJjb3VudHJ5IjoiVW5pdGVkIFN0YXRlcyIsImNvdW50cnlfY29kZSI6InVzIn0sImJvdW5kaW5nYm94IjpbIjMzLjM5NTk1MjAiLCIzMy40NDE1ODQwIiwiLTgyLjM0MDYwNjAiLCItODIuMjg1NjQ1MCJdfV0=
-  recorded_at: Thu, 17 Aug 2023 14:57:58 GMT
-- request:
-    method: get
-    uri: https://nominatim.openstreetmap.org/search?accept-language=en&addressdetails=1&format=json&q=304%20W%2034th%20St%20new%20york,%20new%20york%2010001
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-      Accept:
-      - "*/*"
-      User-Agent:
-      - Ruby
-  response:
-    status:
-      code: 200
-      message: OK
-    headers:
-      Server:
-      - nginx
-      Date:
-      - Thu, 17 Aug 2023 14:57:59 GMT
-      Content-Type:
-      - application/json
-      Content-Length:
-      - '1642'
-      Connection:
-      - keep-alive
-      Keep-Alive:
-      - timeout=20
-    body:
-      encoding: ASCII-8BIT
-      string: !binary |-
-        W3sicGxhY2VfaWQiOjEyMzk3MDAyLCJsaWNlbmNlIjoiRGF0YSDCqSBPcGVuU3RyZWV0TWFwIGNvbnRyaWJ1dG9ycywgT0RiTCAxLjAuIGh0dHA6Ly9vc20ub3JnL2NvcHlyaWdodCIsIm9zbV90eXBlIjoibm9kZSIsIm9zbV9pZCI6MTI3MjY3NDk3MywibGF0IjoiNDAuNzUyMzI2NyIsImxvbiI6Ii03My45OTQyNDgyIiwiY2xhc3MiOiJzaG9wIiwidHlwZSI6ImNvcHlzaG9wIiwicGxhY2VfcmFuayI6MzAsImltcG9ydGFuY2UiOjkuOTk5OTk5OTk5OTU0NDllLTA2LCJhZGRyZXNzdHlwZSI6InNob3AiLCJuYW1lIjoiRmVkRXggT2ZmaWNlIiwiZGlzcGxheV9uYW1lIjoiRmVkRXggT2ZmaWNlLCAzMDQsIFdlc3QgMzR0aCBTdHJlZXQsIE1hbmhhdHRhbiBDb21tdW5pdHkgQm9hcmQgNCwgTWFuaGF0dGFuLCBOZXcgWW9yayBDb3VudHksIE5ldyBZb3JrLCAxMDAwMSwgVW5pdGVkIFN0YXRlcyIsImFkZHJlc3MiOnsic2hvcCI6IkZlZEV4IE9mZmljZSIsImhvdXNlX251bWJlciI6IjMwNCIsInJvYWQiOiJXZXN0IDM0dGggU3RyZWV0IiwibmVpZ2hib3VyaG9vZCI6Ik1hbmhhdHRhbiBDb21tdW5pdHkgQm9hcmQgNCIsInN1YnVyYiI6Ik1hbmhhdHRhbiIsImNvdW50eSI6Ik5ldyBZb3JrIENvdW50eSIsImNpdHkiOiJOZXcgWW9yayIsInN0YXRlIjoiTmV3IFlvcmsiLCJJU08zMTY2LTItbHZsNCI6IlVTLU5ZIiwicG9zdGNvZGUiOiIxMDAwMSIsImNvdW50cnkiOiJVbml0ZWQgU3RhdGVzIiwiY291bnRyeV9jb2RlIjoidXMifSwiYm91bmRpbmdib3giOlsiNDAuNzUyMjc2NyIsIjQwLjc1MjM3NjciLCItNzMuOTk0Mjk4MiIsIi03My45OTQxOTgyIl19LHsicGxhY2VfaWQiOjQ1NTQ3ODM0LCJsaWNlbmNlIjoiRGF0YSDCqSBPcGVuU3RyZWV0TWFwIGNvbnRyaWJ1dG9ycywgT0RiTCAxLjAuIGh0dHA6Ly9vc20ub3JnL2NvcHlyaWdodCIsIm9zbV90eXBlIjoibm9kZSIsIm9zbV9pZCI6MzgwOTAwMDk0MiwibGF0IjoiNDAuNzUyMzU2IiwibG9uIjoiLTczLjk5NDMxNzUiLCJjbGFzcyI6ImFtZW5pdHkiLCJ0eXBlIjoiZmFzdF9mb29kIiwicGxhY2VfcmFuayI6MzAsImltcG9ydGFuY2UiOjkuOTk5OTk5OTk5OTU0NDllLTA2LCJhZGRyZXNzdHlwZSI6ImFtZW5pdHkiLCJuYW1lIjoiQ2hpcG90bGUiLCJkaXNwbGF5X25hbWUiOiJDaGlwb3RsZSwgMzA0LCBXZXN0IDM0dGggU3RyZWV0LCBNYW5oYXR0YW4gQ29tbXVuaXR5IEJvYXJkIDQsIE1hbmhhdHRhbiwgTmV3IFlvcmsgQ291bnR5LCBOZXcgWW9yaywgMTAwMDEsIFVuaXRlZCBTdGF0ZXMiLCJhZGRyZXNzIjp7ImFtZW5pdHkiOiJDaGlwb3RsZSIsImhvdXNlX251bWJlciI6IjMwNCIsInJvYWQiOiJXZXN0IDM0dGggU3RyZWV0IiwibmVpZ2hib3VyaG9vZCI6Ik1hbmhhdHRhbiBDb21tdW5pdHkgQm9hcmQgNCIsInN1YnVyYiI6Ik1hbmhhdHRhbiIsImNvdW50eSI6Ik5ldyBZb3JrIENvdW50eSIsImNpdHkiOiJOZXcgWW9yayIsInN0YXRlIjoiTmV3IFlvcmsiLCJJU08zMTY2LTItbHZsNCI6IlVTLU5ZIiwicG9zdGNvZGUiOiIxMDAwMSIsImNvdW50cnkiOiJVbml0ZWQgU3RhdGVzIiwiY291bnRyeV9jb2RlIjoidXMifSwiYm91bmRpbmdib3giOlsiNDAuNzUyMzA2MCIsIjQwLjc1MjQwNjAiLCItNzMuOTk0MzY3NSIsIi03My45OTQyNjc1Il19XQ==
-  recorded_at: Thu, 17 Aug 2023 14:57:59 GMT
-- request:
-    method: get
-    uri: https://nominatim.openstreetmap.org/search?accept-language=en&addressdetails=1&format=json&q=304%20W%2034th%20St%20new%20york,%20new%20york%2010001
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-      Accept:
-      - "*/*"
-      User-Agent:
-      - Ruby
-  response:
-    status:
-      code: 200
-      message: OK
-    headers:
-      Server:
-      - nginx
-      Date:
-      - Thu, 17 Aug 2023 14:58:00 GMT
-      Content-Type:
-      - application/json
-      Content-Length:
-      - '1642'
-      Connection:
-      - keep-alive
-      Keep-Alive:
-      - timeout=20
-    body:
-      encoding: ASCII-8BIT
-      string: !binary |-
-        W3sicGxhY2VfaWQiOjEyMzk3MDAyLCJsaWNlbmNlIjoiRGF0YSDCqSBPcGVuU3RyZWV0TWFwIGNvbnRyaWJ1dG9ycywgT0RiTCAxLjAuIGh0dHA6Ly9vc20ub3JnL2NvcHlyaWdodCIsIm9zbV90eXBlIjoibm9kZSIsIm9zbV9pZCI6MTI3MjY3NDk3MywibGF0IjoiNDAuNzUyMzI2NyIsImxvbiI6Ii03My45OTQyNDgyIiwiY2xhc3MiOiJzaG9wIiwidHlwZSI6ImNvcHlzaG9wIiwicGxhY2VfcmFuayI6MzAsImltcG9ydGFuY2UiOjkuOTk5OTk5OTk5OTU0NDllLTA2LCJhZGRyZXNzdHlwZSI6InNob3AiLCJuYW1lIjoiRmVkRXggT2ZmaWNlIiwiZGlzcGxheV9uYW1lIjoiRmVkRXggT2ZmaWNlLCAzMDQsIFdlc3QgMzR0aCBTdHJlZXQsIE1hbmhhdHRhbiBDb21tdW5pdHkgQm9hcmQgNCwgTWFuaGF0dGFuLCBOZXcgWW9yayBDb3VudHksIE5ldyBZb3JrLCAxMDAwMSwgVW5pdGVkIFN0YXRlcyIsImFkZHJlc3MiOnsic2hvcCI6IkZlZEV4IE9mZmljZSIsImhvdXNlX251bWJlciI6IjMwNCIsInJvYWQiOiJXZXN0IDM0dGggU3RyZWV0IiwibmVpZ2hib3VyaG9vZCI6Ik1hbmhhdHRhbiBDb21tdW5pdHkgQm9hcmQgNCIsInN1YnVyYiI6Ik1hbmhhdHRhbiIsImNvdW50eSI6Ik5ldyBZb3JrIENvdW50eSIsImNpdHkiOiJOZXcgWW9yayIsInN0YXRlIjoiTmV3IFlvcmsiLCJJU08zMTY2LTItbHZsNCI6IlVTLU5ZIiwicG9zdGNvZGUiOiIxMDAwMSIsImNvdW50cnkiOiJVbml0ZWQgU3RhdGVzIiwiY291bnRyeV9jb2RlIjoidXMifSwiYm91bmRpbmdib3giOlsiNDAuNzUyMjc2NyIsIjQwLjc1MjM3NjciLCItNzMuOTk0Mjk4MiIsIi03My45OTQxOTgyIl19LHsicGxhY2VfaWQiOjQ1NTQ3ODM0LCJsaWNlbmNlIjoiRGF0YSDCqSBPcGVuU3RyZWV0TWFwIGNvbnRyaWJ1dG9ycywgT0RiTCAxLjAuIGh0dHA6Ly9vc20ub3JnL2NvcHlyaWdodCIsIm9zbV90eXBlIjoibm9kZSIsIm9zbV9pZCI6MzgwOTAwMDk0MiwibGF0IjoiNDAuNzUyMzU2IiwibG9uIjoiLTczLjk5NDMxNzUiLCJjbGFzcyI6ImFtZW5pdHkiLCJ0eXBlIjoiZmFzdF9mb29kIiwicGxhY2VfcmFuayI6MzAsImltcG9ydGFuY2UiOjkuOTk5OTk5OTk5OTU0NDllLTA2LCJhZGRyZXNzdHlwZSI6ImFtZW5pdHkiLCJuYW1lIjoiQ2hpcG90bGUiLCJkaXNwbGF5X25hbWUiOiJDaGlwb3RsZSwgMzA0LCBXZXN0IDM0dGggU3RyZWV0LCBNYW5oYXR0YW4gQ29tbXVuaXR5IEJvYXJkIDQsIE1hbmhhdHRhbiwgTmV3IFlvcmsgQ291bnR5LCBOZXcgWW9yaywgMTAwMDEsIFVuaXRlZCBTdGF0ZXMiLCJhZGRyZXNzIjp7ImFtZW5pdHkiOiJDaGlwb3RsZSIsImhvdXNlX251bWJlciI6IjMwNCIsInJvYWQiOiJXZXN0IDM0dGggU3RyZWV0IiwibmVpZ2hib3VyaG9vZCI6Ik1hbmhhdHRhbiBDb21tdW5pdHkgQm9hcmQgNCIsInN1YnVyYiI6Ik1hbmhhdHRhbiIsImNvdW50eSI6Ik5ldyBZb3JrIENvdW50eSIsImNpdHkiOiJOZXcgWW9yayIsInN0YXRlIjoiTmV3IFlvcmsiLCJJU08zMTY2LTItbHZsNCI6IlVTLU5ZIiwicG9zdGNvZGUiOiIxMDAwMSIsImNvdW50cnkiOiJVbml0ZWQgU3RhdGVzIiwiY291bnRyeV9jb2RlIjoidXMifSwiYm91bmRpbmdib3giOlsiNDAuNzUyMzA2MCIsIjQwLjc1MjQwNjAiLCItNzMuOTk0MzY3NSIsIi03My45OTQyNjc1Il19XQ==
-  recorded_at: Thu, 17 Aug 2023 14:58:00 GMT
+        W3sicGxhY2VfaWQiOjk4NjQ5NDUyLCJsaWNlbmNlIjoiRGF0YSDCqSBPcGVuU3RyZWV0TWFwIGNvbnRyaWJ1dG9ycywgT0RiTCAxLjAuIGh0dHA6Ly9vc20ub3JnL2NvcHlyaWdodCIsIm9zbV90eXBlIjoibm9kZSIsIm9zbV9pZCI6OTY3MDg4OTg5MiwibGF0IjoiMzMuNTEwMzAxNyIsImxvbiI6Ii0xMTIuMDcyMDc4NSIsImNsYXNzIjoiYW1lbml0eSIsInR5cGUiOiJyZXN0YXVyYW50IiwicGxhY2VfcmFuayI6MzAsImltcG9ydGFuY2UiOjkuOTk5OTk5OTk0NzM2NDQyZS0wOCwiYWRkcmVzc3R5cGUiOiJhbWVuaXR5IiwibmFtZSI6IkNodWxhIFNlYWZvb2QgVXB0b3duIiwiZGlzcGxheV9uYW1lIjoiQ2h1bGEgU2VhZm9vZCBVcHRvd24sIDEwMCwgRWFzdCBDYW1lbGJhY2sgUm9hZCwgUGhvZW5peCwgTWFyaWNvcGEgQ291bnR5LCBBcml6b25hLCA4NTAxMiwgVW5pdGVkIFN0YXRlcyIsImFkZHJlc3MiOnsiYW1lbml0eSI6IkNodWxhIFNlYWZvb2QgVXB0b3duIiwiaG91c2VfbnVtYmVyIjoiMTAwIiwicm9hZCI6IkVhc3QgQ2FtZWxiYWNrIFJvYWQiLCJjaXR5IjoiUGhvZW5peCIsImNvdW50eSI6Ik1hcmljb3BhIENvdW50eSIsInN0YXRlIjoiQXJpem9uYSIsIklTTzMxNjYtMi1sdmw0IjoiVVMtQVoiLCJwb3N0Y29kZSI6Ijg1MDEyIiwiY291bnRyeSI6IlVuaXRlZCBTdGF0ZXMiLCJjb3VudHJ5X2NvZGUiOiJ1cyJ9LCJib3VuZGluZ2JveCI6WyIzMy41MTAyNTE3IiwiMzMuNTEwMzUxNyIsIi0xMTIuMDcyMTI4NSIsIi0xMTIuMDcyMDI4NSJdfSx7InBsYWNlX2lkIjo5ODk5MzM3MCwibGljZW5jZSI6IkRhdGEgwqkgT3BlblN0cmVldE1hcCBjb250cmlidXRvcnMsIE9EYkwgMS4wLiBodHRwOi8vb3NtLm9yZy9jb3B5cmlnaHQiLCJvc21fdHlwZSI6Im5vZGUiLCJvc21faWQiOjk2NzA4ODk5ODAsImxhdCI6IjMzLjUxMDYwMjYiLCJsb24iOiItMTEyLjA3MTc1OTIiLCJjbGFzcyI6ImFtZW5pdHkiLCJ0eXBlIjoicHViIiwicGxhY2VfcmFuayI6MzAsImltcG9ydGFuY2UiOjkuOTk5OTk5OTk0NzM2NDQyZS0wOCwiYWRkcmVzc3R5cGUiOiJhbWVuaXR5IiwibmFtZSI6IlVwdG93biBQaG9lbml4IFRhcHJvb20gKyBLaXRjaGVuIiwiZGlzcGxheV9uYW1lIjoiVXB0b3duIFBob2VuaXggVGFwcm9vbSArIEtpdGNoZW4sIDEwMCwgRWFzdCBDYW1lbGJhY2sgUm9hZCwgUGhvZW5peCwgTWFyaWNvcGEgQ291bnR5LCBBcml6b25hLCA4NTAxMiwgVW5pdGVkIFN0YXRlcyIsImFkZHJlc3MiOnsiYW1lbml0eSI6IlVwdG93biBQaG9lbml4IFRhcHJvb20gKyBLaXRjaGVuIiwiaG91c2VfbnVtYmVyIjoiMTAwIiwicm9hZCI6IkVhc3QgQ2FtZWxiYWNrIFJvYWQiLCJjaXR5IjoiUGhvZW5peCIsImNvdW50eSI6Ik1hcmljb3BhIENvdW50eSIsInN0YXRlIjoiQXJpem9uYSIsIklTTzMxNjYtMi1sdmw0IjoiVVMtQVoiLCJwb3N0Y29kZSI6Ijg1MDEyIiwiY291bnRyeSI6IlVuaXRlZCBTdGF0ZXMiLCJjb3VudHJ5X2NvZGUiOiJ1cyJ9LCJib3VuZGluZ2JveCI6WyIzMy41MTA1NTI2IiwiMzMuNTEwNjUyNiIsIi0xMTIuMDcxODA5MiIsIi0xMTIuMDcxNzA5MiJdfV0=
+  recorded_at: Wed, 23 Aug 2023 16:29:11 GMT
 - request:
     method: get
     uri: https://nominatim.openstreetmap.org/search?accept-language=en&addressdetails=1&format=json&q=100%20E%20Camelback%20Rd%20phoenix,%20arizona%2085012
@@ -449,7 +134,7 @@ http_interactions:
       Server:
       - nginx
       Date:
-      - Thu, 17 Aug 2023 14:58:01 GMT
+      - Thu, 24 Aug 2023 16:38:26 GMT
       Content-Type:
       - application/json
       Content-Length:
@@ -462,10 +147,10 @@ http_interactions:
       encoding: ASCII-8BIT
       string: !binary |-
         W3sicGxhY2VfaWQiOjk4NjQ5NDUyLCJsaWNlbmNlIjoiRGF0YSDCqSBPcGVuU3RyZWV0TWFwIGNvbnRyaWJ1dG9ycywgT0RiTCAxLjAuIGh0dHA6Ly9vc20ub3JnL2NvcHlyaWdodCIsIm9zbV90eXBlIjoibm9kZSIsIm9zbV9pZCI6OTY3MDg4OTg5MiwibGF0IjoiMzMuNTEwMzAxNyIsImxvbiI6Ii0xMTIuMDcyMDc4NSIsImNsYXNzIjoiYW1lbml0eSIsInR5cGUiOiJyZXN0YXVyYW50IiwicGxhY2VfcmFuayI6MzAsImltcG9ydGFuY2UiOjkuOTk5OTk5OTk0NzM2NDQyZS0wOCwiYWRkcmVzc3R5cGUiOiJhbWVuaXR5IiwibmFtZSI6IkNodWxhIFNlYWZvb2QgVXB0b3duIiwiZGlzcGxheV9uYW1lIjoiQ2h1bGEgU2VhZm9vZCBVcHRvd24sIDEwMCwgRWFzdCBDYW1lbGJhY2sgUm9hZCwgUGhvZW5peCwgTWFyaWNvcGEgQ291bnR5LCBBcml6b25hLCA4NTAxMiwgVW5pdGVkIFN0YXRlcyIsImFkZHJlc3MiOnsiYW1lbml0eSI6IkNodWxhIFNlYWZvb2QgVXB0b3duIiwiaG91c2VfbnVtYmVyIjoiMTAwIiwicm9hZCI6IkVhc3QgQ2FtZWxiYWNrIFJvYWQiLCJjaXR5IjoiUGhvZW5peCIsImNvdW50eSI6Ik1hcmljb3BhIENvdW50eSIsInN0YXRlIjoiQXJpem9uYSIsIklTTzMxNjYtMi1sdmw0IjoiVVMtQVoiLCJwb3N0Y29kZSI6Ijg1MDEyIiwiY291bnRyeSI6IlVuaXRlZCBTdGF0ZXMiLCJjb3VudHJ5X2NvZGUiOiJ1cyJ9LCJib3VuZGluZ2JveCI6WyIzMy41MTAyNTE3IiwiMzMuNTEwMzUxNyIsIi0xMTIuMDcyMTI4NSIsIi0xMTIuMDcyMDI4NSJdfSx7InBsYWNlX2lkIjo5ODk5MzM3MCwibGljZW5jZSI6IkRhdGEgwqkgT3BlblN0cmVldE1hcCBjb250cmlidXRvcnMsIE9EYkwgMS4wLiBodHRwOi8vb3NtLm9yZy9jb3B5cmlnaHQiLCJvc21fdHlwZSI6Im5vZGUiLCJvc21faWQiOjk2NzA4ODk5ODAsImxhdCI6IjMzLjUxMDYwMjYiLCJsb24iOiItMTEyLjA3MTc1OTIiLCJjbGFzcyI6ImFtZW5pdHkiLCJ0eXBlIjoicHViIiwicGxhY2VfcmFuayI6MzAsImltcG9ydGFuY2UiOjkuOTk5OTk5OTk0NzM2NDQyZS0wOCwiYWRkcmVzc3R5cGUiOiJhbWVuaXR5IiwibmFtZSI6IlVwdG93biBQaG9lbml4IFRhcHJvb20gKyBLaXRjaGVuIiwiZGlzcGxheV9uYW1lIjoiVXB0b3duIFBob2VuaXggVGFwcm9vbSArIEtpdGNoZW4sIDEwMCwgRWFzdCBDYW1lbGJhY2sgUm9hZCwgUGhvZW5peCwgTWFyaWNvcGEgQ291bnR5LCBBcml6b25hLCA4NTAxMiwgVW5pdGVkIFN0YXRlcyIsImFkZHJlc3MiOnsiYW1lbml0eSI6IlVwdG93biBQaG9lbml4IFRhcHJvb20gKyBLaXRjaGVuIiwiaG91c2VfbnVtYmVyIjoiMTAwIiwicm9hZCI6IkVhc3QgQ2FtZWxiYWNrIFJvYWQiLCJjaXR5IjoiUGhvZW5peCIsImNvdW50eSI6Ik1hcmljb3BhIENvdW50eSIsInN0YXRlIjoiQXJpem9uYSIsIklTTzMxNjYtMi1sdmw0IjoiVVMtQVoiLCJwb3N0Y29kZSI6Ijg1MDEyIiwiY291bnRyeSI6IlVuaXRlZCBTdGF0ZXMiLCJjb3VudHJ5X2NvZGUiOiJ1cyJ9LCJib3VuZGluZ2JveCI6WyIzMy41MTA1NTI2IiwiMzMuNTEwNjUyNiIsIi0xMTIuMDcxODA5MiIsIi0xMTIuMDcxNzA5MiJdfV0=
-  recorded_at: Thu, 17 Aug 2023 14:58:01 GMT
+  recorded_at: Thu, 24 Aug 2023 16:38:25 GMT
 - request:
     method: get
-    uri: https://nominatim.openstreetmap.org/search?accept-language=en&addressdetails=1&format=json&q=100%20E%20Camelback%20Rd%20phoenix,%20arizona%2085012
+    uri: https://nominatim.openstreetmap.org/search?accept-language=en&addressdetails=1&format=json&q=harlem,%20georgia
     body:
       encoding: US-ASCII
       string: ''
@@ -484,11 +169,11 @@ http_interactions:
       Server:
       - nginx
       Date:
-      - Thu, 17 Aug 2023 14:58:01 GMT
+      - Thu, 24 Aug 2023 18:06:27 GMT
       Content-Type:
       - application/json
       Content-Length:
-      - '1562'
+      - '1190'
       Connection:
       - keep-alive
       Keep-Alive:
@@ -496,11 +181,11 @@ http_interactions:
     body:
       encoding: ASCII-8BIT
       string: !binary |-
-        W3sicGxhY2VfaWQiOjk4NjQ5NDUyLCJsaWNlbmNlIjoiRGF0YSDCqSBPcGVuU3RyZWV0TWFwIGNvbnRyaWJ1dG9ycywgT0RiTCAxLjAuIGh0dHA6Ly9vc20ub3JnL2NvcHlyaWdodCIsIm9zbV90eXBlIjoibm9kZSIsIm9zbV9pZCI6OTY3MDg4OTg5MiwibGF0IjoiMzMuNTEwMzAxNyIsImxvbiI6Ii0xMTIuMDcyMDc4NSIsImNsYXNzIjoiYW1lbml0eSIsInR5cGUiOiJyZXN0YXVyYW50IiwicGxhY2VfcmFuayI6MzAsImltcG9ydGFuY2UiOjkuOTk5OTk5OTk0NzM2NDQyZS0wOCwiYWRkcmVzc3R5cGUiOiJhbWVuaXR5IiwibmFtZSI6IkNodWxhIFNlYWZvb2QgVXB0b3duIiwiZGlzcGxheV9uYW1lIjoiQ2h1bGEgU2VhZm9vZCBVcHRvd24sIDEwMCwgRWFzdCBDYW1lbGJhY2sgUm9hZCwgUGhvZW5peCwgTWFyaWNvcGEgQ291bnR5LCBBcml6b25hLCA4NTAxMiwgVW5pdGVkIFN0YXRlcyIsImFkZHJlc3MiOnsiYW1lbml0eSI6IkNodWxhIFNlYWZvb2QgVXB0b3duIiwiaG91c2VfbnVtYmVyIjoiMTAwIiwicm9hZCI6IkVhc3QgQ2FtZWxiYWNrIFJvYWQiLCJjaXR5IjoiUGhvZW5peCIsImNvdW50eSI6Ik1hcmljb3BhIENvdW50eSIsInN0YXRlIjoiQXJpem9uYSIsIklTTzMxNjYtMi1sdmw0IjoiVVMtQVoiLCJwb3N0Y29kZSI6Ijg1MDEyIiwiY291bnRyeSI6IlVuaXRlZCBTdGF0ZXMiLCJjb3VudHJ5X2NvZGUiOiJ1cyJ9LCJib3VuZGluZ2JveCI6WyIzMy41MTAyNTE3IiwiMzMuNTEwMzUxNyIsIi0xMTIuMDcyMTI4NSIsIi0xMTIuMDcyMDI4NSJdfSx7InBsYWNlX2lkIjo5ODk5MzM3MCwibGljZW5jZSI6IkRhdGEgwqkgT3BlblN0cmVldE1hcCBjb250cmlidXRvcnMsIE9EYkwgMS4wLiBodHRwOi8vb3NtLm9yZy9jb3B5cmlnaHQiLCJvc21fdHlwZSI6Im5vZGUiLCJvc21faWQiOjk2NzA4ODk5ODAsImxhdCI6IjMzLjUxMDYwMjYiLCJsb24iOiItMTEyLjA3MTc1OTIiLCJjbGFzcyI6ImFtZW5pdHkiLCJ0eXBlIjoicHViIiwicGxhY2VfcmFuayI6MzAsImltcG9ydGFuY2UiOjkuOTk5OTk5OTk0NzM2NDQyZS0wOCwiYWRkcmVzc3R5cGUiOiJhbWVuaXR5IiwibmFtZSI6IlVwdG93biBQaG9lbml4IFRhcHJvb20gKyBLaXRjaGVuIiwiZGlzcGxheV9uYW1lIjoiVXB0b3duIFBob2VuaXggVGFwcm9vbSArIEtpdGNoZW4sIDEwMCwgRWFzdCBDYW1lbGJhY2sgUm9hZCwgUGhvZW5peCwgTWFyaWNvcGEgQ291bnR5LCBBcml6b25hLCA4NTAxMiwgVW5pdGVkIFN0YXRlcyIsImFkZHJlc3MiOnsiYW1lbml0eSI6IlVwdG93biBQaG9lbml4IFRhcHJvb20gKyBLaXRjaGVuIiwiaG91c2VfbnVtYmVyIjoiMTAwIiwicm9hZCI6IkVhc3QgQ2FtZWxiYWNrIFJvYWQiLCJjaXR5IjoiUGhvZW5peCIsImNvdW50eSI6Ik1hcmljb3BhIENvdW50eSIsInN0YXRlIjoiQXJpem9uYSIsIklTTzMxNjYtMi1sdmw0IjoiVVMtQVoiLCJwb3N0Y29kZSI6Ijg1MDEyIiwiY291bnRyeSI6IlVuaXRlZCBTdGF0ZXMiLCJjb3VudHJ5X2NvZGUiOiJ1cyJ9LCJib3VuZGluZ2JveCI6WyIzMy41MTA1NTI2IiwiMzMuNTEwNjUyNiIsIi0xMTIuMDcxODA5MiIsIi0xMTIuMDcxNzA5MiJdfV0=
-  recorded_at: Thu, 17 Aug 2023 14:58:01 GMT
+        W3sicGxhY2VfaWQiOjI5ODU1NTI1MCwibGljZW5jZSI6IkRhdGEgwqkgT3BlblN0cmVldE1hcCBjb250cmlidXRvcnMsIE9EYkwgMS4wLiBodHRwOi8vb3NtLm9yZy9jb3B5cmlnaHQiLCJvc21fdHlwZSI6InJlbGF0aW9uIiwib3NtX2lkIjoxMTk4MDAsImxhdCI6IjMzLjQxNDU4MzQiLCJsb24iOiItODIuMzEyNjIzNyIsImNsYXNzIjoiYm91bmRhcnkiLCJ0eXBlIjoiYWRtaW5pc3RyYXRpdmUiLCJwbGFjZV9yYW5rIjoxNiwiaW1wb3J0YW5jZSI6MC40MDQ1NDYxNjUyMzQ1MTYyLCJhZGRyZXNzdHlwZSI6ImNpdHkiLCJuYW1lIjoiSGFybGVtIiwiZGlzcGxheV9uYW1lIjoiSGFybGVtLCBDb2x1bWJpYSBDb3VudHksIEdlb3JnaWEsIFVuaXRlZCBTdGF0ZXMiLCJhZGRyZXNzIjp7InZpbGxhZ2UiOiJIYXJsZW0iLCJjb3VudHkiOiJDb2x1bWJpYSBDb3VudHkiLCJzdGF0ZSI6Ikdlb3JnaWEiLCJJU08zMTY2LTItbHZsNCI6IlVTLUdBIiwiY291bnRyeSI6IlVuaXRlZCBTdGF0ZXMiLCJjb3VudHJ5X2NvZGUiOiJ1cyJ9LCJib3VuZGluZ2JveCI6WyIzMy4zOTU5NTIwIiwiMzMuNDQyMDY4NSIsIi04Mi4zNDA2MDYwIiwiLTgyLjI4NTY0NTAiXX0seyJwbGFjZV9pZCI6MTg3ODA0NzI5LCJsaWNlbmNlIjoiRGF0YSDCqSBPcGVuU3RyZWV0TWFwIGNvbnRyaWJ1dG9ycywgT0RiTCAxLjAuIGh0dHA6Ly9vc20ub3JnL2NvcHlyaWdodCIsIm9zbV90eXBlIjoid2F5Iiwib3NtX2lkIjozNDA1MTkzMTYsImxhdCI6IjMzLjQxODg5OTU1IiwibG9uIjoiLTgyLjMwNzQxNTQ2NTUyMDQ2IiwiY2xhc3MiOiJib3VuZGFyeSIsInR5cGUiOiJhZG1pbmlzdHJhdGl2ZSIsInBsYWNlX3JhbmsiOjE2LCJpbXBvcnRhbmNlIjowLjM1MDAwMDA5OTk5OTk5OTksImFkZHJlc3N0eXBlIjoiY2l0eSIsIm5hbWUiOiJIYXJsZW0iLCJkaXNwbGF5X25hbWUiOiJIYXJsZW0sIENvbHVtYmlhIENvdW50eSwgR2VvcmdpYSwgVW5pdGVkIFN0YXRlcyIsImFkZHJlc3MiOnsiY2l0eSI6IkhhcmxlbSIsImNvdW50eSI6IkNvbHVtYmlhIENvdW50eSIsInN0YXRlIjoiR2VvcmdpYSIsIklTTzMxNjYtMi1sdmw0IjoiVVMtR0EiLCJjb3VudHJ5IjoiVW5pdGVkIFN0YXRlcyIsImNvdW50cnlfY29kZSI6InVzIn0sImJvdW5kaW5nYm94IjpbIjMzLjM5NTk1MjAiLCIzMy40NDE1ODQwIiwiLTgyLjM0MDYwNjAiLCItODIuMjg1NjQ1MCJdfV0=
+  recorded_at: Thu, 24 Aug 2023 18:06:27 GMT
 - request:
     method: get
-    uri: https://nominatim.openstreetmap.org/search?accept-language=en&addressdetails=1&format=json&q=488%20S%20High%20St%20columbus,%20ohio%2043215
+    uri: https://nominatim.openstreetmap.org/search?accept-language=en&addressdetails=1&format=json&q=harlem,%20georgia
     body:
       encoding: US-ASCII
       string: ''
@@ -519,11 +204,11 @@ http_interactions:
       Server:
       - nginx
       Date:
-      - Thu, 17 Aug 2023 14:58:03 GMT
+      - Thu, 24 Aug 2023 18:06:28 GMT
       Content-Type:
       - application/json
       Content-Length:
-      - '1515'
+      - '1190'
       Connection:
       - keep-alive
       Keep-Alive:
@@ -531,43 +216,8 @@ http_interactions:
     body:
       encoding: ASCII-8BIT
       string: !binary |-
-        W3sicGxhY2VfaWQiOjMyNTkzMDA4NiwibGljZW5jZSI6IkRhdGEgwqkgT3BlblN0cmVldE1hcCBjb250cmlidXRvcnMsIE9EYkwgMS4wLiBodHRwOi8vb3NtLm9yZy9jb3B5cmlnaHQiLCJvc21fdHlwZSI6IndheSIsIm9zbV9pZCI6MTIxMzQxNjM3LCJsYXQiOiIzOS45NTI2NDA1IiwibG9uIjoiLTgyLjk5ODkwNTIwODMzMzMzIiwiY2xhc3MiOiJwbGFjZSIsInR5cGUiOiJob3VzZSIsInBsYWNlX3JhbmsiOjMwLCJpbXBvcnRhbmNlIjo5Ljk5OTk5OTk5NDczNjQ0MmUtMDgsImFkZHJlc3N0eXBlIjoicGxhY2UiLCJuYW1lIjoiIiwiZGlzcGxheV9uYW1lIjoiNDg4LCBTb3V0aCBIaWdoIFN0cmVldCwgQnJld2VyeSBEaXN0cmljdCwgQ29sdW1idXMsIEZyYW5rbGluIENvdW50eSwgT2hpbywgNDMyMTUsIFVuaXRlZCBTdGF0ZXMiLCJhZGRyZXNzIjp7ImhvdXNlX251bWJlciI6IjQ4OCIsInJvYWQiOiJTb3V0aCBIaWdoIFN0cmVldCIsIm5laWdoYm91cmhvb2QiOiJCcmV3ZXJ5IERpc3RyaWN0IiwiY2l0eSI6IkNvbHVtYnVzIiwiY291bnR5IjoiRnJhbmtsaW4gQ291bnR5Iiwic3RhdGUiOiJPaGlvIiwiSVNPMzE2Ni0yLWx2bDQiOiJVUy1PSCIsInBvc3Rjb2RlIjoiNDMyMTUiLCJjb3VudHJ5IjoiVW5pdGVkIFN0YXRlcyIsImNvdW50cnlfY29kZSI6InVzIn0sImJvdW5kaW5nYm94IjpbIjM5Ljk1MjU5MDUiLCIzOS45NTI2OTA1IiwiLTgyLjk5ODk1NTIiLCItODIuOTk4ODU1MiJdfSx7InBsYWNlX2lkIjoyMjc2NjQyMTEsImxpY2VuY2UiOiJEYXRhIMKpIE9wZW5TdHJlZXRNYXAgY29udHJpYnV0b3JzLCBPRGJMIDEuMC4gaHR0cDovL29zbS5vcmcvY29weXJpZ2h0Iiwib3NtX3R5cGUiOiJ3YXkiLCJvc21faWQiOjU4ODQyNzc4NCwibGF0IjoiMzkuOTUyMDYyOTk5OTk5OTk1IiwibG9uIjoiLTgyLjk5ODQzNjk5Mzg0NDIyIiwiY2xhc3MiOiJhbWVuaXR5IiwidHlwZSI6ImZhc3RfZm9vZCIsInBsYWNlX3JhbmsiOjMwLCJpbXBvcnRhbmNlIjo5Ljk5OTk5OTk5OTk1NDQ5ZS0wNiwiYWRkcmVzc3R5cGUiOiJhbWVuaXR5IiwibmFtZSI6IkNoaXBvdGxlIiwiZGlzcGxheV9uYW1lIjoiQ2hpcG90bGUsIDQ4OCwgU291dGggSGlnaCBTdHJlZXQsIEJyZXdlcnkgRGlzdHJpY3QsIENvbHVtYnVzLCBGcmFua2xpbiBDb3VudHksIE9oaW8sIDQzMjE1LCBVbml0ZWQgU3RhdGVzIiwiYWRkcmVzcyI6eyJhbWVuaXR5IjoiQ2hpcG90bGUiLCJob3VzZV9udW1iZXIiOiI0ODgiLCJyb2FkIjoiU291dGggSGlnaCBTdHJlZXQiLCJuZWlnaGJvdXJob29kIjoiQnJld2VyeSBEaXN0cmljdCIsImNpdHkiOiJDb2x1bWJ1cyIsImNvdW50eSI6IkZyYW5rbGluIENvdW50eSIsInN0YXRlIjoiT2hpbyIsIklTTzMxNjYtMi1sdmw0IjoiVVMtT0giLCJwb3N0Y29kZSI6IjQzMjE1IiwiY291bnRyeSI6IlVuaXRlZCBTdGF0ZXMiLCJjb3VudHJ5X2NvZGUiOiJ1cyJ9LCJib3VuZGluZ2JveCI6WyIzOS45NTIwMTU4IiwiMzkuOTUyMTEwMSIsIi04Mi45OTg1MDkyIiwiLTgyLjk5ODM2NTAiXX1d
-  recorded_at: Thu, 17 Aug 2023 14:58:03 GMT
-- request:
-    method: get
-    uri: https://nominatim.openstreetmap.org/search?accept-language=en&addressdetails=1&format=json&q=488%20S%20High%20St%20columbus,%20ohio%2043215
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-      Accept:
-      - "*/*"
-      User-Agent:
-      - Ruby
-  response:
-    status:
-      code: 200
-      message: OK
-    headers:
-      Server:
-      - nginx
-      Date:
-      - Thu, 17 Aug 2023 14:58:04 GMT
-      Content-Type:
-      - application/json
-      Content-Length:
-      - '1515'
-      Connection:
-      - keep-alive
-      Keep-Alive:
-      - timeout=20
-    body:
-      encoding: ASCII-8BIT
-      string: !binary |-
-        W3sicGxhY2VfaWQiOjMyNTkzMDA4NiwibGljZW5jZSI6IkRhdGEgwqkgT3BlblN0cmVldE1hcCBjb250cmlidXRvcnMsIE9EYkwgMS4wLiBodHRwOi8vb3NtLm9yZy9jb3B5cmlnaHQiLCJvc21fdHlwZSI6IndheSIsIm9zbV9pZCI6MTIxMzQxNjM3LCJsYXQiOiIzOS45NTI2NDA1IiwibG9uIjoiLTgyLjk5ODkwNTIwODMzMzMzIiwiY2xhc3MiOiJwbGFjZSIsInR5cGUiOiJob3VzZSIsInBsYWNlX3JhbmsiOjMwLCJpbXBvcnRhbmNlIjo5Ljk5OTk5OTk5NDczNjQ0MmUtMDgsImFkZHJlc3N0eXBlIjoicGxhY2UiLCJuYW1lIjoiIiwiZGlzcGxheV9uYW1lIjoiNDg4LCBTb3V0aCBIaWdoIFN0cmVldCwgQnJld2VyeSBEaXN0cmljdCwgQ29sdW1idXMsIEZyYW5rbGluIENvdW50eSwgT2hpbywgNDMyMTUsIFVuaXRlZCBTdGF0ZXMiLCJhZGRyZXNzIjp7ImhvdXNlX251bWJlciI6IjQ4OCIsInJvYWQiOiJTb3V0aCBIaWdoIFN0cmVldCIsIm5laWdoYm91cmhvb2QiOiJCcmV3ZXJ5IERpc3RyaWN0IiwiY2l0eSI6IkNvbHVtYnVzIiwiY291bnR5IjoiRnJhbmtsaW4gQ291bnR5Iiwic3RhdGUiOiJPaGlvIiwiSVNPMzE2Ni0yLWx2bDQiOiJVUy1PSCIsInBvc3Rjb2RlIjoiNDMyMTUiLCJjb3VudHJ5IjoiVW5pdGVkIFN0YXRlcyIsImNvdW50cnlfY29kZSI6InVzIn0sImJvdW5kaW5nYm94IjpbIjM5Ljk1MjU5MDUiLCIzOS45NTI2OTA1IiwiLTgyLjk5ODk1NTIiLCItODIuOTk4ODU1MiJdfSx7InBsYWNlX2lkIjoyMjc2NjQyMTEsImxpY2VuY2UiOiJEYXRhIMKpIE9wZW5TdHJlZXRNYXAgY29udHJpYnV0b3JzLCBPRGJMIDEuMC4gaHR0cDovL29zbS5vcmcvY29weXJpZ2h0Iiwib3NtX3R5cGUiOiJ3YXkiLCJvc21faWQiOjU4ODQyNzc4NCwibGF0IjoiMzkuOTUyMDYyOTk5OTk5OTk1IiwibG9uIjoiLTgyLjk5ODQzNjk5Mzg0NDIyIiwiY2xhc3MiOiJhbWVuaXR5IiwidHlwZSI6ImZhc3RfZm9vZCIsInBsYWNlX3JhbmsiOjMwLCJpbXBvcnRhbmNlIjo5Ljk5OTk5OTk5OTk1NDQ5ZS0wNiwiYWRkcmVzc3R5cGUiOiJhbWVuaXR5IiwibmFtZSI6IkNoaXBvdGxlIiwiZGlzcGxheV9uYW1lIjoiQ2hpcG90bGUsIDQ4OCwgU291dGggSGlnaCBTdHJlZXQsIEJyZXdlcnkgRGlzdHJpY3QsIENvbHVtYnVzLCBGcmFua2xpbiBDb3VudHksIE9oaW8sIDQzMjE1LCBVbml0ZWQgU3RhdGVzIiwiYWRkcmVzcyI6eyJhbWVuaXR5IjoiQ2hpcG90bGUiLCJob3VzZV9udW1iZXIiOiI0ODgiLCJyb2FkIjoiU291dGggSGlnaCBTdHJlZXQiLCJuZWlnaGJvdXJob29kIjoiQnJld2VyeSBEaXN0cmljdCIsImNpdHkiOiJDb2x1bWJ1cyIsImNvdW50eSI6IkZyYW5rbGluIENvdW50eSIsInN0YXRlIjoiT2hpbyIsIklTTzMxNjYtMi1sdmw0IjoiVVMtT0giLCJwb3N0Y29kZSI6IjQzMjE1IiwiY291bnRyeSI6IlVuaXRlZCBTdGF0ZXMiLCJjb3VudHJ5X2NvZGUiOiJ1cyJ9LCJib3VuZGluZ2JveCI6WyIzOS45NTIwMTU4IiwiMzkuOTUyMTEwMSIsIi04Mi45OTg1MDkyIiwiLTgyLjk5ODM2NTAiXX1d
-  recorded_at: Thu, 17 Aug 2023 14:58:04 GMT
+        W3sicGxhY2VfaWQiOjI5ODU1NTI1MCwibGljZW5jZSI6IkRhdGEgwqkgT3BlblN0cmVldE1hcCBjb250cmlidXRvcnMsIE9EYkwgMS4wLiBodHRwOi8vb3NtLm9yZy9jb3B5cmlnaHQiLCJvc21fdHlwZSI6InJlbGF0aW9uIiwib3NtX2lkIjoxMTk4MDAsImxhdCI6IjMzLjQxNDU4MzQiLCJsb24iOiItODIuMzEyNjIzNyIsImNsYXNzIjoiYm91bmRhcnkiLCJ0eXBlIjoiYWRtaW5pc3RyYXRpdmUiLCJwbGFjZV9yYW5rIjoxNiwiaW1wb3J0YW5jZSI6MC40MDQ1NDYxNjUyMzQ1MTYyLCJhZGRyZXNzdHlwZSI6ImNpdHkiLCJuYW1lIjoiSGFybGVtIiwiZGlzcGxheV9uYW1lIjoiSGFybGVtLCBDb2x1bWJpYSBDb3VudHksIEdlb3JnaWEsIFVuaXRlZCBTdGF0ZXMiLCJhZGRyZXNzIjp7InZpbGxhZ2UiOiJIYXJsZW0iLCJjb3VudHkiOiJDb2x1bWJpYSBDb3VudHkiLCJzdGF0ZSI6Ikdlb3JnaWEiLCJJU08zMTY2LTItbHZsNCI6IlVTLUdBIiwiY291bnRyeSI6IlVuaXRlZCBTdGF0ZXMiLCJjb3VudHJ5X2NvZGUiOiJ1cyJ9LCJib3VuZGluZ2JveCI6WyIzMy4zOTU5NTIwIiwiMzMuNDQyMDY4NSIsIi04Mi4zNDA2MDYwIiwiLTgyLjI4NTY0NTAiXX0seyJwbGFjZV9pZCI6MTg3ODA0NzI5LCJsaWNlbmNlIjoiRGF0YSDCqSBPcGVuU3RyZWV0TWFwIGNvbnRyaWJ1dG9ycywgT0RiTCAxLjAuIGh0dHA6Ly9vc20ub3JnL2NvcHlyaWdodCIsIm9zbV90eXBlIjoid2F5Iiwib3NtX2lkIjozNDA1MTkzMTYsImxhdCI6IjMzLjQxODg5OTU1IiwibG9uIjoiLTgyLjMwNzQxNTQ2NTUyMDQ2IiwiY2xhc3MiOiJib3VuZGFyeSIsInR5cGUiOiJhZG1pbmlzdHJhdGl2ZSIsInBsYWNlX3JhbmsiOjE2LCJpbXBvcnRhbmNlIjowLjM1MDAwMDA5OTk5OTk5OTksImFkZHJlc3N0eXBlIjoiY2l0eSIsIm5hbWUiOiJIYXJsZW0iLCJkaXNwbGF5X25hbWUiOiJIYXJsZW0sIENvbHVtYmlhIENvdW50eSwgR2VvcmdpYSwgVW5pdGVkIFN0YXRlcyIsImFkZHJlc3MiOnsiY2l0eSI6IkhhcmxlbSIsImNvdW50eSI6IkNvbHVtYmlhIENvdW50eSIsInN0YXRlIjoiR2VvcmdpYSIsIklTTzMxNjYtMi1sdmw0IjoiVVMtR0EiLCJjb3VudHJ5IjoiVW5pdGVkIFN0YXRlcyIsImNvdW50cnlfY29kZSI6InVzIn0sImJvdW5kaW5nYm94IjpbIjMzLjM5NTk1MjAiLCIzMy40NDE1ODQwIiwiLTgyLjM0MDYwNjAiLCItODIuMjg1NjQ1MCJdfV0=
+  recorded_at: Thu, 24 Aug 2023 18:06:28 GMT
 - request:
     method: get
     uri: https://nominatim.openstreetmap.org/search?accept-language=en&addressdetails=1&format=json&q=1625%20Chestnut%20St%20philadelphia,%20pennsylvania%2019103
@@ -589,7 +239,7 @@ http_interactions:
       Server:
       - nginx
       Date:
-      - Thu, 17 Aug 2023 14:58:05 GMT
+      - Thu, 24 Aug 2023 18:07:25 GMT
       Content-Type:
       - application/json
       Content-Length:
@@ -602,7 +252,7 @@ http_interactions:
       encoding: ASCII-8BIT
       string: !binary |-
         W3sicGxhY2VfaWQiOjI0NDY5NTczLCJsaWNlbmNlIjoiRGF0YSDCqSBPcGVuU3RyZWV0TWFwIGNvbnRyaWJ1dG9ycywgT0RiTCAxLjAuIGh0dHA6Ly9vc20ub3JnL2NvcHlyaWdodCIsIm9zbV90eXBlIjoibm9kZSIsIm9zbV9pZCI6MjY1NDM2MzMxNSwibGF0IjoiMzkuOTUxNDk1MyIsImxvbiI6Ii03NS4xNjc0MzA5IiwiY2xhc3MiOiJhbWVuaXR5IiwidHlwZSI6ImNhZmUiLCJwbGFjZV9yYW5rIjozMCwiaW1wb3J0YW5jZSI6OS45OTk5OTk5OTQ3MzY0NDJlLTA4LCJhZGRyZXNzdHlwZSI6ImFtZW5pdHkiLCJuYW1lIjoiU2F4YnlzIiwiZGlzcGxheV9uYW1lIjoiU2F4YnlzLCAxNjI1LCBDaGVzdG51dCBTdHJlZXQsIFJpdHRlbmhvdXNlIFNxdWFyZSwgQ2VudGVyIENpdHksIFBoaWxhZGVscGhpYSwgUGhpbGFkZWxwaGlhIENvdW50eSwgUGVubnN5bHZhbmlhLCAxOTEwMywgVW5pdGVkIFN0YXRlcyIsImFkZHJlc3MiOnsiYW1lbml0eSI6IlNheGJ5cyIsImhvdXNlX251bWJlciI6IjE2MjUiLCJyb2FkIjoiQ2hlc3RudXQgU3RyZWV0IiwibmVpZ2hib3VyaG9vZCI6IlJpdHRlbmhvdXNlIFNxdWFyZSIsInN1YnVyYiI6IkNlbnRlciBDaXR5IiwiY2l0eSI6IlBoaWxhZGVscGhpYSIsImNvdW50eSI6IlBoaWxhZGVscGhpYSBDb3VudHkiLCJzdGF0ZSI6IlBlbm5zeWx2YW5pYSIsIklTTzMxNjYtMi1sdmw0IjoiVVMtUEEiLCJwb3N0Y29kZSI6IjE5MTAzIiwiY291bnRyeSI6IlVuaXRlZCBTdGF0ZXMiLCJjb3VudHJ5X2NvZGUiOiJ1cyJ9LCJib3VuZGluZ2JveCI6WyIzOS45NTE0NDUzIiwiMzkuOTUxNTQ1MyIsIi03NS4xNjc0ODA5IiwiLTc1LjE2NzM4MDkiXX1d
-  recorded_at: Thu, 17 Aug 2023 14:58:05 GMT
+  recorded_at: Thu, 24 Aug 2023 18:07:25 GMT
 - request:
     method: get
     uri: https://nominatim.openstreetmap.org/search?accept-language=en&addressdetails=1&format=json&q=1625%20Chestnut%20St%20philadelphia,%20pennsylvania%2019103
@@ -624,7 +274,7 @@ http_interactions:
       Server:
       - nginx
       Date:
-      - Thu, 17 Aug 2023 14:58:06 GMT
+      - Thu, 24 Aug 2023 18:07:27 GMT
       Content-Type:
       - application/json
       Content-Length:
@@ -637,7 +287,77 @@ http_interactions:
       encoding: ASCII-8BIT
       string: !binary |-
         W3sicGxhY2VfaWQiOjI0NDY5NTczLCJsaWNlbmNlIjoiRGF0YSDCqSBPcGVuU3RyZWV0TWFwIGNvbnRyaWJ1dG9ycywgT0RiTCAxLjAuIGh0dHA6Ly9vc20ub3JnL2NvcHlyaWdodCIsIm9zbV90eXBlIjoibm9kZSIsIm9zbV9pZCI6MjY1NDM2MzMxNSwibGF0IjoiMzkuOTUxNDk1MyIsImxvbiI6Ii03NS4xNjc0MzA5IiwiY2xhc3MiOiJhbWVuaXR5IiwidHlwZSI6ImNhZmUiLCJwbGFjZV9yYW5rIjozMCwiaW1wb3J0YW5jZSI6OS45OTk5OTk5OTQ3MzY0NDJlLTA4LCJhZGRyZXNzdHlwZSI6ImFtZW5pdHkiLCJuYW1lIjoiU2F4YnlzIiwiZGlzcGxheV9uYW1lIjoiU2F4YnlzLCAxNjI1LCBDaGVzdG51dCBTdHJlZXQsIFJpdHRlbmhvdXNlIFNxdWFyZSwgQ2VudGVyIENpdHksIFBoaWxhZGVscGhpYSwgUGhpbGFkZWxwaGlhIENvdW50eSwgUGVubnN5bHZhbmlhLCAxOTEwMywgVW5pdGVkIFN0YXRlcyIsImFkZHJlc3MiOnsiYW1lbml0eSI6IlNheGJ5cyIsImhvdXNlX251bWJlciI6IjE2MjUiLCJyb2FkIjoiQ2hlc3RudXQgU3RyZWV0IiwibmVpZ2hib3VyaG9vZCI6IlJpdHRlbmhvdXNlIFNxdWFyZSIsInN1YnVyYiI6IkNlbnRlciBDaXR5IiwiY2l0eSI6IlBoaWxhZGVscGhpYSIsImNvdW50eSI6IlBoaWxhZGVscGhpYSBDb3VudHkiLCJzdGF0ZSI6IlBlbm5zeWx2YW5pYSIsIklTTzMxNjYtMi1sdmw0IjoiVVMtUEEiLCJwb3N0Y29kZSI6IjE5MTAzIiwiY291bnRyeSI6IlVuaXRlZCBTdGF0ZXMiLCJjb3VudHJ5X2NvZGUiOiJ1cyJ9LCJib3VuZGluZ2JveCI6WyIzOS45NTE0NDUzIiwiMzkuOTUxNTQ1MyIsIi03NS4xNjc0ODA5IiwiLTc1LjE2NzM4MDkiXX1d
-  recorded_at: Thu, 17 Aug 2023 14:58:06 GMT
+  recorded_at: Thu, 24 Aug 2023 18:07:27 GMT
+- request:
+    method: get
+    uri: https://nominatim.openstreetmap.org/search?accept-language=en&addressdetails=1&format=json&q=488%20S%20High%20St%20columbus,%20ohio%2043215
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Thu, 24 Aug 2023 18:17:01 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '1515'
+      Connection:
+      - keep-alive
+      Keep-Alive:
+      - timeout=20
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        W3sicGxhY2VfaWQiOjMyNTkzMDA4NiwibGljZW5jZSI6IkRhdGEgwqkgT3BlblN0cmVldE1hcCBjb250cmlidXRvcnMsIE9EYkwgMS4wLiBodHRwOi8vb3NtLm9yZy9jb3B5cmlnaHQiLCJvc21fdHlwZSI6IndheSIsIm9zbV9pZCI6MTIxMzQxNjM3LCJsYXQiOiIzOS45NTI2NDA1IiwibG9uIjoiLTgyLjk5ODkwNTIwODMzMzMzIiwiY2xhc3MiOiJwbGFjZSIsInR5cGUiOiJob3VzZSIsInBsYWNlX3JhbmsiOjMwLCJpbXBvcnRhbmNlIjo5Ljk5OTk5OTk5NDczNjQ0MmUtMDgsImFkZHJlc3N0eXBlIjoicGxhY2UiLCJuYW1lIjoiIiwiZGlzcGxheV9uYW1lIjoiNDg4LCBTb3V0aCBIaWdoIFN0cmVldCwgQnJld2VyeSBEaXN0cmljdCwgQ29sdW1idXMsIEZyYW5rbGluIENvdW50eSwgT2hpbywgNDMyMTUsIFVuaXRlZCBTdGF0ZXMiLCJhZGRyZXNzIjp7ImhvdXNlX251bWJlciI6IjQ4OCIsInJvYWQiOiJTb3V0aCBIaWdoIFN0cmVldCIsIm5laWdoYm91cmhvb2QiOiJCcmV3ZXJ5IERpc3RyaWN0IiwiY2l0eSI6IkNvbHVtYnVzIiwiY291bnR5IjoiRnJhbmtsaW4gQ291bnR5Iiwic3RhdGUiOiJPaGlvIiwiSVNPMzE2Ni0yLWx2bDQiOiJVUy1PSCIsInBvc3Rjb2RlIjoiNDMyMTUiLCJjb3VudHJ5IjoiVW5pdGVkIFN0YXRlcyIsImNvdW50cnlfY29kZSI6InVzIn0sImJvdW5kaW5nYm94IjpbIjM5Ljk1MjU5MDUiLCIzOS45NTI2OTA1IiwiLTgyLjk5ODk1NTIiLCItODIuOTk4ODU1MiJdfSx7InBsYWNlX2lkIjoyMjc2NjQyMTEsImxpY2VuY2UiOiJEYXRhIMKpIE9wZW5TdHJlZXRNYXAgY29udHJpYnV0b3JzLCBPRGJMIDEuMC4gaHR0cDovL29zbS5vcmcvY29weXJpZ2h0Iiwib3NtX3R5cGUiOiJ3YXkiLCJvc21faWQiOjU4ODQyNzc4NCwibGF0IjoiMzkuOTUyMDYyOTk5OTk5OTk1IiwibG9uIjoiLTgyLjk5ODQzNjk5Mzg0NDIyIiwiY2xhc3MiOiJhbWVuaXR5IiwidHlwZSI6ImZhc3RfZm9vZCIsInBsYWNlX3JhbmsiOjMwLCJpbXBvcnRhbmNlIjo5Ljk5OTk5OTk5OTk1NDQ5ZS0wNiwiYWRkcmVzc3R5cGUiOiJhbWVuaXR5IiwibmFtZSI6IkNoaXBvdGxlIiwiZGlzcGxheV9uYW1lIjoiQ2hpcG90bGUsIDQ4OCwgU291dGggSGlnaCBTdHJlZXQsIEJyZXdlcnkgRGlzdHJpY3QsIENvbHVtYnVzLCBGcmFua2xpbiBDb3VudHksIE9oaW8sIDQzMjE1LCBVbml0ZWQgU3RhdGVzIiwiYWRkcmVzcyI6eyJhbWVuaXR5IjoiQ2hpcG90bGUiLCJob3VzZV9udW1iZXIiOiI0ODgiLCJyb2FkIjoiU291dGggSGlnaCBTdHJlZXQiLCJuZWlnaGJvdXJob29kIjoiQnJld2VyeSBEaXN0cmljdCIsImNpdHkiOiJDb2x1bWJ1cyIsImNvdW50eSI6IkZyYW5rbGluIENvdW50eSIsInN0YXRlIjoiT2hpbyIsIklTTzMxNjYtMi1sdmw0IjoiVVMtT0giLCJwb3N0Y29kZSI6IjQzMjE1IiwiY291bnRyeSI6IlVuaXRlZCBTdGF0ZXMiLCJjb3VudHJ5X2NvZGUiOiJ1cyJ9LCJib3VuZGluZ2JveCI6WyIzOS45NTIwMTU4IiwiMzkuOTUyMTEwMSIsIi04Mi45OTg1MDkyIiwiLTgyLjk5ODM2NTAiXX1d
+  recorded_at: Thu, 24 Aug 2023 18:17:01 GMT
+- request:
+    method: get
+    uri: https://nominatim.openstreetmap.org/search?accept-language=en&addressdetails=1&format=json&q=488%20S%20High%20St%20columbus,%20ohio%2043215
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Thu, 24 Aug 2023 18:17:06 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '1515'
+      Connection:
+      - keep-alive
+      Keep-Alive:
+      - timeout=20
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        W3sicGxhY2VfaWQiOjMyNTkzMDA4NiwibGljZW5jZSI6IkRhdGEgwqkgT3BlblN0cmVldE1hcCBjb250cmlidXRvcnMsIE9EYkwgMS4wLiBodHRwOi8vb3NtLm9yZy9jb3B5cmlnaHQiLCJvc21fdHlwZSI6IndheSIsIm9zbV9pZCI6MTIxMzQxNjM3LCJsYXQiOiIzOS45NTI2NDA1IiwibG9uIjoiLTgyLjk5ODkwNTIwODMzMzMzIiwiY2xhc3MiOiJwbGFjZSIsInR5cGUiOiJob3VzZSIsInBsYWNlX3JhbmsiOjMwLCJpbXBvcnRhbmNlIjo5Ljk5OTk5OTk5NDczNjQ0MmUtMDgsImFkZHJlc3N0eXBlIjoicGxhY2UiLCJuYW1lIjoiIiwiZGlzcGxheV9uYW1lIjoiNDg4LCBTb3V0aCBIaWdoIFN0cmVldCwgQnJld2VyeSBEaXN0cmljdCwgQ29sdW1idXMsIEZyYW5rbGluIENvdW50eSwgT2hpbywgNDMyMTUsIFVuaXRlZCBTdGF0ZXMiLCJhZGRyZXNzIjp7ImhvdXNlX251bWJlciI6IjQ4OCIsInJvYWQiOiJTb3V0aCBIaWdoIFN0cmVldCIsIm5laWdoYm91cmhvb2QiOiJCcmV3ZXJ5IERpc3RyaWN0IiwiY2l0eSI6IkNvbHVtYnVzIiwiY291bnR5IjoiRnJhbmtsaW4gQ291bnR5Iiwic3RhdGUiOiJPaGlvIiwiSVNPMzE2Ni0yLWx2bDQiOiJVUy1PSCIsInBvc3Rjb2RlIjoiNDMyMTUiLCJjb3VudHJ5IjoiVW5pdGVkIFN0YXRlcyIsImNvdW50cnlfY29kZSI6InVzIn0sImJvdW5kaW5nYm94IjpbIjM5Ljk1MjU5MDUiLCIzOS45NTI2OTA1IiwiLTgyLjk5ODk1NTIiLCItODIuOTk4ODU1MiJdfSx7InBsYWNlX2lkIjoyMjc2NjQyMTEsImxpY2VuY2UiOiJEYXRhIMKpIE9wZW5TdHJlZXRNYXAgY29udHJpYnV0b3JzLCBPRGJMIDEuMC4gaHR0cDovL29zbS5vcmcvY29weXJpZ2h0Iiwib3NtX3R5cGUiOiJ3YXkiLCJvc21faWQiOjU4ODQyNzc4NCwibGF0IjoiMzkuOTUyMDYyOTk5OTk5OTk1IiwibG9uIjoiLTgyLjk5ODQzNjk5Mzg0NDIyIiwiY2xhc3MiOiJhbWVuaXR5IiwidHlwZSI6ImZhc3RfZm9vZCIsInBsYWNlX3JhbmsiOjMwLCJpbXBvcnRhbmNlIjo5Ljk5OTk5OTk5OTk1NDQ5ZS0wNiwiYWRkcmVzc3R5cGUiOiJhbWVuaXR5IiwibmFtZSI6IkNoaXBvdGxlIiwiZGlzcGxheV9uYW1lIjoiQ2hpcG90bGUsIDQ4OCwgU291dGggSGlnaCBTdHJlZXQsIEJyZXdlcnkgRGlzdHJpY3QsIENvbHVtYnVzLCBGcmFua2xpbiBDb3VudHksIE9oaW8sIDQzMjE1LCBVbml0ZWQgU3RhdGVzIiwiYWRkcmVzcyI6eyJhbWVuaXR5IjoiQ2hpcG90bGUiLCJob3VzZV9udW1iZXIiOiI0ODgiLCJyb2FkIjoiU291dGggSGlnaCBTdHJlZXQiLCJuZWlnaGJvdXJob29kIjoiQnJld2VyeSBEaXN0cmljdCIsImNpdHkiOiJDb2x1bWJ1cyIsImNvdW50eSI6IkZyYW5rbGluIENvdW50eSIsInN0YXRlIjoiT2hpbyIsIklTTzMxNjYtMi1sdmw0IjoiVVMtT0giLCJwb3N0Y29kZSI6IjQzMjE1IiwiY291bnRyeSI6IlVuaXRlZCBTdGF0ZXMiLCJjb3VudHJ5X2NvZGUiOiJ1cyJ9LCJib3VuZGluZ2JveCI6WyIzOS45NTIwMTU4IiwiMzkuOTUyMTEwMSIsIi04Mi45OTg1MDkyIiwiLTgyLjk5ODM2NTAiXX1d
+  recorded_at: Thu, 24 Aug 2023 18:17:06 GMT
 - request:
     method: get
     uri: https://nominatim.openstreetmap.org/search?accept-language=en&addressdetails=1&format=json&q=304%20W%2034th%20St%20new%20york,%20new%20york%2010001
@@ -659,7 +379,7 @@ http_interactions:
       Server:
       - nginx
       Date:
-      - Thu, 17 Aug 2023 14:58:07 GMT
+      - Thu, 24 Aug 2023 18:20:45 GMT
       Content-Type:
       - application/json
       Content-Length:
@@ -672,7 +392,7 @@ http_interactions:
       encoding: ASCII-8BIT
       string: !binary |-
         W3sicGxhY2VfaWQiOjEyMzk3MDAyLCJsaWNlbmNlIjoiRGF0YSDCqSBPcGVuU3RyZWV0TWFwIGNvbnRyaWJ1dG9ycywgT0RiTCAxLjAuIGh0dHA6Ly9vc20ub3JnL2NvcHlyaWdodCIsIm9zbV90eXBlIjoibm9kZSIsIm9zbV9pZCI6MTI3MjY3NDk3MywibGF0IjoiNDAuNzUyMzI2NyIsImxvbiI6Ii03My45OTQyNDgyIiwiY2xhc3MiOiJzaG9wIiwidHlwZSI6ImNvcHlzaG9wIiwicGxhY2VfcmFuayI6MzAsImltcG9ydGFuY2UiOjkuOTk5OTk5OTk5OTU0NDllLTA2LCJhZGRyZXNzdHlwZSI6InNob3AiLCJuYW1lIjoiRmVkRXggT2ZmaWNlIiwiZGlzcGxheV9uYW1lIjoiRmVkRXggT2ZmaWNlLCAzMDQsIFdlc3QgMzR0aCBTdHJlZXQsIE1hbmhhdHRhbiBDb21tdW5pdHkgQm9hcmQgNCwgTWFuaGF0dGFuLCBOZXcgWW9yayBDb3VudHksIE5ldyBZb3JrLCAxMDAwMSwgVW5pdGVkIFN0YXRlcyIsImFkZHJlc3MiOnsic2hvcCI6IkZlZEV4IE9mZmljZSIsImhvdXNlX251bWJlciI6IjMwNCIsInJvYWQiOiJXZXN0IDM0dGggU3RyZWV0IiwibmVpZ2hib3VyaG9vZCI6Ik1hbmhhdHRhbiBDb21tdW5pdHkgQm9hcmQgNCIsInN1YnVyYiI6Ik1hbmhhdHRhbiIsImNvdW50eSI6Ik5ldyBZb3JrIENvdW50eSIsImNpdHkiOiJOZXcgWW9yayIsInN0YXRlIjoiTmV3IFlvcmsiLCJJU08zMTY2LTItbHZsNCI6IlVTLU5ZIiwicG9zdGNvZGUiOiIxMDAwMSIsImNvdW50cnkiOiJVbml0ZWQgU3RhdGVzIiwiY291bnRyeV9jb2RlIjoidXMifSwiYm91bmRpbmdib3giOlsiNDAuNzUyMjc2NyIsIjQwLjc1MjM3NjciLCItNzMuOTk0Mjk4MiIsIi03My45OTQxOTgyIl19LHsicGxhY2VfaWQiOjQ1NTQ3ODM0LCJsaWNlbmNlIjoiRGF0YSDCqSBPcGVuU3RyZWV0TWFwIGNvbnRyaWJ1dG9ycywgT0RiTCAxLjAuIGh0dHA6Ly9vc20ub3JnL2NvcHlyaWdodCIsIm9zbV90eXBlIjoibm9kZSIsIm9zbV9pZCI6MzgwOTAwMDk0MiwibGF0IjoiNDAuNzUyMzU2IiwibG9uIjoiLTczLjk5NDMxNzUiLCJjbGFzcyI6ImFtZW5pdHkiLCJ0eXBlIjoiZmFzdF9mb29kIiwicGxhY2VfcmFuayI6MzAsImltcG9ydGFuY2UiOjkuOTk5OTk5OTk5OTU0NDllLTA2LCJhZGRyZXNzdHlwZSI6ImFtZW5pdHkiLCJuYW1lIjoiQ2hpcG90bGUiLCJkaXNwbGF5X25hbWUiOiJDaGlwb3RsZSwgMzA0LCBXZXN0IDM0dGggU3RyZWV0LCBNYW5oYXR0YW4gQ29tbXVuaXR5IEJvYXJkIDQsIE1hbmhhdHRhbiwgTmV3IFlvcmsgQ291bnR5LCBOZXcgWW9yaywgMTAwMDEsIFVuaXRlZCBTdGF0ZXMiLCJhZGRyZXNzIjp7ImFtZW5pdHkiOiJDaGlwb3RsZSIsImhvdXNlX251bWJlciI6IjMwNCIsInJvYWQiOiJXZXN0IDM0dGggU3RyZWV0IiwibmVpZ2hib3VyaG9vZCI6Ik1hbmhhdHRhbiBDb21tdW5pdHkgQm9hcmQgNCIsInN1YnVyYiI6Ik1hbmhhdHRhbiIsImNvdW50eSI6Ik5ldyBZb3JrIENvdW50eSIsImNpdHkiOiJOZXcgWW9yayIsInN0YXRlIjoiTmV3IFlvcmsiLCJJU08zMTY2LTItbHZsNCI6IlVTLU5ZIiwicG9zdGNvZGUiOiIxMDAwMSIsImNvdW50cnkiOiJVbml0ZWQgU3RhdGVzIiwiY291bnRyeV9jb2RlIjoidXMifSwiYm91bmRpbmdib3giOlsiNDAuNzUyMzA2MCIsIjQwLjc1MjQwNjAiLCItNzMuOTk0MzY3NSIsIi03My45OTQyNjc1Il19XQ==
-  recorded_at: Thu, 17 Aug 2023 14:58:07 GMT
+  recorded_at: Thu, 24 Aug 2023 18:20:45 GMT
 - request:
     method: get
     uri: https://nominatim.openstreetmap.org/search?accept-language=en&addressdetails=1&format=json&q=304%20W%2034th%20St%20new%20york,%20new%20york%2010001
@@ -694,7 +414,7 @@ http_interactions:
       Server:
       - nginx
       Date:
-      - Thu, 17 Aug 2023 14:58:08 GMT
+      - Thu, 24 Aug 2023 18:20:53 GMT
       Content-Type:
       - application/json
       Content-Length:
@@ -707,5 +427,495 @@ http_interactions:
       encoding: ASCII-8BIT
       string: !binary |-
         W3sicGxhY2VfaWQiOjEyMzk3MDAyLCJsaWNlbmNlIjoiRGF0YSDCqSBPcGVuU3RyZWV0TWFwIGNvbnRyaWJ1dG9ycywgT0RiTCAxLjAuIGh0dHA6Ly9vc20ub3JnL2NvcHlyaWdodCIsIm9zbV90eXBlIjoibm9kZSIsIm9zbV9pZCI6MTI3MjY3NDk3MywibGF0IjoiNDAuNzUyMzI2NyIsImxvbiI6Ii03My45OTQyNDgyIiwiY2xhc3MiOiJzaG9wIiwidHlwZSI6ImNvcHlzaG9wIiwicGxhY2VfcmFuayI6MzAsImltcG9ydGFuY2UiOjkuOTk5OTk5OTk5OTU0NDllLTA2LCJhZGRyZXNzdHlwZSI6InNob3AiLCJuYW1lIjoiRmVkRXggT2ZmaWNlIiwiZGlzcGxheV9uYW1lIjoiRmVkRXggT2ZmaWNlLCAzMDQsIFdlc3QgMzR0aCBTdHJlZXQsIE1hbmhhdHRhbiBDb21tdW5pdHkgQm9hcmQgNCwgTWFuaGF0dGFuLCBOZXcgWW9yayBDb3VudHksIE5ldyBZb3JrLCAxMDAwMSwgVW5pdGVkIFN0YXRlcyIsImFkZHJlc3MiOnsic2hvcCI6IkZlZEV4IE9mZmljZSIsImhvdXNlX251bWJlciI6IjMwNCIsInJvYWQiOiJXZXN0IDM0dGggU3RyZWV0IiwibmVpZ2hib3VyaG9vZCI6Ik1hbmhhdHRhbiBDb21tdW5pdHkgQm9hcmQgNCIsInN1YnVyYiI6Ik1hbmhhdHRhbiIsImNvdW50eSI6Ik5ldyBZb3JrIENvdW50eSIsImNpdHkiOiJOZXcgWW9yayIsInN0YXRlIjoiTmV3IFlvcmsiLCJJU08zMTY2LTItbHZsNCI6IlVTLU5ZIiwicG9zdGNvZGUiOiIxMDAwMSIsImNvdW50cnkiOiJVbml0ZWQgU3RhdGVzIiwiY291bnRyeV9jb2RlIjoidXMifSwiYm91bmRpbmdib3giOlsiNDAuNzUyMjc2NyIsIjQwLjc1MjM3NjciLCItNzMuOTk0Mjk4MiIsIi03My45OTQxOTgyIl19LHsicGxhY2VfaWQiOjQ1NTQ3ODM0LCJsaWNlbmNlIjoiRGF0YSDCqSBPcGVuU3RyZWV0TWFwIGNvbnRyaWJ1dG9ycywgT0RiTCAxLjAuIGh0dHA6Ly9vc20ub3JnL2NvcHlyaWdodCIsIm9zbV90eXBlIjoibm9kZSIsIm9zbV9pZCI6MzgwOTAwMDk0MiwibGF0IjoiNDAuNzUyMzU2IiwibG9uIjoiLTczLjk5NDMxNzUiLCJjbGFzcyI6ImFtZW5pdHkiLCJ0eXBlIjoiZmFzdF9mb29kIiwicGxhY2VfcmFuayI6MzAsImltcG9ydGFuY2UiOjkuOTk5OTk5OTk5OTU0NDllLTA2LCJhZGRyZXNzdHlwZSI6ImFtZW5pdHkiLCJuYW1lIjoiQ2hpcG90bGUiLCJkaXNwbGF5X25hbWUiOiJDaGlwb3RsZSwgMzA0LCBXZXN0IDM0dGggU3RyZWV0LCBNYW5oYXR0YW4gQ29tbXVuaXR5IEJvYXJkIDQsIE1hbmhhdHRhbiwgTmV3IFlvcmsgQ291bnR5LCBOZXcgWW9yaywgMTAwMDEsIFVuaXRlZCBTdGF0ZXMiLCJhZGRyZXNzIjp7ImFtZW5pdHkiOiJDaGlwb3RsZSIsImhvdXNlX251bWJlciI6IjMwNCIsInJvYWQiOiJXZXN0IDM0dGggU3RyZWV0IiwibmVpZ2hib3VyaG9vZCI6Ik1hbmhhdHRhbiBDb21tdW5pdHkgQm9hcmQgNCIsInN1YnVyYiI6Ik1hbmhhdHRhbiIsImNvdW50eSI6Ik5ldyBZb3JrIENvdW50eSIsImNpdHkiOiJOZXcgWW9yayIsInN0YXRlIjoiTmV3IFlvcmsiLCJJU08zMTY2LTItbHZsNCI6IlVTLU5ZIiwicG9zdGNvZGUiOiIxMDAwMSIsImNvdW50cnkiOiJVbml0ZWQgU3RhdGVzIiwiY291bnRyeV9jb2RlIjoidXMifSwiYm91bmRpbmdib3giOlsiNDAuNzUyMzA2MCIsIjQwLjc1MjQwNjAiLCItNzMuOTk0MzY3NSIsIi03My45OTQyNjc1Il19XQ==
-  recorded_at: Thu, 17 Aug 2023 14:58:08 GMT
+  recorded_at: Thu, 24 Aug 2023 18:20:53 GMT
+- request:
+    method: get
+    uri: https://nominatim.openstreetmap.org/search?accept-language=en&addressdetails=1&format=json&q=304%20W%2034th%20St%20new%20york,%20new%20york%2010001
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Thu, 24 Aug 2023 18:21:02 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '1642'
+      Connection:
+      - keep-alive
+      Keep-Alive:
+      - timeout=20
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        W3sicGxhY2VfaWQiOjEyMzk3MDAyLCJsaWNlbmNlIjoiRGF0YSDCqSBPcGVuU3RyZWV0TWFwIGNvbnRyaWJ1dG9ycywgT0RiTCAxLjAuIGh0dHA6Ly9vc20ub3JnL2NvcHlyaWdodCIsIm9zbV90eXBlIjoibm9kZSIsIm9zbV9pZCI6MTI3MjY3NDk3MywibGF0IjoiNDAuNzUyMzI2NyIsImxvbiI6Ii03My45OTQyNDgyIiwiY2xhc3MiOiJzaG9wIiwidHlwZSI6ImNvcHlzaG9wIiwicGxhY2VfcmFuayI6MzAsImltcG9ydGFuY2UiOjkuOTk5OTk5OTk5OTU0NDllLTA2LCJhZGRyZXNzdHlwZSI6InNob3AiLCJuYW1lIjoiRmVkRXggT2ZmaWNlIiwiZGlzcGxheV9uYW1lIjoiRmVkRXggT2ZmaWNlLCAzMDQsIFdlc3QgMzR0aCBTdHJlZXQsIE1hbmhhdHRhbiBDb21tdW5pdHkgQm9hcmQgNCwgTWFuaGF0dGFuLCBOZXcgWW9yayBDb3VudHksIE5ldyBZb3JrLCAxMDAwMSwgVW5pdGVkIFN0YXRlcyIsImFkZHJlc3MiOnsic2hvcCI6IkZlZEV4IE9mZmljZSIsImhvdXNlX251bWJlciI6IjMwNCIsInJvYWQiOiJXZXN0IDM0dGggU3RyZWV0IiwibmVpZ2hib3VyaG9vZCI6Ik1hbmhhdHRhbiBDb21tdW5pdHkgQm9hcmQgNCIsInN1YnVyYiI6Ik1hbmhhdHRhbiIsImNvdW50eSI6Ik5ldyBZb3JrIENvdW50eSIsImNpdHkiOiJOZXcgWW9yayIsInN0YXRlIjoiTmV3IFlvcmsiLCJJU08zMTY2LTItbHZsNCI6IlVTLU5ZIiwicG9zdGNvZGUiOiIxMDAwMSIsImNvdW50cnkiOiJVbml0ZWQgU3RhdGVzIiwiY291bnRyeV9jb2RlIjoidXMifSwiYm91bmRpbmdib3giOlsiNDAuNzUyMjc2NyIsIjQwLjc1MjM3NjciLCItNzMuOTk0Mjk4MiIsIi03My45OTQxOTgyIl19LHsicGxhY2VfaWQiOjQ1NTQ3ODM0LCJsaWNlbmNlIjoiRGF0YSDCqSBPcGVuU3RyZWV0TWFwIGNvbnRyaWJ1dG9ycywgT0RiTCAxLjAuIGh0dHA6Ly9vc20ub3JnL2NvcHlyaWdodCIsIm9zbV90eXBlIjoibm9kZSIsIm9zbV9pZCI6MzgwOTAwMDk0MiwibGF0IjoiNDAuNzUyMzU2IiwibG9uIjoiLTczLjk5NDMxNzUiLCJjbGFzcyI6ImFtZW5pdHkiLCJ0eXBlIjoiZmFzdF9mb29kIiwicGxhY2VfcmFuayI6MzAsImltcG9ydGFuY2UiOjkuOTk5OTk5OTk5OTU0NDllLTA2LCJhZGRyZXNzdHlwZSI6ImFtZW5pdHkiLCJuYW1lIjoiQ2hpcG90bGUiLCJkaXNwbGF5X25hbWUiOiJDaGlwb3RsZSwgMzA0LCBXZXN0IDM0dGggU3RyZWV0LCBNYW5oYXR0YW4gQ29tbXVuaXR5IEJvYXJkIDQsIE1hbmhhdHRhbiwgTmV3IFlvcmsgQ291bnR5LCBOZXcgWW9yaywgMTAwMDEsIFVuaXRlZCBTdGF0ZXMiLCJhZGRyZXNzIjp7ImFtZW5pdHkiOiJDaGlwb3RsZSIsImhvdXNlX251bWJlciI6IjMwNCIsInJvYWQiOiJXZXN0IDM0dGggU3RyZWV0IiwibmVpZ2hib3VyaG9vZCI6Ik1hbmhhdHRhbiBDb21tdW5pdHkgQm9hcmQgNCIsInN1YnVyYiI6Ik1hbmhhdHRhbiIsImNvdW50eSI6Ik5ldyBZb3JrIENvdW50eSIsImNpdHkiOiJOZXcgWW9yayIsInN0YXRlIjoiTmV3IFlvcmsiLCJJU08zMTY2LTItbHZsNCI6IlVTLU5ZIiwicG9zdGNvZGUiOiIxMDAwMSIsImNvdW50cnkiOiJVbml0ZWQgU3RhdGVzIiwiY291bnRyeV9jb2RlIjoidXMifSwiYm91bmRpbmdib3giOlsiNDAuNzUyMzA2MCIsIjQwLjc1MjQwNjAiLCItNzMuOTk0MzY3NSIsIi03My45OTQyNjc1Il19XQ==
+  recorded_at: Thu, 24 Aug 2023 18:21:02 GMT
+- request:
+    method: get
+    uri: https://nominatim.openstreetmap.org/search?accept-language=en&addressdetails=1&format=json&q=304%20W%2034th%20St%20new%20york,%20new%20york%2010001
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Thu, 24 Aug 2023 18:21:08 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '1642'
+      Connection:
+      - keep-alive
+      Keep-Alive:
+      - timeout=20
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        W3sicGxhY2VfaWQiOjEyMzk3MDAyLCJsaWNlbmNlIjoiRGF0YSDCqSBPcGVuU3RyZWV0TWFwIGNvbnRyaWJ1dG9ycywgT0RiTCAxLjAuIGh0dHA6Ly9vc20ub3JnL2NvcHlyaWdodCIsIm9zbV90eXBlIjoibm9kZSIsIm9zbV9pZCI6MTI3MjY3NDk3MywibGF0IjoiNDAuNzUyMzI2NyIsImxvbiI6Ii03My45OTQyNDgyIiwiY2xhc3MiOiJzaG9wIiwidHlwZSI6ImNvcHlzaG9wIiwicGxhY2VfcmFuayI6MzAsImltcG9ydGFuY2UiOjkuOTk5OTk5OTk5OTU0NDllLTA2LCJhZGRyZXNzdHlwZSI6InNob3AiLCJuYW1lIjoiRmVkRXggT2ZmaWNlIiwiZGlzcGxheV9uYW1lIjoiRmVkRXggT2ZmaWNlLCAzMDQsIFdlc3QgMzR0aCBTdHJlZXQsIE1hbmhhdHRhbiBDb21tdW5pdHkgQm9hcmQgNCwgTWFuaGF0dGFuLCBOZXcgWW9yayBDb3VudHksIE5ldyBZb3JrLCAxMDAwMSwgVW5pdGVkIFN0YXRlcyIsImFkZHJlc3MiOnsic2hvcCI6IkZlZEV4IE9mZmljZSIsImhvdXNlX251bWJlciI6IjMwNCIsInJvYWQiOiJXZXN0IDM0dGggU3RyZWV0IiwibmVpZ2hib3VyaG9vZCI6Ik1hbmhhdHRhbiBDb21tdW5pdHkgQm9hcmQgNCIsInN1YnVyYiI6Ik1hbmhhdHRhbiIsImNvdW50eSI6Ik5ldyBZb3JrIENvdW50eSIsImNpdHkiOiJOZXcgWW9yayIsInN0YXRlIjoiTmV3IFlvcmsiLCJJU08zMTY2LTItbHZsNCI6IlVTLU5ZIiwicG9zdGNvZGUiOiIxMDAwMSIsImNvdW50cnkiOiJVbml0ZWQgU3RhdGVzIiwiY291bnRyeV9jb2RlIjoidXMifSwiYm91bmRpbmdib3giOlsiNDAuNzUyMjc2NyIsIjQwLjc1MjM3NjciLCItNzMuOTk0Mjk4MiIsIi03My45OTQxOTgyIl19LHsicGxhY2VfaWQiOjQ1NTQ3ODM0LCJsaWNlbmNlIjoiRGF0YSDCqSBPcGVuU3RyZWV0TWFwIGNvbnRyaWJ1dG9ycywgT0RiTCAxLjAuIGh0dHA6Ly9vc20ub3JnL2NvcHlyaWdodCIsIm9zbV90eXBlIjoibm9kZSIsIm9zbV9pZCI6MzgwOTAwMDk0MiwibGF0IjoiNDAuNzUyMzU2IiwibG9uIjoiLTczLjk5NDMxNzUiLCJjbGFzcyI6ImFtZW5pdHkiLCJ0eXBlIjoiZmFzdF9mb29kIiwicGxhY2VfcmFuayI6MzAsImltcG9ydGFuY2UiOjkuOTk5OTk5OTk5OTU0NDllLTA2LCJhZGRyZXNzdHlwZSI6ImFtZW5pdHkiLCJuYW1lIjoiQ2hpcG90bGUiLCJkaXNwbGF5X25hbWUiOiJDaGlwb3RsZSwgMzA0LCBXZXN0IDM0dGggU3RyZWV0LCBNYW5oYXR0YW4gQ29tbXVuaXR5IEJvYXJkIDQsIE1hbmhhdHRhbiwgTmV3IFlvcmsgQ291bnR5LCBOZXcgWW9yaywgMTAwMDEsIFVuaXRlZCBTdGF0ZXMiLCJhZGRyZXNzIjp7ImFtZW5pdHkiOiJDaGlwb3RsZSIsImhvdXNlX251bWJlciI6IjMwNCIsInJvYWQiOiJXZXN0IDM0dGggU3RyZWV0IiwibmVpZ2hib3VyaG9vZCI6Ik1hbmhhdHRhbiBDb21tdW5pdHkgQm9hcmQgNCIsInN1YnVyYiI6Ik1hbmhhdHRhbiIsImNvdW50eSI6Ik5ldyBZb3JrIENvdW50eSIsImNpdHkiOiJOZXcgWW9yayIsInN0YXRlIjoiTmV3IFlvcmsiLCJJU08zMTY2LTItbHZsNCI6IlVTLU5ZIiwicG9zdGNvZGUiOiIxMDAwMSIsImNvdW50cnkiOiJVbml0ZWQgU3RhdGVzIiwiY291bnRyeV9jb2RlIjoidXMifSwiYm91bmRpbmdib3giOlsiNDAuNzUyMzA2MCIsIjQwLjc1MjQwNjAiLCItNzMuOTk0MzY3NSIsIi03My45OTQyNjc1Il19XQ==
+  recorded_at: Thu, 24 Aug 2023 18:21:08 GMT
+- request:
+    method: get
+    uri: https://nominatim.openstreetmap.org/search?accept-language=en&addressdetails=1&format=json&q=montpelier,%20vermont
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Thu, 24 Aug 2023 18:31:23 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '633'
+      Connection:
+      - keep-alive
+      Keep-Alive:
+      - timeout=20
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        W3sicGxhY2VfaWQiOjI5ODA1MTY1NiwibGljZW5jZSI6IkRhdGEgwqkgT3BlblN0cmVldE1hcCBjb250cmlidXRvcnMsIE9EYkwgMS4wLiBodHRwOi8vb3NtLm9yZy9jb3B5cmlnaHQiLCJvc21fdHlwZSI6InJlbGF0aW9uIiwib3NtX2lkIjoxOTkwODgsImxhdCI6IjQ0LjI2MDIxNjQiLCJsb24iOiItNzIuNTc1MTIwOCIsImNsYXNzIjoiYm91bmRhcnkiLCJ0eXBlIjoiYWRtaW5pc3RyYXRpdmUiLCJwbGFjZV9yYW5rIjoxNiwiaW1wb3J0YW5jZSI6MC41MDQ1MzQyODQ1MzM1NzkzLCJhZGRyZXNzdHlwZSI6ImNpdHkiLCJuYW1lIjoiTW9udHBlbGllciIsImRpc3BsYXlfbmFtZSI6Ik1vbnRwZWxpZXIsIFdhc2hpbmd0b24gQ291bnR5LCBWZXJtb250LCAwNTYwMiwgVW5pdGVkIFN0YXRlcyIsImFkZHJlc3MiOnsiY2l0eSI6Ik1vbnRwZWxpZXIiLCJjb3VudHkiOiJXYXNoaW5ndG9uIENvdW50eSIsInN0YXRlIjoiVmVybW9udCIsIklTTzMxNjYtMi1sdmw0IjoiVVMtVlQiLCJwb3N0Y29kZSI6IjA1NjAyIiwiY291bnRyeSI6IlVuaXRlZCBTdGF0ZXMiLCJjb3VudHJ5X2NvZGUiOiJ1cyJ9LCJib3VuZGluZ2JveCI6WyI0NC4yMzQ5MjMyIiwiNDQuMzEzMzE0OCIsIi03Mi42MTI0NDc3IiwiLTcyLjUyNTA4NzEiXX1d
+  recorded_at: Thu, 24 Aug 2023 18:31:23 GMT
+- request:
+    method: get
+    uri: https://nominatim.openstreetmap.org/search?accept-language=en&addressdetails=1&format=json&q=montpelier,%20vermont
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Thu, 24 Aug 2023 18:31:28 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '633'
+      Connection:
+      - keep-alive
+      Keep-Alive:
+      - timeout=20
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        W3sicGxhY2VfaWQiOjI5ODA1MTY1NiwibGljZW5jZSI6IkRhdGEgwqkgT3BlblN0cmVldE1hcCBjb250cmlidXRvcnMsIE9EYkwgMS4wLiBodHRwOi8vb3NtLm9yZy9jb3B5cmlnaHQiLCJvc21fdHlwZSI6InJlbGF0aW9uIiwib3NtX2lkIjoxOTkwODgsImxhdCI6IjQ0LjI2MDIxNjQiLCJsb24iOiItNzIuNTc1MTIwOCIsImNsYXNzIjoiYm91bmRhcnkiLCJ0eXBlIjoiYWRtaW5pc3RyYXRpdmUiLCJwbGFjZV9yYW5rIjoxNiwiaW1wb3J0YW5jZSI6MC41MDQ1MzQyODQ1MzM1NzkzLCJhZGRyZXNzdHlwZSI6ImNpdHkiLCJuYW1lIjoiTW9udHBlbGllciIsImRpc3BsYXlfbmFtZSI6Ik1vbnRwZWxpZXIsIFdhc2hpbmd0b24gQ291bnR5LCBWZXJtb250LCAwNTYwMiwgVW5pdGVkIFN0YXRlcyIsImFkZHJlc3MiOnsiY2l0eSI6Ik1vbnRwZWxpZXIiLCJjb3VudHkiOiJXYXNoaW5ndG9uIENvdW50eSIsInN0YXRlIjoiVmVybW9udCIsIklTTzMxNjYtMi1sdmw0IjoiVVMtVlQiLCJwb3N0Y29kZSI6IjA1NjAyIiwiY291bnRyeSI6IlVuaXRlZCBTdGF0ZXMiLCJjb3VudHJ5X2NvZGUiOiJ1cyJ9LCJib3VuZGluZ2JveCI6WyI0NC4yMzQ5MjMyIiwiNDQuMzEzMzE0OCIsIi03Mi42MTI0NDc3IiwiLTcyLjUyNTA4NzEiXX1d
+  recorded_at: Thu, 24 Aug 2023 18:31:28 GMT
+- request:
+    method: get
+    uri: https://nominatim.openstreetmap.org/search?accept-language=en&addressdetails=1&format=json&q=austin,%20texas
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Thu, 24 Aug 2023 18:31:32 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '1739'
+      Connection:
+      - keep-alive
+      Keep-Alive:
+      - timeout=20
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        W3sicGxhY2VfaWQiOjM0NzEwMDU5NCwibGljZW5jZSI6IkRhdGEgwqkgT3BlblN0cmVldE1hcCBjb250cmlidXRvcnMsIE9EYkwgMS4wLiBodHRwOi8vb3NtLm9yZy9jb3B5cmlnaHQiLCJvc21fdHlwZSI6InJlbGF0aW9uIiwib3NtX2lkIjoxMTMzMTQsImxhdCI6IjMwLjI3MTEyODYiLCJsb24iOiItOTcuNzQzNjk5NSIsImNsYXNzIjoiYm91bmRhcnkiLCJ0eXBlIjoiYWRtaW5pc3RyYXRpdmUiLCJwbGFjZV9yYW5rIjoxNiwiaW1wb3J0YW5jZSI6MC42NDk0MjY1NzE3ODY2NjY5LCJhZGRyZXNzdHlwZSI6ImNpdHkiLCJuYW1lIjoiQXVzdGluIiwiZGlzcGxheV9uYW1lIjoiQXVzdGluLCBUcmF2aXMgQ291bnR5LCBUZXhhcywgVW5pdGVkIFN0YXRlcyIsImFkZHJlc3MiOnsiY2l0eSI6IkF1c3RpbiIsImNvdW50eSI6IlRyYXZpcyBDb3VudHkiLCJzdGF0ZSI6IlRleGFzIiwiSVNPMzE2Ni0yLWx2bDQiOiJVUy1UWCIsImNvdW50cnkiOiJVbml0ZWQgU3RhdGVzIiwiY291bnRyeV9jb2RlIjoidXMifSwiYm91bmRpbmdib3giOlsiMzAuMDk4NTEzMyIsIjMwLjUxNjYyNTUiLCItOTcuOTM2NzY2MyIsIi05Ny41NjA1Mjg4Il19LHsicGxhY2VfaWQiOjI5ODU3NTg5NywibGljZW5jZSI6IkRhdGEgwqkgT3BlblN0cmVldE1hcCBjb250cmlidXRvcnMsIE9EYkwgMS4wLiBodHRwOi8vb3NtLm9yZy9jb3B5cmlnaHQiLCJvc21fdHlwZSI6InJlbGF0aW9uIiwib3NtX2lkIjoxODM3NzU1LCJsYXQiOiIyOS44OTE2NDg4IiwibG9uIjoiLTk2LjI0NDM0NjciLCJjbGFzcyI6ImJvdW5kYXJ5IiwidHlwZSI6ImFkbWluaXN0cmF0aXZlIiwicGxhY2VfcmFuayI6MTIsImltcG9ydGFuY2UiOjAuNTU4NzAyODM3OTQ2NDEyOCwiYWRkcmVzc3R5cGUiOiJjb3VudHkiLCJuYW1lIjoiQXVzdGluIENvdW50eSIsImRpc3BsYXlfbmFtZSI6IkF1c3RpbiBDb3VudHksIFRleGFzLCBVbml0ZWQgU3RhdGVzIiwiYWRkcmVzcyI6eyJjb3VudHkiOiJBdXN0aW4gQ291bnR5Iiwic3RhdGUiOiJUZXhhcyIsIklTTzMxNjYtMi1sdmw0IjoiVVMtVFgiLCJjb3VudHJ5IjoiVW5pdGVkIFN0YXRlcyIsImNvdW50cnlfY29kZSI6InVzIn0sImJvdW5kaW5nYm94IjpbIjI5LjYwMTg0NTgiLCIzMC4wOTcyMjA5IiwiLTk2LjYyMjE5NzEiLCItOTYuMDA0NzY4NyJdfSx7InBsYWNlX2lkIjozNzM2NTQ3MTEsImxpY2VuY2UiOiJEYXRhIMKpIE9wZW5TdHJlZXRNYXAgY29udHJpYnV0b3JzLCBPRGJMIDEuMC4gaHR0cDovL29zbS5vcmcvY29weXJpZ2h0Iiwib3NtX3R5cGUiOiJ3YXkiLCJvc21faWQiOjYxMjg4ODQwMywibGF0IjoiMzAuMTQxNzYyOSIsImxvbiI6Ii05Ny44MDc2NDM4MDgxMjIzNCIsImNsYXNzIjoiYm91bmRhcnkiLCJ0eXBlIjoiYWRtaW5pc3RyYXRpdmUiLCJwbGFjZV9yYW5rIjoxNiwiaW1wb3J0YW5jZSI6MC4zNTAwMDk5OTk5OTk5OTk5MywiYWRkcmVzc3R5cGUiOiJjaXR5IiwibmFtZSI6IkF1c3RpbiIsImRpc3BsYXlfbmFtZSI6IkF1c3RpbiwgVHJhdmlzIENvdW50eSwgVGV4YXMsIFVuaXRlZCBTdGF0ZXMiLCJhZGRyZXNzIjp7ImNpdHkiOiJBdXN0aW4iLCJjb3VudHkiOiJUcmF2aXMgQ291bnR5Iiwic3RhdGUiOiJUZXhhcyIsIklTTzMxNjYtMi1sdmw0IjoiVVMtVFgiLCJjb3VudHJ5IjoiVW5pdGVkIFN0YXRlcyIsImNvdW50cnlfY29kZSI6InVzIn0sImJvdW5kaW5nYm94IjpbIjMwLjEzOTE4NzUiLCIzMC4xNDQzMTg3IiwiLTk3LjgxMDE5MTkiLCItOTcuODA1MDM3NyJdfV0=
+  recorded_at: Thu, 24 Aug 2023 18:31:32 GMT
+- request:
+    method: get
+    uri: https://nominatim.openstreetmap.org/search?accept-language=en&addressdetails=1&format=json&q=austin,%20texas
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Thu, 24 Aug 2023 18:31:37 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '1739'
+      Connection:
+      - keep-alive
+      Keep-Alive:
+      - timeout=20
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        W3sicGxhY2VfaWQiOjM0NzEwMDU5NCwibGljZW5jZSI6IkRhdGEgwqkgT3BlblN0cmVldE1hcCBjb250cmlidXRvcnMsIE9EYkwgMS4wLiBodHRwOi8vb3NtLm9yZy9jb3B5cmlnaHQiLCJvc21fdHlwZSI6InJlbGF0aW9uIiwib3NtX2lkIjoxMTMzMTQsImxhdCI6IjMwLjI3MTEyODYiLCJsb24iOiItOTcuNzQzNjk5NSIsImNsYXNzIjoiYm91bmRhcnkiLCJ0eXBlIjoiYWRtaW5pc3RyYXRpdmUiLCJwbGFjZV9yYW5rIjoxNiwiaW1wb3J0YW5jZSI6MC42NDk0MjY1NzE3ODY2NjY5LCJhZGRyZXNzdHlwZSI6ImNpdHkiLCJuYW1lIjoiQXVzdGluIiwiZGlzcGxheV9uYW1lIjoiQXVzdGluLCBUcmF2aXMgQ291bnR5LCBUZXhhcywgVW5pdGVkIFN0YXRlcyIsImFkZHJlc3MiOnsiY2l0eSI6IkF1c3RpbiIsImNvdW50eSI6IlRyYXZpcyBDb3VudHkiLCJzdGF0ZSI6IlRleGFzIiwiSVNPMzE2Ni0yLWx2bDQiOiJVUy1UWCIsImNvdW50cnkiOiJVbml0ZWQgU3RhdGVzIiwiY291bnRyeV9jb2RlIjoidXMifSwiYm91bmRpbmdib3giOlsiMzAuMDk4NTEzMyIsIjMwLjUxNjYyNTUiLCItOTcuOTM2NzY2MyIsIi05Ny41NjA1Mjg4Il19LHsicGxhY2VfaWQiOjI5ODU3NTg5NywibGljZW5jZSI6IkRhdGEgwqkgT3BlblN0cmVldE1hcCBjb250cmlidXRvcnMsIE9EYkwgMS4wLiBodHRwOi8vb3NtLm9yZy9jb3B5cmlnaHQiLCJvc21fdHlwZSI6InJlbGF0aW9uIiwib3NtX2lkIjoxODM3NzU1LCJsYXQiOiIyOS44OTE2NDg4IiwibG9uIjoiLTk2LjI0NDM0NjciLCJjbGFzcyI6ImJvdW5kYXJ5IiwidHlwZSI6ImFkbWluaXN0cmF0aXZlIiwicGxhY2VfcmFuayI6MTIsImltcG9ydGFuY2UiOjAuNTU4NzAyODM3OTQ2NDEyOCwiYWRkcmVzc3R5cGUiOiJjb3VudHkiLCJuYW1lIjoiQXVzdGluIENvdW50eSIsImRpc3BsYXlfbmFtZSI6IkF1c3RpbiBDb3VudHksIFRleGFzLCBVbml0ZWQgU3RhdGVzIiwiYWRkcmVzcyI6eyJjb3VudHkiOiJBdXN0aW4gQ291bnR5Iiwic3RhdGUiOiJUZXhhcyIsIklTTzMxNjYtMi1sdmw0IjoiVVMtVFgiLCJjb3VudHJ5IjoiVW5pdGVkIFN0YXRlcyIsImNvdW50cnlfY29kZSI6InVzIn0sImJvdW5kaW5nYm94IjpbIjI5LjYwMTg0NTgiLCIzMC4wOTcyMjA5IiwiLTk2LjYyMjE5NzEiLCItOTYuMDA0NzY4NyJdfSx7InBsYWNlX2lkIjozNzM2NTQ3MTEsImxpY2VuY2UiOiJEYXRhIMKpIE9wZW5TdHJlZXRNYXAgY29udHJpYnV0b3JzLCBPRGJMIDEuMC4gaHR0cDovL29zbS5vcmcvY29weXJpZ2h0Iiwib3NtX3R5cGUiOiJ3YXkiLCJvc21faWQiOjYxMjg4ODQwMywibGF0IjoiMzAuMTQxNzYyOSIsImxvbiI6Ii05Ny44MDc2NDM4MDgxMjIzNCIsImNsYXNzIjoiYm91bmRhcnkiLCJ0eXBlIjoiYWRtaW5pc3RyYXRpdmUiLCJwbGFjZV9yYW5rIjoxNiwiaW1wb3J0YW5jZSI6MC4zNTAwMDk5OTk5OTk5OTk5MywiYWRkcmVzc3R5cGUiOiJjaXR5IiwibmFtZSI6IkF1c3RpbiIsImRpc3BsYXlfbmFtZSI6IkF1c3RpbiwgVHJhdmlzIENvdW50eSwgVGV4YXMsIFVuaXRlZCBTdGF0ZXMiLCJhZGRyZXNzIjp7ImNpdHkiOiJBdXN0aW4iLCJjb3VudHkiOiJUcmF2aXMgQ291bnR5Iiwic3RhdGUiOiJUZXhhcyIsIklTTzMxNjYtMi1sdmw0IjoiVVMtVFgiLCJjb3VudHJ5IjoiVW5pdGVkIFN0YXRlcyIsImNvdW50cnlfY29kZSI6InVzIn0sImJvdW5kaW5nYm94IjpbIjMwLjEzOTE4NzUiLCIzMC4xNDQzMTg3IiwiLTk3LjgxMDE5MTkiLCItOTcuODA1MDM3NyJdfV0=
+  recorded_at: Thu, 24 Aug 2023 18:31:37 GMT
+- request:
+    method: get
+    uri: https://nominatim.openstreetmap.org/search?accept-language=en&addressdetails=1&format=json&q=san%20diego,%20california
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Thu, 24 Aug 2023 18:31:41 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '1340'
+      Connection:
+      - keep-alive
+      Keep-Alive:
+      - timeout=20
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        W3sicGxhY2VfaWQiOjI5ODA2MzkwMSwibGljZW5jZSI6IkRhdGEgwqkgT3BlblN0cmVldE1hcCBjb250cmlidXRvcnMsIE9EYkwgMS4wLiBodHRwOi8vb3NtLm9yZy9jb3B5cmlnaHQiLCJvc21fdHlwZSI6InJlbGF0aW9uIiwib3NtX2lkIjoyNTM4MzIsImxhdCI6IjMyLjcxNzQyMDIiLCJsb24iOiItMTE3LjE2Mjc3MjgiLCJjbGFzcyI6ImJvdW5kYXJ5IiwidHlwZSI6ImFkbWluaXN0cmF0aXZlIiwicGxhY2VfcmFuayI6MTYsImltcG9ydGFuY2UiOjAuNjcyNzk3MDA1OTUxODU4NywiYWRkcmVzc3R5cGUiOiJjaXR5IiwibmFtZSI6IlNhbiBEaWVnbyIsImRpc3BsYXlfbmFtZSI6IlNhbiBEaWVnbywgU2FuIERpZWdvIENvdW50eSwgQ0FMIEZpcmUgU291dGhlcm4gUmVnaW9uLCBDYWxpZm9ybmlhLCBVbml0ZWQgU3RhdGVzIiwiYWRkcmVzcyI6eyJjaXR5IjoiU2FuIERpZWdvIiwiY291bnR5IjoiU2FuIERpZWdvIENvdW50eSIsInN0YXRlX2Rpc3RyaWN0IjoiQ0FMIEZpcmUgU291dGhlcm4gUmVnaW9uIiwic3RhdGUiOiJDYWxpZm9ybmlhIiwiSVNPMzE2Ni0yLWx2bDQiOiJVUy1DQSIsImNvdW50cnkiOiJVbml0ZWQgU3RhdGVzIiwiY291bnRyeV9jb2RlIjoidXMifSwiYm91bmRpbmdib3giOlsiMzIuNTM0NzczNyIsIjMzLjExNDI0OTAiLCItMTE3LjMwOTgwNTMiLCItMTE2LjkwNTcyMjYiXX0seyJwbGFjZV9pZCI6Mjk4MTI5NDI5LCJsaWNlbmNlIjoiRGF0YSDCqSBPcGVuU3RyZWV0TWFwIGNvbnRyaWJ1dG9ycywgT0RiTCAxLjAuIGh0dHA6Ly9vc20ub3JnL2NvcHlyaWdodCIsIm9zbV90eXBlIjoicmVsYXRpb24iLCJvc21faWQiOjM5NjQ4MiwibGF0IjoiMzIuOTYzNzgzOCIsImxvbiI6Ii0xMTYuNzcwNjI3NyIsImNsYXNzIjoiYm91bmRhcnkiLCJ0eXBlIjoiYWRtaW5pc3RyYXRpdmUiLCJwbGFjZV9yYW5rIjoxMiwiaW1wb3J0YW5jZSI6MC41ODUzOTgyMzc3OTExOTQ2LCJhZGRyZXNzdHlwZSI6ImNvdW50eSIsIm5hbWUiOiJTYW4gRGllZ28gQ291bnR5IiwiZGlzcGxheV9uYW1lIjoiU2FuIERpZWdvIENvdW50eSwgQ0FMIEZpcmUgU291dGhlcm4gUmVnaW9uLCBDYWxpZm9ybmlhLCBVbml0ZWQgU3RhdGVzIiwiYWRkcmVzcyI6eyJjb3VudHkiOiJTYW4gRGllZ28gQ291bnR5Iiwic3RhdGVfZGlzdHJpY3QiOiJDQUwgRmlyZSBTb3V0aGVybiBSZWdpb24iLCJzdGF0ZSI6IkNhbGlmb3JuaWEiLCJJU08zMTY2LTItbHZsNCI6IlVTLUNBIiwiY291bnRyeSI6IlVuaXRlZCBTdGF0ZXMiLCJjb3VudHJ5X2NvZGUiOiJ1cyJ9LCJib3VuZGluZ2JveCI6WyIzMi41Mjk1MjM2IiwiMzMuNTA1MjQyMyIsIi0xMTcuNjEwNTM2MyIsIi0xMTYuMDgxMDk0MSJdfV0=
+  recorded_at: Thu, 24 Aug 2023 18:31:41 GMT
+- request:
+    method: get
+    uri: https://nominatim.openstreetmap.org/search?accept-language=en&addressdetails=1&format=json&q=san%20diego,%20california
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Thu, 24 Aug 2023 18:31:43 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '1340'
+      Connection:
+      - keep-alive
+      Keep-Alive:
+      - timeout=20
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        W3sicGxhY2VfaWQiOjI5ODA2MzkwMSwibGljZW5jZSI6IkRhdGEgwqkgT3BlblN0cmVldE1hcCBjb250cmlidXRvcnMsIE9EYkwgMS4wLiBodHRwOi8vb3NtLm9yZy9jb3B5cmlnaHQiLCJvc21fdHlwZSI6InJlbGF0aW9uIiwib3NtX2lkIjoyNTM4MzIsImxhdCI6IjMyLjcxNzQyMDIiLCJsb24iOiItMTE3LjE2Mjc3MjgiLCJjbGFzcyI6ImJvdW5kYXJ5IiwidHlwZSI6ImFkbWluaXN0cmF0aXZlIiwicGxhY2VfcmFuayI6MTYsImltcG9ydGFuY2UiOjAuNjcyNzk3MDA1OTUxODU4NywiYWRkcmVzc3R5cGUiOiJjaXR5IiwibmFtZSI6IlNhbiBEaWVnbyIsImRpc3BsYXlfbmFtZSI6IlNhbiBEaWVnbywgU2FuIERpZWdvIENvdW50eSwgQ0FMIEZpcmUgU291dGhlcm4gUmVnaW9uLCBDYWxpZm9ybmlhLCBVbml0ZWQgU3RhdGVzIiwiYWRkcmVzcyI6eyJjaXR5IjoiU2FuIERpZWdvIiwiY291bnR5IjoiU2FuIERpZWdvIENvdW50eSIsInN0YXRlX2Rpc3RyaWN0IjoiQ0FMIEZpcmUgU291dGhlcm4gUmVnaW9uIiwic3RhdGUiOiJDYWxpZm9ybmlhIiwiSVNPMzE2Ni0yLWx2bDQiOiJVUy1DQSIsImNvdW50cnkiOiJVbml0ZWQgU3RhdGVzIiwiY291bnRyeV9jb2RlIjoidXMifSwiYm91bmRpbmdib3giOlsiMzIuNTM0NzczNyIsIjMzLjExNDI0OTAiLCItMTE3LjMwOTgwNTMiLCItMTE2LjkwNTcyMjYiXX0seyJwbGFjZV9pZCI6Mjk4MTI5NDI5LCJsaWNlbmNlIjoiRGF0YSDCqSBPcGVuU3RyZWV0TWFwIGNvbnRyaWJ1dG9ycywgT0RiTCAxLjAuIGh0dHA6Ly9vc20ub3JnL2NvcHlyaWdodCIsIm9zbV90eXBlIjoicmVsYXRpb24iLCJvc21faWQiOjM5NjQ4MiwibGF0IjoiMzIuOTYzNzgzOCIsImxvbiI6Ii0xMTYuNzcwNjI3NyIsImNsYXNzIjoiYm91bmRhcnkiLCJ0eXBlIjoiYWRtaW5pc3RyYXRpdmUiLCJwbGFjZV9yYW5rIjoxMiwiaW1wb3J0YW5jZSI6MC41ODUzOTgyMzc3OTExOTQ2LCJhZGRyZXNzdHlwZSI6ImNvdW50eSIsIm5hbWUiOiJTYW4gRGllZ28gQ291bnR5IiwiZGlzcGxheV9uYW1lIjoiU2FuIERpZWdvIENvdW50eSwgQ0FMIEZpcmUgU291dGhlcm4gUmVnaW9uLCBDYWxpZm9ybmlhLCBVbml0ZWQgU3RhdGVzIiwiYWRkcmVzcyI6eyJjb3VudHkiOiJTYW4gRGllZ28gQ291bnR5Iiwic3RhdGVfZGlzdHJpY3QiOiJDQUwgRmlyZSBTb3V0aGVybiBSZWdpb24iLCJzdGF0ZSI6IkNhbGlmb3JuaWEiLCJJU08zMTY2LTItbHZsNCI6IlVTLUNBIiwiY291bnRyeSI6IlVuaXRlZCBTdGF0ZXMiLCJjb3VudHJ5X2NvZGUiOiJ1cyJ9LCJib3VuZGluZ2JveCI6WyIzMi41Mjk1MjM2IiwiMzMuNTA1MjQyMyIsIi0xMTcuNjEwNTM2MyIsIi0xMTYuMDgxMDk0MSJdfV0=
+  recorded_at: Thu, 24 Aug 2023 18:31:43 GMT
+- request:
+    method: get
+    uri: https://nominatim.openstreetmap.org/search?accept-language=en&addressdetails=1&format=json&q=304%20W%2034th%20Street%20new%20york,%20new%20york%2010001
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Thu, 24 Aug 2023 18:31:48 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '1642'
+      Connection:
+      - keep-alive
+      Keep-Alive:
+      - timeout=20
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        W3sicGxhY2VfaWQiOjEyMzk3MDAyLCJsaWNlbmNlIjoiRGF0YSDCqSBPcGVuU3RyZWV0TWFwIGNvbnRyaWJ1dG9ycywgT0RiTCAxLjAuIGh0dHA6Ly9vc20ub3JnL2NvcHlyaWdodCIsIm9zbV90eXBlIjoibm9kZSIsIm9zbV9pZCI6MTI3MjY3NDk3MywibGF0IjoiNDAuNzUyMzI2NyIsImxvbiI6Ii03My45OTQyNDgyIiwiY2xhc3MiOiJzaG9wIiwidHlwZSI6ImNvcHlzaG9wIiwicGxhY2VfcmFuayI6MzAsImltcG9ydGFuY2UiOjkuOTk5OTk5OTk5OTU0NDllLTA2LCJhZGRyZXNzdHlwZSI6InNob3AiLCJuYW1lIjoiRmVkRXggT2ZmaWNlIiwiZGlzcGxheV9uYW1lIjoiRmVkRXggT2ZmaWNlLCAzMDQsIFdlc3QgMzR0aCBTdHJlZXQsIE1hbmhhdHRhbiBDb21tdW5pdHkgQm9hcmQgNCwgTWFuaGF0dGFuLCBOZXcgWW9yayBDb3VudHksIE5ldyBZb3JrLCAxMDAwMSwgVW5pdGVkIFN0YXRlcyIsImFkZHJlc3MiOnsic2hvcCI6IkZlZEV4IE9mZmljZSIsImhvdXNlX251bWJlciI6IjMwNCIsInJvYWQiOiJXZXN0IDM0dGggU3RyZWV0IiwibmVpZ2hib3VyaG9vZCI6Ik1hbmhhdHRhbiBDb21tdW5pdHkgQm9hcmQgNCIsInN1YnVyYiI6Ik1hbmhhdHRhbiIsImNvdW50eSI6Ik5ldyBZb3JrIENvdW50eSIsImNpdHkiOiJOZXcgWW9yayIsInN0YXRlIjoiTmV3IFlvcmsiLCJJU08zMTY2LTItbHZsNCI6IlVTLU5ZIiwicG9zdGNvZGUiOiIxMDAwMSIsImNvdW50cnkiOiJVbml0ZWQgU3RhdGVzIiwiY291bnRyeV9jb2RlIjoidXMifSwiYm91bmRpbmdib3giOlsiNDAuNzUyMjc2NyIsIjQwLjc1MjM3NjciLCItNzMuOTk0Mjk4MiIsIi03My45OTQxOTgyIl19LHsicGxhY2VfaWQiOjQ1NTQ3ODM0LCJsaWNlbmNlIjoiRGF0YSDCqSBPcGVuU3RyZWV0TWFwIGNvbnRyaWJ1dG9ycywgT0RiTCAxLjAuIGh0dHA6Ly9vc20ub3JnL2NvcHlyaWdodCIsIm9zbV90eXBlIjoibm9kZSIsIm9zbV9pZCI6MzgwOTAwMDk0MiwibGF0IjoiNDAuNzUyMzU2IiwibG9uIjoiLTczLjk5NDMxNzUiLCJjbGFzcyI6ImFtZW5pdHkiLCJ0eXBlIjoiZmFzdF9mb29kIiwicGxhY2VfcmFuayI6MzAsImltcG9ydGFuY2UiOjkuOTk5OTk5OTk5OTU0NDllLTA2LCJhZGRyZXNzdHlwZSI6ImFtZW5pdHkiLCJuYW1lIjoiQ2hpcG90bGUiLCJkaXNwbGF5X25hbWUiOiJDaGlwb3RsZSwgMzA0LCBXZXN0IDM0dGggU3RyZWV0LCBNYW5oYXR0YW4gQ29tbXVuaXR5IEJvYXJkIDQsIE1hbmhhdHRhbiwgTmV3IFlvcmsgQ291bnR5LCBOZXcgWW9yaywgMTAwMDEsIFVuaXRlZCBTdGF0ZXMiLCJhZGRyZXNzIjp7ImFtZW5pdHkiOiJDaGlwb3RsZSIsImhvdXNlX251bWJlciI6IjMwNCIsInJvYWQiOiJXZXN0IDM0dGggU3RyZWV0IiwibmVpZ2hib3VyaG9vZCI6Ik1hbmhhdHRhbiBDb21tdW5pdHkgQm9hcmQgNCIsInN1YnVyYiI6Ik1hbmhhdHRhbiIsImNvdW50eSI6Ik5ldyBZb3JrIENvdW50eSIsImNpdHkiOiJOZXcgWW9yayIsInN0YXRlIjoiTmV3IFlvcmsiLCJJU08zMTY2LTItbHZsNCI6IlVTLU5ZIiwicG9zdGNvZGUiOiIxMDAwMSIsImNvdW50cnkiOiJVbml0ZWQgU3RhdGVzIiwiY291bnRyeV9jb2RlIjoidXMifSwiYm91bmRpbmdib3giOlsiNDAuNzUyMzA2MCIsIjQwLjc1MjQwNjAiLCItNzMuOTk0MzY3NSIsIi03My45OTQyNjc1Il19XQ==
+  recorded_at: Thu, 24 Aug 2023 18:31:48 GMT
+- request:
+    method: get
+    uri: https://nominatim.openstreetmap.org/search?accept-language=en&addressdetails=1&format=json&q=304%20W%2034th%20Street%20new%20york,%20new%20york%2010001
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Thu, 24 Aug 2023 18:31:51 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '1642'
+      Connection:
+      - keep-alive
+      Keep-Alive:
+      - timeout=20
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        W3sicGxhY2VfaWQiOjEyMzk3MDAyLCJsaWNlbmNlIjoiRGF0YSDCqSBPcGVuU3RyZWV0TWFwIGNvbnRyaWJ1dG9ycywgT0RiTCAxLjAuIGh0dHA6Ly9vc20ub3JnL2NvcHlyaWdodCIsIm9zbV90eXBlIjoibm9kZSIsIm9zbV9pZCI6MTI3MjY3NDk3MywibGF0IjoiNDAuNzUyMzI2NyIsImxvbiI6Ii03My45OTQyNDgyIiwiY2xhc3MiOiJzaG9wIiwidHlwZSI6ImNvcHlzaG9wIiwicGxhY2VfcmFuayI6MzAsImltcG9ydGFuY2UiOjkuOTk5OTk5OTk5OTU0NDllLTA2LCJhZGRyZXNzdHlwZSI6InNob3AiLCJuYW1lIjoiRmVkRXggT2ZmaWNlIiwiZGlzcGxheV9uYW1lIjoiRmVkRXggT2ZmaWNlLCAzMDQsIFdlc3QgMzR0aCBTdHJlZXQsIE1hbmhhdHRhbiBDb21tdW5pdHkgQm9hcmQgNCwgTWFuaGF0dGFuLCBOZXcgWW9yayBDb3VudHksIE5ldyBZb3JrLCAxMDAwMSwgVW5pdGVkIFN0YXRlcyIsImFkZHJlc3MiOnsic2hvcCI6IkZlZEV4IE9mZmljZSIsImhvdXNlX251bWJlciI6IjMwNCIsInJvYWQiOiJXZXN0IDM0dGggU3RyZWV0IiwibmVpZ2hib3VyaG9vZCI6Ik1hbmhhdHRhbiBDb21tdW5pdHkgQm9hcmQgNCIsInN1YnVyYiI6Ik1hbmhhdHRhbiIsImNvdW50eSI6Ik5ldyBZb3JrIENvdW50eSIsImNpdHkiOiJOZXcgWW9yayIsInN0YXRlIjoiTmV3IFlvcmsiLCJJU08zMTY2LTItbHZsNCI6IlVTLU5ZIiwicG9zdGNvZGUiOiIxMDAwMSIsImNvdW50cnkiOiJVbml0ZWQgU3RhdGVzIiwiY291bnRyeV9jb2RlIjoidXMifSwiYm91bmRpbmdib3giOlsiNDAuNzUyMjc2NyIsIjQwLjc1MjM3NjciLCItNzMuOTk0Mjk4MiIsIi03My45OTQxOTgyIl19LHsicGxhY2VfaWQiOjQ1NTQ3ODM0LCJsaWNlbmNlIjoiRGF0YSDCqSBPcGVuU3RyZWV0TWFwIGNvbnRyaWJ1dG9ycywgT0RiTCAxLjAuIGh0dHA6Ly9vc20ub3JnL2NvcHlyaWdodCIsIm9zbV90eXBlIjoibm9kZSIsIm9zbV9pZCI6MzgwOTAwMDk0MiwibGF0IjoiNDAuNzUyMzU2IiwibG9uIjoiLTczLjk5NDMxNzUiLCJjbGFzcyI6ImFtZW5pdHkiLCJ0eXBlIjoiZmFzdF9mb29kIiwicGxhY2VfcmFuayI6MzAsImltcG9ydGFuY2UiOjkuOTk5OTk5OTk5OTU0NDllLTA2LCJhZGRyZXNzdHlwZSI6ImFtZW5pdHkiLCJuYW1lIjoiQ2hpcG90bGUiLCJkaXNwbGF5X25hbWUiOiJDaGlwb3RsZSwgMzA0LCBXZXN0IDM0dGggU3RyZWV0LCBNYW5oYXR0YW4gQ29tbXVuaXR5IEJvYXJkIDQsIE1hbmhhdHRhbiwgTmV3IFlvcmsgQ291bnR5LCBOZXcgWW9yaywgMTAwMDEsIFVuaXRlZCBTdGF0ZXMiLCJhZGRyZXNzIjp7ImFtZW5pdHkiOiJDaGlwb3RsZSIsImhvdXNlX251bWJlciI6IjMwNCIsInJvYWQiOiJXZXN0IDM0dGggU3RyZWV0IiwibmVpZ2hib3VyaG9vZCI6Ik1hbmhhdHRhbiBDb21tdW5pdHkgQm9hcmQgNCIsInN1YnVyYiI6Ik1hbmhhdHRhbiIsImNvdW50eSI6Ik5ldyBZb3JrIENvdW50eSIsImNpdHkiOiJOZXcgWW9yayIsInN0YXRlIjoiTmV3IFlvcmsiLCJJU08zMTY2LTItbHZsNCI6IlVTLU5ZIiwicG9zdGNvZGUiOiIxMDAwMSIsImNvdW50cnkiOiJVbml0ZWQgU3RhdGVzIiwiY291bnRyeV9jb2RlIjoidXMifSwiYm91bmRpbmdib3giOlsiNDAuNzUyMzA2MCIsIjQwLjc1MjQwNjAiLCItNzMuOTk0MzY3NSIsIi03My45OTQyNjc1Il19XQ==
+  recorded_at: Thu, 24 Aug 2023 18:31:51 GMT
+- request:
+    method: get
+    uri: https://nominatim.openstreetmap.org/search?accept-language=en&addressdetails=1&format=json&q=100%20E%20Camelback%20Road%20phoenix,%20arizona%2085012
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Thu, 24 Aug 2023 18:31:55 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '1562'
+      Connection:
+      - keep-alive
+      Keep-Alive:
+      - timeout=20
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        W3sicGxhY2VfaWQiOjk4NjQ5NDUyLCJsaWNlbmNlIjoiRGF0YSDCqSBPcGVuU3RyZWV0TWFwIGNvbnRyaWJ1dG9ycywgT0RiTCAxLjAuIGh0dHA6Ly9vc20ub3JnL2NvcHlyaWdodCIsIm9zbV90eXBlIjoibm9kZSIsIm9zbV9pZCI6OTY3MDg4OTg5MiwibGF0IjoiMzMuNTEwMzAxNyIsImxvbiI6Ii0xMTIuMDcyMDc4NSIsImNsYXNzIjoiYW1lbml0eSIsInR5cGUiOiJyZXN0YXVyYW50IiwicGxhY2VfcmFuayI6MzAsImltcG9ydGFuY2UiOjkuOTk5OTk5OTk0NzM2NDQyZS0wOCwiYWRkcmVzc3R5cGUiOiJhbWVuaXR5IiwibmFtZSI6IkNodWxhIFNlYWZvb2QgVXB0b3duIiwiZGlzcGxheV9uYW1lIjoiQ2h1bGEgU2VhZm9vZCBVcHRvd24sIDEwMCwgRWFzdCBDYW1lbGJhY2sgUm9hZCwgUGhvZW5peCwgTWFyaWNvcGEgQ291bnR5LCBBcml6b25hLCA4NTAxMiwgVW5pdGVkIFN0YXRlcyIsImFkZHJlc3MiOnsiYW1lbml0eSI6IkNodWxhIFNlYWZvb2QgVXB0b3duIiwiaG91c2VfbnVtYmVyIjoiMTAwIiwicm9hZCI6IkVhc3QgQ2FtZWxiYWNrIFJvYWQiLCJjaXR5IjoiUGhvZW5peCIsImNvdW50eSI6Ik1hcmljb3BhIENvdW50eSIsInN0YXRlIjoiQXJpem9uYSIsIklTTzMxNjYtMi1sdmw0IjoiVVMtQVoiLCJwb3N0Y29kZSI6Ijg1MDEyIiwiY291bnRyeSI6IlVuaXRlZCBTdGF0ZXMiLCJjb3VudHJ5X2NvZGUiOiJ1cyJ9LCJib3VuZGluZ2JveCI6WyIzMy41MTAyNTE3IiwiMzMuNTEwMzUxNyIsIi0xMTIuMDcyMTI4NSIsIi0xMTIuMDcyMDI4NSJdfSx7InBsYWNlX2lkIjo5ODk5MzM3MCwibGljZW5jZSI6IkRhdGEgwqkgT3BlblN0cmVldE1hcCBjb250cmlidXRvcnMsIE9EYkwgMS4wLiBodHRwOi8vb3NtLm9yZy9jb3B5cmlnaHQiLCJvc21fdHlwZSI6Im5vZGUiLCJvc21faWQiOjk2NzA4ODk5ODAsImxhdCI6IjMzLjUxMDYwMjYiLCJsb24iOiItMTEyLjA3MTc1OTIiLCJjbGFzcyI6ImFtZW5pdHkiLCJ0eXBlIjoicHViIiwicGxhY2VfcmFuayI6MzAsImltcG9ydGFuY2UiOjkuOTk5OTk5OTk0NzM2NDQyZS0wOCwiYWRkcmVzc3R5cGUiOiJhbWVuaXR5IiwibmFtZSI6IlVwdG93biBQaG9lbml4IFRhcHJvb20gKyBLaXRjaGVuIiwiZGlzcGxheV9uYW1lIjoiVXB0b3duIFBob2VuaXggVGFwcm9vbSArIEtpdGNoZW4sIDEwMCwgRWFzdCBDYW1lbGJhY2sgUm9hZCwgUGhvZW5peCwgTWFyaWNvcGEgQ291bnR5LCBBcml6b25hLCA4NTAxMiwgVW5pdGVkIFN0YXRlcyIsImFkZHJlc3MiOnsiYW1lbml0eSI6IlVwdG93biBQaG9lbml4IFRhcHJvb20gKyBLaXRjaGVuIiwiaG91c2VfbnVtYmVyIjoiMTAwIiwicm9hZCI6IkVhc3QgQ2FtZWxiYWNrIFJvYWQiLCJjaXR5IjoiUGhvZW5peCIsImNvdW50eSI6Ik1hcmljb3BhIENvdW50eSIsInN0YXRlIjoiQXJpem9uYSIsIklTTzMxNjYtMi1sdmw0IjoiVVMtQVoiLCJwb3N0Y29kZSI6Ijg1MDEyIiwiY291bnRyeSI6IlVuaXRlZCBTdGF0ZXMiLCJjb3VudHJ5X2NvZGUiOiJ1cyJ9LCJib3VuZGluZ2JveCI6WyIzMy41MTA1NTI2IiwiMzMuNTEwNjUyNiIsIi0xMTIuMDcxODA5MiIsIi0xMTIuMDcxNzA5MiJdfV0=
+  recorded_at: Thu, 24 Aug 2023 18:31:55 GMT
+- request:
+    method: get
+    uri: https://nominatim.openstreetmap.org/search?accept-language=en&addressdetails=1&format=json&q=100%20E%20Camelback%20Road%20phoenix,%20arizona%2085012
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Thu, 24 Aug 2023 18:31:58 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '1562'
+      Connection:
+      - keep-alive
+      Keep-Alive:
+      - timeout=20
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        W3sicGxhY2VfaWQiOjk4NjQ5NDUyLCJsaWNlbmNlIjoiRGF0YSDCqSBPcGVuU3RyZWV0TWFwIGNvbnRyaWJ1dG9ycywgT0RiTCAxLjAuIGh0dHA6Ly9vc20ub3JnL2NvcHlyaWdodCIsIm9zbV90eXBlIjoibm9kZSIsIm9zbV9pZCI6OTY3MDg4OTg5MiwibGF0IjoiMzMuNTEwMzAxNyIsImxvbiI6Ii0xMTIuMDcyMDc4NSIsImNsYXNzIjoiYW1lbml0eSIsInR5cGUiOiJyZXN0YXVyYW50IiwicGxhY2VfcmFuayI6MzAsImltcG9ydGFuY2UiOjkuOTk5OTk5OTk0NzM2NDQyZS0wOCwiYWRkcmVzc3R5cGUiOiJhbWVuaXR5IiwibmFtZSI6IkNodWxhIFNlYWZvb2QgVXB0b3duIiwiZGlzcGxheV9uYW1lIjoiQ2h1bGEgU2VhZm9vZCBVcHRvd24sIDEwMCwgRWFzdCBDYW1lbGJhY2sgUm9hZCwgUGhvZW5peCwgTWFyaWNvcGEgQ291bnR5LCBBcml6b25hLCA4NTAxMiwgVW5pdGVkIFN0YXRlcyIsImFkZHJlc3MiOnsiYW1lbml0eSI6IkNodWxhIFNlYWZvb2QgVXB0b3duIiwiaG91c2VfbnVtYmVyIjoiMTAwIiwicm9hZCI6IkVhc3QgQ2FtZWxiYWNrIFJvYWQiLCJjaXR5IjoiUGhvZW5peCIsImNvdW50eSI6Ik1hcmljb3BhIENvdW50eSIsInN0YXRlIjoiQXJpem9uYSIsIklTTzMxNjYtMi1sdmw0IjoiVVMtQVoiLCJwb3N0Y29kZSI6Ijg1MDEyIiwiY291bnRyeSI6IlVuaXRlZCBTdGF0ZXMiLCJjb3VudHJ5X2NvZGUiOiJ1cyJ9LCJib3VuZGluZ2JveCI6WyIzMy41MTAyNTE3IiwiMzMuNTEwMzUxNyIsIi0xMTIuMDcyMTI4NSIsIi0xMTIuMDcyMDI4NSJdfSx7InBsYWNlX2lkIjo5ODk5MzM3MCwibGljZW5jZSI6IkRhdGEgwqkgT3BlblN0cmVldE1hcCBjb250cmlidXRvcnMsIE9EYkwgMS4wLiBodHRwOi8vb3NtLm9yZy9jb3B5cmlnaHQiLCJvc21fdHlwZSI6Im5vZGUiLCJvc21faWQiOjk2NzA4ODk5ODAsImxhdCI6IjMzLjUxMDYwMjYiLCJsb24iOiItMTEyLjA3MTc1OTIiLCJjbGFzcyI6ImFtZW5pdHkiLCJ0eXBlIjoicHViIiwicGxhY2VfcmFuayI6MzAsImltcG9ydGFuY2UiOjkuOTk5OTk5OTk0NzM2NDQyZS0wOCwiYWRkcmVzc3R5cGUiOiJhbWVuaXR5IiwibmFtZSI6IlVwdG93biBQaG9lbml4IFRhcHJvb20gKyBLaXRjaGVuIiwiZGlzcGxheV9uYW1lIjoiVXB0b3duIFBob2VuaXggVGFwcm9vbSArIEtpdGNoZW4sIDEwMCwgRWFzdCBDYW1lbGJhY2sgUm9hZCwgUGhvZW5peCwgTWFyaWNvcGEgQ291bnR5LCBBcml6b25hLCA4NTAxMiwgVW5pdGVkIFN0YXRlcyIsImFkZHJlc3MiOnsiYW1lbml0eSI6IlVwdG93biBQaG9lbml4IFRhcHJvb20gKyBLaXRjaGVuIiwiaG91c2VfbnVtYmVyIjoiMTAwIiwicm9hZCI6IkVhc3QgQ2FtZWxiYWNrIFJvYWQiLCJjaXR5IjoiUGhvZW5peCIsImNvdW50eSI6Ik1hcmljb3BhIENvdW50eSIsInN0YXRlIjoiQXJpem9uYSIsIklTTzMxNjYtMi1sdmw0IjoiVVMtQVoiLCJwb3N0Y29kZSI6Ijg1MDEyIiwiY291bnRyeSI6IlVuaXRlZCBTdGF0ZXMiLCJjb3VudHJ5X2NvZGUiOiJ1cyJ9LCJib3VuZGluZ2JveCI6WyIzMy41MTA1NTI2IiwiMzMuNTEwNjUyNiIsIi0xMTIuMDcxODA5MiIsIi0xMTIuMDcxNzA5MiJdfV0=
+  recorded_at: Thu, 24 Aug 2023 18:31:58 GMT
+- request:
+    method: get
+    uri: https://nominatim.openstreetmap.org/search?accept-language=en&addressdetails=1&format=json&q=304%20W%2034th%20Street%20new%20york,%20new%20york%2010001
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Thu, 24 Aug 2023 18:32:01 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '1642'
+      Connection:
+      - keep-alive
+      Keep-Alive:
+      - timeout=20
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        W3sicGxhY2VfaWQiOjEyMzk3MDAyLCJsaWNlbmNlIjoiRGF0YSDCqSBPcGVuU3RyZWV0TWFwIGNvbnRyaWJ1dG9ycywgT0RiTCAxLjAuIGh0dHA6Ly9vc20ub3JnL2NvcHlyaWdodCIsIm9zbV90eXBlIjoibm9kZSIsIm9zbV9pZCI6MTI3MjY3NDk3MywibGF0IjoiNDAuNzUyMzI2NyIsImxvbiI6Ii03My45OTQyNDgyIiwiY2xhc3MiOiJzaG9wIiwidHlwZSI6ImNvcHlzaG9wIiwicGxhY2VfcmFuayI6MzAsImltcG9ydGFuY2UiOjkuOTk5OTk5OTk5OTU0NDllLTA2LCJhZGRyZXNzdHlwZSI6InNob3AiLCJuYW1lIjoiRmVkRXggT2ZmaWNlIiwiZGlzcGxheV9uYW1lIjoiRmVkRXggT2ZmaWNlLCAzMDQsIFdlc3QgMzR0aCBTdHJlZXQsIE1hbmhhdHRhbiBDb21tdW5pdHkgQm9hcmQgNCwgTWFuaGF0dGFuLCBOZXcgWW9yayBDb3VudHksIE5ldyBZb3JrLCAxMDAwMSwgVW5pdGVkIFN0YXRlcyIsImFkZHJlc3MiOnsic2hvcCI6IkZlZEV4IE9mZmljZSIsImhvdXNlX251bWJlciI6IjMwNCIsInJvYWQiOiJXZXN0IDM0dGggU3RyZWV0IiwibmVpZ2hib3VyaG9vZCI6Ik1hbmhhdHRhbiBDb21tdW5pdHkgQm9hcmQgNCIsInN1YnVyYiI6Ik1hbmhhdHRhbiIsImNvdW50eSI6Ik5ldyBZb3JrIENvdW50eSIsImNpdHkiOiJOZXcgWW9yayIsInN0YXRlIjoiTmV3IFlvcmsiLCJJU08zMTY2LTItbHZsNCI6IlVTLU5ZIiwicG9zdGNvZGUiOiIxMDAwMSIsImNvdW50cnkiOiJVbml0ZWQgU3RhdGVzIiwiY291bnRyeV9jb2RlIjoidXMifSwiYm91bmRpbmdib3giOlsiNDAuNzUyMjc2NyIsIjQwLjc1MjM3NjciLCItNzMuOTk0Mjk4MiIsIi03My45OTQxOTgyIl19LHsicGxhY2VfaWQiOjQ1NTQ3ODM0LCJsaWNlbmNlIjoiRGF0YSDCqSBPcGVuU3RyZWV0TWFwIGNvbnRyaWJ1dG9ycywgT0RiTCAxLjAuIGh0dHA6Ly9vc20ub3JnL2NvcHlyaWdodCIsIm9zbV90eXBlIjoibm9kZSIsIm9zbV9pZCI6MzgwOTAwMDk0MiwibGF0IjoiNDAuNzUyMzU2IiwibG9uIjoiLTczLjk5NDMxNzUiLCJjbGFzcyI6ImFtZW5pdHkiLCJ0eXBlIjoiZmFzdF9mb29kIiwicGxhY2VfcmFuayI6MzAsImltcG9ydGFuY2UiOjkuOTk5OTk5OTk5OTU0NDllLTA2LCJhZGRyZXNzdHlwZSI6ImFtZW5pdHkiLCJuYW1lIjoiQ2hpcG90bGUiLCJkaXNwbGF5X25hbWUiOiJDaGlwb3RsZSwgMzA0LCBXZXN0IDM0dGggU3RyZWV0LCBNYW5oYXR0YW4gQ29tbXVuaXR5IEJvYXJkIDQsIE1hbmhhdHRhbiwgTmV3IFlvcmsgQ291bnR5LCBOZXcgWW9yaywgMTAwMDEsIFVuaXRlZCBTdGF0ZXMiLCJhZGRyZXNzIjp7ImFtZW5pdHkiOiJDaGlwb3RsZSIsImhvdXNlX251bWJlciI6IjMwNCIsInJvYWQiOiJXZXN0IDM0dGggU3RyZWV0IiwibmVpZ2hib3VyaG9vZCI6Ik1hbmhhdHRhbiBDb21tdW5pdHkgQm9hcmQgNCIsInN1YnVyYiI6Ik1hbmhhdHRhbiIsImNvdW50eSI6Ik5ldyBZb3JrIENvdW50eSIsImNpdHkiOiJOZXcgWW9yayIsInN0YXRlIjoiTmV3IFlvcmsiLCJJU08zMTY2LTItbHZsNCI6IlVTLU5ZIiwicG9zdGNvZGUiOiIxMDAwMSIsImNvdW50cnkiOiJVbml0ZWQgU3RhdGVzIiwiY291bnRyeV9jb2RlIjoidXMifSwiYm91bmRpbmdib3giOlsiNDAuNzUyMzA2MCIsIjQwLjc1MjQwNjAiLCItNzMuOTk0MzY3NSIsIi03My45OTQyNjc1Il19XQ==
+  recorded_at: Thu, 24 Aug 2023 18:32:01 GMT
+- request:
+    method: get
+    uri: https://nominatim.openstreetmap.org/search?accept-language=en&addressdetails=1&format=json&q=304%20W%2034th%20Street%20new%20york,%20new%20york%2010001
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Thu, 24 Aug 2023 18:32:11 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '1642'
+      Connection:
+      - keep-alive
+      Keep-Alive:
+      - timeout=20
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        W3sicGxhY2VfaWQiOjEyMzk3MDAyLCJsaWNlbmNlIjoiRGF0YSDCqSBPcGVuU3RyZWV0TWFwIGNvbnRyaWJ1dG9ycywgT0RiTCAxLjAuIGh0dHA6Ly9vc20ub3JnL2NvcHlyaWdodCIsIm9zbV90eXBlIjoibm9kZSIsIm9zbV9pZCI6MTI3MjY3NDk3MywibGF0IjoiNDAuNzUyMzI2NyIsImxvbiI6Ii03My45OTQyNDgyIiwiY2xhc3MiOiJzaG9wIiwidHlwZSI6ImNvcHlzaG9wIiwicGxhY2VfcmFuayI6MzAsImltcG9ydGFuY2UiOjkuOTk5OTk5OTk5OTU0NDllLTA2LCJhZGRyZXNzdHlwZSI6InNob3AiLCJuYW1lIjoiRmVkRXggT2ZmaWNlIiwiZGlzcGxheV9uYW1lIjoiRmVkRXggT2ZmaWNlLCAzMDQsIFdlc3QgMzR0aCBTdHJlZXQsIE1hbmhhdHRhbiBDb21tdW5pdHkgQm9hcmQgNCwgTWFuaGF0dGFuLCBOZXcgWW9yayBDb3VudHksIE5ldyBZb3JrLCAxMDAwMSwgVW5pdGVkIFN0YXRlcyIsImFkZHJlc3MiOnsic2hvcCI6IkZlZEV4IE9mZmljZSIsImhvdXNlX251bWJlciI6IjMwNCIsInJvYWQiOiJXZXN0IDM0dGggU3RyZWV0IiwibmVpZ2hib3VyaG9vZCI6Ik1hbmhhdHRhbiBDb21tdW5pdHkgQm9hcmQgNCIsInN1YnVyYiI6Ik1hbmhhdHRhbiIsImNvdW50eSI6Ik5ldyBZb3JrIENvdW50eSIsImNpdHkiOiJOZXcgWW9yayIsInN0YXRlIjoiTmV3IFlvcmsiLCJJU08zMTY2LTItbHZsNCI6IlVTLU5ZIiwicG9zdGNvZGUiOiIxMDAwMSIsImNvdW50cnkiOiJVbml0ZWQgU3RhdGVzIiwiY291bnRyeV9jb2RlIjoidXMifSwiYm91bmRpbmdib3giOlsiNDAuNzUyMjc2NyIsIjQwLjc1MjM3NjciLCItNzMuOTk0Mjk4MiIsIi03My45OTQxOTgyIl19LHsicGxhY2VfaWQiOjQ1NTQ3ODM0LCJsaWNlbmNlIjoiRGF0YSDCqSBPcGVuU3RyZWV0TWFwIGNvbnRyaWJ1dG9ycywgT0RiTCAxLjAuIGh0dHA6Ly9vc20ub3JnL2NvcHlyaWdodCIsIm9zbV90eXBlIjoibm9kZSIsIm9zbV9pZCI6MzgwOTAwMDk0MiwibGF0IjoiNDAuNzUyMzU2IiwibG9uIjoiLTczLjk5NDMxNzUiLCJjbGFzcyI6ImFtZW5pdHkiLCJ0eXBlIjoiZmFzdF9mb29kIiwicGxhY2VfcmFuayI6MzAsImltcG9ydGFuY2UiOjkuOTk5OTk5OTk5OTU0NDllLTA2LCJhZGRyZXNzdHlwZSI6ImFtZW5pdHkiLCJuYW1lIjoiQ2hpcG90bGUiLCJkaXNwbGF5X25hbWUiOiJDaGlwb3RsZSwgMzA0LCBXZXN0IDM0dGggU3RyZWV0LCBNYW5oYXR0YW4gQ29tbXVuaXR5IEJvYXJkIDQsIE1hbmhhdHRhbiwgTmV3IFlvcmsgQ291bnR5LCBOZXcgWW9yaywgMTAwMDEsIFVuaXRlZCBTdGF0ZXMiLCJhZGRyZXNzIjp7ImFtZW5pdHkiOiJDaGlwb3RsZSIsImhvdXNlX251bWJlciI6IjMwNCIsInJvYWQiOiJXZXN0IDM0dGggU3RyZWV0IiwibmVpZ2hib3VyaG9vZCI6Ik1hbmhhdHRhbiBDb21tdW5pdHkgQm9hcmQgNCIsInN1YnVyYiI6Ik1hbmhhdHRhbiIsImNvdW50eSI6Ik5ldyBZb3JrIENvdW50eSIsImNpdHkiOiJOZXcgWW9yayIsInN0YXRlIjoiTmV3IFlvcmsiLCJJU08zMTY2LTItbHZsNCI6IlVTLU5ZIiwicG9zdGNvZGUiOiIxMDAwMSIsImNvdW50cnkiOiJVbml0ZWQgU3RhdGVzIiwiY291bnRyeV9jb2RlIjoidXMifSwiYm91bmRpbmdib3giOlsiNDAuNzUyMzA2MCIsIjQwLjc1MjQwNjAiLCItNzMuOTk0MzY3NSIsIi03My45OTQyNjc1Il19XQ==
+  recorded_at: Thu, 24 Aug 2023 18:32:10 GMT
 recorded_with: VCR 6.2.0

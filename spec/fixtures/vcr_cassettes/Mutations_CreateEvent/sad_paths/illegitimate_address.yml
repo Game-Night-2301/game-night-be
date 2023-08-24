@@ -21,7 +21,7 @@ http_interactions:
       Server:
       - nginx
       Date:
-      - Tue, 15 Aug 2023 17:11:24 GMT
+      - Wed, 23 Aug 2023 16:30:18 GMT
       Content-Type:
       - application/json
       Content-Length:
@@ -33,5 +33,5 @@ http_interactions:
     body:
       encoding: UTF-8
       string: "[]"
-  recorded_at: Tue, 15 Aug 2023 17:11:24 GMT
+  recorded_at: Wed, 23 Aug 2023 16:30:17 GMT
 recorded_with: VCR 6.2.0

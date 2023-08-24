@@ -15,7 +15,7 @@ module Mutations
           UserEvent.create(user_id: user_2.id, event_id: event.id)
 
           expect(UserEvent.count).to eq(2)
-          expect(event.users).to eq([user_1, user_2])
+          expect(event.users.sort).to eq([user_1, user_2].sort)
 
           result = GameNightBeSchema.execute(query).as_json
 
