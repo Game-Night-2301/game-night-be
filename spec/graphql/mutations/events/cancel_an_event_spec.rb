@@ -9,12 +9,12 @@ module Mutations
         @user_1 = create(:user, id: 1, city: "montpelier", state: "vermont")
         @user_2 = create(:user, id: 2, city: "austin", state: "texas")
         @user_3 = create(:user, id: 3, city: "san diego", state: "california")
-        @user_4 = create(:user, id: 4, city: "harlem", state: "georgia")
+        # @user_4 = create(:user, id: 4, city: "harlem", state: "georgia")
 
-        @event_1 = create(:event, address: "304 W 34th St", city: "new york", state: "new york", zip: "10001", host_id: @user_1.id, id: 1, cancelled: false)
-        @event_2 = create(:event, address: "100 E Camelback Rd", city: "phoenix", state: "arizona", zip: "85012", host_id: @user_1.id, id: 2)
-        @event_3 = create(:event, address: "488 S High St", city: "columbus", state: "ohio", zip: "43215", host_id: @user_2.id, id: 3)
-        @event_4 = create(:event, address: "1625 Chestnut St", city: "philadelphia", state: "pennsylvania", zip: "19103", host_id: @user_3.id, id: 4)
+        @event_1 = create(:event, address: "304 W 34th Street", city: "new york", state: "new york", zip: "10001", host_id: @user_1.id, id: 1, cancelled: false)
+        @event_2 = create(:event, address: "100 E Camelback Road", city: "phoenix", state: "arizona", zip: "85012", host_id: @user_2.id, id: 2)
+        # @event_3 = create(:event, address: "488 S High St", city: "columbus", state: "ohio", zip: "43215", host_id: @user_2.id, id: 3)
+        # @event_4 = create(:event, address: "1625 Chestnut St", city: "philadelphia", state: "pennsylvania", zip: "19103", host_id: @user_3.id, id: 4)
       end
 
       describe "resolve" do

@@ -1016,7 +1016,7 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Wed, 16 Aug 2023 21:18:26 GMT
+      - Thu, 24 Aug 2023 18:29:04 GMT
       Content-Type:
       - application/json
       Transfer-Encoding:
@@ -1032,7 +1032,7 @@ http_interactions:
       Openai-Organization:
       - game-night-tiwtpu
       Openai-Processing-Ms:
-      - '749'
+      - '734'
       Openai-Version:
       - '2020-10-01'
       Strict-Transport-Security:
@@ -1050,40 +1050,40 @@ http_interactions:
       X-Ratelimit-Reset-Tokens:
       - 74ms
       X-Request-Id:
-      - 61291c4d8e4741a55b28f0d88eed01e1
+      - c36f4ca7fb621de162322cfb9076cf99
       Cf-Cache-Status:
       - DYNAMIC
       Server:
       - cloudflare
       Cf-Ray:
-      - 7f7cb5b20c081466-STL
+      - 7fbda89b88ca5188-DEN
       Alt-Svc:
       - h3=":443"; ma=86400
     body:
       encoding: ASCII-8BIT
       string: |
         {
-          "id": "chatcmpl-7oICIZGjEM4Xxfskym4Bg2nR0ZBHR",
+          "id": "chatcmpl-7r9MmRBnYoAIu2fRV5zaYsQ6kYFWx",
           "object": "chat.completion",
-          "created": 1692220706,
+          "created": 1692901744,
           "model": "gpt-3.5-turbo-0613",
           "choices": [
             {
               "index": 0,
               "message": {
                 "role": "assistant",
-                "content": "[\"Ticket to Ride\", \"Pandemic\", \"7 Wonders\"]"
+                "content": "[\"Ticket to Ride\", \"Splendor\", \"7 Wonders\"]"
               },
               "finish_reason": "stop"
             }
           ],
           "usage": {
             "prompt_tokens": 88,
-            "completion_tokens": 15,
-            "total_tokens": 103
+            "completion_tokens": 14,
+            "total_tokens": 102
           }
         }
-  recorded_at: Wed, 16 Aug 2023 21:18:26 GMT
+  recorded_at: Thu, 24 Aug 2023 18:29:04 GMT
 - request:
     method: get
     uri: https://nominatim.openstreetmap.org/search?accept-language=en&addressdetails=1&format=json&q=Denver,%20Colorado
@@ -1105,7 +1105,7 @@ http_interactions:
       Server:
       - nginx
       Date:
-      - Thu, 17 Aug 2023 14:58:53 GMT
+      - Thu, 24 Aug 2023 18:34:20 GMT
       Content-Type:
       - application/json
       Content-Length:
@@ -1118,7 +1118,7 @@ http_interactions:
       encoding: ASCII-8BIT
       string: !binary |-
         W3sicGxhY2VfaWQiOjM2NDc1NzAyMywibGljZW5jZSI6IkRhdGEgwqkgT3BlblN0cmVldE1hcCBjb250cmlidXRvcnMsIE9EYkwgMS4wLiBodHRwOi8vb3NtLm9yZy9jb3B5cmlnaHQiLCJvc21fdHlwZSI6InJlbGF0aW9uIiwib3NtX2lkIjoxNDExMzM5LCJsYXQiOiIzOS43MzkyMzY0IiwibG9uIjoiLTEwNC45ODQ4NjIiLCJjbGFzcyI6ImJvdW5kYXJ5IiwidHlwZSI6ImFkbWluaXN0cmF0aXZlIiwicGxhY2VfcmFuayI6MTIsImltcG9ydGFuY2UiOjAuNTk1NDc1ODczOTA5NTc5LCJhZGRyZXNzdHlwZSI6ImNpdHkiLCJuYW1lIjoiRGVudmVyIiwiZGlzcGxheV9uYW1lIjoiRGVudmVyLCBDb2xvcmFkbywgVW5pdGVkIFN0YXRlcyIsImFkZHJlc3MiOnsiY2l0eSI6IkRlbnZlciIsInN0YXRlIjoiQ29sb3JhZG8iLCJJU08zMTY2LTItbHZsNCI6IlVTLUNPIiwiY291bnRyeSI6IlVuaXRlZCBTdGF0ZXMiLCJjb3VudHJ5X2NvZGUiOiJ1cyJ9LCJib3VuZGluZ2JveCI6WyIzOS42MTQzMDA4IiwiMzkuOTE0MjA4NyIsIi0xMDUuMTA5ODg0NSIsIi0xMDQuNTk5Njk5NyJdfV0=
-  recorded_at: Thu, 17 Aug 2023 14:58:53 GMT
+  recorded_at: Thu, 24 Aug 2023 18:34:20 GMT
 - request:
     method: get
     uri: https://nominatim.openstreetmap.org/search?accept-language=en&addressdetails=1&format=json&q=Denver,%20Colorado
@@ -1140,7 +1140,7 @@ http_interactions:
       Server:
       - nginx
       Date:
-      - Thu, 17 Aug 2023 14:58:54 GMT
+      - Thu, 24 Aug 2023 18:34:22 GMT
       Content-Type:
       - application/json
       Content-Length:
@@ -1153,7 +1153,7 @@ http_interactions:
       encoding: ASCII-8BIT
       string: !binary |-
         W3sicGxhY2VfaWQiOjM2NDc1NzAyMywibGljZW5jZSI6IkRhdGEgwqkgT3BlblN0cmVldE1hcCBjb250cmlidXRvcnMsIE9EYkwgMS4wLiBodHRwOi8vb3NtLm9yZy9jb3B5cmlnaHQiLCJvc21fdHlwZSI6InJlbGF0aW9uIiwib3NtX2lkIjoxNDExMzM5LCJsYXQiOiIzOS43MzkyMzY0IiwibG9uIjoiLTEwNC45ODQ4NjIiLCJjbGFzcyI6ImJvdW5kYXJ5IiwidHlwZSI6ImFkbWluaXN0cmF0aXZlIiwicGxhY2VfcmFuayI6MTIsImltcG9ydGFuY2UiOjAuNTk1NDc1ODczOTA5NTc5LCJhZGRyZXNzdHlwZSI6ImNpdHkiLCJuYW1lIjoiRGVudmVyIiwiZGlzcGxheV9uYW1lIjoiRGVudmVyLCBDb2xvcmFkbywgVW5pdGVkIFN0YXRlcyIsImFkZHJlc3MiOnsiY2l0eSI6IkRlbnZlciIsInN0YXRlIjoiQ29sb3JhZG8iLCJJU08zMTY2LTItbHZsNCI6IlVTLUNPIiwiY291bnRyeSI6IlVuaXRlZCBTdGF0ZXMiLCJjb3VudHJ5X2NvZGUiOiJ1cyJ9LCJib3VuZGluZ2JveCI6WyIzOS42MTQzMDA4IiwiMzkuOTE0MjA4NyIsIi0xMDUuMTA5ODg0NSIsIi0xMDQuNTk5Njk5NyJdfV0=
-  recorded_at: Thu, 17 Aug 2023 14:58:54 GMT
+  recorded_at: Thu, 24 Aug 2023 18:34:22 GMT
 - request:
     method: post
     uri: https://api.openai.com/v1/chat/completions
@@ -1182,7 +1182,7 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Thu, 17 Aug 2023 14:58:55 GMT
+      - Thu, 24 Aug 2023 18:34:23 GMT
       Content-Type:
       - application/json
       Transfer-Encoding:
@@ -1198,7 +1198,7 @@ http_interactions:
       Openai-Organization:
       - game-night-tiwtpu
       Openai-Processing-Ms:
-      - '854'
+      - '722'
       Openai-Version:
       - '2020-10-01'
       Strict-Transport-Security:
@@ -1216,22 +1216,22 @@ http_interactions:
       X-Ratelimit-Reset-Tokens:
       - 74ms
       X-Request-Id:
-      - fb16b1e9a676dfb065f3fe36f29c4f12
+      - e8046f614ba4122f6b3aa3d426f788c8
       Cf-Cache-Status:
       - DYNAMIC
       Server:
       - cloudflare
       Cf-Ray:
-      - 7f82c7243f55e5a9-DFW
+      - 7fbdb0620e73519e-DEN
       Alt-Svc:
       - h3=":443"; ma=86400
     body:
       encoding: ASCII-8BIT
       string: |
         {
-          "id": "chatcmpl-7oYkZSIs0H4QggNrNiQvfyIC7Qaho",
+          "id": "chatcmpl-7r9Ru3a5JUNvEuCt8TZgxY1IkxzCo",
           "object": "chat.completion",
-          "created": 1692284335,
+          "created": 1692902062,
           "model": "gpt-3.5-turbo-0613",
           "choices": [
             {
@@ -1249,5 +1249,5 @@ http_interactions:
             "total_tokens": 103
           }
         }
-  recorded_at: Thu, 17 Aug 2023 14:58:55 GMT
+  recorded_at: Thu, 24 Aug 2023 18:34:23 GMT
 recorded_with: VCR 6.2.0

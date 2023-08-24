@@ -28,7 +28,6 @@ class AiService
         request.body = payload.to_json
       end.body, symbolize_names: true
     )
-
     JSON.parse(response[:choices][0][:message][:content])
   end
 end

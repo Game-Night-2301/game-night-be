@@ -9,8 +9,9 @@ http_interactions:
         me 3 board games based on the following collection of games. [\"Catan\", \"Betrayal
         at House on the Hill\", \"Gloom Haven\", \"Brass: Birmingham\", \"Survive:
         Escape from Atlantis\"]\n                      Do not recommend games that
-        are already in the collection you''ve been given.\n                      Please
-        include only the name of the games, in the form of strings within an array."}],"temperature":0.8}'
+        are already in the collection you''ve been given and only recommend each game
+        once.\n                      Please include only the name of the games, in
+        the form of strings within an array."}],"temperature":0.8}'
     headers:
       Content-Type:
       - application/json
@@ -28,7 +29,7 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Tue, 15 Aug 2023 17:14:40 GMT
+      - Thu, 24 Aug 2023 17:58:27 GMT
       Content-Type:
       - application/json
       Transfer-Encoding:
@@ -44,7 +45,7 @@ http_interactions:
       Openai-Organization:
       - game-night-tiwtpu
       Openai-Processing-Ms:
-      - '792'
+      - '771'
       Openai-Version:
       - '2020-10-01'
       Strict-Transport-Security:
@@ -56,28 +57,28 @@ http_interactions:
       X-Ratelimit-Remaining-Requests:
       - '3499'
       X-Ratelimit-Remaining-Tokens:
-      - '89886'
+      - '89878'
       X-Ratelimit-Reset-Requests:
       - 17ms
       X-Ratelimit-Reset-Tokens:
-      - 76ms
+      - 81ms
       X-Request-Id:
-      - 25fd65ab27fb2de06a7292a7961572e2
+      - e88aa05aeca721264d0046c6dec8a980
       Cf-Cache-Status:
       - DYNAMIC
       Server:
       - cloudflare
       Cf-Ray:
-      - 7f73133f8d6a1f4a-DEN
+      - 7fbd7bc16c0251f1-DEN
       Alt-Svc:
       - h3=":443"; ma=86400
     body:
       encoding: ASCII-8BIT
       string: |
         {
-          "id": "chatcmpl-7nruqbjUnN1FpUoZiDfBDbwGCISyt",
+          "id": "chatcmpl-7r8t8iz2vpVFDyL9XLsFAc4XDNozc",
           "object": "chat.completion",
-          "created": 1692119680,
+          "created": 1692899906,
           "model": "gpt-3.5-turbo-0613",
           "choices": [
             {
@@ -90,10 +91,10 @@ http_interactions:
             }
           ],
           "usage": {
-            "prompt_tokens": 89,
+            "prompt_tokens": 95,
             "completion_tokens": 14,
-            "total_tokens": 103
+            "total_tokens": 109
           }
         }
-  recorded_at: Tue, 15 Aug 2023 17:14:40 GMT
+  recorded_at: Thu, 24 Aug 2023 17:58:27 GMT
 recorded_with: VCR 6.2.0
