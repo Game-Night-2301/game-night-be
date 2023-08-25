@@ -13,8 +13,8 @@
     <img src="https://user-images.githubusercontent.com/120869196/253766698-18414249-a92b-4b58-9032-ac67ce3b26b0.png" alt="Logo" >
   </a>
 
-<h3 align="center">Game Night</h3>
-  <h2 allign="center"><strong><em>Disclaimer: This application used to make an external API call to <code>Board Game Atlas</code>. This service has since shut down. To keep usability for demo purposes, the data we got from that API is being loaded via a JSON file when seeding the database</em></strong></h2><br>
+<h2 align="center">Game Night - A competition project</h2>
+  <h3 allign="center"><strong><em>Disclaimer: This application used to make an external API call to <code>Board Game Atlas</code>. This service has since shut down. To keep usability for demo purposes, the data we got from that API is being loaded via a JSON file when seeding the database</em></strong></h3><br>
   <p align="center">
     Welcome to the back-end repository for Game Night <br><br> Game Night is a web application built for the Turing School of Software and Design's Mod 4 Capstone project. Read more about project requirements: https://mod4.turing.edu/projects/capstone/ 
   </p>
