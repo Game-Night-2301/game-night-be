@@ -14,10 +14,9 @@
   </a>
 
 <h3 align="center">Game Night</h3>
-
+  <h2 allign="center"><strong><em>Disclaimer: This application used to make an external API call to <code>Board Game Atlas</code>. This service has since shut down. To keep usability for demo purposes, the data we got from that API is being loaded via a JSON file when seeding the database</em></strong></h2><br>
   <p align="center">
-    Welcome to the back-end repository for Game Night <br /> Game Night is a web application built for the Turing School of Software and Design's Mod 4 Capstone project. Read more about project requirements: https://mod4.turing.edu/projects/capstone/
-    <br />
+    Welcome to the back-end repository for Game Night <br><br> Game Night is a web application built for the Turing School of Software and Design's Mod 4 Capstone project. Read more about project requirements: https://mod4.turing.edu/projects/capstone/ 
   </p>
 </div>
 
@@ -44,9 +43,9 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-Game Night is an app designed for organizing and scheduling board game get-togethers. Users can create a board game event based on the games in their collection, and join games happening near them.
+Game Night is an app designed for organizing and scheduling board game get-togethers. Users can create a board game event based on the games in their collection and join games happening near them.
 
-Game night is an excellent way to take the hassle out of scheduling get-togethers with your friends, and acts as means of meeting new people who share your passion for tabletop gaming.
+Game night is an excellent way to take the hassle out of scheduling get-togethers with your friends, and it acts as a means of meeting new people who share your passion for tabletop gaming.
 
 - [Production Website](https://game-night-fe.vercel.app/)
 - Backend can be accessed using using `graphQL` queries to the following URL: https://game-night-backend-172o.onrender.com/graphql
@@ -73,17 +72,18 @@ Game Night's back-end application uses these integrations:
 ## Getting Started
 
 To demo Game Night on your local machine, follow these steps: 
+* <em>Note: Since <code>Board Game Atlas</code> no longer exists, getting an API key is unnecessary. The data initially to be loaded into the database from the API call is now loaded from a json file when the database is seeded.</em>
 
 ### Back End Repository
 
-1. Get a free Board Game Atlas API Key [here](https://www.boardgameatlas.com/signup)
+1. ~~Get a free Board Game Atlas API Key [here](https://www.boardgameatlas.com/signup)~~
 2. Register for an OpenAI API Key [here](https://platform.openai.com/overview)
 3. Clone this repo `git@github.com:Game-Night-2301/game-night-be.git`
 4. Navigate to the local repository: `cd game-night-be`
 5. Run: `bundle install`
 6. Run: `rails db:{drop,create,migrate,seed}`
 7. Run: `bundle exec figaro install`
-8. Add `BOARD_GAME_ATLAS_CLIENT_ID` and `OPENAI_ACCESS_TOKEN` to `config/application.yml` file
+8. Add ~~`BOARD_GAME_ATLAS_CLIENT_ID` and~~ `OPENAI_ACCESS_TOKEN` to `config/application.yml` file
 9. Run: `rails s` to start the Rails server
 10. Visit: http://localhost:3000/graphiql
 
@@ -335,15 +335,19 @@ mutation {
 <!-- Technical Solutions -->
 ## Technical Solutions
 
-As a part of the Capstone project requirements, the Game Night team challenged ourselves to implement a novel stretch tech that we, a full stack team, agreed on during our two-week design and development process. We selected this technology based on the challenges we expected to face while building out our MVP. Back-end and Front-end both decided to use `GraphQL` as our novel stretch tech. Not included in that stretch tech category, but a stretch goal for the group was to implement the use of AI.
+As a part of the Capstone project requirements, the Game Night team challenged ourselves to implement a novel stretch tech that we, a full stack team, agreed on during our two-week design and development process. We selected this technology based on the challenges we expected to face while building our MVP. Back-end and Front-end both decided to use `GraphQL` as our novel stretch tech. Not included in that stretch tech category, but a stretch goal for the group was to implement AI.
+
+### Board Game Atlas
+* <b>Challenge</b>: Before a demo competition that members of the Denver tech community judged, we learned that the service at the core of this project, the Board Game Atlas API, had shut down effective Aug. 23, 2023, being that we needed this app to work before this competition the following week we as a team had to scramble to find a way to make sure the backend worked.
+* <b>Solution</b>: The way we solved this was a quick, on-our-feet workaround. On the back-end, one of our team members had yet to try to rebuild the database since the API service had shut down. Since the original database was still intact, we exported the database using <code>Postico</code> into a file that we could then load into the database via the seeds file. While it is an imperfect workaround, it keeps the project running on the production website. Only so many resources are available to us that supply the same information as the previous API. We would like to add <code>BoardGameGeek</code>'s API to the project when possible, as it gives us the most similar data. This would be a lift for this team, requiring the back-end to learn <code>XML</code> and re-write our service and testing. While that on its own isn't horrible, this change would also have ramifications for the front-end of this project. With the data between the two APIs being different, that changes the data this back-end application can send to the front-end. The front-end would have to change portions of their side of the application to accommodate this change. With that in mind, we would like to accomplish this change, but it would take a dedicated effort from all seven of us to make it happen promptly.
 
 ### GraphQL
-* <b>Challenge</b>: The biggest challenge for us as a back-end team came from the fact that, to this point, we had been taught and only built RESTful APIs. Transitioning from RESTful APIs to a GraphQL API presents several challenges. Firstly, one of the main hurdles is the change in mindset and approach to data fetching. With RESTful APIs, the server defines a fixed set of endpoints and response structures, which can lead to over-fetching or under-fetching of data. GraphQL, on the other hand, allows clients to specify their exact data requirements, enabling more efficient and precise data retrieval.
-* <b>Solution</b>: We researched multiple articles on building basic queries and mutations. Then decided to install `GraphiQL` to build out queries and mutations on our server to get more comfortable with writing, structuring, and returning queries correctly. So that the data we exposed for the Front-end was readable, useable, and correct.
+* <b>Challenge</b>: The biggest challenge for us as a back-end team came from the fact that, to this point, we had been taught and only built RESTful APIs. Transitioning from RESTful APIs to GraphQL APIs presents several challenges. Firstly, one of the main hurdles is the change in mindset and approach to data fetching. With RESTful APIs, the server defines a fixed set of endpoints and response structures, which can lead to over-fetching or under-fetching of data. GraphQL, on the other hand, allows clients to specify their exact data requirements, enabling more efficient and precise data retrieval.
+* <b>Solution</b>: We researched multiple articles on building basic queries and mutations. We then decided to install `GraphiQL` to build out queries and mutations on our server to get more comfortable correctly writing, structuring, and returning queries so that the data we exposed for the Front-end was readable, useable, and correct.
 
 ### Artificial Intelligence 
-* <b>Challenge</b>: This challenge was us working with something completely novel to us but popular in the real world. We wanted to implement the AI to give us recommendations based on a collection of games that the user owned. The challenge being we didn't want to send, specifically ChatGPT, the entire game object that was stored in our database. We only wanted to send the names of the games that they owned. This while also having ChatGPT return us only the names of the games that it is suggesting in a usable format for us to take and then expose for the Front-end. Before the data was sent to the FE, we needed to make sure that the game being recommended actually existed in our database and figure out how to handle recommending a different game if the game happens to not be one that we don't have. 
-* <b>Solution</b>: After struggling for quite literally hours. We figured out the hard way that adjusting headers in a request wasn't enough to make `VCR` re-record a response to the cassette. Once we got past the same error because of VCR, we began to actually implement the AI the way we want to. We started by making a method called `get_games` that took the collection of games that were associated with a user and shoveled only the names of the games into an array that would be passed as an argument to the method that was actually querying the OpenAI API. We then specifically asked ChatGPT to, based on the collection we just gave it, only return the recommendations as the names of the games as strings inside an array. From there, we passed that data to the `Games` model and validated whether or not that game was in our database. We used an ActiveRecord to take each name in the array given to us by ChatGPT to attempt to match it to the name of a game in our database. If there was a match, we sent this game on to be exposed to the FE. If the game didn't exist in our database of 1100 games, we picked another game from our database and sent that on with the games that did match.   
+* <b>Challenge</b>: This challenge was us working with something wholly novel but popular in the real world. We wanted to implement the AI to give us recommendations based on a collection of user-owned games. The challenge was that we didn't want to send, specifically ChatGPT, the entire game object stored in our database. We only wanted to send the names of the games that they owned. This while also having ChatGPT return us only the names of the games it suggests in a usable format for us to take and then expose for the front-end. Before the data was sent to the FE, we needed to make sure that the recommended game existed in our database and figure out how to handle recommending a different game if the game happened to be one we didn't have.
+* <b>Solution</b>: After struggling for hours, we realized that adjusting headers in a request wasn't enough to make `VCR` re-record a response to the cassette. Once we got past the same error because of VCR, we began implementing the AI how we wanted to. We started by making a method called `get_games` that took the collection of games associated with a user and shoveled only the names of the games into an array that would be passed as an argument to the method that was querying the OpenAI API. We then specifically asked ChatGPT to, based on the collection we just gave it, only return the recommendations as the names of the games as strings inside an array. From there, we passed that data to the `Games` model and validated whether or not that game was in our database. We used an ActiveRecord to take each name in the array given to us by ChatGPT to attempt to match it to the name of the game in our database. If there was a match, we sent this game on to be exposed to the FE. If the game didn't exist in our database of 1100 games, we picked another game from our database and sent that on with the games that did match. 
 
 
 
@@ -353,6 +357,7 @@ As a part of the Capstone project requirements, the Game Night team challenged o
 ## Roadmap
 
 Additional features, functionality, and potential refactors:
+* Find a new external API to seed the database
 * User Authentication
   * Google OAuth and/or Board Game Atlas OAuth
 * Cache external API calls to improve performance
